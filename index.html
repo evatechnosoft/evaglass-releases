@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>evaglass — AI gözlük companion</title>
+<style>
+  :root{
+    --bg:#0B0D12; --bg-deep:#05060A; --solid:#0D1017;
+    --glass:rgba(255,255,255,.06); --glass-strong:rgba(255,255,255,.10); --glass-inset:rgba(255,255,255,.05);
+    --ink:#F4F6FB; --ink-dim:rgba(244,246,251,.62); --ink-faint:rgba(244,246,251,.38);
+    --edge:rgba(255,255,255,.14); --edge-soft:rgba(255,255,255,.07);
+    --teal:#2DD4BF; --indigo:#6366F1; --magenta:#EC4899;
+    --gradient: linear-gradient(92deg, var(--teal), var(--indigo) 55%, var(--magenta));
+    --r-card:26px; --r-field:16px; --r-pill:100px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{ background:var(--bg); color:var(--ink); font-family:"Segoe UI",Inter,system-ui,-apple-system,sans-serif; min-height:100vh; position:relative; overflow-x:hidden; line-height:1.5; }
+  .aurora{ position:fixed; inset:0; z-index:0; pointer-events:none;
+    background: radial-gradient(600px 400px at 15% 10%, rgba(45,212,191,.20), transparent 60%), radial-gradient(700px 500px at 85% 15%, rgba(99,102,241,.18), transparent 60%), radial-gradient(650px 450px at 50% 95%, rgba(236,72,153,.16), transparent 60%), var(--bg-deep); }
+  main{ position:relative; z-index:1; max-width:640px; margin:0 auto; padding:56px 22px 80px; }
+  .eyebrow{ font-size:12px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-faint); margin:0 0 14px; }
+  h1{ font-size:clamp(32px,7vw,46px); font-weight:700; letter-spacing:-.035em; margin:0 0 12px; line-height:1.08; }
+  h1 .grad{ background:var(--gradient); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .lede{ font-size:15px; color:var(--ink-dim); margin:0 0 40px; max-width:52ch; }
+  .card{ background:var(--glass); border:1px solid var(--edge); border-radius:var(--r-card); padding:24px 22px;
+    backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.09), 0 20px 40px rgba(0,0,0,.35); margin-bottom:24px; }
+  .card h2{ font-size:14px; font-weight:600; letter-spacing:.02em; color:var(--ink-dim); text-transform:uppercase; margin:0 0 16px; }
+  .ver-row{ display:flex; flex-wrap:wrap; gap:10px 24px; margin-bottom:18px; }
+  .ver-item{ min-width:110px; }
+  .ver-item .k{ font-size:11px; color:var(--ink-faint); text-transform:uppercase; letter-spacing:.08em; }
+  .ver-item .v{ font-size:16px; font-weight:600; margin-top:2px; word-break:break-all; }
+  .ver-item .v.mono{ font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:13px; font-weight:500; }
+  .cta{
+    display:flex; align-items:center; justify-content:center; gap:10px;
+    width:100%; height:52px; border-radius:var(--r-field);
+    background:var(--gradient); color:#0B0D12;
+    font-size:15px; font-weight:700; text-decoration:none;
+    border:none; cursor:pointer;
+    transition:filter .2s ease, opacity .2s ease;
+  }
+  .cta:hover{ filter:brightness(1.08); }
+  .cta[aria-disabled="true"]{ opacity:.45; pointer-events:none; }
+  .status{ font-size:12.5px; color:var(--ink-faint); margin-top:10px; text-align:center; }
+  ol.steps{ margin:0; padding-left:20px; color:var(--ink-dim); font-size:14px; }
+  ol.steps li{ margin-bottom:8px; }
+  ol.steps li:last-child{ margin-bottom:0; }
+  ul.features{ list-style:none; margin:0; padding:0; display:grid; gap:14px; }
+  ul.features li{
+    display:flex; gap:12px; align-items:flex-start;
+    font-size:14px; color:var(--ink-dim);
+  }
+  .glyph{
+    flex:0 0 auto; width:34px; height:34px; border-radius:10px;
+    background:var(--glass-inset); border:1px solid var(--edge-soft);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .glyph svg{ width:17px; height:17px; stroke:var(--ink); fill:none; stroke-width:1.8; }
+  footer{
+    margin-top:40px; padding-top:24px; border-top:1px solid var(--edge-soft);
+    font-size:12.5px; color:var(--ink-faint); text-align:center;
+  }
+  footer a{ color:var(--ink-dim); }
+  code{ background:var(--glass-inset); padding:2px 6px; border-radius:6px; font-size:12.5px; }
+</style>
+</head>
+<body>
+<div class="aurora"></div>
+<main>
+  <p class="eyebrow">evaglass</p>
+  <h1>AI gözlük <span class="grad">companion</span></h1>
+  <p class="lede">Akıllı gözlüğünüzü BLE ile kontrol eden, sesli asistanla konuşan ve medya aktaran Android uygulaması.</p>
+
+  <section class="card" aria-labelledby="ver-title">
+    <h2 id="ver-title">Güncel Sürüm</h2>
+    <div class="ver-row">
+      <div class="ver-item">
+        <div class="k">Sürüm</div>
+        <div class="v" id="f-version">yükleniyor…</div>
+      </div>
+      <div class="ver-item">
+        <div class="k">Build</div>
+        <div class="v" id="f-code">—</div>
+      </div>
+      <div class="ver-item">
+        <div class="k">Yayın tarihi</div>
+        <div class="v" id="f-date">—</div>
+      </div>
+      <div class="ver-item">
+        <div class="k">SHA-256</div>
+        <div class="v mono" id="f-sha">—</div>
+      </div>
+    </div>
+    <a id="download-btn" class="cta" href="#" aria-disabled="true">APK indir</a>
+    <p class="status" id="f-status">Sürüm bilgisi alınıyor…</p>
+  </section>
+
+  <section class="card" aria-labelledby="steps-title">
+    <h2 id="steps-title">Kurulum</h2>
+    <ol class="steps">
+      <li>Android ayarlarından "Bilinmeyen kaynaklara izin ver" seçeneğini açın.</li>
+      <li>Yukarıdaki butondan APK dosyasını indirin.</li>
+      <li>İndirilen dosyayı açıp kurulumu tamamlayın.</li>
+      <li>İlk açılışta ⚙️ ayarlar ekranından kendi Gemini API anahtarınızı girin — release APK'da sağlayıcı anahtarı gömülü değildir.</li>
+    </ol>
+  </section>
+
+  <section class="card" aria-labelledby="what-title">
+    <h2 id="what-title">Bu Uygulama Ne Yapar</h2>
+    <ul class="features">
+      <li>
+        <span class="glyph"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 1 16 0 8 8 0 0 1-16 0Z"/><path d="M9 12h6M12 9v6"/></svg></span>
+        <span>BLE üzerinden gözlüğü kontrol eder: fotoğraf, video ve ses komutları.</span>
+      </li>
+      <li>
+        <span class="glyph"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4V5Z"/></svg></span>
+        <span>Gözlükten fotoğraf ve medya dosyalarını telefona aktarır.</span>
+      </li>
+      <li>
+        <span class="glyph"><svg viewBox="0 0 24 24"><path d="M12 3a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3Z"/><path d="M6 11a6 6 0 0 0 12 0M12 17v3"/></svg></span>
+        <span>Sesli AI asistanla doğal dilde konuşma imkânı sunar.</span>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    Kod deposu özeldir; bu sayfa yalnızca dağıtım kanalıdır.<br>
+    Metadata kaynağı: <code>latest.json</code>
+  </footer>
+</main>
+
+<script>
+(function () {
+  var elVersion = document.getElementById('f-version');
+  var elCode = document.getElementById('f-code');
+  var elDate = document.getElementById('f-date');
+  var elSha = document.getElementById('f-sha');
+  var elStatus = document.getElementById('f-status');
+  var btn = document.getElementById('download-btn');
+
+  fetch('latest.json', { cache: 'no-store' })
+    .then(function (res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.json();
+    })
+    .then(function (data) {
+      elVersion.textContent = data.versionName || '—';
+      elCode.textContent = (data.versionCode != null) ? String(data.versionCode) : '—';
+      elDate.textContent = data.releaseDate || data.date || '—';
+
+      if (data.sha256 && data.sha256.length > 0) {
+        var s = data.sha256;
+        elSha.textContent = s.length > 16 ? (s.slice(0, 8) + '…' + s.slice(-8)) : s;
+        elSha.title = s;
+      } else {
+        elSha.textContent = 'yayınlanmadı';
+      }
+
+      if (data.url) {
+        btn.href = data.url;
+        btn.removeAttribute('aria-disabled');
+        elStatus.textContent = 'İndirmeye hazır.';
+      } else {
+        elStatus.textContent = 'İndirme bağlantısı bulunamadı.';
+      }
+    })
+    .catch(function (err) {
+      elVersion.textContent = '—';
+      elStatus.textContent = 'Sürüm bilgisi alınamadı, sayfayı yenileyin. (' + err.message + ')';
+    });
+})();
+</script>
+</body>
+</html>
