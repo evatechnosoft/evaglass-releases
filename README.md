@@ -1,9 +1,9 @@
-# evaglass-releases
+# evaglass — Releases
 
-evaglass companion app (AI gözlük) — **yalnızca release APK'ları.** Kaynak kod private/local.
+AI gozluk (AIMB / AUXOM) companion app'inin OTA dagitim kanali.
+Kod deposu ayri ve ozeldir; burada yalnizca **imzali release APK** ve surum metadatasi bulunur.
 
-## OTA
-Uygulama açılışta bu repo'nun `/releases`'ini kontrol eder; yeni `tag_name` varsa
-"⬆ Güncelle" butonu çıkar → APK indirilir → `PackageInstaller` ile kurulur.
+- Guncel surum: [`latest.json`](https://evatechnosoft.github.io/evaglass-releases/latest.json)
+- Indirme: [Releases](https://github.com/evatechnosoft/evaglass-releases/releases/latest)
 
-> Bu **app** güncellemesidir; gözlük **firmware** OTA'sı DEĞİL (kapsam dışı).
+Release APK'da saglayici anahtari **gomulu degildir** (anahtarlar yalnizca debug build'de seed'lenir).
