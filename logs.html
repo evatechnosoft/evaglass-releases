@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>evaglass — Log monitörü</title>
+<style>
+  :root{ --bg:#0B0D12; --bg-deep:#05060A; --glass:rgba(255,255,255,.06); --glass-inset:rgba(255,255,255,.05);
+    --ink:#F4F6FB; --ink-dim:rgba(244,246,251,.62); --ink-faint:rgba(244,246,251,.38);
+    --edge:rgba(255,255,255,.14); --edge-soft:rgba(255,255,255,.07);
+    --teal:#2DD4BF; --indigo:#6366F1; --magenta:#EC4899;
+    --gradient: linear-gradient(92deg, var(--teal), var(--indigo) 55%, var(--magenta));
+    --err:#F87171; --warn:#FBBF24; --ok:#34D399; --r-card:26px; --r-field:16px; --r-pill:100px; }
+  *{box-sizing:border-box;} html,body{margin:0;padding:0;}
+  body{ background:var(--bg); color:var(--ink); font-family:"Segoe UI",Inter,system-ui,-apple-system,sans-serif; min-height:100vh; position:relative; overflow-x:hidden; line-height:1.5; }
+  .aurora{ position:fixed; inset:0; z-index:0; pointer-events:none;
+    background: radial-gradient(600px 400px at 15% 10%, rgba(45,212,191,.20), transparent 60%), radial-gradient(700px 500px at 85% 15%, rgba(99,102,241,.18), transparent 60%), radial-gradient(650px 450px at 50% 95%, rgba(236,72,153,.16), transparent 60%), var(--bg-deep); }
+  main{ position:relative; z-index:1; max-width:920px; margin:0 auto; padding:40px 20px 70px; }
+  .eyebrow{ font-size:12px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-faint); margin:0 0 12px; }
+  h1{ font-size:clamp(26px,5vw,36px); font-weight:700; letter-spacing:-.03em; margin:0 0 10px; line-height:1.1; }
+  h1 .grad{ background:var(--gradient); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .lede{ font-size:14px; color:var(--ink-dim); margin:0 0 28px; max-width:70ch; }
+  .card{ background:var(--glass); border:1px solid var(--edge); border-radius:var(--r-card); padding:22px 20px; backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); box-shadow: inset 0 1px 0 rgba(255,255,255,.09), 0 20px 40px rgba(0,0,0,.35); margin-bottom:20px; }
+  .card h2{ font-size:13px; font-weight:600; letter-spacing:.02em; color:var(--ink-dim); text-transform:uppercase; margin:0 0 14px; }
+  label.field-label{ display:block; font-size:12px; color:var(--ink-faint); margin-bottom:6px; }
+  input[type=text]{ width:100%; background:var(--glass-inset); border:1px solid var(--edge-soft); color:var(--ink); border-radius:var(--r-field); padding:12px 14px; font-size:13.5px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; }
+  input[type=text]:focus{ outline:none; border-color:var(--indigo); }
+  .row{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+  .btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; height:42px; padding:0 18px; border-radius:var(--r-field); background:var(--gradient); color:#0B0D12; font-size:13.5px; font-weight:700; border:none; cursor:pointer; text-decoration:none; white-space:nowrap; transition:filter .15s ease, opacity .15s ease; }
+  .btn:hover{ filter:brightness(1.08); }
+  .btn.ghost{ background:var(--glass-inset); color:var(--ink); border:1px solid var(--edge-soft); font-weight:600; }
+  .btn.ghost:hover{ filter:brightness(1.15); }
+  select{ height:42px; background:var(--glass-inset); border:1px solid var(--edge-soft); color:var(--ink); border-radius:var(--r-field); padding:0 12px; font-size:13.5px; cursor:pointer; }
+  .toggle{ display:flex; align-items:center; gap:8px; font-size:13px; color:var(--ink-dim); cursor:pointer; user-select:none; }
+  .toggle input{ width:16px; height:16px; accent-color:var(--indigo); }
+  .badge{ display:inline-flex; align-items:center; gap:8px; font-size:12.5px; padding:6px 12px; border-radius:var(--r-pill); border:1px solid var(--edge-soft); background:var(--glass-inset); color:var(--ink-dim); }
+  .dot{ width:8px; height:8px; border-radius:50%; background:var(--ink-faint); flex:0 0 auto; }
+  .dot.ok{ background:var(--ok); box-shadow:0 0 8px var(--ok); }
+  .dot.err{ background:var(--err); box-shadow:0 0 8px var(--err); }
+  .dot.pending{ background:var(--indigo); box-shadow:0 0 8px var(--indigo); }
+  .stat{ font-size:12px; color:var(--ink-faint); }
+  .log-view{ background:var(--bg-deep); border:1px solid var(--edge-soft); border-radius:var(--r-field); padding:14px 16px; height:56vh; min-height:320px; overflow-y:auto; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:12.5px; line-height:1.55; white-space:pre-wrap; word-break:break-all; }
+  .log-line{ display:block; }
+  .log-line .ts{ color:var(--ink-faint); }
+  .log-line.lvl-error{ color:var(--err); }
+  .log-line.lvl-warn{ color:var(--warn); }
+  .log-line.lvl-info{ color:var(--ink-dim); }
+  .empty{ color:var(--ink-faint); font-style:italic; }
+  .help{ font-size:12.5px; color:var(--ink-dim); }
+  .help code{ background:var(--glass-inset); padding:2px 6px; border-radius:6px; font-size:11.5px; }
+  .help summary{ cursor:pointer; font-size:13px; font-weight:600; color:var(--ink-dim); }
+  a.raw{ color:var(--teal); font-size:12.5px; }
+  footer{ margin-top:32px; padding-top:20px; border-top:1px solid var(--edge-soft); font-size:12.5px; color:var(--ink-faint); text-align:center; }
+  footer a{ color:var(--ink-dim); }
+  [hidden]{ display:none !important; }
+</style>
+</head>
+<body>
+<div class="aurora"></div>
+<main>
+  <p class="eyebrow">evaglass</p>
+  <h1>Log <span class="grad">monitörü</span></h1>
+  <p class="lede">Cihazın canlı hata ayıklama kaydını Azure Blob üzerinden okur. Bağlantı bilgisi yalnızca bu tarayıcıda saklanır, hiçbir sunucuya gönderilmez.</p>
+
+  <section class="card" id="config-card" aria-labelledby="cfg-title">
+    <h2 id="cfg-title">Bağlantı</h2>
+    <div id="cfg-empty">
+      <label class="field-label" for="url-input">Blob log URL'i (SAS token dahil, tam okuma linki)</label>
+      <div class="row">
+        <input type="text" id="url-input" placeholder="https://…blob.core.windows.net/…/logs/live.txt?sv=…(SAS)" style="flex:1; min-width:260px;">
+        <button class="btn" id="save-url-btn">Kaydet</button>
+      </div>
+      <p class="stat" id="cfg-error" style="color:var(--err); margin-top:8px;" hidden></p>
+    </div>
+    <div id="cfg-set" hidden>
+      <div class="row">
+        <span class="badge"><span class="dot ok"></span>Bağlantı yapılandırıldı</span>
+        <button class="btn ghost" id="forget-btn">Bağlantıyı unut</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="card" id="viewer-card" hidden aria-labelledby="viewer-title">
+    <h2 id="viewer-title">Canlı log</h2>
+    <div class="row" style="margin-bottom:14px;">
+      <button class="btn" id="refresh-btn">Yenile</button>
+      <label class="toggle"><input type="checkbox" id="auto-toggle" checked>Oto-yenile</label>
+      <select id="interval-select">
+        <option value="3000">3 sn</option>
+        <option value="5000" selected>5 sn</option>
+        <option value="10000">10 sn</option>
+        <option value="30000">30 sn</option>
+      </select>
+      <label class="toggle"><input type="checkbox" id="autoscroll-toggle" checked>Oto-kaydır</label>
+      <label class="toggle"><input type="checkbox" id="onlyerr-toggle">Sadece hata/uyarı</label>
+    </div>
+    <div class="row" style="margin-bottom:14px;">
+      <input type="text" id="filter-input" placeholder="Filtrele (metin içinde ara)…" style="flex:1; min-width:200px;">
+    </div>
+    <div class="row" style="margin-bottom:12px; justify-content:space-between;">
+      <span class="badge" id="status-badge"><span class="dot" id="status-dot"></span><span id="status-text">bekleniyor…</span></span>
+      <span class="stat"><span id="line-count">0</span> satır · <span id="fetch-ago">—</span> · <a class="raw" id="raw-link" href="#" target="_blank" rel="noopener">Ham dosyayı aç ↗</a></span>
+    </div>
+    <div class="log-view" id="log-view"><span class="empty">Henüz veri yok.</span></div>
+  </section>
+
+  <section class="card">
+    <details class="help">
+      <summary>CORS hatası mı alıyorsunuz?</summary>
+      <p style="margin-top:10px;">Blob hesabı tarayıcıdan doğrudan okunuyor. Hesapta CORS kuralı yoksa istek tarayıcı tarafından engellenir (genelde konsolda "CORS" veya "network error" görülür, durum rozeti de hatayı gösterir). Çözüm: Azure portalda ilgili Storage Account → <code>Resource sharing (CORS)</code> → Blob service altına şu kuralı ekleyin — Origin: <code>https://evatechnosoft.github.io</code>, Metodlar: <code>GET, HEAD</code>, İzin verilen başlıklar: <code>*</code>, Max age: <code>3600</code>.</p>
+      <p>403 hatası alırsanız SAS token'ının süresi dolmuş olabilir — yeni bir SAS linki üretip yukarıya yeniden yapıştırın.</p>
+    </details>
+  </section>
+
+  <footer>
+    Bu sayfa herkese açıktır ve hiçbir sır içermez. Bağlantı bilgisi yalnızca sizin tarayıcınızda saklanır.<br>
+    <a href="index.html">← Ana sayfaya dön</a>
+  </footer>
+</main>
+
+<script>
+(function () {
+  'use strict';
+  var STORAGE_KEY = 'evaglass_log_url';
+
+  function safeGet() { try { return localStorage.getItem(STORAGE_KEY); } catch (e) { return null; } }
+  function safeSet(v) { try { localStorage.setItem(STORAGE_KEY, v); return true; } catch (e) { return false; } }
+  function safeRemove() { try { localStorage.removeItem(STORAGE_KEY); } catch (e) {} }
+
+  var cfgEmpty = document.getElementById('cfg-empty');
+  var cfgSet = document.getElementById('cfg-set');
+  var cfgError = document.getElementById('cfg-error');
+  var urlInput = document.getElementById('url-input');
+  var saveBtn = document.getElementById('save-url-btn');
+  var forgetBtn = document.getElementById('forget-btn');
+  var viewerCard = document.getElementById('viewer-card');
+
+  var refreshBtn = document.getElementById('refresh-btn');
+  var autoToggle = document.getElementById('auto-toggle');
+  var intervalSelect = document.getElementById('interval-select');
+  var autoscrollToggle = document.getElementById('autoscroll-toggle');
+  var onlyErrToggle = document.getElementById('onlyerr-toggle');
+  var filterInput = document.getElementById('filter-input');
+  var statusDot = document.getElementById('status-dot');
+  var statusText = document.getElementById('status-text');
+  var lineCountEl = document.getElementById('line-count');
+  var fetchAgoEl = document.getElementById('fetch-ago');
+  var rawLink = document.getElementById('raw-link');
+  var logView = document.getElementById('log-view');
+
+  var timer = null;
+  var lastFetchAt = null;
+  var lastLines = [];
+  var agoTimer = null;
+
+  function applyConfigured(url) {
+    cfgEmpty.hidden = true; cfgSet.hidden = false; viewerCard.hidden = false;
+    rawLink.href = url; scheduleFetch(true); startAgoTicker();
+  }
+
+  function applyUnconfigured() {
+    cfgEmpty.hidden = false; cfgSet.hidden = true; viewerCard.hidden = true;
+    if (timer) { clearTimeout(timer); timer = null; }
+    if (agoTimer) { clearInterval(agoTimer); agoTimer = null; }
+  }
+
+  saveBtn.addEventListener('click', function () {
+    var v = (urlInput.value || '').trim();
+    cfgError.hidden = true;
+    if (v.indexOf('https://') !== 0) {
+      cfgError.textContent = 'Geçersiz bağlantı: URL "https://" ile başlamalı.';
+      cfgError.hidden = false;
+      return;
+    }
+    if (!safeSet(v)) {
+      cfgError.textContent = 'Tarayıcı depolamasına yazılamadı (özel pencere olabilir).';
+      cfgError.hidden = false;
+      return;
+    }
+    urlInput.value = '';
+    applyConfigured(v);
+  });
+
+  forgetBtn.addEventListener('click', function () {
+    safeRemove();
+    lastLines = [];
+    logView.innerHTML = '<span class="empty">Henüz veri yok.</span>';
+    applyUnconfigured();
+  });
+
+  function setStatus(kind, text) { statusDot.className = 'dot ' + kind; statusText.textContent = text; }
+
+  function startAgoTicker() {
+    if (agoTimer) clearInterval(agoTimer);
+    agoTimer = setInterval(function () {
+      if (!lastFetchAt) { fetchAgoEl.textContent = '—'; return; }
+      fetchAgoEl.textContent = Math.round((Date.now() - lastFetchAt) / 1000) + ' sn önce';
+    }, 1000);
+  }
+
+  function escapeHtml(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+
+  function classifyLine(line) {
+    if (/\b(ERROR|HATA)\b/i.test(line)) return 'lvl-error';
+    if (/\b(WARN|UYARI)\b/i.test(line)) return 'lvl-warn';
+    return 'lvl-info';
+  }
+
+  function renderLines() {
+    var filterText = (filterInput.value || '').toLowerCase();
+    var onlyErr = onlyErrToggle.checked;
+    var visible = lastLines.filter(function (line) {
+      if (onlyErr && !/\b(ERROR|HATA|WARN|UYARI)\b/i.test(line)) return false;
+      if (filterText && line.toLowerCase().indexOf(filterText) === -1) return false;
+      return true;
+    });
+
+    if (visible.length === 0) {
+      logView.innerHTML = '<span class="empty">Gösterilecek satır yok.</span>';
+      return;
+    }
+
+    var html = visible.map(function (line) {
+      var cls = classifyLine(line);
+      var m = line.match(/^(\s*[\[\(]?[\d:.\-T ]{4,25}[\]\)]?\s*)(.*)$/);
+      var esc;
+      if (m) {
+        esc = '<span class="ts">' + escapeHtml(m[1]) + '</span>' + escapeHtml(m[2]);
+      } else {
+        esc = escapeHtml(line);
+      }
+      return '<span class="log-line ' + cls + '">' + esc + '</span>';
+    }).join('\n');
+    logView.innerHTML = html;
+    lineCountEl.textContent = String(visible.length);
+
+    if (autoscrollToggle.checked) {
+      logView.scrollTop = logView.scrollHeight;
+    }
+  }
+
+  filterInput.addEventListener('input', renderLines);
+  onlyErrToggle.addEventListener('change', renderLines);
+  autoscrollToggle.addEventListener('change', renderLines);
+
+  function friendlyError(err, status) {
+    if (status === 403) return 'Erişim reddedildi (403). SAS süresi dolmuş olabilir, yeni URL yapıştır.';
+    if (status === 404) return 'Dosya bulunamadı (404). Yol veya hesap adı doğru mu kontrol edin.';
+    if (status) return 'Sunucu hatası (HTTP ' + status + ').';
+    return 'İstek başarısız — CORS engeli, ağ sorunu veya adres hatalı olabilir. Aşağıdaki CORS yardımına bakın.';
+  }
+
+  function doFetch() {
+    var url = safeGet();
+    if (!url) { applyUnconfigured(); return; }
+    setStatus('pending', 'yükleniyor…');
+
+    fetch(url, { cache: 'no-store' })
+      .then(function (res) {
+        lastFetchAt = Date.now();
+        if (!res.ok) {
+          setStatus('err', friendlyError(null, res.status));
+          return null;
+        }
+        return res.text();
+      })
+      .then(function (text) {
+        if (text === null || text === undefined) return;
+        lastLines = text.split(/\r?\n/).filter(function (l) { return l.length > 0; });
+        renderLines();
+        setStatus('ok', 'başarılı');
+      })
+      .catch(function () {
+        lastFetchAt = Date.now();
+        setStatus('err', friendlyError(true));
+      });
+  }
+
+  function scheduleFetch(immediate) {
+    if (timer) clearTimeout(timer);
+    if (immediate) doFetch();
+    if (!autoToggle.checked) return;
+    var ms = parseInt(intervalSelect.value, 10) || 5000;
+    timer = setTimeout(function () { doFetch(); scheduleFetch(false); }, ms);
+  }
+
+  refreshBtn.addEventListener('click', function () { doFetch(); });
+  autoToggle.addEventListener('change', function () { scheduleFetch(true); });
+  intervalSelect.addEventListener('change', function () { scheduleFetch(true); });
+
+  var existing = safeGet();
+  if (existing) { applyConfigured(existing); } else { applyUnconfigured(); }
+})();
+</script>
+</body>
+</html>
