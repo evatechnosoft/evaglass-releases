@@ -1,9 +1,9 @@
 {
-  "apk": "evaglass-0.5.4.apk",
-  "versionCode": 504,
-  "versionName": "0.5.4",
-  "sha256": "",
+  "apk": "evaglass-0.5.5.apk",
+  "versionCode": 505,
+  "versionName": "0.5.5",
+  "sha256": "d3b21c961bdb2390ffc6548095e0a6ea528e10bf396820f176e55bd8ecd8c5f7",
   "releaseDate": "2026-09-02",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.5.4/evaglass-0.5.4.apk",
-  "notes": "Ilk GitHub Releases yayini. SHA-256 alani publish betigi tarafindan doldurulur."
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.5.5/evaglass-0.5.5.apk",
+  "notes": "Keyless gateway (Gemini), BLE dayaniklilik, skill onay kapisi, GitHub Pages OTA"
 }
