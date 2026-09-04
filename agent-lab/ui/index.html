@@ -332,6 +332,13 @@ function applyEvent(ev) {
     const desk = getDesk(ev.agent || "agent");
     desk.session = ev.session || desk.session;
 
+    // HUD tek oturumu gösterir: en son olayın oturumu değiştiyse hedef sayacını sıfırla
+    if (ev.session && ev.session !== S.task.session) {
+      S.task.session = ev.session;
+      S.progress = { done: 0, total: 0, label: "" };
+      if (desk.progress && desk.progress.total) S.progress = desk.progress;
+    }
+
     if (!anim) {                                   // bilinmeyen tür → yut, logla
       console.warn("[agentlab] bilinmeyen olay türü:", type, ev);
       pushLine(`# ??? ${type} ${JSON.stringify(d).slice(0, 80)}`, "warn", ev.seq);
