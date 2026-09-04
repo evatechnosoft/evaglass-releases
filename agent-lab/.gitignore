@@ -1,11 +1,12 @@
 # Çalışma zamanı çıktıları — replay fixture'ları dışında hiçbiri commit edilmez.
-thumbs/
-sandbox/
-runs/
-__pycache__/
 *.pyc
 .pytest_cache/
-proof/*.mp4
+__pycache__/
 node_modules/
+proof/*.mp4
 proof/*.webm
+runs/
+sandbox/
 sessions/
+thumbs/
+.venv/
