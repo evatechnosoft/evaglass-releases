@@ -31,7 +31,13 @@ const browser = await chromium.launch({ args: ['--no-sandbox', '--disable-gpu'] 
 const ctx = await browser.newContext({ viewport: { width: 1360, height: 1000 }, deviceScaleFactor: 1 });
 const page = await ctx.newPage();
 page.on('pageerror', (e) => errors.push('pageerror: ' + e.message));
-page.on('console', (m) => { if (m.type() === 'error') errors.push('console: ' + m.text()); });
+page.on('console', (m) => {
+  if (m.type() !== 'error') return;
+  // eksik küçük resim (thumb) 404'ü beklenen durumdur: UI sahte ekran deseniyle devam eder
+  const src = m.location()?.url ?? '';
+  if (src.includes('/thumbs/')) return;
+  errors.push('console: ' + m.text() + ' @ ' + src);
+});
 
 const url = `${base}/?replay=/fixtures/${fixture}`;
 console.log('→', url);

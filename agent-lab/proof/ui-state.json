@@ -1,0 +1,9 @@
+{
+  "mode": "MOD: STATİK REPLAY",
+  "task": "cut 10 cucumber slices",
+  "goal": "10/10",
+  "conf": "100%",
+  "events": "olay: 74",
+  "logLines": 74,
+  "lastLine": "session.close(ok=true)  # 10/10 slices#73"
+}
