@@ -1,5 +1,7 @@
+# Çalışma zamanı çıktıları — replay fixture'ları dışında hiçbiri commit edilmez.
 thumbs/
 sandbox/
+runs/
 __pycache__/
 *.pyc
 .pytest_cache/

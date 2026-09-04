@@ -1,0 +1,74 @@
+{"v":1,"ts":"2026-09-04T14:10:41.532Z","session":"s_loop01","agent":"goat","seq":0,"type":"session.started","data":{"driver":"scripted","task":"loop","agent":"goat","sandbox":"/home/user/evaglass-releases/agent-lab/sandbox/s_loop01"}}
+{"v":1,"ts":"2026-09-04T14:10:41.532Z","session":"s_loop01","agent":"goat","seq":1,"type":"task.received","data":{"task":"cut 10 cucumber slices","risk":"low"}}
+{"v":1,"ts":"2026-09-04T14:10:41.532Z","session":"s_loop01","agent":"goat","seq":2,"type":"task.plan","data":{"steps":["init","move","click","increment","check"]}}
+{"v":1,"ts":"2026-09-04T14:10:41.532Z","session":"s_loop01","agent":"goat","seq":3,"type":"llm.thinking","data":{"model":"scripted","effort":"low","summary":"slice 1/10: hedefe yaklaş, kes."}}
+{"v":1,"ts":"2026-09-04T14:10:41.532Z","session":"s_loop01","agent":"goat","seq":4,"type":"llm.decision","data":{"action":"left_click","reason":"cut slice 1","model":"scripted"}}
+{"v":1,"ts":"2026-09-04T14:10:41.532Z","session":"s_loop01","agent":"goat","seq":5,"type":"action.requested","data":{"id":"ac_0001","action":"left_click","input":{"coordinate":[412,306]}}}
+{"v":1,"ts":"2026-09-04T14:10:41.590Z","session":"s_loop01","agent":"goat","seq":6,"type":"action.executed","data":{"id":"ac_0001","action":"left_click","ok":true,"latency_ms":57.74,"output":"left_click x1 at [412, 306]"}}
+{"v":1,"ts":"2026-09-04T14:10:41.684Z","session":"s_loop01","agent":"goat","seq":7,"type":"perception.screenshot","data":{"hash":"a6d95abaa50d7e9ad03e34c2f5715d54327f19eb","width":1280,"height":800,"scale":1.0,"changed":true,"thumb_url":"/thumbs/s_loop01/0.png"}}
+{"v":1,"ts":"2026-09-04T14:10:41.684Z","session":"s_loop01","agent":"goat","seq":8,"type":"metrics.tick","data":{"actions_per_min":393.39,"tokens_in":0,"tokens_out":0,"cost_usd":0.0}}
+{"v":1,"ts":"2026-09-04T14:10:41.684Z","session":"s_loop01","agent":"goat","seq":9,"type":"task.progress","data":{"done":1,"total":10,"label":"slices"}}
+{"v":1,"ts":"2026-09-04T14:10:41.734Z","session":"s_loop01","agent":"goat","seq":10,"type":"llm.thinking","data":{"model":"scripted","effort":"low","summary":"slice 2/10: hedefe yaklaş, kes."}}
+{"v":1,"ts":"2026-09-04T14:10:41.735Z","session":"s_loop01","agent":"goat","seq":11,"type":"llm.decision","data":{"action":"left_click","reason":"cut slice 2","model":"scripted"}}
+{"v":1,"ts":"2026-09-04T14:10:41.735Z","session":"s_loop01","agent":"goat","seq":12,"type":"action.requested","data":{"id":"ac_0002","action":"left_click","input":{"coordinate":[412,312]}}}
+{"v":1,"ts":"2026-09-04T14:10:41.736Z","session":"s_loop01","agent":"goat","seq":13,"type":"action.executed","data":{"id":"ac_0002","action":"left_click","ok":true,"latency_ms":1.14,"output":"left_click x1 at [412, 312]"}}
+{"v":1,"ts":"2026-09-04T14:10:41.773Z","session":"s_loop01","agent":"goat","seq":14,"type":"perception.screenshot","data":{"hash":"a6d95abaa50d7e9ad03e34c2f5715d54327f19eb","width":1280,"height":800,"scale":1.0,"changed":false,"thumb_url":"/thumbs/s_loop01/1.png"}}
+{"v":1,"ts":"2026-09-04T14:10:41.773Z","session":"s_loop01","agent":"goat","seq":15,"type":"task.progress","data":{"done":2,"total":10,"label":"slices"}}
+{"v":1,"ts":"2026-09-04T14:10:41.824Z","session":"s_loop01","agent":"goat","seq":16,"type":"llm.thinking","data":{"model":"scripted","effort":"low","summary":"slice 3/10: hedefe yaklaş, kes."}}
+{"v":1,"ts":"2026-09-04T14:10:41.824Z","session":"s_loop01","agent":"goat","seq":17,"type":"metrics.tick","data":{"actions_per_min":410.52,"tokens_in":0,"tokens_out":0,"cost_usd":0.0}}
+{"v":1,"ts":"2026-09-04T14:10:41.824Z","session":"s_loop01","agent":"goat","seq":18,"type":"llm.decision","data":{"action":"left_click","reason":"cut slice 3","model":"scripted"}}
+{"v":1,"ts":"2026-09-04T14:10:41.824Z","session":"s_loop01","agent":"goat","seq":19,"type":"action.requested","data":{"id":"ac_0003","action":"left_click","input":{"coordinate":[412,318]}}}
+{"v":1,"ts":"2026-09-04T14:10:41.825Z","session":"s_loop01","agent":"goat","seq":20,"type":"action.executed","data":{"id":"ac_0003","action":"left_click","ok":true,"latency_ms":1.11,"output":"left_click x1 at [412, 318]"}}
+{"v":1,"ts":"2026-09-04T14:10:41.864Z","session":"s_loop01","agent":"goat","seq":21,"type":"perception.screenshot","data":{"hash":"a6d95abaa50d7e9ad03e34c2f5715d54327f19eb","width":1280,"height":800,"scale":1.0,"changed":false,"thumb_url":"/thumbs/s_loop01/2.png"}}
+{"v":1,"ts":"2026-09-04T14:10:41.865Z","session":"s_loop01","agent":"goat","seq":22,"type":"task.progress","data":{"done":3,"total":10,"label":"slices"}}
+{"v":1,"ts":"2026-09-04T14:10:41.915Z","session":"s_loop01","agent":"goat","seq":23,"type":"llm.thinking","data":{"model":"scripted","effort":"low","summary":"slice 4/10: hedefe yaklaş, kes."}}
+{"v":1,"ts":"2026-09-04T14:10:41.915Z","session":"s_loop01","agent":"goat","seq":24,"type":"llm.decision","data":{"action":"left_click","reason":"cut slice 4","model":"scripted"}}
+{"v":1,"ts":"2026-09-04T14:10:41.915Z","session":"s_loop01","agent":"goat","seq":25,"type":"action.requested","data":{"id":"ac_0004","action":"left_click","input":{"coordinate":[412,324]}}}
+{"v":1,"ts":"2026-09-04T14:10:41.916Z","session":"s_loop01","agent":"goat","seq":26,"type":"action.executed","data":{"id":"ac_0004","action":"left_click","ok":true,"latency_ms":1.05,"output":"left_click x1 at [412, 324]"}}
+{"v":1,"ts":"2026-09-04T14:10:41.916Z","session":"s_loop01","agent":"goat","seq":27,"type":"metrics.tick","data":{"actions_per_min":467.85,"tokens_in":0,"tokens_out":0,"cost_usd":0.0}}
+{"v":1,"ts":"2026-09-04T14:10:41.955Z","session":"s_loop01","agent":"goat","seq":28,"type":"perception.screenshot","data":{"hash":"a6d95abaa50d7e9ad03e34c2f5715d54327f19eb","width":1280,"height":800,"scale":1.0,"changed":false,"thumb_url":"/thumbs/s_loop01/3.png"}}
+{"v":1,"ts":"2026-09-04T14:10:41.955Z","session":"s_loop01","agent":"goat","seq":29,"type":"task.progress","data":{"done":4,"total":10,"label":"slices"}}
+{"v":1,"ts":"2026-09-04T14:10:42.006Z","session":"s_loop01","agent":"goat","seq":30,"type":"llm.thinking","data":{"model":"scripted","effort":"low","summary":"slice 5/10: hedefe yaklaş, kes."}}
+{"v":1,"ts":"2026-09-04T14:10:42.006Z","session":"s_loop01","agent":"goat","seq":31,"type":"llm.decision","data":{"action":"left_click","reason":"cut slice 5","model":"scripted"}}
+{"v":1,"ts":"2026-09-04T14:10:42.006Z","session":"s_loop01","agent":"goat","seq":32,"type":"action.requested","data":{"id":"ac_0005","action":"left_click","input":{"coordinate":[412,300]}}}
+{"v":1,"ts":"2026-09-04T14:10:42.007Z","session":"s_loop01","agent":"goat","seq":33,"type":"action.executed","data":{"id":"ac_0005","action":"left_click","ok":true,"latency_ms":1.23,"output":"left_click x1 at [412, 300]"}}
+{"v":1,"ts":"2026-09-04T14:10:42.047Z","session":"s_loop01","agent":"goat","seq":34,"type":"perception.screenshot","data":{"hash":"a6d95abaa50d7e9ad03e34c2f5715d54327f19eb","width":1280,"height":800,"scale":1.0,"changed":false,"thumb_url":"/thumbs/s_loop01/4.png"}}
+{"v":1,"ts":"2026-09-04T14:10:42.048Z","session":"s_loop01","agent":"goat","seq":35,"type":"metrics.tick","data":{"actions_per_min":581.05,"tokens_in":0,"tokens_out":0,"cost_usd":0.0}}
+{"v":1,"ts":"2026-09-04T14:10:42.048Z","session":"s_loop01","agent":"goat","seq":36,"type":"task.progress","data":{"done":5,"total":10,"label":"slices"}}
+{"v":1,"ts":"2026-09-04T14:10:42.098Z","session":"s_loop01","agent":"goat","seq":37,"type":"llm.thinking","data":{"model":"scripted","effort":"low","summary":"slice 6/10: hedefe yaklaş, kes."}}
+{"v":1,"ts":"2026-09-04T14:10:42.098Z","session":"s_loop01","agent":"goat","seq":38,"type":"llm.decision","data":{"action":"left_click","reason":"cut slice 6","model":"scripted"}}
+{"v":1,"ts":"2026-09-04T14:10:42.098Z","session":"s_loop01","agent":"goat","seq":39,"type":"action.requested","data":{"id":"ac_0006","action":"left_click","input":{"coordinate":[412,306]}}}
+{"v":1,"ts":"2026-09-04T14:10:42.100Z","session":"s_loop01","agent":"goat","seq":40,"type":"action.executed","data":{"id":"ac_0006","action":"left_click","ok":true,"latency_ms":1.6,"output":"left_click x1 at [412, 306]"}}
+{"v":1,"ts":"2026-09-04T14:10:42.139Z","session":"s_loop01","agent":"goat","seq":41,"type":"perception.screenshot","data":{"hash":"a6d95abaa50d7e9ad03e34c2f5715d54327f19eb","width":1280,"height":800,"scale":1.0,"changed":false,"thumb_url":"/thumbs/s_loop01/5.png"}}
+{"v":1,"ts":"2026-09-04T14:10:42.140Z","session":"s_loop01","agent":"goat","seq":42,"type":"task.progress","data":{"done":6,"total":10,"label":"slices"}}
+{"v":1,"ts":"2026-09-04T14:10:42.190Z","session":"s_loop01","agent":"goat","seq":43,"type":"llm.thinking","data":{"model":"scripted","effort":"low","summary":"slice 7/10: hedefe yaklaş, kes."}}
+{"v":1,"ts":"2026-09-04T14:10:42.190Z","session":"s_loop01","agent":"goat","seq":44,"type":"metrics.tick","data":{"actions_per_min":546.51,"tokens_in":0,"tokens_out":0,"cost_usd":0.0}}
+{"v":1,"ts":"2026-09-04T14:10:42.190Z","session":"s_loop01","agent":"goat","seq":45,"type":"llm.decision","data":{"action":"left_click","reason":"cut slice 7","model":"scripted"}}
+{"v":1,"ts":"2026-09-04T14:10:42.190Z","session":"s_loop01","agent":"goat","seq":46,"type":"action.requested","data":{"id":"ac_0007","action":"left_click","input":{"coordinate":[412,312]}}}
+{"v":1,"ts":"2026-09-04T14:10:42.191Z","session":"s_loop01","agent":"goat","seq":47,"type":"action.executed","data":{"id":"ac_0007","action":"left_click","ok":true,"latency_ms":0.98,"output":"left_click x1 at [412, 312]"}}
+{"v":1,"ts":"2026-09-04T14:10:42.231Z","session":"s_loop01","agent":"goat","seq":48,"type":"perception.screenshot","data":{"hash":"a6d95abaa50d7e9ad03e34c2f5715d54327f19eb","width":1280,"height":800,"scale":1.0,"changed":false,"thumb_url":"/thumbs/s_loop01/6.png"}}
+{"v":1,"ts":"2026-09-04T14:10:42.231Z","session":"s_loop01","agent":"goat","seq":49,"type":"task.progress","data":{"done":7,"total":10,"label":"slices"}}
+{"v":1,"ts":"2026-09-04T14:10:42.282Z","session":"s_loop01","agent":"goat","seq":50,"type":"llm.thinking","data":{"model":"scripted","effort":"low","summary":"slice 8/10: hedefe yaklaş, kes."}}
+{"v":1,"ts":"2026-09-04T14:10:42.282Z","session":"s_loop01","agent":"goat","seq":51,"type":"llm.decision","data":{"action":"left_click","reason":"cut slice 8","model":"scripted"}}
+{"v":1,"ts":"2026-09-04T14:10:42.282Z","session":"s_loop01","agent":"goat","seq":52,"type":"action.requested","data":{"id":"ac_0008","action":"left_click","input":{"coordinate":[412,318]}}}
+{"v":1,"ts":"2026-09-04T14:10:42.283Z","session":"s_loop01","agent":"goat","seq":53,"type":"action.executed","data":{"id":"ac_0008","action":"left_click","ok":true,"latency_ms":0.76,"output":"left_click x1 at [412, 318]"}}
+{"v":1,"ts":"2026-09-04T14:10:42.283Z","session":"s_loop01","agent":"goat","seq":54,"type":"metrics.tick","data":{"actions_per_min":559.13,"tokens_in":0,"tokens_out":0,"cost_usd":0.0}}
+{"v":1,"ts":"2026-09-04T14:10:42.322Z","session":"s_loop01","agent":"goat","seq":55,"type":"perception.screenshot","data":{"hash":"a6d95abaa50d7e9ad03e34c2f5715d54327f19eb","width":1280,"height":800,"scale":1.0,"changed":false,"thumb_url":"/thumbs/s_loop01/7.png"}}
+{"v":1,"ts":"2026-09-04T14:10:42.322Z","session":"s_loop01","agent":"goat","seq":56,"type":"task.progress","data":{"done":8,"total":10,"label":"slices"}}
+{"v":1,"ts":"2026-09-04T14:10:42.373Z","session":"s_loop01","agent":"goat","seq":57,"type":"llm.thinking","data":{"model":"scripted","effort":"low","summary":"slice 9/10: hedefe yaklaş, kes."}}
+{"v":1,"ts":"2026-09-04T14:10:42.373Z","session":"s_loop01","agent":"goat","seq":58,"type":"llm.decision","data":{"action":"left_click","reason":"cut slice 9","model":"scripted"}}
+{"v":1,"ts":"2026-09-04T14:10:42.373Z","session":"s_loop01","agent":"goat","seq":59,"type":"action.requested","data":{"id":"ac_0009","action":"left_click","input":{"coordinate":[412,324]}}}
+{"v":1,"ts":"2026-09-04T14:10:42.374Z","session":"s_loop01","agent":"goat","seq":60,"type":"action.executed","data":{"id":"ac_0009","action":"left_click","ok":true,"latency_ms":1.18,"output":"left_click x1 at [412, 324]"}}
+{"v":1,"ts":"2026-09-04T14:10:42.412Z","session":"s_loop01","agent":"goat","seq":61,"type":"perception.screenshot","data":{"hash":"a6d95abaa50d7e9ad03e34c2f5715d54327f19eb","width":1280,"height":800,"scale":1.0,"changed":false,"thumb_url":"/thumbs/s_loop01/8.png"}}
+{"v":1,"ts":"2026-09-04T14:10:42.413Z","session":"s_loop01","agent":"goat","seq":62,"type":"metrics.tick","data":{"actions_per_min":612.85,"tokens_in":0,"tokens_out":0,"cost_usd":0.0}}
+{"v":1,"ts":"2026-09-04T14:10:42.413Z","session":"s_loop01","agent":"goat","seq":63,"type":"task.progress","data":{"done":9,"total":10,"label":"slices"}}
+{"v":1,"ts":"2026-09-04T14:10:42.463Z","session":"s_loop01","agent":"goat","seq":64,"type":"llm.thinking","data":{"model":"scripted","effort":"low","summary":"slice 10/10: hedefe yaklaş, kes."}}
+{"v":1,"ts":"2026-09-04T14:10:42.463Z","session":"s_loop01","agent":"goat","seq":65,"type":"llm.decision","data":{"action":"left_click","reason":"cut slice 10","model":"scripted"}}
+{"v":1,"ts":"2026-09-04T14:10:42.463Z","session":"s_loop01","agent":"goat","seq":66,"type":"action.requested","data":{"id":"ac_0010","action":"left_click","input":{"coordinate":[412,300]}}}
+{"v":1,"ts":"2026-09-04T14:10:42.464Z","session":"s_loop01","agent":"goat","seq":67,"type":"action.executed","data":{"id":"ac_0010","action":"left_click","ok":true,"latency_ms":0.92,"output":"left_click x1 at [412, 300]"}}
+{"v":1,"ts":"2026-09-04T14:10:42.508Z","session":"s_loop01","agent":"goat","seq":68,"type":"perception.screenshot","data":{"hash":"a6d95abaa50d7e9ad03e34c2f5715d54327f19eb","width":1280,"height":800,"scale":1.0,"changed":false,"thumb_url":"/thumbs/s_loop01/9.png"}}
+{"v":1,"ts":"2026-09-04T14:10:42.508Z","session":"s_loop01","agent":"goat","seq":69,"type":"task.progress","data":{"done":10,"total":10,"label":"slices"}}
+{"v":1,"ts":"2026-09-04T14:10:42.559Z","session":"s_loop01","agent":"goat","seq":70,"type":"task.done","data":{"ok":true,"summary":"10/10 slices"}}
+{"v":1,"ts":"2026-09-04T14:10:42.559Z","session":"s_loop01","agent":"goat","seq":71,"type":"metrics.tick","data":{"actions_per_min":584.04,"tokens_in":0,"tokens_out":0,"cost_usd":0.0}}
+{"v":1,"ts":"2026-09-04T14:10:42.559Z","session":"s_loop01","agent":"goat","seq":72,"type":"metrics.tick","data":{"actions_per_min":584.0,"tokens_in":0,"tokens_out":0,"cost_usd":0.0}}
+{"v":1,"ts":"2026-09-04T14:10:42.559Z","session":"s_loop01","agent":"goat","seq":73,"type":"session.finished","data":{"ok":true,"summary":"10/10 slices"}}
