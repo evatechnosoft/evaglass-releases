@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import shutil
 import subprocess
+import threading
 import time
 from dataclasses import dataclass
 from pathlib import Path
@@ -52,6 +53,10 @@ def run_shell(cmd: str, cwd: Path, timeout: float = DEFAULT_TIMEOUT_S) -> ShellR
     return ShellResult(ok=proc.returncode == 0, code=proc.returncode, output=out)
 
 
+
+class Aborted(RuntimeError):
+    """Kill switch (DURDUR) ile durduruldu."""
+
 class _Ticker:
     """N olayda bir `metrics.tick` yayınlar (aksiyon/dk göstergesi için)."""
 
@@ -90,7 +95,9 @@ class ScriptedDriver:
         executor: Any | None = None,
         approvals: ApprovalBroker | None = None,
         pace: float = 0.3,
+        kill: "threading.Event | None" = None,
     ) -> None:
+        self.kill = kill if kill is not None else threading.Event()
         self.bus = bus
         self.session = session
         self.agent = agent
@@ -103,13 +110,22 @@ class ScriptedDriver:
 
     # ---------------------------------------------------------------- yardımcı
 
+    def _check_kill(self) -> None:
+        """Kill switch basıldıysa görevi durdur (DURDUR / abort)."""
+        if self.kill.is_set():
+            raise Aborted("aborted")
+
     def _emit(self, type_: str, data: dict[str, Any], *, action: bool = False) -> None:
+        if not type_.startswith("session."):
+            self._check_kill()
         self.bus.emit(self.session, self.agent, type_, data)
         self.ticker.bump(action=action)
 
     def _sleep(self, factor: float = 1.0) -> None:
         if self.pace > 0:
-            time.sleep(self.pace * factor)
+            # kill switch'e duyarlı bekleme
+            if self.kill.wait(self.pace * factor):
+                raise Aborted("aborted")
 
     def _maybe_approve(self, action: str, payload: dict[str, Any]) -> bool:
         """Risk eşiği aşılırsa ApprovalBroker'a sorar; aksi halde True."""
@@ -170,7 +186,6 @@ class ScriptedDriver:
         self._emit("perception.screenshot", {
             "hash": f"fake{index:04d}", "width": 1366, "height": 768,
             "scale": 0.711458, "changed": True,
-            "thumb_url": f"/thumbs/{self.session}/{index}.png",
         })
 
     # ------------------------------------------------------------------ görevler
@@ -186,6 +201,10 @@ class ScriptedDriver:
             if handler is None:
                 raise ValueError(f"unknown scripted task: {task_name}")
             result = handler(self, work, commands)
+        except Aborted:
+            self.ticker.tick()
+            self._emit("session.failed", {"reason": "aborted"})
+            return {"ok": False, "summary": "aborted by kill switch"}
         except Exception as exc:
             self.ticker.tick()
             self._emit("session.failed", {"reason": f"{type(exc).__name__}: {exc}"})
@@ -311,9 +330,10 @@ def run_task(
     approvals: ApprovalBroker | None = None,
     pace: float = 0.3,
     commands: Sequence[str] | None = None,
+    kill: "threading.Event | None" = None,
 ) -> dict[str, Any]:
-    """Gateway'in bir thread'de çağırabileceği senkron giriş noktası."""
+    """Gateway'in bir thread'de çağırabileceği senkron giriş noktası. `kill` = DURDUR."""
     driver = ScriptedDriver(bus, session, agent, sandbox_dir=sandbox_dir,
                             perception=perception, executor=executor,
-                            approvals=approvals, pace=pace)
+                            approvals=approvals, pace=pace, kill=kill)
     return driver.run(task_name, commands=commands)

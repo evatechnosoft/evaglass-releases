@@ -623,3 +623,36 @@ def test_committed_fixtures_validate_against_schema(name: str) -> None:
         seqs.append(ev["seq"])
     assert seqs == list(range(len(seqs)))
     assert len(seqs) > 20
+
+
+def test_scripted_kill_switch_aborts_loop(tmp_path):
+    """DURDUR: kill switch basılınca loop görevi session.failed{reason:aborted} ile biter."""
+    import threading
+    from agentlab.events import EventBus
+    from agentlab.drivers.scripted import run_task
+
+    bus = EventBus()
+    kill = threading.Event()
+    seen: list[str] = []
+    bus.subscribe(lambda e: seen.append(e.type))
+
+    def stop_after_first_progress(ev):
+        if ev.type == "task.progress" and ev.data.get("done", 0) >= 2:
+            kill.set()
+    bus.subscribe(stop_after_first_progress)
+
+    result = run_task(bus, "s_kill01", "goat", "loop", sandbox_dir=tmp_path, pace=0.01, kill=kill)
+    assert result["ok"] is False and "abort" in result["summary"]
+    assert "session.failed" in seen and "task.done" not in seen
+    assert seen.index("session.failed") > max(i for i, t in enumerate(seen) if t == "task.progress")
+    done = [e for e in bus.history["s_kill01"] if e.type == "task.progress"]
+    assert done and max(e.data["done"] for e in done) < 10
+
+
+def test_scripted_no_fake_thumb_url_without_perception(tmp_path):
+    from agentlab.events import EventBus
+    from agentlab.drivers.scripted import run_task
+    bus = EventBus()
+    run_task(bus, "s_nothumb", "goat", "loop", sandbox_dir=tmp_path, pace=0)
+    shots = [e for e in bus.history["s_nothumb"] if e.type == "perception.screenshot"]
+    assert shots and all("thumb_url" not in e.data for e in shots)
