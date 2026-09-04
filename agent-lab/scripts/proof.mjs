@@ -1,6 +1,8 @@
 // Kanıt: gateway'i açar, loop + git-push görevlerini tetikler, sahneyi video + PNG olarak kaydeder.
 // Kullanım: NODE_PATH=$(npm root -g) node scripts/proof.mjs http://127.0.0.1:8799 proof/
-import { chromium } from 'playwright';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('playwright'); // NODE_PATH=$(npm root -g) ile global playwright bulunur
 import fs from 'node:fs';
 import path from 'node:path';
 

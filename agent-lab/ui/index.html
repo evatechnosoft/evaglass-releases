@@ -1,0 +1,1033 @@
+<title>AgentLab — Ajan Sahnesi</title>
+<meta name="color-scheme" content="dark">
+<meta name="description" content="AgentLab olay akışının piksel-art sahne yorumu (plan §5).">
+<style>
+  :root{
+    --bg:#080a10; --panel:#11141d; --panel2:#161a26; --line:#242a3a; --ink:#dbe3f7;
+    --dim:#7b86a3; --green:#3ddc84; --yellow:#ffd23f; --red:#ff4d5e; --blue:#4cc2ff;
+    --purple:#a06bff; --orange:#ff9f43;
+    --font:"Press Start 2P", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:12px;
+       line-height:1.5;-webkit-font-smoothing:none;padding:10px}
+  .app{max-width:1300px;margin:0 auto;display:grid;gap:10px}
+  .row{display:grid;gap:10px}
+  .card{background:var(--panel);border:2px solid var(--line);border-radius:2px;padding:9px 11px;
+        position:relative;overflow:hidden}
+  .card::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:repeating-linear-gradient(transparent 0 3px, rgba(0,0,0,.16) 3px 4px)}
+  .k{color:var(--dim);font-size:9px;letter-spacing:1px;text-transform:uppercase;margin:0 0 6px}
+  .big{font-size:22px;line-height:1.1}
+  .sub{font-size:10px;color:var(--dim)}
+  .hud{grid-template-columns:250px 1fr 320px}
+  @media (max-width:980px){.hud{grid-template-columns:1fr}}
+  .badge{display:inline-block;border:1px solid var(--line);background:var(--panel2);
+    padding:2px 6px;font-size:9px;border-radius:2px;color:var(--dim);margin-right:5px;white-space:nowrap}
+  .badge.on{color:var(--blue);border-color:#2a4f6b}
+  .badge.ok{color:var(--green);border-color:#245f3f}
+  .badge.warn{color:var(--yellow);border-color:#6b5a1e}
+  .badge.err{color:var(--red);border-color:#6b2530}
+  .bar{height:12px;background:#0b0e16;border:1px solid var(--line);position:relative;overflow:hidden}
+  .bar>i{display:block;height:100%;background:var(--green);width:0%;transition:width .25s steps(8)}
+  .bar.warn>i{background:var(--yellow)} .bar.err>i{background:var(--red)}
+  canvas{image-rendering:pixelated;image-rendering:crisp-edges;display:block}
+  #scene{width:100%;max-width:960px;margin:0 auto;aspect-ratio:16/9;background:#0b0e16;border:2px solid var(--line)}
+  .stagewrap{position:relative;display:flex;justify-content:center}
+  .stagebox{position:relative;width:100%;max-width:960px}
+  .stagewrap .over{position:absolute;left:8px;top:8px;display:flex;gap:5px;flex-wrap:wrap}
+  .console{display:grid;grid-template-columns:1fr 250px;gap:10px}
+  @media (max-width:980px){.console{grid-template-columns:1fr}}
+  #log{height:236px;overflow-y:auto;background:#0b0e16;border:1px solid var(--line);padding:6px;
+       font-size:11px;scrollbar-width:thin}
+  .ln{display:grid;grid-template-columns:1fr 54px;gap:8px;padding:1px 4px;color:#96a2c0;
+      white-space:pre-wrap;word-break:break-word;border-left:2px solid transparent}
+  .ln .st{color:#4a5470;font-size:9px;text-align:right;white-space:nowrap}
+  .ln.active{color:var(--green);background:#0f1a14;border-left-color:var(--green)}
+  .ln.err{color:var(--red)} .ln.warn{color:var(--yellow)} .ln.dim{color:#5a6482}
+  .ln.act{color:var(--blue)}
+  .side{display:grid;gap:8px;align-content:start}
+  .controls{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+  button,select,input[type=range]{font-family:var(--font);font-size:10px}
+  button{background:var(--panel2);color:var(--ink);border:2px solid var(--line);border-radius:2px;
+    padding:7px 9px;cursor:pointer}
+  button:hover:not(:disabled){border-color:var(--blue);color:#fff}
+  button:active:not(:disabled){transform:translateY(1px)}
+  button:disabled{opacity:.35;cursor:not-allowed}
+  button.go{border-color:#245f3f;color:var(--green)}
+  button.yes{border-color:#245f3f;color:var(--green)}
+  button.no{border-color:#6b2530;color:var(--red)}
+  button.stop{border-color:#6b4a1e;color:var(--orange)}
+  select{background:var(--panel2);color:var(--ink);border:2px solid var(--line);padding:6px}
+  input[type=range]{accent-color:var(--green);width:110px;vertical-align:middle}
+  .spacer{flex:1}
+  .dot{display:inline-block;width:7px;height:7px;margin-right:5px;background:var(--dim)}
+  .dot.live{background:var(--green)} .dot.off{background:var(--red)}
+  .foot{color:#49526e;font-size:9px;text-align:center;padding:2px 0 10px}
+</style>
+
+<div class="app">
+  <!-- ───────────────────────── HUD ───────────────────────── -->
+  <div class="row hud">
+    <div class="card">
+      <p class="k">Aksiyon Hızı</p>
+      <div style="display:flex;align-items:flex-end;gap:9px">
+        <canvas id="spark" width="120" height="40" style="width:120px;height:40px"></canvas>
+        <div><div class="big" id="apm">0</div><div class="sub">aksiyon / dk</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="k">Aktif Görev</p>
+      <div id="taskText" style="font-size:13px;min-height:20px">—</div>
+      <div style="margin-top:7px">
+        <span class="badge on" id="bModel">model: —</span>
+        <span class="badge" id="bDriver">driver: —</span>
+        <span class="badge" id="bSession">session: —</span>
+        <span class="badge" id="bRisk">risk: —</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="k">Hedef</p>
+      <div style="display:flex;justify-content:space-between;align-items:baseline">
+        <span id="goalLabel" class="sub">bekleniyor</span>
+        <span id="goalCount" style="font-size:14px;color:var(--yellow)">0/0</span>
+      </div>
+      <div class="bar" id="goalBar" style="margin-top:6px"><i></i></div>
+      <div style="margin-top:7px">
+        <span class="badge" id="bStatus">durum: idle</span>
+        <span class="badge" id="bEvents">olay: 0</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─────────────────────── SAHNE ─────────────────────── -->
+  <div class="stagewrap"><div class="stagebox">
+    <canvas id="scene" width="640" height="360"></canvas>
+    <div class="over">
+      <span class="badge" id="bMode">MOD: —</span>
+      <span class="badge" id="bConn"><i class="dot" id="connDot"></i>bağlanıyor</span>
+    </div>
+  </div></div>
+
+  <!-- ─────────────────── KOMUT AKIŞI ─────────────────── -->
+  <div class="console">
+    <div class="card" style="padding:9px">
+      <p class="k">Komut Akışı<span style="float:right;color:#3c445e">adım</span></p>
+      <div id="log"></div>
+    </div>
+    <div class="side">
+      <div class="card">
+        <p class="k">Model</p>
+        <div id="modelBox" style="font-size:11px;color:var(--blue)">—</div>
+        <div class="sub" id="modelSub">tur bekleniyor</div>
+      </div>
+      <div class="card">
+        <p class="k">Güven</p>
+        <div style="display:flex;align-items:center;gap:8px">
+          <canvas id="gauge" width="96" height="52" style="width:96px;height:52px"></canvas>
+          <div><div class="big" id="confVal">—</div><div class="sub" id="confSub">0 ok / 0 hata</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─────────────────── KONTROLLER ─────────────────── -->
+  <div class="card controls">
+    <select id="sessionSel" title="Oturum filtresi"><option value="all">TÜM OTURUMLAR</option></select>
+    <button class="go" data-task="git-push">▶ git-push</button>
+    <button class="go" data-task="loop">▶ loop</button>
+    <button data-replay="replay-git-push.ndjson">▶ replay git-push</button>
+    <button data-replay="replay-loop.ndjson">▶ replay loop</button>
+    <label class="sub" title="Adım gecikmesi (sn)">hız <input id="pace" type="range" min="0" max="1.2" step="0.05" value="0.3"><span id="paceVal">0.30</span></label>
+    <span class="spacer"></span>
+    <button class="yes" id="btnOk" disabled>ONAYLA</button>
+    <button class="no" id="btnNo" disabled>REDDET</button>
+    <button class="stop" id="btnAbort">DURDUR</button>
+  </div>
+  <div class="foot">AgentLab · olay sözleşmesi v1 · UI yalnızca /events akışını tüketir, yazma yolu /sessions/{id}/commands</div>
+</div>
+
+<script>
+"use strict";
+/* ═══════════════════════════════════════════════════════════════════════════
+   AgentLab — oyunlaştırılmış ajan sahnesi (plan §5).
+   Tek dosya, harici varlık yok: tüm piksel-art canvas üzerinde çizilir.
+   İki mod:
+     • CANLI  : EventSource → /events?session=…   + POST /sessions/{id}/commands
+     • STATİK : ?replay=<url> veya window.__REPLAY__ (NDJSON) → sunucusuz oynatma
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+const $ = (s) => document.querySelector(s);
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+const nowMs = () => Date.now();
+
+/* ─────────────────────────── ANIM: olay → sahne ───────────────────────────
+   Tek eşleme tablosu. `state` sprite durumu, `tag` sahnedeki yüzen etiket,
+   `code` alt paneldeki sahte-kod satırı, `cls` satır rengi.                */
+const TAG = {
+  done:    { text: "TOOK PROFIT", color: "#3ddc84", ttl: 4.5 },
+  ok:      { text: "DONE",        color: "#3ddc84", ttl: 3.5 },
+  fail:    { text: "NO DICE",     color: "#ff4d5e", ttl: 5.0 },
+  wait:    { text: "ONAY BEKLİYOR", color: "#ffd23f", ttl: 999 },
+  boot:    { text: "ONLINE",      color: "#4cc2ff", ttl: 2.0 },
+};
+
+const ANIM = {
+  "session.started":      { state: "idle",      hold: 1.0, tag: TAG.boot,
+    cls: "dim",  code: (d, e) => `session.open("${e.session}", agent="${e.agent}", driver="${d.driver || "?"}")` },
+  "session.finished":     { state: "celebrate", hold: 4.0, tag: (d) => (d.ok === false ? TAG.fail : TAG.ok),
+    cls: "dim",  code: (d) => `session.close(ok=${d.ok !== false})  # ${d.summary || ""}` },
+  "session.failed":       { state: "fail",      hold: 999, tag: TAG.fail, force: true,
+    cls: "err",  code: (d) => `session.abort("${d.reason || "unknown"}")` },
+  "task.received":        { state: "thinking",  hold: 1.2,
+    cls: "",     code: (d) => `task("${d.task || "?"}", risk=${d.risk || "low"})` },
+  "task.plan":            { state: "thinking",  hold: 1.4,
+    cls: "",     code: (d) => `plan(${JSON.stringify(d.steps || []).slice(0, 120)})` },
+  "task.progress":        { state: "working",   hold: 0.8,
+    cls: "dim",  code: (d) => `progress(${d.done}/${d.total})  # ${d.label || ""}` },
+  "task.done":            { state: "celebrate", hold: 4.0, tag: (d) => (d.ok ? TAG.done : TAG.fail),
+    cls: "",     code: (d) => `done(ok=${!!d.ok})  # ${d.summary || ""}` },
+  "perception.screenshot":{ state: "look",      hold: 0.7,
+    cls: "dim",  code: (d) => `screenshot()  # ${d.width || "?"}x${d.height || "?"} hash=${(d.hash || "").slice(0, 8)}${d.changed === false ? " unchanged" : ""}` },
+  "perception.zoom":      { state: "look",      hold: 0.9,
+    cls: "dim",  code: (d) => `zoom(${JSON.stringify(d.region || [])})` },
+  "llm.thinking":         { state: "thinking",  hold: 1.1,
+    cls: "",     code: (d) => `think(model="${d.model || "?"}", effort=${d.effort || "auto"})  # ${d.summary || ""}` },
+  "llm.decision":         { state: "working",   hold: 0.9,
+    cls: "act",  code: (d) => `decide("${d.action || "?"}")  # ${d.reason || ""}` },
+  "action.requested":     { state: "working",   hold: 0.8,
+    cls: "dim",  code: (d) => `request("${d.action || "?"}", ${fmtInput(d.input)})` },
+  "action.executed":      { state: "working",   hold: 0.9,
+    cls: "act",  code: (d) => `execute("${d.action || "?"}", ${fmtInput(d.input)})  # ${d.latency_ms != null ? Math.round(d.latency_ms) + "ms" : ""} ${d.ok === false ? "FAIL" : "ok"}${d.output ? " → " + oneLine(d.output) : ""}` },
+  "action.failed":        { state: "fail",      hold: 2.2, tag: TAG.fail, spark: true,
+    cls: "err",  code: (d) => `raise ActionError("${d.action || "?"}"): ${oneLine(d.error || "")}` },
+  "approval.requested":   { state: "alert",     hold: 999, tag: TAG.wait,
+    cls: "warn", code: (d) => `approval.wait("${d.description || d.action || "?"}", risk=${d.risk || "?"})` },
+  "approval.resolved":    { state: "working",   hold: 1.0, clearTag: true, force: true,
+    cls: "warn", code: (d) => `approval.resolve(approved=${!!d.approved}, by="${d.by || "?"}")` },
+  "metrics.tick":         { state: null,
+    cls: "dim",  code: (d) => `metrics(apm=${d.actions_per_min ?? 0}, tok=${(d.tokens_in ?? 0) + (d.tokens_out ?? 0)}, usd=${(d.cost_usd ?? 0).toFixed ? (d.cost_usd ?? 0).toFixed(4) : d.cost_usd})` },
+  "log":                  { state: null,
+    cls: "dim",  code: (d) => `status("${oneLine(d.msg || "")}")` },
+};
+
+function oneLine(s) { return String(s).replace(/\s+/g, " ").slice(0, 90); }
+function fmtInput(inp) {
+  if (!inp || typeof inp !== "object") return "[]";
+  if (Array.isArray(inp.coordinate)) return `[${inp.coordinate.join(",")}]`;
+  if (inp.text != null) return `"${oneLine(inp.text).slice(0, 60)}"`;
+  const s = JSON.stringify(inp);
+  return s.length > 70 ? s.slice(0, 67) + "…" : s;
+}
+
+/* ─────────────────────────── Piksel sprite'ları ─────────────────────────── */
+const PAL = { ".": null, k: "#080b12", d: "#2b3550", w: "#e9f0ff", e: "#4cc2ff",
+              y: "#ffd23f", r: "#ff4d5e", g: "#3ddc84", b: "AGENT" };
+
+/* 14×19 gövde; satır 4-5 göz katmanıyla değiştirilir. */
+const BODY = [
+  "......yy......",
+  "......kk......",
+  "..kkkkkkkkkk..",
+  "..kddddddddk..",
+  "..kdwwddwwdk..",
+  "..kdweddewdk..",
+  "..kddddddddk..",
+  "..kddkkkkddk..",
+  "..kkkkkkkkkk..",
+  ".....kddk.....",
+  ".kkkkkkkkkkkk.",
+  ".kdbbbbbbbbdk.",
+  ".kdbbwwbbbbdk.",
+  ".kdbbbbbbbbdk.",
+  ".kdbbbbbbbbdk.",
+  ".kkkkkkkkkkkk.",
+  "...kddk..kddk.",
+  "...kddk..kddk.",
+  "...kkkk..kkkk.",
+];
+const EYES = {
+  open:  ["..kdwwddwwdk..", "..kdweddewdk.."],
+  blink: ["..kddddddddk..", "..kdkkddkkdk.."],
+  up:    ["..kdeeddeedk..", "..kdwwddwwdk.."],
+  wide:  ["..kdwwddwwdk..", "..kdwrddrwdk.."],
+  dead:  ["..kdkddddkdk..", "..kddkddkddk.."],
+  happy: ["..kddddddddk..", "..kdkwddwkdk.."],
+};
+function bodyWith(eyes) { const r = BODY.slice(); r[4] = eyes[0]; r[5] = eyes[1]; return r; }
+const FRAMES = {
+  open: bodyWith(EYES.open), blink: bodyWith(EYES.blink), up: bodyWith(EYES.up),
+  wide: bodyWith(EYES.wide), dead: bodyWith(EYES.dead), happy: bodyWith(EYES.happy),
+};
+
+/* durum → {gövde karesi seçici, kol pozu} */
+const POSE = {
+  idle:      (t) => ({ body: (t % 3.2 < 0.12 ? FRAMES.blink : FRAMES.open), arms: "down",  bob: Math.floor(t * 2) % 2 }),
+  working:   (t) => ({ body: FRAMES.open,  arms: (Math.floor(t * 6) % 2 ? "typeA" : "typeB"), bob: 0 }),
+  thinking:  (t) => ({ body: FRAMES.up,    arms: "chin",  bob: Math.floor(t * 1.5) % 2, bubble: true }),
+  look:      (t) => ({ body: FRAMES.open,  arms: "point", bob: 0, lean: 1 }),
+  alert:     (t) => ({ body: FRAMES.wide,  arms: "up",    bob: Math.floor(t * 5) % 2, bang: true }),
+  celebrate: (t) => ({ body: FRAMES.happy, arms: "up",    bob: Math.floor(t * 4) % 2 ? -2 : 0, party: true }),
+  fail:      (t) => ({ body: FRAMES.dead,  arms: "down",  bob: 0, smoke: true }),
+};
+
+/* ───────────────────────────── Uygulama durumu ───────────────────────────── */
+const AGENT_COLORS = ["#4cc2ff", "#ff9f43", "#a06bff", "#3ddc84"];
+const MAX_DESKS = 4;
+const MAX_LOG = 400;
+
+const S = {
+  mode: "live",
+  filter: "all",
+  desks: new Map(),
+  actions: [],            // action.executed zaman damgaları (aksiyon/dk)
+  ok: 0, fail: 0,
+  events: 0,
+  pending: null,          // {id, session, agent, risk, description}
+  task: { text: "—", driver: "—", model: "—", risk: "—", session: "—" },
+  progress: { done: 0, total: 0, label: "" },
+  status: "idle",
+  connected: false,
+  activeLine: null,
+  paused: false,
+};
+
+function agentColor(name) {
+  let h = 0; for (const c of String(name)) h = (h * 31 + c.charCodeAt(0)) >>> 0;
+  return AGENT_COLORS[h % AGENT_COLORS.length];
+}
+
+function getDesk(agent) {
+  const key = agent || "?";
+  let d = S.desks.get(key);
+  if (!d) {
+    if (S.desks.size >= MAX_DESKS) {           // en eski masayı geri dönüştür
+      let oldest = null;
+      for (const [k, v] of S.desks) if (!oldest || v.seen < oldest[1].seen) oldest = [k, v];
+      if (oldest) S.desks.delete(oldest[0]);
+    }
+    d = {
+      agent: key, color: agentColor(key), session: "—", state: "idle", stateT: 0, hold: 0,
+      tag: null, thumb: null, thumbSeed: 1234, cursor: { x: 22, y: 14, tx: 22, ty: 14 },
+      progress: { done: 0, total: 0, label: "" }, model: "—", lamp: "idle",
+      parts: [], seen: nowMs(), lastAction: "",
+    };
+    S.desks.set(key, d);
+  }
+  d.seen = nowMs();
+  return d;
+}
+
+/* ─────────────────────────── Olay uygulaması ─────────────────────────── */
+function applyEvent(ev) {
+  try {
+    if (!ev || typeof ev !== "object") return;
+    const type = String(ev.type || "");
+    const d = (ev.data && typeof ev.data === "object") ? ev.data : {};
+    const anim = ANIM[type];
+    S.events++;
+
+    const desk = getDesk(ev.agent || "agent");
+    desk.session = ev.session || desk.session;
+
+    if (!anim) {                                   // bilinmeyen tür → yut, logla
+      console.warn("[agentlab] bilinmeyen olay türü:", type, ev);
+      pushLine(`# ??? ${type} ${JSON.stringify(d).slice(0, 80)}`, "warn", ev.seq);
+      return;
+    }
+
+    /* durum + etiket */
+    if (anim.state) setState(desk, anim.state, anim.hold ?? 1.0, anim.force);
+    if ((type === "session.finished" || type === "task.done") && d.ok === false) setState(desk, "fail", 999, true);
+    let tag = typeof anim.tag === "function" ? anim.tag(d) : anim.tag;
+    if (type === "task.done" || type === "session.finished") tag = d.ok === false ? TAG.fail : tag;
+    if (anim.clearTag && desk.tag && desk.tag.text === TAG.wait.text) desk.tag = null;
+    if (tag) desk.tag = { text: tag.text, color: tag.color, until: nowMs() + tag.ttl * 1000 };
+    if (anim.spark) spawnParts(desk, "spark", 14);
+
+    /* tür-özel güncellemeler */
+    switch (type) {
+      case "session.started":
+        S.task.driver = d.driver || S.task.driver;
+        S.task.session = ev.session || S.task.session;
+        if (d.task) S.task.text = d.task;
+        S.status = "running"; desk.lamp = "run";
+        break;
+      case "task.received":
+        S.task.text = d.task || S.task.text;
+        S.task.risk = d.risk || "low";
+        S.task.session = ev.session || S.task.session;
+        break;
+      case "task.progress": {
+        const p = { done: +d.done || 0, total: +d.total || 0, label: d.label || "" };
+        desk.progress = p; S.progress = p;
+        break;
+      }
+      case "task.done":
+        S.status = d.ok ? "done" : "failed";
+        if (d.ok) spawnParts(desk, "confetti", 26); else spawnParts(desk, "smoke", 10);
+        break;
+      case "session.finished":
+        S.status = d.ok === false ? "failed" : "finished"; desk.lamp = "idle";
+        break;
+      case "session.failed":
+        S.status = "failed"; desk.lamp = "err"; spawnParts(desk, "smoke", 14);
+        break;
+      case "perception.screenshot":
+        setThumb(desk, d);
+        break;
+      case "llm.thinking":
+      case "llm.decision":
+        if (d.model) { desk.model = d.model; S.task.model = d.model; }
+        break;
+      case "action.requested":
+      case "action.executed":
+      case "action.failed": {
+        const c = d.input && Array.isArray(d.input.coordinate) ? d.input.coordinate : null;
+        if (c) moveCursor(desk, c[0], c[1]);
+        desk.lastAction = d.action || desk.lastAction;
+        if (type === "action.executed") {
+          if (d.ok === false) { S.fail++; } else { S.ok++; S.actions.push(nowMs()); }
+        } else if (type === "action.failed") { S.fail++; }
+        break;
+      }
+      case "approval.requested":
+        S.pending = { id: d.id, session: ev.session, agent: ev.agent, risk: d.risk, description: d.description };
+        S.status = "waiting-approval"; desk.lamp = "wait";
+        break;
+      case "approval.resolved":
+        if (S.pending && (!d.id || S.pending.id === d.id)) S.pending = null;
+        S.status = "running"; desk.lamp = "run";
+        break;
+    }
+
+    pushLine(safeCode(anim, d, ev), anim.cls || "", ev.seq);
+    refreshHud();
+  } catch (err) {
+    console.warn("[agentlab] olay işlenemedi", err);
+  }
+}
+
+function safeCode(anim, d, ev) {
+  try { return anim.code ? anim.code(d, ev) : `${ev.type}(${JSON.stringify(d).slice(0, 80)})`; }
+  catch (e) { return `${ev.type}(…)`; }
+}
+
+function setState(desk, state, hold, force) {
+  // "fail"/"alert" gibi güçlü durumlar süresi dolmadan düşük öncelikli duruma düşmesin
+  const strong = { fail: 3, alert: 3, celebrate: 2 };
+  const cur = strong[desk.state] || 0, next = strong[state] || 0;
+  if (!force && cur > next && desk.hold > 0) return;
+  desk.state = state; desk.stateT = 0; desk.hold = hold;
+}
+
+function moveCursor(desk, x, y) {
+  desk.cursor.tx = clamp((x / 1366) * 44, 1, 43);
+  desk.cursor.ty = clamp((y / 768) * 28, 1, 27);
+}
+
+function setThumb(desk, d) {
+  desk.thumbSeed = hashStr(String(d.hash || Math.random()));
+  const url = d.thumb_url;
+  if (!url || (desk.thumb && desk.thumb.url === url && desk.thumb.img && desk.thumb.img.complete)) return;
+  const img = new Image();
+  const rec = { url, img, ok: false };
+  img.onload = () => { rec.ok = true; };
+  img.onerror = () => { rec.ok = false; rec.img = null; };  // gerçek küçük resim yoksa sahte ekran
+  try { img.src = url; } catch (e) { rec.img = null; }
+  desk.thumb = rec;
+}
+
+function hashStr(s) { let h = 2166136261; for (const c of s) { h ^= c.charCodeAt(0); h = (h * 16777619) >>> 0; } return h >>> 0; }
+function rng(seed) { let s = seed >>> 0 || 1; return () => ((s = (s * 1664525 + 1013904223) >>> 0) / 4294967296); }
+
+function spawnParts(desk, kind, n) {
+  for (let i = 0; i < n; i++) {
+    desk.parts.push({
+      kind, x: (Math.random() - 0.5) * 18, y: -10 - Math.random() * 8,
+      vx: (Math.random() - 0.5) * 26, vy: -14 - Math.random() * 26,
+      life: 0.7 + Math.random() * (kind === "confetti" ? 1.6 : 0.9),
+      age: 0, c: kind === "spark" ? "#ffd23f" : kind === "smoke" ? "#5a6482"
+        : AGENT_COLORS[(Math.random() * AGENT_COLORS.length) | 0],
+    });
+  }
+  if (desk.parts.length > 160) desk.parts.splice(0, desk.parts.length - 160);
+}
+
+/* ─────────────────────────── Alt panel (kod akışı) ─────────────────────────── */
+const logEl = $("#log");
+function pushLine(text, cls, seq) {
+  const atBottom = logEl.scrollTop + logEl.clientHeight >= logEl.scrollHeight - 24;
+  if (S.activeLine) S.activeLine.classList.remove("active");
+  const div = document.createElement("div");
+  div.className = "ln " + (cls || "");
+  const code = document.createElement("span");
+  code.textContent = text;
+  const st = document.createElement("span");
+  st.className = "st";
+  st.textContent = seq == null ? "" : "#" + seq;
+  div.append(code, st);
+  div.classList.add("active");
+  S.activeLine = div;
+  logEl.appendChild(div);
+  while (logEl.childElementCount > MAX_LOG) logEl.removeChild(logEl.firstChild);
+  if (atBottom) logEl.scrollTop = logEl.scrollHeight;
+}
+
+/* ─────────────────────────── HUD güncelleme ─────────────────────────── */
+function refreshHud() {
+  $("#taskText").textContent = S.task.text || "—";
+  $("#bModel").textContent = "model: " + (S.task.model || "—");
+  $("#bDriver").textContent = "driver: " + (S.task.driver || "—");
+  $("#bSession").textContent = "session: " + (S.task.session || "—");
+  $("#bRisk").textContent = "risk: " + (S.task.risk || "—");
+  $("#bEvents").textContent = "olay: " + S.events;
+
+  const p = S.progress, total = p.total || 0, done = p.done || 0;
+  $("#goalCount").textContent = `${done}/${total}`;
+  $("#goalLabel").textContent = p.label ? `${p.label}: ${done}/${total}` : "hedef bekleniyor";
+  const bar = $("#goalBar");
+  bar.firstElementChild.style.width = total ? clamp((done / total) * 100, 0, 100) + "%" : "0%";
+  bar.className = "bar" + (S.status === "failed" ? " err" : S.status === "waiting-approval" ? " warn" : "");
+
+  const st = $("#bStatus");
+  st.textContent = "durum: " + S.status;
+  st.className = "badge " + (S.status === "failed" ? "err" : S.status === "waiting-approval" ? "warn"
+    : (S.status === "done" || S.status === "finished") ? "ok" : "on");
+
+  $("#modelBox").textContent = S.task.model || "—";
+  $("#modelSub").textContent = S.task.driver === "scripted" ? "deterministik sürücü" : "computer_toolset döngüsü";
+
+  const tot = S.ok + S.fail;
+  $("#confVal").textContent = tot ? Math.round((S.ok / tot) * 100) + "%" : "—";
+  $("#confSub").textContent = `${S.ok} ok / ${S.fail} hata`;
+
+  const has = !!S.pending;
+  $("#btnOk").disabled = !has || S.mode !== "live";
+  $("#btnNo").disabled = !has || S.mode !== "live";
+}
+
+/* ─────────────────────────── Sahne çizimi ─────────────────────────── */
+const cv = $("#scene"), ctx = cv.getContext("2d", { alpha: false });
+ctx.imageSmoothingEnabled = false;
+const W = cv.width, H = cv.height, FLOOR = 268;
+
+function px(x, y, w, h, c) { if (!c) return; ctx.fillStyle = c; ctx.fillRect(x | 0, y | 0, Math.max(1, w | 0), Math.max(1, h | 0)); }
+function text(s, x, y, c, size) {
+  ctx.fillStyle = c; ctx.font = `${size || 8}px ui-monospace, monospace`;
+  ctx.textBaseline = "top"; ctx.fillText(String(s), x | 0, y | 0);
+}
+function textC(s, cx, y, c, size) {
+  ctx.font = `${size || 8}px ui-monospace, monospace`;
+  const w = ctx.measureText(String(s)).width;
+  text(s, cx - w / 2, y, c, size);
+}
+
+function drawSprite(rows, x, y, scale, accent) {
+  for (let r = 0; r < rows.length; r++) {
+    const row = rows[r];
+    for (let c = 0; c < row.length; c++) {
+      const ch = row[c];
+      if (ch === ".") continue;
+      const col = PAL[ch] === "AGENT" ? accent : PAL[ch];
+      if (col) px(x + c * scale, y + r * scale, scale, scale, col);
+    }
+  }
+}
+
+function drawArms(pose, x, y, s, accent, t) {
+  const L = x + 1 * s, R = x + 12 * s, top = y + 11 * s;
+  const hand = "#e9f0ff";
+  const seg = (px0, py0, w, h) => { px(px0, py0, w, h, accent); };
+  switch (pose) {
+    case "down":
+      seg(L - s, top, s, 5 * s); seg(R, top, s, 5 * s);
+      px(L - s, top + 5 * s, s, s, hand); px(R, top + 5 * s, s, s, hand);
+      break;
+    case "typeA":
+      seg(L - s, top, s, 3 * s); seg(R, top, s, 3 * s);
+      px(L - 2 * s, top + 3 * s, 2 * s, s, hand); px(R, top + 4 * s, 2 * s, s, hand);
+      break;
+    case "typeB":
+      seg(L - s, top, s, 3 * s); seg(R, top, s, 3 * s);
+      px(L - 2 * s, top + 4 * s, 2 * s, s, hand); px(R, top + 3 * s, 2 * s, s, hand);
+      break;
+    case "chin":
+      seg(L - s, top, s, 4 * s); px(L - s, top + 4 * s, s, s, hand);
+      seg(R, top - s, s, 2 * s); px(R - s, top - 2 * s, s, s, hand);
+      break;
+    case "point":
+      seg(L - s, top, s, 4 * s); px(L - s, top + 4 * s, s, s, hand);
+      seg(R, top, 3 * s, s); px(R + 3 * s, top, s, s, hand);
+      break;
+    case "up":
+      seg(L - s, top - 3 * s, s, 4 * s); seg(R, top - 3 * s, s, 4 * s);
+      px(L - s, top - 4 * s, s, s, hand); px(R, top - 4 * s, s, s, hand);
+      break;
+  }
+}
+
+function drawRoom(t) {
+  px(0, 0, W, FLOOR, "#141a28");                                   // duvar
+  for (let x = 0; x < W; x += 32) px(x, 0, 1, FLOOR, "#182034");
+  for (let y = 0; y < FLOOR; y += 32) px(0, y, W, 1, "#182034");
+  px(0, FLOOR - 4, W, 4, "#1d2536");                               // süpürgelik
+  px(0, FLOOR, W, H - FLOOR, "#241d2e");                           // zemin
+  px(0, FLOOR, W, 2, "#151022");
+  for (let x = -80; x < W + 80; x += 44) px(x, FLOOR, 1, H - FLOOR, "#2c2439");
+  for (let y = FLOOR + 16; y < H; y += 20) px(0, y, W, 1, "#2c2439");
+
+  // pencere (yıldızlı gece)
+  px(22, 22, 92, 62, "#0c1120");
+  px(22, 22, 92, 2, "#39445e"); px(22, 82, 92, 2, "#39445e");
+  px(22, 22, 2, 62, "#39445e"); px(112, 22, 2, 62, "#39445e");
+  px(66, 22, 2, 62, "#39445e"); px(22, 52, 92, 2, "#39445e");
+  const rs = rng(7);
+  for (let i = 0; i < 26; i++) {
+    const sx = 24 + rs() * 86, sy = 24 + rs() * 58;
+    px(sx, sy, 1, 1, 0.5 + 0.5 * Math.sin(t * 2 + i) > 0.75 ? "#dbe3f7" : "#5a6482");
+  }
+
+  // afiş
+  px(506, 22, 112, 48, "#1b2233"); px(506, 22, 112, 2, "#3ddc84");
+  textC("AGENTLAB", 562, 34, "#3ddc84", 10);
+  textC("computer use", 562, 50, "#7b86a3", 8);
+
+  // duvar saati (yelkovan gerçek zamanlı)
+  const kx = 300, ky = 40, kr = 13;
+  px(kx - kr, ky - kr, kr * 2, kr * 2, "#1b2233");
+  px(kx - kr + 2, ky - kr + 2, kr * 2 - 4, kr * 2 - 4, "#0d1220");
+  for (let i = 0; i < 12; i++) {
+    const a = (i / 12) * Math.PI * 2;
+    px(kx + Math.cos(a) * (kr - 3), ky + Math.sin(a) * (kr - 3), 1, 1, "#4a5470");
+  }
+  const ha = t * 0.6, ma = t * 2.2;
+  for (let r = 0; r < kr - 6; r++) px(kx + Math.cos(ha) * r, ky + Math.sin(ha) * r, 1, 1, "#dbe3f7");
+  for (let r = 0; r < kr - 4; r++) px(kx + Math.cos(ma) * r, ky + Math.sin(ma) * r, 1, 1, "#4cc2ff");
+
+  // beyaz tahta (plan eskizi)
+  px(150, 96, 118, 74, "#e9f0ff"); px(150, 96, 118, 3, "#9aa6c2");
+  px(152, 100, 114, 66, "#f6f9ff");
+  textC("PLAN", 209, 103, "#2b3550", 9);
+  const bs = [34, 58, 46, 70, 40];
+  for (let i = 0; i < bs.length; i++) {
+    px(158, 118 + i * 9, 5, 5, i < 3 ? "#3ddc84" : "#c3cde3");
+    px(167, 120 + i * 9, bs[i], 2, "#8894b4");
+  }
+  px(232, 118, 28, 28, "#dbe3f7"); px(234, 120, 24, 24, "#f6f9ff");
+  for (let i = 0; i < 5; i++) px(236 + i * 4, 142 - i * 4, 3, 3 + i * 4, "#4cc2ff");
+
+  // sunucu dolabı
+  px(452, 96, 32, 74, "#1b2233"); px(452, 96, 32, 2, "#2c3752");
+  for (let i = 0; i < 7; i++) {
+    px(456, 102 + i * 9, 24, 6, "#121826");
+    px(458, 104 + i * 9, 2, 2, (Math.floor(t * 3) + i) % 4 ? "#3ddc84" : "#ffd23f");
+    px(462, 104 + i * 9, 12, 2, "#1e2740");
+  }
+
+  // saksı bitkisi
+  px(596, 214, 18, 22, "#7a4a32"); px(596, 214, 18, 3, "#96603f");
+  px(603, 196, 4, 20, "#2c7a4b");
+  for (const [dx0, dy0] of [[-9, -6], [7, -8], [-6, -16], [6, -18], [0, -24]]) {
+    px(605 + dx0, 210 + dy0, 8, 5, "#3ddc84"); px(605 + dx0 + 1, 210 + dy0 + 5, 6, 2, "#2c7a4b");
+  }
+}
+
+function drawScreenContent(d, sx, sy, sw, sh, t) {
+  const img = d.thumb && d.thumb.ok && d.thumb.img;
+  if (img) {
+    try { ctx.drawImage(img, sx, sy, sw, sh); }
+    catch (e) { d.thumb.ok = false; }
+  } else {
+    // sahte masaüstü (hash ile tohumlanır): başlık çubuğu + metin satırları + buton
+    px(sx, sy, sw, sh, "#121a2b");
+    px(sx, sy, sw, 6, "#2e3d5e"); px(sx + 2, sy + 2, 3, 3, "#ff4d5e");
+    px(sx + 7, sy + 2, 3, 3, "#ffd23f"); px(sx + 12, sy + 2, 3, 3, "#3ddc84");
+    const r = rng(d.thumbSeed || 1), rows = Math.floor((sh - 12) / 5);
+    for (let i = 0; i < rows; i++) {
+      const w = 8 + r() * (sw - 18);
+      const hot = Math.floor(r() * 5) === 0;
+      px(sx + 4, sy + 10 + i * 5, 3, 2, hot ? d.color : "#54648f");
+      px(sx + 9, sy + 10 + i * 5, w, 2, hot ? "#9fb0d8" : "#54648f");
+    }
+    px(sx + sw - 20, sy + sh - 10, 16, 7, d.color);
+    px(sx + sw - 19, sy + sh - 9, 14, 5, "#121a2b");
+  }
+  // imleç (aksiyon koordinatına yumuşak geçiş)
+  const c = d.cursor;
+  c.x += (c.tx - c.x) * 0.22; c.y += (c.ty - c.y) * 0.22;
+  const cx = sx + clamp((c.x / 44) * sw, 0, sw - 3), cy = sy + clamp((c.y / 28) * sh, 0, sh - 5);
+  px(cx, cy, 1, 5, "#080b12"); px(cx + 1, cy, 1, 4, "#ffffff");
+  px(cx + 1, cy + 4, 2, 1, "#ffffff"); px(cx + 2, cy + 2, 1, 2, "#ffffff");
+}
+
+function drawDesk(d, cx, t, dt, s) {
+  const pose = (POSE[d.state] || POSE.idle)(d.stateT);
+  const dw = s === 3 ? 156 : 112;
+  const dx = Math.round(cx - dw / 2), dy = FLOOR - 12;          // masa üstü
+  const bw = 14 * s, bh = 19 * s;
+  const bx = dx + (s === 3 ? 8 : 4);                            // ajan masanın sol ucunda
+  const by = FLOOR - bh + (pose.bob || 0) + (pose.lean || 0);
+  const headCx = bx + 7 * s;
+
+  px(dx - 8, FLOOR + 1, dw + 16, 8, "#2a2036");                 // halı
+  px(headCx - 11, FLOOR - 2, 22, 3, "#181226");                 // gölge
+
+  drawSprite(pose.body, bx, by, s, d.color);
+  drawArms(pose.arms, bx, by, s, d.color, t);
+
+  // masa
+  px(dx, dy, dw, 5, "#6b4a2f"); px(dx, dy, dw, 2, "#8a6440"); px(dx, dy + 5, dw, 2, "#3d2a1b");
+  px(dx + 5, dy + 7, 4, 18, "#3d2a1b"); px(dx + dw - 9, dy + 7, 4, 18, "#3d2a1b");
+
+  // monitör (masanın sağ yarısında)
+  const mw = s === 3 ? 74 : 56, mh = s === 3 ? 50 : 38;
+  const mx = dx + dw - mw - (s === 3 ? 10 : 6), my = dy - mh + 1;
+  px(mx - 2, my - 2, mw + 4, mh + 4, "#0a0e17");
+  px(mx, my, mw, mh, "#2b3446"); px(mx, my, mw, 2, "#3c4a63");
+  drawScreenContent(d, mx + 4, my + 4, mw - 8, mh - 11, t);
+  px(mx + 4, my + mh - 5, 6, 2, d.lamp === "run" ? "#3ddc84" : "#3a4562");
+
+  // klavye · kupa · durum lambası
+  px(mx + 4, dy + 1, mw - 8, 3, "#39435c");
+  px(dx + dw - 14, dy - 6, 6, 6, "#8a6440"); px(dx + dw - 8, dy - 4, 2, 2, "#8a6440");
+  const lampC = d.lamp === "wait" ? (Math.floor(t * 4) % 2 ? "#ffd23f" : "#3a3010")
+    : d.lamp === "err" ? "#ff4d5e" : d.lamp === "run" ? "#3ddc84" : "#3a4562";
+  px(mx - 12, dy - 8, 4, 9, "#1b2233"); px(mx - 13, dy - 11, 6, 3, lampC);
+
+  // isim plakası + ilerleme
+  textC(d.agent.toUpperCase(), cx, FLOOR + 14, d.color, s === 3 ? 10 : 9);
+  const pr = d.progress;
+  if (pr && pr.total) textC(`${pr.label || "adım"} ${pr.done}/${pr.total}`, cx, FLOOR + 28, "#7b86a3", 9);
+  else textC(d.session, cx, FLOOR + 28, "#4a5470", 8);
+
+  // düşünce balonu / ünlem
+  if (pose.bubble) {
+    const bxx = bx - 4, byy = by - 20;
+    px(bxx, byy, 30, 14, "#e9f0ff"); px(bxx + 4, byy + 14, 4, 4, "#e9f0ff");
+    for (let i = 0; i < 3; i++) {
+      px(bxx + 6 + i * 7, byy + 6, 3, 3, Math.floor(t * 3) % 3 >= i ? "#080b12" : "#9aa6c2");
+    }
+  }
+  if (pose.bang) {
+    const on = Math.floor(t * 5) % 2, c = on ? "#ffd23f" : "#8a6a10";
+    px(headCx - 2, by - 20, 4, 10, c); px(headCx - 2, by - 8, 4, 4, c);
+  }
+  if (pose.smoke && Math.random() < 0.10 * (dt * 60)) spawnParts(d, "smoke", 1);
+  if (pose.party && Math.random() < 0.06 * (dt * 60)) spawnParts(d, "confetti", 1);
+
+  for (const p of d.parts) {
+    const sz = p.kind === "confetti" ? 3 : 2;
+    px(headCx + p.x, by + 12 + p.y, sz, sz, p.c);
+  }
+
+  // yüzen etiket
+  if (d.tag && d.tag.until > nowMs()) {
+    ctx.font = "10px ui-monospace, monospace";
+    const w = Math.round(ctx.measureText(d.tag.text).width) + 12;
+    const tx = Math.round(headCx - w / 2), ty = by - 34;
+    px(tx, ty, w, 16, "#080b12");
+    px(tx, ty, w, 1, d.tag.color); px(tx, ty + 15, w, 1, d.tag.color);
+    px(tx, ty, 1, 16, d.tag.color); px(tx + w - 1, ty, 1, 16, d.tag.color);
+    textC(d.tag.text, headCx, ty + 4, d.tag.color, 10);
+  } else if (d.tag && d.tag.until <= nowMs()) d.tag = null;
+}
+
+function updateDesks(dt) {
+  for (const d of S.desks.values()) {
+    d.stateT += dt;
+    if (d.hold > 0) {
+      d.hold -= dt;
+      if (d.hold <= 0 && d.state !== "idle") { d.state = "idle"; d.stateT = 0; }
+    }
+    for (let i = d.parts.length - 1; i >= 0; i--) {
+      const p = d.parts[i];
+      p.age += dt;
+      if (p.age > p.life) { d.parts.splice(i, 1); continue; }
+      p.x += p.vx * dt; p.y += p.vy * dt;
+      p.vy += (p.kind === "smoke" ? -18 : 90) * dt;
+    }
+  }
+}
+
+function drawScene(t, dt) {
+  drawRoom(t);
+  const desks = [...S.desks.values()];
+  if (!desks.length) {
+    textC("OTURUM YOK", W / 2, 150, "#4a5470", 12);
+    textC("▶ git-push · ▶ loop · ▶ replay ile başlat", W / 2, 170, "#3c445e", 10);
+  }
+  const n = Math.max(1, desks.length);
+  const s = n <= 2 ? 3 : 2;                       // 1-2 masa: büyük sprite
+  desks.forEach((d, i) => drawDesk(d, Math.round((W / n) * (i + 0.5)), t, dt, s));
+  ctx.globalAlpha = 0.10; ctx.fillStyle = "#000";  // tarama çizgileri
+  for (let y = 0; y < H; y += 3) ctx.fillRect(0, y, W, 1);
+  ctx.globalAlpha = 1;
+}
+
+/* mini grafikler */
+function drawSpark() {
+  const c = $("#spark"), g = c.getContext("2d");
+  const now = nowMs();
+  S.actions = S.actions.filter((ts) => now - ts < 60000);
+  const buckets = new Array(20).fill(0);
+  for (const ts of S.actions) {
+    const idx = clamp(19 - Math.floor((now - ts) / 3000), 0, 19);
+    buckets[idx]++;
+  }
+  const max = Math.max(2, ...buckets);
+  g.clearRect(0, 0, c.width, c.height);
+  g.fillStyle = "#0b0e16"; g.fillRect(0, 0, c.width, c.height);
+  buckets.forEach((v, i) => {
+    const h = Math.round((v / max) * (c.height - 4));
+    g.fillStyle = v === 0 ? "#1b2233" : i > 16 ? "#3ddc84" : "#2a7f56";
+    g.fillRect(i * 6, c.height - Math.max(1, h), 5, Math.max(1, h));
+  });
+  $("#apm").textContent = String(S.actions.length);
+}
+
+function drawGauge() {
+  const c = $("#gauge"), g = c.getContext("2d");
+  const tot = S.ok + S.fail, ratio = tot ? S.ok / tot : 0;
+  g.clearRect(0, 0, c.width, c.height);
+  const cx = c.width / 2, cy = c.height - 6, R = 38;
+  for (let i = 0; i <= 40; i++) {
+    const a = Math.PI + (i / 40) * Math.PI;
+    const on = tot > 0 && i / 40 <= ratio;
+    const col = !on ? "#1b2233" : ratio > 0.8 ? "#3ddc84" : ratio > 0.5 ? "#ffd23f" : "#ff4d5e";
+    g.fillStyle = col;
+    g.fillRect(Math.round(cx + Math.cos(a) * R) - 1, Math.round(cy + Math.sin(a) * R) - 1, 3, 3);
+  }
+  const a = Math.PI + (tot ? ratio : 0) * Math.PI;
+  g.strokeStyle = "#e9f0ff"; g.lineWidth = 2;
+  g.beginPath(); g.moveTo(cx, cy); g.lineTo(cx + Math.cos(a) * (R - 6), cy + Math.sin(a) * (R - 6)); g.stroke();
+}
+
+let last = performance.now();
+function frame(now) {
+  const dt = clamp((now - last) / 1000, 0, 0.1);
+  last = now;
+  const t = now / 1000;
+  try {
+    updateDesks(dt);
+    drawScene(t, dt);
+    drawSpark();
+    drawGauge();
+  } catch (e) { console.warn("[agentlab] çizim hatası", e); }
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+
+/* ─────────────────────────── Taşıma: canlı SSE ─────────────────────────── */
+let es = null, retry = null;
+function connect() {
+  if (S.mode !== "live") return;
+  if (es) { try { es.close(); } catch (e) {} es = null; }
+  const url = `/events?session=${encodeURIComponent(S.filter)}`;
+  try { es = new EventSource(url); } catch (e) { setConn(false); return; }
+  es.onopen = () => setConn(true);
+  es.onmessage = (m) => {
+    try { applyEvent(JSON.parse(m.data)); } catch (e) { console.warn("[agentlab] bozuk olay", e); }
+  };
+  es.onerror = () => {
+    setConn(false);
+    try { es.close(); } catch (e) {}
+    es = null;
+    clearTimeout(retry);
+    retry = setTimeout(connect, 2000);          // yeniden bağlan
+  };
+}
+function setConn(on) {
+  S.connected = on;
+  $("#connDot").className = "dot " + (on ? "live" : "off");
+  $("#bConn").lastChild.textContent = on ? "canlı" : "bağlantı yok";
+}
+
+async function api(path, body) {
+  const r = await fetch(path, {
+    method: body ? "POST" : "GET",
+    headers: body ? { "content-type": "application/json" } : undefined,
+    body: body ? JSON.stringify(body) : undefined,
+  });
+  const txt = await r.text();
+  let data = {};
+  try { data = txt ? JSON.parse(txt) : {}; } catch (e) { data = { detail: txt }; }
+  if (!r.ok) throw new Error(data.detail || `${r.status} ${r.statusText}`);
+  return data;
+}
+
+/* oturum seçici — 3 sn'de bir tazelenir */
+async function pollSessions() {
+  if (S.mode !== "live") return;
+  try {
+    const d = await api("/sessions");
+    const sel = $("#sessionSel"), cur = sel.value;
+    const opts = ['<option value="all">TÜM OTURUMLAR</option>'];
+    for (const s of d.sessions || []) {
+      const mark = s.status === "failed" ? "✖" : s.status === "finished" ? "✔"
+        : s.status === "waiting-approval" ? "!" : "•";
+      opts.push(`<option value="${s.session}">${mark} ${s.session} · ${s.agent} · ${s.last_type || "-"} (${s.count})</option>`);
+    }
+    const html = opts.join("");
+    if (sel.dataset.html !== html) { sel.dataset.html = html; sel.innerHTML = html; sel.value = cur; }
+    if (sel.value !== cur) sel.value = "all";
+    // sunucu tarafı bekleyen onayı UI ile eşitle (geç katılan sekmeler için)
+    const mine = (d.sessions || []).find((s) => s.pending_approval && (S.filter === "all" || s.session === S.filter));
+    if (mine) S.pending = { id: mine.pending_approval.id, session: mine.session, agent: mine.agent,
+                            risk: mine.pending_approval.risk, description: mine.pending_approval.description };
+    else if (S.pending && !(d.sessions || []).some((s) => s.pending_approval)) S.pending = null;
+    refreshHud();
+  } catch (e) { /* sunucu yok — sessiz */ }
+}
+
+/* ─────────────────────────── Taşıma: statik replay ─────────────────────────── */
+function parseNdjson(input) {
+  const rows = [];
+  const lines = Array.isArray(input) ? input : String(input).split("\n");
+  for (const line of lines) {
+    if (typeof line === "object" && line) { rows.push(line); continue; }
+    const s = String(line).trim();
+    if (!s) continue;
+    try { rows.push(JSON.parse(s)); } catch (e) { console.warn("[agentlab] bozuk NDJSON satırı"); }
+  }
+  return rows;
+}
+
+let playTimer = null;
+function playRows(rows, speed) {
+  clearTimeout(playTimer);
+  if (!rows.length) return;
+  const spd = clamp(+speed || 1, 0.1, 20);
+  let i = 0, prev = null;
+  const step = () => {
+    if (i >= rows.length) { playTimer = null; return; }
+    const ev = rows[i++];
+    applyEvent(ev);
+    const cur = Date.parse(ev.ts || "");
+    let gap = 250;
+    if (prev != null && !Number.isNaN(cur)) gap = clamp((cur - prev) / spd, 0, 2000);
+    if (!Number.isNaN(cur)) prev = cur;
+    playTimer = setTimeout(step, Math.max(16, gap));
+  };
+  step();
+}
+
+async function bootStatic(src) {
+  S.mode = "static";
+  $("#bMode").textContent = "MOD: STATİK REPLAY";
+  $("#bMode").className = "badge warn";
+  setConn(false);
+  $("#bConn").lastChild.textContent = "sunucusuz";
+  document.querySelectorAll("[data-task],[data-replay],#btnAbort,#btnOk,#btnNo").forEach((b) => (b.disabled = true));
+  $("#sessionSel").disabled = true;
+
+  let rows = [];
+  if (Array.isArray(window.__REPLAY__) || typeof window.__REPLAY__ === "string") {
+    rows = parseNdjson(window.__REPLAY__);
+  } else if (src) {
+    try {
+      const r = await fetch(src);
+      rows = parseNdjson(await r.text());
+    } catch (e) {
+      pushLine(`# replay yüklenemedi: ${src} (${e.message})`, "err", null);
+    }
+  }
+  if (!rows.length) { pushLine("# statik replay boş", "err", null); return; }
+
+  const btn = document.createElement("button");
+  btn.textContent = "▶ TEKRAR";
+  btn.className = "go";
+  btn.disabled = false;
+  btn.onclick = () => { resetState(); playRows(rows, params.get("speed") || 1); };
+  $("#btnAbort").after(btn);
+  playRows(rows, params.get("speed") || 1);
+}
+
+function resetState() {
+  S.desks.clear(); S.actions.length = 0; S.ok = S.fail = S.events = 0;
+  S.pending = null; S.progress = { done: 0, total: 0, label: "" };
+  S.task = { text: "—", driver: "—", model: "—", risk: "—", session: "—" };
+  S.status = "idle"; S.activeLine = null;
+  logEl.innerHTML = "";
+  refreshHud();
+}
+
+/* ─────────────────────────── Kontroller ─────────────────────────── */
+const params = new URLSearchParams(location.search);
+const pace = () => +$("#pace").value;
+let agentIdx = 0;
+const AGENT_NAMES = ["goat", "pengu", "popcat", "wojak"];
+
+document.querySelectorAll("[data-task]").forEach((b) => {
+  b.onclick = async () => {
+    try {
+      const agent = AGENT_NAMES[agentIdx++ % AGENT_NAMES.length];
+      const d = await api("/sessions/new/commands", {
+        cmd: "start", task: b.dataset.task, driver: "scripted", agent, pace: pace(),
+      });
+      pushLine(`# start ${b.dataset.task} → ${d.session} (${agent})`, "dim", null);
+      selectSession(d.session);
+    } catch (e) { pushLine(`# start hatası: ${e.message}`, "err", null); }
+  };
+});
+
+document.querySelectorAll("[data-replay]").forEach((b) => {
+  b.onclick = async () => {
+    try {
+      const d = await api("/replay", { fixture: b.dataset.replay, speed: 1.0 });
+      pushLine(`# replay ${b.dataset.replay} → ${d.session} (${d.count} olay)`, "dim", null);
+      selectSession(d.session);
+    } catch (e) { pushLine(`# replay hatası: ${e.message}`, "err", null); }
+  };
+});
+
+$("#btnOk").onclick = () => resolveApproval(true);
+$("#btnNo").onclick = () => resolveApproval(false);
+async function resolveApproval(ok) {
+  const p = S.pending;
+  if (!p) return;
+  try {
+    await api(`/sessions/${encodeURIComponent(p.session || S.filter)}/commands`,
+      { cmd: ok ? "approve" : "reject", approval_id: p.id });
+    S.pending = null; refreshHud();
+  } catch (e) { pushLine(`# onay hatası: ${e.message}`, "err", null); }
+}
+
+$("#btnAbort").onclick = async () => {
+  const sid = S.filter !== "all" ? S.filter : S.task.session;
+  if (!sid || sid === "—") { pushLine("# durdurulacak oturum yok", "warn", null); return; }
+  try { await api(`/sessions/${encodeURIComponent(sid)}/commands`, { cmd: "abort" }); }
+  catch (e) { pushLine(`# abort hatası: ${e.message}`, "err", null); }
+};
+
+$("#pace").oninput = () => ($("#paceVal").textContent = pace().toFixed(2));
+$("#sessionSel").onchange = () => selectSession($("#sessionSel").value);
+
+function selectSession(sid) {
+  S.filter = sid || "all";
+  const sel = $("#sessionSel");
+  if (![...sel.options].some((o) => o.value === S.filter)) {
+    sel.insertAdjacentHTML("beforeend", `<option value="${S.filter}">• ${S.filter}</option>`);
+  }
+  sel.value = S.filter;
+  resetState();
+  connect();                     // yeni filtre = yeni akış (geçmiş tekrar oynatılır)
+}
+
+/* ─────────────────────────── Başlangıç ─────────────────────────── */
+const replayParam = params.get("replay");
+refreshHud();
+if (replayParam || window.__REPLAY__ !== undefined || location.protocol === "file:") {
+  bootStatic(replayParam);
+} else {
+  S.mode = "live";
+  $("#bMode").textContent = "MOD: CANLI";
+  $("#bMode").className = "badge ok";
+  if (params.get("session")) S.filter = params.get("session");
+  connect();
+  pollSessions();
+  setInterval(pollSessions, 3000);
+}
+</script>

@@ -52,3 +52,24 @@ docker compose up --build
 | Risk sınıflandırma | kural motoru → `claude-haiku-4-5` | Deterministik önce |
 
 Sprint 0'da gateway TypeScript yerine Python'da (tek dil, hızlı kanıt). TS'e taşıma Sprint 2 kararı.
+
+## Kanıt (Sprint 0 uçtan uca koşu, 2026-09-04)
+
+Xvfb 1280×800 altında gateway + scripted sürücü, Playwright ile izlendi (`scripts/proof.mjs`):
+
+| Dosya | Ne gösteriyor |
+|---|---|
+| `proof/01-loop-running.png` | `loop` görevi: GOAT masasında 10 dilim, her dilimde gerçek `left_click` + gerçek ekran görüntüsü (sha1 hash) |
+| `proof/04-approval-pending.png` | `git-push` görevi: PENGU `git push` öncesi **ONAY BEKLİYOR** (risk=medium), sarı ünlem |
+| `proof/05-git-push-done.png` | Onay sonrası gerçek push: `f79cf61 feat: agentlab scripted smoke` bare origin'de |
+| `proof/13-scene.png` | Sahne yakın plan |
+| `proof/sessions.json` | `/sessions` çıktısı: iki oturum `session.finished`, 74 + 42 olay |
+| `fixtures/replay-demo.ndjson` | İki görevin birleşik, sunucusuz oynatılabilir kaydı (artifact bunu gömer) |
+
+Tekrar üretmek için:
+
+```bash
+export PYTHONPATH=$PWD/services
+nohup xvfb-run -a -s "-screen 0 1280x800x24" python3 -m agentlab.gateway --port 8799 --store-dir "" &
+NODE_PATH=$(npm root -g) node scripts/proof.mjs http://127.0.0.1:8799 proof
+```

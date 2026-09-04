@@ -1,0 +1,79 @@
+{
+  "sessions": [
+    {
+      "session": "s_c5212c",
+      "agent": "pengu",
+      "agents": [
+        "pengu"
+      ],
+      "count": 42,
+      "counts": {
+        "session.started": 1,
+        "task.received": 1,
+        "task.plan": 1,
+        "llm.thinking": 5,
+        "llm.decision": 5,
+        "action.requested": 5,
+        "action.executed": 5,
+        "perception.screenshot": 5,
+        "metrics.tick": 5,
+        "task.progress": 5,
+        "approval.requested": 1,
+        "approval.resolved": 1,
+        "task.done": 1,
+        "session.finished": 1
+      },
+      "last_type": "session.finished",
+      "last_ts": "2026-09-04T14:17:39.054Z",
+      "started_ts": "2026-09-04T14:17:34.548Z",
+      "task": "commit and push a README to origin",
+      "driver": "scripted",
+      "model": "scripted",
+      "progress": {
+        "done": 5,
+        "total": 5,
+        "label": "steps"
+      },
+      "ok": true,
+      "status": "finished",
+      "pending_approval": null
+    },
+    {
+      "session": "s_e6ff01",
+      "agent": "goat",
+      "agents": [
+        "goat"
+      ],
+      "count": 74,
+      "counts": {
+        "session.started": 1,
+        "task.received": 1,
+        "task.plan": 1,
+        "llm.thinking": 10,
+        "llm.decision": 10,
+        "action.requested": 10,
+        "action.executed": 10,
+        "perception.screenshot": 10,
+        "metrics.tick": 9,
+        "task.progress": 10,
+        "task.done": 1,
+        "session.finished": 1
+      },
+      "last_type": "session.finished",
+      "last_ts": "2026-09-04T14:17:33.270Z",
+      "started_ts": "2026-09-04T14:17:29.140Z",
+      "task": "cut 10 cucumber slices",
+      "driver": "scripted",
+      "model": "scripted",
+      "progress": {
+        "done": 10,
+        "total": 10,
+        "label": "slices"
+      },
+      "ok": true,
+      "status": "finished",
+      "pending_approval": null
+    }
+  ],
+  "count": 2
+}

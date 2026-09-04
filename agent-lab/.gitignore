@@ -7,3 +7,5 @@ __pycache__/
 .pytest_cache/
 proof/*.mp4
 node_modules/
+proof/*.webm
+sessions/
