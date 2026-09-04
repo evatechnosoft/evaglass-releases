@@ -1,9 +1,9 @@
 {
-  "apk": "evaglass-0.5.8.apk",
-  "versionCode": 508,
-  "versionName": "0.5.8",
-  "sha256": "f0870109341095a99897c9166c44793a6932a259398a2f5375f13b9894b5a18c",
+  "apk": "evaglass-0.6.0.apk",
+  "versionCode": 600,
+  "versionName": "0.6.0",
+  "sha256": "e3fab821fbabda573afc0ceb61c13ab9eb6b5e68154dc2c215dc3792b541a98b",
   "releaseDate": "2026-09-04",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.5.8/evaglass-0.5.8.apk",
-  "notes": "Adapter SDK soyutlamasi (GlassesTransport), yetenek-tabanli UI, sahte basari mesajlari kaldirildi, tema kalici, izin uyarisi, ayarlar sayfasi okunabilir."
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.0/evaglass-0.6.0.apk",
+  "notes": "TR/EN dil destegi, web aramasi (kendi Gemini anahtarinla), araya girebilme (cihaz-ici VAD), cihazdaki sirlar sifreli, video kaydi cihaz onayiyla. APK ~22 MB (VAD). Ilk kurulumda eski surumu kaldirin."
 }
