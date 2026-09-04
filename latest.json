@@ -1,9 +1,9 @@
 {
-  "apk": "evaglass-0.5.7.apk",
-  "versionCode": 507,
-  "versionName": "0.5.7",
-  "sha256": "2e5030a45c4539323de055a0080c4eb36b433afbd27233b221b400dead805907",
-  "releaseDate": "2026-09-03",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.5.7/evaglass-0.5.7.apk",
-  "notes": "Uygulama ici indirme karti artik GitHub Releases'i gosteriyor (emekli Azure Blob portali kaldirildi). Android 13+ temali launcher icin monochrome ikon katmani eklendi."
+  "apk": "evaglass-0.5.8.apk",
+  "versionCode": 508,
+  "versionName": "0.5.8",
+  "sha256": "f0870109341095a99897c9166c44793a6932a259398a2f5375f13b9894b5a18c",
+  "releaseDate": "2026-09-04",
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.5.8/evaglass-0.5.8.apk",
+  "notes": "Adapter SDK soyutlamasi (GlassesTransport), yetenek-tabanli UI, sahte basari mesajlari kaldirildi, tema kalici, izin uyarisi, ayarlar sayfasi okunabilir."
 }
