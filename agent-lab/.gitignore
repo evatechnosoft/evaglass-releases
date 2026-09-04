@@ -1,0 +1,7 @@
+thumbs/
+sandbox/
+__pycache__/
+*.pyc
+.pytest_cache/
+proof/*.mp4
+node_modules/

@@ -1,0 +1,9 @@
+[project]
+name = "agentlab"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["fastapi", "uvicorn[standard]", "mss", "pynput", "pillow", "anthropic>=0.80", "jsonschema"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["services"]

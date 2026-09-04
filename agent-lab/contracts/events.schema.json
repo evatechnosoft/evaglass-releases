@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://evatechnosoft.dev/agent-lab/events.schema.json",
+  "title": "AgentLab Event v1",
+  "type": "object",
+  "required": ["v", "ts", "session", "agent", "seq", "type", "data"],
+  "additionalProperties": false,
+  "properties": {
+    "v": { "const": 1 },
+    "ts": { "type": "string", "format": "date-time" },
+    "session": { "type": "string", "pattern": "^s_[A-Za-z0-9]+$" },
+    "agent": { "type": "string", "minLength": 1 },
+    "seq": { "type": "integer", "minimum": 0 },
+    "type": {
+      "type": "string",
+      "enum": [
+        "session.started", "session.finished", "session.failed",
+        "task.received", "task.plan", "task.progress", "task.done",
+        "perception.screenshot", "perception.zoom",
+        "llm.thinking", "llm.decision",
+        "action.requested", "action.executed", "action.failed",
+        "approval.requested", "approval.resolved",
+        "metrics.tick", "log"
+      ]
+    },
+    "data": { "type": "object" }
+  },
+  "$defs": {
+    "task.received":       { "properties": { "task": {"type":"string"}, "risk": {"enum":["low","medium","high","financial"]} }, "required": ["task"] },
+    "task.plan":           { "properties": { "steps": {"type":"array","items":{"type":"string"}} }, "required": ["steps"] },
+    "task.progress":       { "properties": { "done": {"type":"integer"}, "total": {"type":"integer"}, "label": {"type":"string"} }, "required": ["done","total"] },
+    "task.done":           { "properties": { "summary": {"type":"string"}, "ok": {"type":"boolean"} }, "required": ["summary","ok"] },
+    "perception.screenshot": { "properties": { "hash": {"type":"string"}, "width": {"type":"integer"}, "height": {"type":"integer"}, "scale": {"type":"number"}, "changed": {"type":"boolean"}, "thumb_url": {"type":"string"} }, "required": ["hash","width","height"] },
+    "perception.zoom":     { "properties": { "region": {"type":"array","items":{"type":"integer"},"minItems":4,"maxItems":4} }, "required": ["region"] },
+    "llm.thinking":        { "properties": { "model": {"type":"string"}, "effort": {"type":"string"}, "summary": {"type":"string"} }, "required": ["model"] },
+    "llm.decision":        { "properties": { "action": {"type":"string"}, "reason": {"type":"string"}, "model": {"type":"string"} }, "required": ["action"] },
+    "action.requested":    { "properties": { "id": {"type":"string"}, "action": {"type":"string"}, "input": {"type":"object"} }, "required": ["id","action"] },
+    "action.executed":     { "properties": { "id": {"type":"string"}, "action": {"type":"string"}, "ok": {"type":"boolean"}, "latency_ms": {"type":"number"}, "output": {"type":"string"} }, "required": ["id","action","ok"] },
+    "action.failed":       { "properties": { "id": {"type":"string"}, "action": {"type":"string"}, "error": {"type":"string"} }, "required": ["id","action","error"] },
+    "approval.requested":  { "properties": { "id": {"type":"string"}, "risk": {"enum":["low","medium","high","financial"]}, "description": {"type":"string"}, "action": {"type":"string"} }, "required": ["id","risk","description"] },
+    "approval.resolved":   { "properties": { "id": {"type":"string"}, "approved": {"type":"boolean"}, "by": {"type":"string"} }, "required": ["id","approved"] },
+    "metrics.tick":        { "properties": { "tokens_in": {"type":"integer"}, "tokens_out": {"type":"integer"}, "cost_usd": {"type":"number"}, "actions_per_min": {"type":"number"} } },
+    "log":                 { "properties": { "level": {"enum":["debug","info","warn","error"]}, "msg": {"type":"string"} }, "required": ["msg"] }
+  }
+}

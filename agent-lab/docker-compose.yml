@@ -1,0 +1,11 @@
+services:
+  agentlab:
+    build: .
+    ports: ["8799:8799"]
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - AGENTLAB_FLAGS=${AGENTLAB_FLAGS:---auto-approve}
+    volumes:
+      - ./sandbox:/app/sandbox
+      - ./thumbs:/app/thumbs
+    shm_size: "512m"
