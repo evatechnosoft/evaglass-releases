@@ -1,9 +1,9 @@
 {
-  "apk": "evaglass-0.6.1.apk",
-  "versionCode": 601,
-  "versionName": "0.6.1",
-  "sha256": "057961dfd433448675a0d94b44d9e1bb103984721a51ac86df930c2ae8c602fb",
-  "releaseDate": "2026-09-04",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.1/evaglass-0.6.1.apk",
-  "notes": "Kendi Gemini anahtarini girince motor otomatik Gemini'ye geciyor; anahtarsiz web aramasinda net hata mesaji; cihaz-ici Android TTS artik uygulama dilini kullaniyor."
+  "apk": "evaglass-0.6.2.apk",
+  "versionCode": 602,
+  "versionName": "0.6.2",
+  "sha256": "29c24b301ad6c0f3fc23f8bfb3381dea5229d87035bb112fd7103ae74a4aaf46",
+  "releaseDate": "2026-09-05",
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.2/evaglass-0.6.2.apk",
+  "notes": "Ayarlar ekrani artik dashboard ile ayni temayi kullaniyor; tasarimin fontlari (Inter / Space Grotesk / Anybody) devreye girdi; gozluk mikrofonu Azure anahtari yokken sessizce telefon mikrofonuna dusuyor ve sebebini soyluyor."
 }
