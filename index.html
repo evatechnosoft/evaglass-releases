@@ -93,7 +93,8 @@
         <div class="v mono" id="f-sha">—</div>
       </div>
     </div>
-    <a id="download-btn" class="cta" href="#" aria-disabled="true">APK indir</a>
+    <a id="download-btn" class="cta" href="#" aria-disabled="true">Telefon APK indir</a>
+    <a id="download-wear" class="cta" href="#" aria-disabled="true" hidden>Saat APK indir (Wear OS)</a>
     <p class="status" id="f-status">Sürüm bilgisi alınıyor…</p>
   </section>
 
@@ -104,6 +105,18 @@
       <li>Yukarıdaki butondan APK dosyasını indirin.</li>
       <li>İndirilen dosyayı açıp kurulumu tamamlayın.</li>
       <li>İlk açılışta ⚙️ ayarlar ekranından kendi Gemini API anahtarınızı girin — release APK'da sağlayıcı anahtarı gömülü değildir.</li>
+    </ol>
+
+    <h3>Saat uygulaması (Wear OS)</h3>
+    <p>
+      Saat APK'sı ayrı bir dosyadır ve <strong>telefondan saate gönderilemez</strong> — Android,
+      uygulama içinden başka bir cihaza kurulum yapılmasına izin vermez. Saate kurmak için:
+    </p>
+    <ol class="steps">
+      <li>Saatte Ayarlar → Sistem → Hakkında → Yazılım sürümüne 7 kez dokunup geliştirici seçeneklerini açın.</li>
+      <li>Geliştirici seçeneklerinde "ADB hata ayıklama" ve "Kablosuz hata ayıklama"yı açın; saatin IP adresini not edin.</li>
+      <li>Bilgisayardan: <code>adb connect &lt;saat-ip&gt;:5555</code> ardından <code>adb install evaglass-watch-&lt;sürüm&gt;.apk</code></li>
+      <li>Saatte uygulamayı açın; kısayol listesi telefondaki ⌚ ayar ekranından belirlenir.</li>
     </ol>
   </section>
 
@@ -139,6 +152,7 @@
   var elSha = document.getElementById('f-sha');
   var elStatus = document.getElementById('f-status');
   var btn = document.getElementById('download-btn');
+  var btnWear = document.getElementById('download-wear');
 
   fetch('latest.json', { cache: 'no-store' })
     .then(function (res) {
@@ -164,6 +178,13 @@
         elStatus.textContent = 'İndirmeye hazır.';
       } else {
         elStatus.textContent = 'İndirme bağlantısı bulunamadı.';
+      }
+
+      // Saat APK'si her surumde olmayabilir: alan yoksa dugme hic gorunmez.
+      if (data.wearUrl) {
+        btnWear.href = data.wearUrl;
+        btnWear.removeAttribute('aria-disabled');
+        btnWear.hidden = false;
       }
     })
     .catch(function (err) {
