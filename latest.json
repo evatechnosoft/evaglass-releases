@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.6.3.apk",
-  "versionCode": 603,
-  "versionName": "0.6.3",
-  "sha256": "6cc6d262a3a4e09d039bc160d36b0b2f3cf8b19edac61dc9cc6c891b1366d235",
+  "apk": "evaglass-0.6.4.apk",
+  "versionCode": 604,
+  "versionName": "0.6.4",
+  "sha256": "c14d8feaa9394353255e4a7f5658e185776221ba9a8034af6c58bf9169d24c4e",
   "releaseDate": "2026-09-05",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.3/evaglass-0.6.3.apk",
-  "notes": "Saat kisayollari: telefon ve saat icin widget, hangi kisayolun gorunecegi tek yerden secilir; toplantı kaydi (gozluk mikrofonu, silinebilir); goruntude odak kutulari - isaretle ve sor. Saat APK'si ayri artefakt: evaglass-watch-0.6.3.apk",
-  "wearApk": "evaglass-watch-0.6.3.apk",
-  "wearSha256": "49a1a5ce9451b3183a809c513b6fa11fcadc3c473464c4f4ae4b7ffbb8fe81e1",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.3/evaglass-watch-0.6.3.apk"
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.4/evaglass-0.6.4.apk",
+  "notes": "Gozluk ilk komutu dusuruyordu: video ve ses artik idle'a zorlanip gonderiliyor (ses cevabi sirasinda takilma). Onizleme, sesli 'etrafimda ne var' akisiyla ayni sirayi izliyor: once foto, sonra kucuk-resim. Thumbnail pocket taramasi kisaltildi.",
+  "wearApk": "evaglass-watch-0.6.4.apk",
+  "wearSha256": "eca1ade8cc2512fafd509ef2f46f21c5f498553f803f609f7d4fc71257c294b2",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.4/evaglass-watch-0.6.4.apk"
 }
