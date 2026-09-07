@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.6.5.apk",
-  "versionCode": 605,
-  "versionName": "0.6.5",
-  "sha256": "6b3fa218dbbcb13f51cdc242dcbdc4f88d94674254c047451cd6309d25ce8713",
+  "apk": "evaglass-0.6.6.apk",
+  "versionCode": 606,
+  "versionName": "0.6.6",
+  "sha256": "007f349645348f527382dffda612ca541a6be175e3598ca5393f3d3632cb68d2",
   "releaseDate": "2026-09-07",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.5/evaglass-0.6.5.apk",
-  "notes": "Ayarlarda Azure Speech anahtari alani: anahtar girilince Eva dogal sesle konusur, bos birakilirsa cihaz-ici robotik TTS devam eder. Eva konusurken araya girme (barge-in) dinleyicisi ikinci kez baslatildiginda cakisiyordu; artik onceki dinleyici bitmeden yenisi acilmiyor.",
-  "wearApk": "evaglass-watch-0.6.5.apk",
-  "wearSha256": "223542bbd0e04e772f481fa2966ab8803b505ae05509492d18024b6312e350b9",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.5/evaglass-watch-0.6.5.apk"
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.6/evaglass-0.6.6.apk",
+  "notes": "Dogal ses artik anahtarsiz calisiyor: Azure Speech anahtari gecidin arkasinda, uygulamaya bir sey girmene gerek yok. Web aramasi da ayni sekilde gecit uzerinden geliyor, kendi Gemini anahtarin sart degil. Kendi anahtarlarini girmek istersen Ayarlar'daki alanlar duruyor ve istekler dogrudan saglayiciya gider.",
+  "wearApk": "evaglass-watch-0.6.6.apk",
+  "wearSha256": "0745a0408e3ad270b07fe1fbd66f56e2ac476858feaea705caefb03bd6b6588b",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.6/evaglass-watch-0.6.6.apk"
 }
