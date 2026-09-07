@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.6.6.apk",
-  "versionCode": 606,
-  "versionName": "0.6.6",
-  "sha256": "007f349645348f527382dffda612ca541a6be175e3598ca5393f3d3632cb68d2",
+  "apk": "evaglass-0.6.7.apk",
+  "versionCode": 607,
+  "versionName": "0.6.7",
+  "sha256": "f13ec0e55cc1542e21d1e75c1af56e980491b9a9a47a2de672bd0a590826b6d3",
   "releaseDate": "2026-09-07",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.6/evaglass-0.6.6.apk",
-  "notes": "Dogal ses artik anahtarsiz calisiyor: Azure Speech anahtari gecidin arkasinda, uygulamaya bir sey girmene gerek yok. Web aramasi da ayni sekilde gecit uzerinden geliyor, kendi Gemini anahtarin sart degil. Kendi anahtarlarini girmek istersen Ayarlar'daki alanlar duruyor ve istekler dogrudan saglayiciya gider.",
-  "wearApk": "evaglass-watch-0.6.6.apk",
-  "wearSha256": "0745a0408e3ad270b07fe1fbd66f56e2ac476858feaea705caefb03bd6b6588b",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.6/evaglass-watch-0.6.6.apk"
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.7/evaglass-0.6.7.apk",
+  "notes": "Cokme avi: uygulama artik cokerse izini sakliyor. Bir sonraki acilista ekranin ustunde kirmizi serit cikacak, Kopyala'ya basip bana gonder - hatanin tam yerini oradan gorecegim. Kisisel metin kaydedilmiyor, yalnizca teknik iz.",
+  "wearApk": "evaglass-watch-0.6.7.apk",
+  "wearSha256": "76c4693dde8363cc32c243d2d25e715df40d59f20768cf4f7c7a81bb5de79fef",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.7/evaglass-watch-0.6.7.apk"
 }
