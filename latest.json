@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.6.8.apk",
-  "versionCode": 608,
-  "versionName": "0.6.8",
-  "sha256": "903329629fa378f7963249bc399f06d4a34649fc99b9bf7cb9a5e932cffba36a",
-  "releaseDate": "2026-09-07",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.8/evaglass-0.6.8.apk",
-  "notes": "Hata raporu: uygulama artik hem cokmeyi hem yakalanan hatalari topluyor. Ustte kirmizi serit cikinca Kopyala'ya bas, bana yapistir - cokmenin yigin izi, hata satirlari ve o ana kadarki olaylar birlikte geliyor. Ayrica Log gonder dugmesi release'de de calisiyor (gecit uzerinden).",
-  "wearApk": "evaglass-watch-0.6.8.apk",
-  "wearSha256": "d57580a1e2917662a6483df8a96c8707fc48a4c7e9a9cb30cbb2038a67e1c289",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.8/evaglass-watch-0.6.8.apk"
+  "apk": "evaglass-0.6.9.apk",
+  "versionCode": 609,
+  "versionName": "0.6.9",
+  "sha256": "4e0925272bff180f336cea26e31ae680e698628b81560534af5569344db6905f",
+  "releaseDate": "2026-09-08",
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.9/evaglass-0.6.9.apk",
+  "notes": "Saha turu duzeltmeleri: sesli dongu tek tur hatasinda kapanmiyor, anahtarsiz kurulumda gozluk mikrofonu gateway /stt ile calisiyor, TTS durdurmasi cagirani askida birakmiyor; thumbnail cok-paketli sayfa birlestirme ve sondan-basa pocket taramasi; saat kurulum talimati Wear OS 4 icin duzeltildi (adb pair).",
+  "wearApk": "evaglass-watch-0.6.9.apk",
+  "wearSha256": "6feb98b29f5b88edea1ceb7787a616ecebd99e8c1dd2f1926be4bc6e0a36ae86",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.9/evaglass-watch-0.6.9.apk"
 }

@@ -114,8 +114,12 @@
     </p>
     <ol class="steps">
       <li>Saatte Ayarlar → Sistem → Hakkında → Yazılım sürümüne 7 kez dokunup geliştirici seçeneklerini açın.</li>
-      <li>Geliştirici seçeneklerinde "ADB hata ayıklama" ve "Kablosuz hata ayıklama"yı açın; saatin IP adresini not edin.</li>
-      <li>Bilgisayardan: <code>adb connect &lt;saat-ip&gt;:5555</code> ardından <code>adb install evaglass-watch-&lt;sürüm&gt;.apk</code></li>
+      <li>Geliştirici seçeneklerinde "ADB hata ayıklama" ve "Kablosuz hata ayıklama"yı açın. Saat ile bilgisayar <strong>aynı Wi-Fi ağında</strong> olmalı (Galaxy Watch telefona Bluetooth ile bağlıyken Wi-Fi'yi kapatabilir — gerekirse saatte Wi-Fi'yi elle bağlayın).</li>
+      <li>"Kablosuz hata ayıklama" ekranında <strong>"Cihazı eşleştirme koduyla eşleştir"</strong>e girin; oradaki <code>ip:port</code> ve 6 haneli kod ile bilgisayardan:
+        <code>adb pair &lt;saat-ip&gt;:&lt;eşleştirme-portu&gt;</code></li>
+      <li>Sonra ana "Kablosuz hata ayıklama" ekranındaki <strong>diğer</strong> portla bağlanıp kurun (port rastgeledir, 5555 değil):
+        <code>adb connect &lt;saat-ip&gt;:&lt;bağlantı-portu&gt;</code> ardından <code>adb install -r evaglass-watch-&lt;sürüm&gt;.apk</code></li>
+      <li><strong>Bu dosyayı telefona kurmayı denemeyin</strong> — saat APK'sı telefon uygulamasıyla aynı paket adını taşır, telefonda "uygulama yüklenmedi" hatası verir.</li>
       <li>Saatte uygulamayı açın; kısayol listesi telefondaki ⌚ ayar ekranından belirlenir.</li>
     </ol>
   </section>
