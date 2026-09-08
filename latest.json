@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.7.2.apk",
-  "versionCode": 702,
-  "versionName": "0.7.2",
-  "sha256": "cbc8562d83ea7934a4e92febfb72d037087d163b545dbaa0b6d4d48dfb2e679c",
+  "apk": "evaglass-0.7.3.apk",
+  "versionCode": 703,
+  "versionName": "0.7.3",
+  "sha256": "cc23e94ec324cfb4fdf3be99fb18affd2f116406250d5dda81a4a1d0d27eabeb",
   "releaseDate": "2026-09-08",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.2/evaglass-0.7.2.apk",
-  "notes": "Kart basliklari da temanin yazi tipini kullaniyor; onceden yalniz hero degisiyordu.",
-  "wearApk": "evaglass-watch-0.7.2.apk",
-  "wearSha256": "ed28e13b516f44bb7b0409d2340a59ea50825d8b9587563d23ade98dbfbb2f1d",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.2/evaglass-watch-0.7.2.apk"
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.3/evaglass-0.7.3.apk",
+  "notes": "Saat kendini gunceller (Guncellemeyi denetle dugmesi). Hareket algilama ekran kapaninca susmuyor.",
+  "wearApk": "evaglass-watch-0.7.3.apk",
+  "wearSha256": "2153a88508a0a8be2ed5e99dc5db7d980ec9f08d84e7cac6de3a34633b5119dc",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.3/evaglass-watch-0.7.3.apk"
 }
