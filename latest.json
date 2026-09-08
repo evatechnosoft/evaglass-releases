@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.7.8.apk",
-  "versionCode": 708,
-  "versionName": "0.7.8",
-  "sha256": "9332c222f9f672f3d63e38bb6dcc57030e6adb94dd2453153ecc387eb72a4dec",
+  "apk": "evaglass-0.7.9.apk",
+  "versionCode": 709,
+  "versionName": "0.7.9",
+  "sha256": "d02675e3a34d5e22ef2f7991fa8d89d0e1af96d916091982fd4625bc108e6362",
   "releaseDate": "2026-09-08",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.8/evaglass-0.7.8.apk",
-  "notes": "Sade sohbet sayfasi: kart, cerceve ve animasyon olmadan tek kutu. Panodaki '💬 Sade sohbet' dugmesinden acilir.",
-  "wearApk": "evaglass-watch-0.7.8.apk",
-  "wearSha256": "86575e2acc31e3746dbed620c2f2c5a47575d1dad3d2db59ea29c236b169b0d1",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.8/evaglass-watch-0.7.8.apk"
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.9/evaglass-0.7.9.apk",
+  "notes": "Araya girme (barge-in) duzeltildi: iki dinleyicinin ayni anda mikrofona ve ONNX oturumuna girmesi engellendi.",
+  "wearApk": "evaglass-watch-0.7.9.apk",
+  "wearSha256": "a8a3a7caa5ef00e9991f87f096e25e030682cef9dc6ccc4bcc3fba99cfdb2349",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.9/evaglass-watch-0.7.9.apk"
 }
