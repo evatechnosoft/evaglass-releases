@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.7.6.apk",
-  "versionCode": 706,
-  "versionName": "0.7.6",
-  "sha256": "d4b9aafd74719bc6e7af79336b7078e6dc704f4f3023dd529f520fa30d2ad794",
+  "apk": "evaglass-0.7.7.apk",
+  "versionCode": 707,
+  "versionName": "0.7.7",
+  "sha256": "a17785781ecd5186a144c69e37cf020139c017116d24837ff523d38c52c30436",
   "releaseDate": "2026-09-08",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.6/evaglass-0.7.6.apk",
-  "notes": "Cokme izi hem otomatik gonderiliyor hem ekranda kaliyor.",
-  "wearApk": "evaglass-watch-0.7.6.apk",
-  "wearSha256": "ae7b3d85c7d8358e30bf74e401da8355f7f64d8f51212bbd04dd0470db974d78",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.6/evaglass-watch-0.7.6.apk"
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.7/evaglass-0.7.7.apk",
+  "notes": "Sohbet yeniden calisiyor: kart giris animasyonu composition sirasinda state yaziyordu, her yeni baloncuk sonsuz recomposition dongusunu besleyip uygulamayi dusuruyordu.",
+  "wearApk": "evaglass-watch-0.7.7.apk",
+  "wearSha256": "e2ba4910b968d97ddac1e2e37e8033c297929f70b107f6b4d0ed4827d86e4c7d",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.7/evaglass-watch-0.7.7.apk"
 }
