@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.7.4.apk",
-  "versionCode": 704,
-  "versionName": "0.7.4",
-  "sha256": "bf2bfa3bc4c326e1e44f6aa8f249130ff10fa56a9a7face609c97ba0b0ec21d0",
+  "apk": "evaglass-0.7.5.apk",
+  "versionCode": 705,
+  "versionName": "0.7.5",
+  "sha256": "bf04b5a3b3d1c71846efa5e99561b8333a4a00e5d19428c18156d754e86909f2",
   "releaseDate": "2026-09-08",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.4/evaglass-0.7.4.apk",
-  "notes": "Saat ekrani yuvarlak hatlara uydu; acik olan hareket dinleme yesil yaniyor ve durumu hatirliyor.",
-  "wearApk": "evaglass-watch-0.7.4.apk",
-  "wearSha256": "8000d0b0b999bace650e6e9f49941dadcf71a955ee7f88729845d8b2530458e5",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.4/evaglass-watch-0.7.4.apk"
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.5/evaglass-0.7.5.apk",
+  "notes": "Sesli cevap okunurken cokme giderildi. Cokme izi bir sonraki acilista kendiliginden gonderiliyor. Saat hareket esikleri duzeltildi ve son olcum ekranda gorunuyor. Kartlar sirayla beliriyor, basliklarda parilti.",
+  "wearApk": "evaglass-watch-0.7.5.apk",
+  "wearSha256": "7dd2ebc61a9837760c5ab2fe57d3b38ef6fe749d1290e031734d6b0210de94a4",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.5/evaglass-watch-0.7.5.apk"
 }
