@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.7.9.apk",
-  "versionCode": 709,
-  "versionName": "0.7.9",
-  "sha256": "d02675e3a34d5e22ef2f7991fa8d89d0e1af96d916091982fd4625bc108e6362",
+  "apk": "evaglass-0.8.0.apk",
+  "versionCode": 800,
+  "versionName": "0.8.0",
+  "sha256": "5a5d62b538ff1bd988e907b9928948dd1aa165b1be8e80f645fd33280e740217",
   "releaseDate": "2026-09-08",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.9/evaglass-0.7.9.apk",
-  "notes": "Araya girme (barge-in) duzeltildi: iki dinleyicinin ayni anda mikrofona ve ONNX oturumuna girmesi engellendi.",
-  "wearApk": "evaglass-watch-0.7.9.apk",
-  "wearSha256": "a8a3a7caa5ef00e9991f87f096e25e030682cef9dc6ccc4bcc3fba99cfdb2349",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.9/evaglass-watch-0.7.9.apk"
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.0/evaglass-0.8.0.apk",
+  "notes": "Saat ekrani papatya oldu; yuklu surum gorunuyor; guncelleme indirilirken ekran acik kaliyor. Gemini 3.5 hattina gecildi.",
+  "wearApk": "evaglass-watch-0.8.0.apk",
+  "wearSha256": "ac5ae7c8c40a7dffc55f749b1bd596f0d86c4283653444563f897552d9fac390",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.0/evaglass-watch-0.8.0.apk"
 }
