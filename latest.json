@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.7.0.apk",
-  "versionCode": 700,
-  "versionName": "0.7.0",
-  "sha256": "5d2892f21019c2bdfd5cc795a061b44c1476740e9d8b42c1b74183e7ea84ff3d",
+  "apk": "evaglass-0.7.1.apk",
+  "versionCode": 701,
+  "versionName": "0.7.1",
+  "sha256": "48eae98b474be67c230b92748a992e5e655315f098f3654787a102091434483e",
   "releaseDate": "2026-09-08",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.0/evaglass-0.7.0.apk",
-  "notes": "BLE hattini kendimiz koparmayi biraktik: sessizlik artik once yoklama, sonra olum. Hat hazir degilse ses telefon mikrofonuna dusuyor.",
-  "wearApk": "evaglass-watch-0.7.0.apk",
-  "wearSha256": "582493a9ac8804168c46ccd4fe19aff98ff005bc8cda88d3bf83db6a77203cc2",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.0/evaglass-watch-0.7.0.apk"
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.1/evaglass-0.7.1.apk",
+  "notes": "Yazi tipi: Bangers artik gercekten gorunuyor (yanlis agirlik istegi sistem fontuna dusuruyordu) ve Turkce'de de kullaniliyor. Ayarlarda uygulama dili kisayolu.",
+  "wearApk": "evaglass-watch-0.7.1.apk",
+  "wearSha256": "e746479a66177672908821a2ae17d7f4da3d96cf77c71e800c57716a2ae4ea35",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.1/evaglass-watch-0.7.1.apk"
 }
