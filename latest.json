@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.7.3.apk",
-  "versionCode": 703,
-  "versionName": "0.7.3",
-  "sha256": "cc23e94ec324cfb4fdf3be99fb18affd2f116406250d5dda81a4a1d0d27eabeb",
+  "apk": "evaglass-0.7.4.apk",
+  "versionCode": 704,
+  "versionName": "0.7.4",
+  "sha256": "bf2bfa3bc4c326e1e44f6aa8f249130ff10fa56a9a7face609c97ba0b0ec21d0",
   "releaseDate": "2026-09-08",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.3/evaglass-0.7.3.apk",
-  "notes": "Saat kendini gunceller (Guncellemeyi denetle dugmesi). Hareket algilama ekran kapaninca susmuyor.",
-  "wearApk": "evaglass-watch-0.7.3.apk",
-  "wearSha256": "2153a88508a0a8be2ed5e99dc5db7d980ec9f08d84e7cac6de3a34633b5119dc",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.3/evaglass-watch-0.7.3.apk"
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.4/evaglass-0.7.4.apk",
+  "notes": "Saat ekrani yuvarlak hatlara uydu; acik olan hareket dinleme yesil yaniyor ve durumu hatirliyor.",
+  "wearApk": "evaglass-watch-0.7.4.apk",
+  "wearSha256": "8000d0b0b999bace650e6e9f49941dadcf71a955ee7f88729845d8b2530458e5",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.4/evaglass-watch-0.7.4.apk"
 }
