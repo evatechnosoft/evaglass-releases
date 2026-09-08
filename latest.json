@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.7.1.apk",
-  "versionCode": 701,
-  "versionName": "0.7.1",
-  "sha256": "48eae98b474be67c230b92748a992e5e655315f098f3654787a102091434483e",
+  "apk": "evaglass-0.7.2.apk",
+  "versionCode": 702,
+  "versionName": "0.7.2",
+  "sha256": "cbc8562d83ea7934a4e92febfb72d037087d163b545dbaa0b6d4d48dfb2e679c",
   "releaseDate": "2026-09-08",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.1/evaglass-0.7.1.apk",
-  "notes": "Yazi tipi: Bangers artik gercekten gorunuyor (yanlis agirlik istegi sistem fontuna dusuruyordu) ve Turkce'de de kullaniliyor. Ayarlarda uygulama dili kisayolu.",
-  "wearApk": "evaglass-watch-0.7.1.apk",
-  "wearSha256": "e746479a66177672908821a2ae17d7f4da3d96cf77c71e800c57716a2ae4ea35",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.1/evaglass-watch-0.7.1.apk"
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.2/evaglass-0.7.2.apk",
+  "notes": "Kart basliklari da temanin yazi tipini kullaniyor; onceden yalniz hero degisiyordu.",
+  "wearApk": "evaglass-watch-0.7.2.apk",
+  "wearSha256": "ed28e13b516f44bb7b0409d2340a59ea50825d8b9587563d23ade98dbfbb2f1d",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.2/evaglass-watch-0.7.2.apk"
 }
