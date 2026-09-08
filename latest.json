@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.7.7.apk",
-  "versionCode": 707,
-  "versionName": "0.7.7",
-  "sha256": "a17785781ecd5186a144c69e37cf020139c017116d24837ff523d38c52c30436",
+  "apk": "evaglass-0.7.8.apk",
+  "versionCode": 708,
+  "versionName": "0.7.8",
+  "sha256": "9332c222f9f672f3d63e38bb6dcc57030e6adb94dd2453153ecc387eb72a4dec",
   "releaseDate": "2026-09-08",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.7/evaglass-0.7.7.apk",
-  "notes": "Sohbet yeniden calisiyor: kart giris animasyonu composition sirasinda state yaziyordu, her yeni baloncuk sonsuz recomposition dongusunu besleyip uygulamayi dusuruyordu.",
-  "wearApk": "evaglass-watch-0.7.7.apk",
-  "wearSha256": "e2ba4910b968d97ddac1e2e37e8033c297929f70b107f6b4d0ed4827d86e4c7d",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.7/evaglass-watch-0.7.7.apk"
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.8/evaglass-0.7.8.apk",
+  "notes": "Sade sohbet sayfasi: kart, cerceve ve animasyon olmadan tek kutu. Panodaki '💬 Sade sohbet' dugmesinden acilir.",
+  "wearApk": "evaglass-watch-0.7.8.apk",
+  "wearSha256": "86575e2acc31e3746dbed620c2f2c5a47575d1dad3d2db59ea29c236b169b0d1",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.8/evaglass-watch-0.7.8.apk"
 }
