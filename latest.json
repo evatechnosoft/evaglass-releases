@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.6.9.apk",
-  "versionCode": 609,
-  "versionName": "0.6.9",
-  "sha256": "4e0925272bff180f336cea26e31ae680e698628b81560534af5569344db6905f",
+  "apk": "evaglass-0.7.0.apk",
+  "versionCode": 700,
+  "versionName": "0.7.0",
+  "sha256": "5d2892f21019c2bdfd5cc795a061b44c1476740e9d8b42c1b74183e7ea84ff3d",
   "releaseDate": "2026-09-08",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.9/evaglass-0.6.9.apk",
-  "notes": "Saha turu duzeltmeleri: sesli dongu tek tur hatasinda kapanmiyor, anahtarsiz kurulumda gozluk mikrofonu gateway /stt ile calisiyor, TTS durdurmasi cagirani askida birakmiyor; thumbnail cok-paketli sayfa birlestirme ve sondan-basa pocket taramasi; saat kurulum talimati Wear OS 4 icin duzeltildi (adb pair).",
-  "wearApk": "evaglass-watch-0.6.9.apk",
-  "wearSha256": "6feb98b29f5b88edea1ceb7787a616ecebd99e8c1dd2f1926be4bc6e0a36ae86",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.6.9/evaglass-watch-0.6.9.apk"
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.0/evaglass-0.7.0.apk",
+  "notes": "BLE hattini kendimiz koparmayi biraktik: sessizlik artik once yoklama, sonra olum. Hat hazir degilse ses telefon mikrofonuna dusuyor.",
+  "wearApk": "evaglass-watch-0.7.0.apk",
+  "wearSha256": "582493a9ac8804168c46ccd4fe19aff98ff005bc8cda88d3bf83db6a77203cc2",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.7.0/evaglass-watch-0.7.0.apk"
 }
