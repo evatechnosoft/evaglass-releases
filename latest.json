@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.8.1.apk",
-  "versionCode": 801,
-  "versionName": "0.8.1",
-  "sha256": "c371d00bb66a9b9b707d403760f01914ebb42f1a2c30678a303a4794c25e00a4",
+  "apk": "evaglass-0.8.2.apk",
+  "versionCode": 802,
+  "versionName": "0.8.2",
+  "sha256": "6ed70ed4ba07be78183f1e8d4da2a712bf3adc0587a1d463bc2c90fb7593fd41",
   "releaseDate": "2026-09-09",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.1/evaglass-0.8.1.apk",
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.2/evaglass-0.8.2.apk",
   "notes": "",
-  "wearApk": "evaglass-watch-0.8.1.apk",
-  "wearSha256": "20f307882aa2315ede997cbb6bb7f2a4df4d91ab50aa2477fbc9dfe2f701f7e9",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.1/evaglass-watch-0.8.1.apk"
+  "wearApk": "evaglass-watch-0.8.2.apk",
+  "wearSha256": "182679dde168adce0b8e0fef2d6be5f6477094c49279dce956927147b6c911bc",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.2/evaglass-watch-0.8.2.apk"
 }
