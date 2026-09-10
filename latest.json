@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.8.5.apk",
-  "versionCode": 805,
-  "versionName": "0.8.5",
-  "sha256": "d001c77bd7b0265be0dce1855d51164b399072f7ec625bca3b58461edea783c2",
+  "apk": "evaglass-0.8.6.apk",
+  "versionCode": 806,
+  "versionName": "0.8.6",
+  "sha256": "072f2272ee56adeb8fcb38df6d49dbdf139d88c9d6569d82496f2bf02baf9b53",
   "releaseDate": "2026-09-10",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.5/evaglass-0.8.5.apk",
-  "notes": "wear: peak line refreshes live while the app is open; shows peak count and x/y/z of the strongest sample; sensor kind/wake-up; wake lock re-acquired on back-to-back gestures.",
-  "wearApk": "evaglass-watch-0.8.5.apk",
-  "wearSha256": "4770ddc06b68801c57be45cf9914e21fc3109be921357d722c81e8c094eb4fbc",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.5/evaglass-watch-0.8.5.apk"
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.6/evaglass-0.8.6.apk",
+  "notes": "Foto/thumbnail: AI-capture 02 01 06 + photo-ready notify beklemesi, cift deklansor kaldirildi. Ses: telefon mikrofonu acilmiyordu (queries/RecognitionService), STT hatalari artik gorunuyor, gozluk-mic anahtari tek anlama geldi. Gozlukteki tik sesleri: is modu tek komuta indi. Medya: 'Medya indir' butonu eklendi, release'de cleartext gozluk gecidi icin acildi, mobil veri acikken de calisir.",
+  "wearApk": "evaglass-watch-0.8.6.apk",
+  "wearSha256": "7003d4f1ba5a31b8246e2bf894fba32dbe66ec43ffc0c0e541971b85ffbb07a0",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.6/evaglass-watch-0.8.6.apk"
 }
