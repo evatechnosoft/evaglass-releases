@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.8.4.apk",
-  "versionCode": 804,
-  "versionName": "0.8.4",
-  "sha256": "5c6ede0931d9acea3131d9de99f141d48e8de9f4256da4be805de60f35b67d21",
+  "apk": "evaglass-0.8.5.apk",
+  "versionCode": 805,
+  "versionName": "0.8.5",
+  "sha256": "d001c77bd7b0265be0dce1855d51164b399072f7ec625bca3b58461edea783c2",
   "releaseDate": "2026-09-10",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.4/evaglass-0.8.4.apk",
-  "notes": "wear: wake lock re-acquired on back-to-back gestures; sensor kind/wake-up shown under the daisy. app: FINE+COARSE location on Android 12+.",
-  "wearApk": "evaglass-watch-0.8.4.apk",
-  "wearSha256": "94c9c54b5b2f2f8fb3d7a56ee52ca47107e3c5d88fb6081e8dabc7c5544c4aa8",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.4/evaglass-watch-0.8.4.apk"
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.5/evaglass-0.8.5.apk",
+  "notes": "wear: peak line refreshes live while the app is open; shows peak count and x/y/z of the strongest sample; sensor kind/wake-up; wake lock re-acquired on back-to-back gestures.",
+  "wearApk": "evaglass-watch-0.8.5.apk",
+  "wearSha256": "4770ddc06b68801c57be45cf9914e21fc3109be921357d722c81e8c094eb4fbc",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.5/evaglass-watch-0.8.5.apk"
 }
