@@ -32,6 +32,22 @@
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.6/evaglass-watch-0.8.6.apk",
       "sha256": "7003d4f1ba5a31b8246e2bf894fba32dbe66ec43ffc0c0e541971b85ffbb07a0",
       "notes": "Bu dosyayı telefona kurmayın; telefon uygulamasıyla aynı paket adını taşır."
+    },
+    {
+      "id": "evaitec-ota-wear",
+      "packageName": "com.evaitec.ota.wear",
+      "versionCode": 1,
+      "name": "evaitecOTA",
+      "tagline": "Saate uygulama kuran ve güncelleyen yükleyici.",
+      "platform": "watch",
+      "icon": "assets/evaitec-ota.svg",
+      "screenshots": [],
+      "version": "0.1.0",
+      "releaseDate": "2026-09-10",
+      "sizeBytes": 338481,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-wear-v0.1.0/evaitecOTA-0.1.0.apk",
+      "sha256": "8ccb0fbba42a413f92858cf9acacaeefc5ad049d6cf48f520c2123a50611fe6b",
+      "notes": "Saate BİR KEZ ADB ile kurulur; sonraki uygulamalar bunun üzerinden gelir. Cihazda doğrulanmadı."
     }
   ]
 }
