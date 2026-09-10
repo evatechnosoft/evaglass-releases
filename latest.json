@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.8.3.apk",
-  "versionCode": 803,
-  "versionName": "0.8.3",
-  "sha256": "cf19c200d5516f4e976aa31c5df0d8008d9a840b9bce1d09d76c3acf673f87ef",
-  "releaseDate": "2026-09-09",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.3/evaglass-0.8.3.apk",
-  "notes": "",
-  "wearApk": "evaglass-watch-0.8.3.apk",
-  "wearSha256": "0db62429e0bd77f9f0fe182657715d43eeba07ebd077828c9a084d0420f06fc2",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.3/evaglass-watch-0.8.3.apk"
+  "apk": "evaglass-0.8.4.apk",
+  "versionCode": 804,
+  "versionName": "0.8.4",
+  "sha256": "5c6ede0931d9acea3131d9de99f141d48e8de9f4256da4be805de60f35b67d21",
+  "releaseDate": "2026-09-10",
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.4/evaglass-0.8.4.apk",
+  "notes": "wear: wake lock re-acquired on back-to-back gestures; sensor kind/wake-up shown under the daisy. app: FINE+COARSE location on Android 12+.",
+  "wearApk": "evaglass-watch-0.8.4.apk",
+  "wearSha256": "94c9c54b5b2f2f8fb3d7a56ee52ca47107e3c5d88fb6081e8dabc7c5544c4aa8",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.4/evaglass-watch-0.8.4.apk"
 }
