@@ -1,0 +1,37 @@
+{
+  "updated": "2026-09-10",
+  "apps": [
+    {
+      "id": "evaglass-phone",
+      "packageName": "com.evaglass.app",
+      "versionCode": 806,
+      "name": "evaglass",
+      "tagline": "AI gözlüğünüzü BLE ile kontrol eden telefon uygulaması.",
+      "platform": "phone",
+      "icon": "assets/evaglass-phone.svg",
+      "screenshots": [],
+      "version": "0.8.6",
+      "releaseDate": "2026-09-10",
+      "sizeBytes": 22809138,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.6/evaglass-0.8.6.apk",
+      "sha256": "072f2272ee56adeb8fcb38df6d49dbdf139d88c9d6569d82496f2bf02baf9b53",
+      "notes": "Android 10+. Kurulumdan önce \"bilinmeyen kaynaklara izin ver\" açık olmalı."
+    },
+    {
+      "id": "evaglass-watch",
+      "packageName": "com.evaglass.app",
+      "versionCode": 806,
+      "name": "evaglass Saat",
+      "tagline": "Gözlük kısayolları bileğinizde — Wear OS companion.",
+      "platform": "watch",
+      "icon": "assets/evaglass-watch.svg",
+      "screenshots": [],
+      "version": "0.8.6",
+      "releaseDate": "2026-09-10",
+      "sizeBytes": 14036912,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.6/evaglass-watch-0.8.6.apk",
+      "sha256": "7003d4f1ba5a31b8246e2bf894fba32dbe66ec43ffc0c0e541971b85ffbb07a0",
+      "notes": "Bu dosyayı telefona kurmayın; telefon uygulamasıyla aynı paket adını taşır."
+    }
+  ]
+}

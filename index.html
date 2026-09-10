@@ -3,198 +3,323 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>evaglass — AI gözlük companion</title>
+<title>evaitec — İndirme Merkezi</title>
 <style>
   :root{
-    --bg:#0B0D12; --bg-deep:#05060A; --solid:#0D1017;
-    --glass:rgba(255,255,255,.06); --glass-strong:rgba(255,255,255,.10); --glass-inset:rgba(255,255,255,.05);
-    --ink:#F4F6FB; --ink-dim:rgba(244,246,251,.62); --ink-faint:rgba(244,246,251,.38);
-    --edge:rgba(255,255,255,.14); --edge-soft:rgba(255,255,255,.07);
-    --teal:#2DD4BF; --indigo:#6366F1; --magenta:#EC4899;
-    --gradient: linear-gradient(92deg, var(--teal), var(--indigo) 55%, var(--magenta));
-    --r-card:26px; --r-field:16px; --r-pill:100px;
+    color-scheme: light dark;
+    --bg:#F5F6FA; --bg-deep:#EDEFF6; --card:#FFFFFF;
+    --ink:#12151C; --ink-dim:rgba(18,21,28,.66); --ink-faint:rgba(18,21,28,.45);
+    --edge:rgba(18,21,28,.12); --edge-soft:rgba(18,21,28,.07);
+    --chip:rgba(18,21,28,.05);
+    --teal:#0EA192; --indigo:#5457E5; --magenta:#DB2777;
+    --gradient:linear-gradient(92deg,var(--teal),var(--indigo) 55%,var(--magenta));
+    --on-gradient:#FFFFFF;
+    --shadow:0 10px 30px rgba(18,21,28,.10);
+    --r-card:22px; --r-field:14px; --r-pill:100px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0B0D12; --bg-deep:#05060A; --card:rgba(255,255,255,.055);
+      --ink:#F4F6FB; --ink-dim:rgba(244,246,251,.64); --ink-faint:rgba(244,246,251,.40);
+      --edge:rgba(255,255,255,.14); --edge-soft:rgba(255,255,255,.08);
+      --chip:rgba(255,255,255,.07);
+      --teal:#2DD4BF; --indigo:#6366F1; --magenta:#EC4899;
+      --on-gradient:#0B0D12;
+      --shadow:inset 0 1px 0 rgba(255,255,255,.08), 0 20px 40px rgba(0,0,0,.38);
+    }
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
-  body{ background:var(--bg); color:var(--ink); font-family:"Segoe UI",Inter,system-ui,-apple-system,sans-serif; min-height:100vh; position:relative; overflow-x:hidden; line-height:1.5; }
-  .aurora{ position:fixed; inset:0; z-index:0; pointer-events:none;
-    background: radial-gradient(600px 400px at 15% 10%, rgba(45,212,191,.20), transparent 60%), radial-gradient(700px 500px at 85% 15%, rgba(99,102,241,.18), transparent 60%), radial-gradient(650px 450px at 50% 95%, rgba(236,72,153,.16), transparent 60%), var(--bg-deep); }
-  main{ position:relative; z-index:1; max-width:640px; margin:0 auto; padding:56px 22px 80px; }
-  .eyebrow{ font-size:12px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-faint); margin:0 0 14px; }
-  h1{ font-size:clamp(32px,7vw,46px); font-weight:700; letter-spacing:-.035em; margin:0 0 12px; line-height:1.08; }
-  h1 .grad{ background:var(--gradient); -webkit-background-clip:text; background-clip:text; color:transparent; }
-  .lede{ font-size:15px; color:var(--ink-dim); margin:0 0 40px; max-width:52ch; }
-  .card{ background:var(--glass); border:1px solid var(--edge); border-radius:var(--r-card); padding:24px 22px;
-    backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.09), 0 20px 40px rgba(0,0,0,.35); margin-bottom:24px; }
-  .card h2{ font-size:14px; font-weight:600; letter-spacing:.02em; color:var(--ink-dim); text-transform:uppercase; margin:0 0 16px; }
-  .ver-row{ display:flex; flex-wrap:wrap; gap:10px 24px; margin-bottom:18px; }
-  .ver-item{ min-width:110px; }
-  .ver-item .k{ font-size:11px; color:var(--ink-faint); text-transform:uppercase; letter-spacing:.08em; }
-  .ver-item .v{ font-size:16px; font-weight:600; margin-top:2px; word-break:break-all; }
-  .ver-item .v.mono{ font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:13px; font-weight:500; }
+  body{
+    background:var(--bg); color:var(--ink); line-height:1.5;
+    font-family:"Segoe UI",Inter,system-ui,-apple-system,sans-serif;
+    min-height:100vh; overflow-x:hidden; position:relative;
+  }
+  .aurora{
+    position:fixed; inset:0; z-index:0; pointer-events:none; opacity:.55;
+    background:
+      radial-gradient(600px 400px at 12% 8%, color-mix(in srgb, var(--teal) 26%, transparent), transparent 62%),
+      radial-gradient(700px 500px at 88% 12%, color-mix(in srgb, var(--indigo) 24%, transparent), transparent 62%),
+      radial-gradient(650px 450px at 50% 98%, color-mix(in srgb, var(--magenta) 20%, transparent), transparent 62%),
+      var(--bg-deep);
+  }
+  main{position:relative; z-index:1; max-width:1080px; margin:0 auto; padding:56px 20px 72px;}
+  .eyebrow{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 12px;}
+  h1{font-size:clamp(30px,6vw,44px);font-weight:700;letter-spacing:-.035em;margin:0 0 10px;line-height:1.08;}
+  h1 .grad{background:var(--gradient);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .lede{font-size:15px;color:var(--ink-dim);margin:0 0 36px;max-width:56ch;}
+
+  .grid{display:grid;grid-template-columns:1fr;gap:20px;}
+  @media (min-width:720px){ .grid{grid-template-columns:repeat(2,minmax(0,1fr));} }
+  @media (min-width:1040px){ .grid{grid-template-columns:repeat(3,minmax(0,1fr));} }
+
+  .app{
+    background:var(--card);border:1px solid var(--edge);border-radius:var(--r-card);
+    padding:20px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:14px;
+    backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);min-width:0;
+  }
+  .app-head{display:flex;gap:14px;align-items:flex-start;min-width:0;}
+  .icon{flex:0 0 auto;width:56px;height:56px;border-radius:16px;overflow:hidden;border:1px solid var(--edge-soft);background:var(--chip);}
+  .icon img{width:100%;height:100%;display:block;object-fit:cover;}
+  .icon.ph{display:flex;align-items:center;justify-content:center;background:var(--gradient);color:var(--on-gradient);font-weight:700;font-size:22px;}
+  .titles{min-width:0;}
+  .titles h2{font-size:18px;font-weight:700;letter-spacing:-.01em;margin:0 0 2px;overflow-wrap:anywhere;}
+  .titles p{font-size:13.5px;color:var(--ink-dim);margin:0;}
+  .badge{
+    display:inline-flex;align-items:center;gap:5px;margin-top:8px;
+    padding:3px 10px;border-radius:var(--r-pill);background:var(--chip);
+    border:1px solid var(--edge-soft);font-size:11.5px;font-weight:600;color:var(--ink-dim);
+  }
+  .badge svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:1.8;}
+
+  .meta{display:flex;flex-wrap:wrap;gap:8px 20px;}
+  .meta div{min-width:0;}
+  .meta .k{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-faint);}
+  .meta .v{font-size:14px;font-weight:600;}
+
+  .shots{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;}
+  .shots img{height:96px;border-radius:10px;border:1px solid var(--edge-soft);cursor:zoom-in;flex:0 0 auto;}
+
+  .note{font-size:12.5px;color:var(--ink-dim);margin:0;}
+
   .cta{
-    display:flex; align-items:center; justify-content:center; gap:10px;
-    width:100%; height:52px; border-radius:var(--r-field);
-    background:var(--gradient); color:#0B0D12;
-    font-size:15px; font-weight:700; text-decoration:none;
-    border:none; cursor:pointer;
-    transition:filter .2s ease, opacity .2s ease;
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    width:100%;height:48px;border-radius:var(--r-field);margin-top:auto;
+    background:var(--gradient);color:var(--on-gradient);
+    font-size:15px;font-weight:700;text-decoration:none;transition:filter .2s ease;
   }
-  .cta:hover{ filter:brightness(1.08); }
-  .cta[aria-disabled="true"]{ opacity:.45; pointer-events:none; }
-  .status{ font-size:12.5px; color:var(--ink-faint); margin-top:10px; text-align:center; }
-  ol.steps{ margin:0; padding-left:20px; color:var(--ink-dim); font-size:14px; }
-  ol.steps li{ margin-bottom:8px; }
-  ol.steps li:last-child{ margin-bottom:0; }
-  ul.features{ list-style:none; margin:0; padding:0; display:grid; gap:14px; }
-  ul.features li{
-    display:flex; gap:12px; align-items:flex-start;
-    font-size:14px; color:var(--ink-dim);
+  .cta:hover{filter:brightness(1.08);}
+  .cta[aria-disabled="true"]{opacity:.45;pointer-events:none;}
+
+  .sha{display:flex;align-items:center;gap:8px;font-size:11.5px;color:var(--ink-faint);}
+  .sha code{
+    font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+    background:var(--chip);padding:3px 7px;border-radius:6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
   }
-  .glyph{
-    flex:0 0 auto; width:34px; height:34px; border-radius:10px;
-    background:var(--glass-inset); border:1px solid var(--edge-soft);
-    display:flex; align-items:center; justify-content:center;
+  .sha button{
+    font:inherit;font-size:11.5px;padding:3px 9px;border-radius:var(--r-pill);cursor:pointer;
+    background:transparent;border:1px solid var(--edge);color:var(--ink-dim);flex:0 0 auto;
   }
-  .glyph svg{ width:17px; height:17px; stroke:var(--ink); fill:none; stroke-width:1.8; }
-  footer{
-    margin-top:40px; padding-top:24px; border-top:1px solid var(--edge-soft);
-    font-size:12.5px; color:var(--ink-faint); text-align:center;
+  .sha button:hover{background:var(--chip);}
+
+  .msg{
+    border:1px solid var(--edge);border-radius:var(--r-card);background:var(--card);
+    padding:24px;color:var(--ink-dim);font-size:14px;box-shadow:var(--shadow);
   }
-  footer a{ color:var(--ink-dim); }
-  code{ background:var(--glass-inset); padding:2px 6px; border-radius:6px; font-size:12.5px; }
+  .msg strong{color:var(--ink);display:block;margin-bottom:6px;font-size:15px;}
+
+  details.help{margin-top:36px;border:1px solid var(--edge);border-radius:var(--r-card);background:var(--card);padding:18px 20px;box-shadow:var(--shadow);}
+  details.help summary{cursor:pointer;font-weight:600;font-size:14.5px;}
+  details.help ol{margin:14px 0 0;padding-left:20px;color:var(--ink-dim);font-size:13.5px;}
+  details.help li{margin-bottom:8px;}
+  details.help code{background:var(--chip);padding:2px 6px;border-radius:6px;font-size:12.5px;overflow-wrap:anywhere;}
+
+  footer{margin-top:36px;padding-top:22px;border-top:1px solid var(--edge-soft);font-size:12.5px;color:var(--ink-faint);text-align:center;}
+  footer a{color:var(--ink-dim);}
+
+  dialog.lb{border:none;background:transparent;padding:0;max-width:94vw;max-height:94vh;}
+  dialog.lb::backdrop{background:rgba(0,0,0,.78);}
+  dialog.lb img{max-width:94vw;max-height:94vh;border-radius:12px;display:block;}
 </style>
 </head>
 <body>
 <div class="aurora"></div>
 <main>
-  <p class="eyebrow">evaglass</p>
-  <h1>AI gözlük <span class="grad">companion</span></h1>
-  <p class="lede">Akıllı gözlüğünüzü BLE ile kontrol eden, sesli asistanla konuşan ve medya aktaran Android uygulaması.</p>
+  <p class="eyebrow">evaitec</p>
+  <h1>İndirme <span class="grad">merkezi</span></h1>
+  <p class="lede">Tüm evaitec uygulamaları tek yerde. İstediğiniz uygulamanın kartından güncel sürümü indirin.</p>
 
-  <section class="card" aria-labelledby="ver-title">
-    <h2 id="ver-title">Güncel Sürüm</h2>
-    <div class="ver-row">
-      <div class="ver-item">
-        <div class="k">Sürüm</div>
-        <div class="v" id="f-version">yükleniyor…</div>
-      </div>
-      <div class="ver-item">
-        <div class="k">Build</div>
-        <div class="v" id="f-code">—</div>
-      </div>
-      <div class="ver-item">
-        <div class="k">Yayın tarihi</div>
-        <div class="v" id="f-date">—</div>
-      </div>
-      <div class="ver-item">
-        <div class="k">SHA-256</div>
-        <div class="v mono" id="f-sha">—</div>
-      </div>
-    </div>
-    <a id="download-btn" class="cta" href="#" aria-disabled="true">Telefon APK indir</a>
-    <a id="download-wear" class="cta" href="#" aria-disabled="true" hidden>Saat APK indir (Wear OS)</a>
-    <p class="status" id="f-status">Sürüm bilgisi alınıyor…</p>
-  </section>
+  <div class="grid" id="grid" hidden></div>
+  <div class="msg" id="msg"><strong>Yükleniyor…</strong>Uygulama listesi alınıyor.</div>
 
-  <section class="card" aria-labelledby="steps-title">
-    <h2 id="steps-title">Kurulum</h2>
-    <ol class="steps">
-      <li>Android ayarlarından "Bilinmeyen kaynaklara izin ver" seçeneğini açın.</li>
-      <li>Yukarıdaki butondan APK dosyasını indirin.</li>
-      <li>İndirilen dosyayı açıp kurulumu tamamlayın.</li>
-      <li>İlk açılışta ⚙️ ayarlar ekranından kendi Gemini API anahtarınızı girin — release APK'da sağlayıcı anahtarı gömülü değildir.</li>
-    </ol>
-
-    <h3>Saat uygulaması (Wear OS)</h3>
-    <p>
-      Saat APK'sı ayrı bir dosyadır ve <strong>telefondan saate gönderilemez</strong> — Android,
-      uygulama içinden başka bir cihaza kurulum yapılmasına izin vermez. Saate kurmak için:
-    </p>
-    <ol class="steps">
+  <details class="help">
+    <summary>Saat (Wear OS) APK'sı nasıl kurulur?</summary>
+    <ol>
       <li>Saatte Ayarlar → Sistem → Hakkında → Yazılım sürümüne 7 kez dokunup geliştirici seçeneklerini açın.</li>
-      <li>Geliştirici seçeneklerinde "ADB hata ayıklama" ve "Kablosuz hata ayıklama"yı açın. Saat ile bilgisayar <strong>aynı Wi-Fi ağında</strong> olmalı (Galaxy Watch telefona Bluetooth ile bağlıyken Wi-Fi'yi kapatabilir — gerekirse saatte Wi-Fi'yi elle bağlayın).</li>
-      <li>"Kablosuz hata ayıklama" ekranında <strong>"Cihazı eşleştirme koduyla eşleştir"</strong>e girin; oradaki <code>ip:port</code> ve 6 haneli kod ile bilgisayardan:
-        <code>adb pair &lt;saat-ip&gt;:&lt;eşleştirme-portu&gt;</code></li>
-      <li>Sonra ana "Kablosuz hata ayıklama" ekranındaki <strong>diğer</strong> portla bağlanıp kurun (port rastgeledir, 5555 değil):
-        <code>adb connect &lt;saat-ip&gt;:&lt;bağlantı-portu&gt;</code> ardından <code>adb install -r evaglass-watch-&lt;sürüm&gt;.apk</code></li>
-      <li><strong>Bu dosyayı telefona kurmayı denemeyin</strong> — saat APK'sı telefon uygulamasıyla aynı paket adını taşır, telefonda "uygulama yüklenmedi" hatası verir.</li>
-      <li>Saatte uygulamayı açın; kısayol listesi telefondaki ⌚ ayar ekranından belirlenir.</li>
+      <li>Geliştirici seçeneklerinde "ADB hata ayıklama" ve "Kablosuz hata ayıklama"yı açın. Saat ile bilgisayar <strong>aynı Wi-Fi ağında</strong> olmalı.</li>
+      <li>"Kablosuz hata ayıklama" → "Cihazı eşleştirme koduyla eşleştir" ekranındaki <code>ip:port</code> ve 6 haneli kodla: <code>adb pair &lt;saat-ip&gt;:&lt;eşleştirme-portu&gt;</code></li>
+      <li>Ana ekrandaki <strong>diğer</strong> portla bağlanıp kurun: <code>adb connect &lt;saat-ip&gt;:&lt;bağlantı-portu&gt;</code> ardından <code>adb install -r evaglass-watch-&lt;sürüm&gt;.apk</code></li>
+      <li>Alternatif: APK'yı saatin tarayıcısından doğrudan indirip kurun. <strong>Telefona kurmayı denemeyin.</strong></li>
     </ol>
-  </section>
-
-  <section class="card" aria-labelledby="what-title">
-    <h2 id="what-title">Bu Uygulama Ne Yapar</h2>
-    <ul class="features">
-      <li>
-        <span class="glyph"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 1 16 0 8 8 0 0 1-16 0Z"/><path d="M9 12h6M12 9v6"/></svg></span>
-        <span>BLE üzerinden gözlüğü kontrol eder: fotoğraf, video ve ses komutları.</span>
-      </li>
-      <li>
-        <span class="glyph"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4V5Z"/></svg></span>
-        <span>Gözlükten fotoğraf ve medya dosyalarını telefona aktarır.</span>
-      </li>
-      <li>
-        <span class="glyph"><svg viewBox="0 0 24 24"><path d="M12 3a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3Z"/><path d="M6 11a6 6 0 0 0 12 0M12 17v3"/></svg></span>
-        <span>Sesli AI asistanla doğal dilde konuşma imkânı sunar.</span>
-      </li>
-    </ul>
-  </section>
+  </details>
 
   <footer>
     Kod deposu özeldir; bu sayfa yalnızca dağıtım kanalıdır.<br>
-    Metadata kaynağı: <code>latest.json</code>
+    Metadata kaynağı: <code>apps.json</code> · OTA kanalı: <code>latest.json</code>
   </footer>
 </main>
 
+<dialog class="lb" id="lb"><img id="lb-img" alt=""></dialog>
+
 <script>
 (function () {
-  var elVersion = document.getElementById('f-version');
-  var elCode = document.getElementById('f-code');
-  var elDate = document.getElementById('f-date');
-  var elSha = document.getElementById('f-sha');
-  var elStatus = document.getElementById('f-status');
-  var btn = document.getElementById('download-btn');
-  var btnWear = document.getElementById('download-wear');
+  var grid = document.getElementById('grid');
+  var msg = document.getElementById('msg');
+  var lb = document.getElementById('lb');
+  var lbImg = document.getElementById('lb-img');
 
-  fetch('latest.json', { cache: 'no-store' })
+  var PLATFORM = {
+    phone: { label: 'Telefon', path: 'M7 2h10v20H7z M10 19h4' },
+    watch: { label: 'Saat', path: 'M6 8h12v8H6z M9 8V4h6v4 M9 16v4h6v-4' },
+    both:  { label: 'Telefon + Saat', path: 'M4 3h8v18H4z M15 8h5v8h-5z' }
+  };
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+
+  function formatSize(bytes) {
+    if (typeof bytes !== 'number' || !isFinite(bytes) || bytes <= 0) return null;
+    var mb = bytes / (1024 * 1024);
+    return (mb >= 10 ? mb.toFixed(0) : mb.toFixed(1)) + ' MB';
+  }
+
+  function placeholder(app) {
+    // Gorsel yoksa kart kirilmasin: ad bas harfinden yer tutucu.
+    var box = el('div', 'icon ph');
+    box.textContent = (app.name || '?').trim().charAt(0).toUpperCase();
+    return box;
+  }
+
+  function iconNode(app) {
+    if (!app.icon) return placeholder(app);
+    var box = el('div', 'icon');
+    var img = el('img');
+    img.src = app.icon;
+    img.alt = '';
+    img.onerror = function () { box.replaceWith(placeholder(app)); };
+    box.appendChild(img);
+    return box;
+  }
+
+  function badgeNode(platform) {
+    var p = PLATFORM[platform] || PLATFORM.phone;
+    var b = el('span', 'badge');
+    b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="' + p.path + '"/></svg>';
+    b.appendChild(document.createTextNode(p.label));
+    return b;
+  }
+
+  function metaNode(app) {
+    var wrap = el('div', 'meta');
+    var items = [
+      ['Sürüm', app.version],
+      ['Boyut', formatSize(app.sizeBytes)],
+      ['Tarih', app.releaseDate]
+    ];
+    items.forEach(function (it) {
+      if (!it[1]) return;
+      var d = el('div');
+      d.appendChild(el('div', 'k', it[0]));
+      d.appendChild(el('div', 'v', it[1]));
+      wrap.appendChild(d);
+    });
+    return wrap.children.length ? wrap : null;
+  }
+
+  function shotsNode(app) {
+    if (!Array.isArray(app.screenshots) || !app.screenshots.length) return null;
+    var wrap = el('div', 'shots');
+    app.screenshots.forEach(function (src) {
+      var img = el('img');
+      img.src = src;
+      img.alt = app.name + ' ekran görüntüsü';
+      img.loading = 'lazy';
+      img.onerror = function () { img.remove(); };
+      img.onclick = function () {
+        lbImg.src = src;
+        lbImg.alt = img.alt;
+        lb.showModal();
+      };
+      wrap.appendChild(img);
+    });
+    return wrap;
+  }
+
+  function shaNode(app) {
+    if (!app.sha256) return null;
+    var s = String(app.sha256);
+    var row = el('div', 'sha');
+    row.appendChild(el('span', null, 'sha256'));
+    var code = el('code', null, s.length > 20 ? s.slice(0, 10) + '…' + s.slice(-10) : s);
+    code.title = s;
+    row.appendChild(code);
+    var btn = el('button', null, 'kopyala');
+    btn.type = 'button';
+    btn.onclick = function () {
+      navigator.clipboard.writeText(s).then(
+        function () { btn.textContent = 'kopyalandı'; },
+        function () { btn.textContent = 'kopyalanamadı'; }
+      );
+      setTimeout(function () { btn.textContent = 'kopyala'; }, 1800);
+    };
+    row.appendChild(btn);
+    return row;
+  }
+
+  function card(app) {
+    var c = el('article', 'app');
+
+    var head = el('div', 'app-head');
+    head.appendChild(iconNode(app));
+    var titles = el('div', 'titles');
+    titles.appendChild(el('h2', null, app.name || app.id || 'Uygulama'));
+    if (app.tagline) titles.appendChild(el('p', null, app.tagline));
+    titles.appendChild(badgeNode(app.platform));
+    head.appendChild(titles);
+    c.appendChild(head);
+
+    [metaNode(app), shotsNode(app)].forEach(function (n) { if (n) c.appendChild(n); });
+
+    if (app.notes) c.appendChild(el('p', 'note', app.notes));
+    if (app.platform === 'watch') {
+      c.appendChild(el('p', 'note', 'Telefondan saate kurulamaz — saatin tarayıcısından indirin ya da ADB ile aktarın.'));
+    }
+
+    var sha = shaNode(app);
+    if (sha) c.appendChild(sha);
+
+    var cta = el('a', 'cta', 'İndir');
+    if (app.downloadUrl) {
+      cta.href = app.downloadUrl;
+    } else {
+      cta.href = '#';
+      cta.setAttribute('aria-disabled', 'true');
+      cta.textContent = 'Yayınlanmadı';
+    }
+    c.appendChild(cta);
+    return c;
+  }
+
+  lb.onclick = function () { lb.close(); };
+
+  function fail(detail) {
+    grid.hidden = true;
+    msg.hidden = false;
+    msg.innerHTML = '';
+    msg.appendChild(el('strong', null, 'Uygulama listesi yüklenemedi'));
+    msg.appendChild(document.createTextNode(
+      'Sayfayı yenileyin. Sorun sürerse github.com/evatechnosoft/evaglass-releases/releases ' +
+      'adresinden doğrudan indirebilirsiniz. (' + detail + ')'
+    ));
+  }
+
+  fetch('apps.json', { cache: 'no-store' })
     .then(function (res) {
       if (!res.ok) throw new Error('HTTP ' + res.status);
       return res.json();
     })
     .then(function (data) {
-      elVersion.textContent = data.versionName || '—';
-      elCode.textContent = (data.versionCode != null) ? String(data.versionCode) : '—';
-      elDate.textContent = data.releaseDate || data.date || '—';
-
-      if (data.sha256 && data.sha256.length > 0) {
-        var s = data.sha256;
-        elSha.textContent = s.length > 16 ? (s.slice(0, 8) + '…' + s.slice(-8)) : s;
-        elSha.title = s;
-      } else {
-        elSha.textContent = 'yayınlanmadı';
-      }
-
-      if (data.url) {
-        btn.href = data.url;
-        btn.removeAttribute('aria-disabled');
-        elStatus.textContent = 'İndirmeye hazır.';
-      } else {
-        elStatus.textContent = 'İndirme bağlantısı bulunamadı.';
-      }
-
-      // Saat APK'si her surumde olmayabilir: alan yoksa dugme hic gorunmez.
-      if (data.wearUrl) {
-        btnWear.href = data.wearUrl;
-        btnWear.removeAttribute('aria-disabled');
-        btnWear.hidden = false;
-      }
+      var apps = (data && Array.isArray(data.apps)) ? data.apps : [];
+      if (!apps.length) throw new Error('liste boş');
+      apps.forEach(function (a) { grid.appendChild(card(a)); });
+      grid.hidden = false;
+      msg.hidden = true;
     })
-    .catch(function (err) {
-      elVersion.textContent = '—';
-      elStatus.textContent = 'Sürüm bilgisi alınamadı, sayfayı yenileyin. (' + err.message + ')';
-    });
+    .catch(function (err) { fail(err.message); });
 })();
 </script>
 </body>
