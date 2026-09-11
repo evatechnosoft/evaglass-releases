@@ -96,6 +96,22 @@
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/wellness-v0.7.1/wellness-0.7.1.apk",
       "sha256": "3f24260409891f2fe8d2094f361fb483344e7dc0f8635fcdfa40910a20fd5e5a",
       "notes": "Android 8+. Ilk acilista Ayar > Sunucu alanina adres ve token girilir; Health Connect izinleri telefon ayarlarindan verilir."
+    },
+    {
+      "id": "netmovies-phone",
+      "packageName": "com.evaitec.netmovies.tv",
+      "versionCode": 10080,
+      "name": "NetMovies",
+      "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
+      "platform": "phone",
+      "icon": "assets/evaitec-ota.svg",
+      "screenshots": [],
+      "version": "0.1.80",
+      "releaseDate": "2026-09-11",
+      "sizeBytes": 20084862,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-v0.1.80/netmovies-0.1.80.apk",
+      "sha256": "9e9dd4d3d8280d555314431b51f070b332724cdedffc5a2324a614c3a459af44",
+      "notes": "Aynı APK Android TV'de de çalışır. Telefonda kumandadır: seçilen içerik televizyonda açılır, telefonda değil."
     }
   ]
 }
