@@ -94,16 +94,22 @@ def build_glasses(mat_frame, mat_lens):
     bpy.ops.object.transform_apply(scale=True)
     # alt kenarı hafif daralt (trapez): alt köşe vertexlerini içeri çek
     for v in front.data.vertices:
-        if v.co.z < 0: v.co.x *= 0.93
-    bev = front.modifiers.new("bevel", "BEVEL"); bev.width = 0.007; bev.segments = 10; bev.limit_method = "ANGLE"
+        if v.co.z < 0: v.co.x *= 0.95
+    bev = front.modifiers.new("bevel", "BEVEL"); bev.width = 0.0045; bev.segments = 8; bev.limit_method = "ANGLE"
     bpy.ops.object.modifier_apply(modifier=bev.name)
     # cam boşlukları: yuvarlatılmış dikdörtgen kesici (küp + bevel), camlar aynı şekille kesişim
     def rounded_cutter(name, x, depth):
+        """Wayfarer cam açıklığı: köşeler 4.5 mm yarıçaplı, alt kenar üstten %10 dar, dış alt köşe biraz daha kısa."""
         c = add_obj(name, bpy.ops.mesh.primitive_cube_add, None, loc=(x, 0, -0.002), size=1)
-        c.scale = (0.053, depth, 0.040)
+        c.scale = (0.054, depth, 0.040)
         bpy.ops.object.select_all(action="DESELECT"); c.select_set(True); bpy.context.view_layer.objects.active = c
         bpy.ops.object.transform_apply(scale=True)
-        b = c.modifiers.new("bevel", "BEVEL"); b.width = 0.011; b.segments = 10; b.limit_method = "NONE"
+        outer = 1 if x > 0 else -1
+        for v in c.data.vertices:
+            if v.co.z < 0:
+                v.co.x *= 0.90                       # alt kenar daralır
+                if (v.co.x > 0) == (outer > 0): v.co.z += 0.003  # dış alt köşe yukarı: Wayfarer eğimi
+        b = c.modifiers.new("bevel", "BEVEL"); b.width = 0.0045; b.segments = 8; b.limit_method = "NONE"
         bpy.ops.object.modifier_apply(modifier=b.name)
         return c
     for side, x in (("L", -0.0345), ("R", 0.0345)):
