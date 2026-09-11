@@ -13,8 +13,8 @@ Argumanlar (hepsi istege bagli):
   --device CPU|CUDA|OPTIX          render cihazi (varsayilan CPU)
   --out DIR                        cikti klasoru (varsayilan ./out)
   --glasses PATH.glb|.obj|.fbx     gercek gozluk modeli; verilmezse yer tutucu cizilir
-  --screen-phone DIR               telefon ekran kaydi kare dizisi (png/jpg) klasoru
-  --screen-watch DIR               saat ekran kaydi kare dizisi klasoru
+  --screen-phone PATH              telefon ekran kaydi: mp4/mov dosyasi ya da png dizisi klasoru
+  --screen-watch PATH              saat ekran kaydi: mp4/mov dosyasi ya da png dizisi klasoru
   --save PATH.blend                sahneyi .blend olarak kaydet (yerelde acip bakmak icin)
 """
 import bpy, sys, os, math, argparse
@@ -71,28 +71,94 @@ def smooth(o):
     for p in o.data.polygons: p.use_smooth = True
 
 # ---------------------------------------------------------------- products
+def _apply_bool(target, cutter):
+    m = target.modifiers.new("cut", "BOOLEAN"); m.operation = "DIFFERENCE"; m.object = cutter; m.solver = "EXACT"
+    bpy.ops.object.select_all(action="DESELECT"); target.select_set(True); bpy.context.view_layer.objects.active = target
+    bpy.ops.object.modifier_apply(modifier=m.name)
+    bpy.data.objects.remove(cutter, do_unlink=True)
+
 def build_glasses(mat_frame, mat_lens):
-    """Yer tutucu gozluk: iki cerceve halkasi, iki cam, kopru, iki sap. Gercek model --glasses ile gelir."""
+    """evaglass yer tutucu: fotoğraflara göre kalın mat siyah Wayfarer gövde, dikdörtgene yakın camlar,
+    elektronikli kalın saplar, sol ön köşede kamera, sapta kırmızı anahtar ve mikrofon delikleri.
+    Gerçek 3D model --glasses ile gelirse bu çizilmez."""
     root = bpy.data.objects.new("glasses", None); bpy.context.collection.objects.link(root)
     parts = []
-    for side, x in (("L", -0.036), ("R", 0.036)):
-        rim = add_obj(f"rim_{side}", bpy.ops.mesh.primitive_torus_add, mat_frame, loc=(x, 0, 0), rot=(math.radians(90), 0, 0),
-                      major_radius=0.024, minor_radius=0.0022, major_segments=64, minor_segments=16)
-        rim.scale = (1.3, 1.0, 0.72)  # genis, modern kadraj
-        smooth(rim); parts.append(rim)
-        lens = add_obj(f"lens_{side}", bpy.ops.mesh.primitive_cylinder_add, mat_lens, loc=(x, 0.0005, 0), rot=(math.radians(90), 0, 0),
-                       radius=0.0235, depth=0.0015, vertices=64)
-        lens.scale = (1.3, 1.0, 0.72)
-        smooth(lens); parts.append(lens)
-    bridge = add_obj("bridge", bpy.ops.mesh.primitive_cylinder_add, mat_frame, loc=(0, -0.002, 0.004), rot=(0, math.radians(90), 0), radius=0.0018, depth=0.012, vertices=24)
-    smooth(bridge); parts.append(bridge)
-    for side, x, sgn in (("L", -0.066, -1), ("R", 0.066, 1)):
-        temple = add_obj(f"temple_{side}", bpy.ops.mesh.primitive_cube_add, mat_frame, loc=(x, 0.055, 0.004), size=1)
-        temple.scale = (0.002, 0.06, 0.004)
+    mat_cam = mat_principled("cam_lens", (0.02, 0.02, 0.03, 1), rough=0.05, transmission=0.6, ior=1.7)
+    mat_red = mat_principled("switch_red", (0.75, 0.05, 0.03, 1), rough=0.5)
+    mat_dark = mat_principled("grille", (0.004, 0.004, 0.004, 1), rough=0.9)
+
+    # --- ön gövde: yuvarlatılmış dikdörtgen, üstte biraz daha geniş (Wayfarer)
+    front = add_obj("front", bpy.ops.mesh.primitive_cube_add, mat_frame, loc=(0, 0, 0), size=1)
+    front.scale = (0.144, 0.0065, 0.048)
+    bpy.ops.object.select_all(action="DESELECT"); front.select_set(True); bpy.context.view_layer.objects.active = front
+    bpy.ops.object.transform_apply(scale=True)
+    # alt kenarı hafif daralt (trapez): alt köşe vertexlerini içeri çek
+    for v in front.data.vertices:
+        if v.co.z < 0: v.co.x *= 0.95
+    bev = front.modifiers.new("bevel", "BEVEL"); bev.width = 0.0045; bev.segments = 8; bev.limit_method = "ANGLE"
+    bpy.ops.object.modifier_apply(modifier=bev.name)
+    # cam boşlukları: yuvarlatılmış dikdörtgen kesici (küp + bevel), camlar aynı şekille kesişim
+    def rounded_cutter(name, x, depth):
+        """Wayfarer cam açıklığı: köşeler 4.5 mm yarıçaplı, alt kenar üstten %10 dar, dış alt köşe biraz daha kısa."""
+        c = add_obj(name, bpy.ops.mesh.primitive_cube_add, None, loc=(x, 0, -0.002), size=1)
+        c.scale = (0.054, depth, 0.040)
+        bpy.ops.object.select_all(action="DESELECT"); c.select_set(True); bpy.context.view_layer.objects.active = c
+        bpy.ops.object.transform_apply(scale=True)
+        outer = 1 if x > 0 else -1
+        for v in c.data.vertices:
+            if v.co.z < 0:
+                v.co.x *= 0.90                       # alt kenar daralır
+                if (v.co.x > 0) == (outer > 0): v.co.z += 0.003  # dış alt köşe yukarı: Wayfarer eğimi
+        b = c.modifiers.new("bevel", "BEVEL"); b.width = 0.0045; b.segments = 8; b.limit_method = "NONE"
+        bpy.ops.object.modifier_apply(modifier=b.name)
+        return c
+    for side, x in (("L", -0.0345), ("R", 0.0345)):
+        _apply_bool(front, rounded_cutter(f"cut_{side}", x, 0.03))
+    # burun boşluğu (keyhole)
+    nose = add_obj("cut_nose", bpy.ops.mesh.primitive_cylinder_add, None, loc=(0, 0, -0.033), rot=(math.radians(90), 0, 0), radius=0.014, depth=0.03, vertices=32)
+    _apply_bool(front, nose)
+    smooth(front); parts.append(front)
+    # camlar: ince levha ∩ kesici şekli
+    for side, x in (("L", -0.0345), ("R", 0.0345)):
+        lens = add_obj(f"lens_{side}", bpy.ops.mesh.primitive_cube_add, mat_lens, loc=(x, 0.0005, -0.002), size=1)
+        lens.scale = (0.2, 0.0018, 0.2)
+        bpy.ops.object.select_all(action="DESELECT"); lens.select_set(True); bpy.context.view_layer.objects.active = lens
+        bpy.ops.object.transform_apply(scale=True)
+        shape = rounded_cutter(f"lensshape_{side}", x, 0.03)
+        # kesici %97 küçük: cam çerçeve içinde otursun
+        shape.scale = (0.97, 1, 0.97)
+        m = lens.modifiers.new("fit", "BOOLEAN"); m.operation = "INTERSECT"; m.object = shape; m.solver = "EXACT"
+        bpy.ops.object.select_all(action="DESELECT"); lens.select_set(True); bpy.context.view_layer.objects.active = lens
+        bpy.ops.object.modifier_apply(modifier=m.name)
+        bpy.data.objects.remove(shape, do_unlink=True)
+        parts.append(lens)  # düz levha: flat shading doğru, smooth buruşuk gösterir
+    # --- saplar: kalın, elektronikli; uçta kulak kıvrımı
+    for side, x, sgn in (("L", -0.070, -1), ("R", 0.070, 1)):
+        hinge = add_obj(f"hinge_{side}", bpy.ops.mesh.primitive_cube_add, mat_frame, loc=(x, 0.006, 0.006), size=1)
+        hinge.scale = (0.0075, 0.012, 0.014); hb = hinge.modifiers.new("bevel", "BEVEL"); hb.width = 0.0015; hb.segments = 4
+        parts.append(hinge)
+        temple = add_obj(f"temple_{side}", bpy.ops.mesh.primitive_cube_add, mat_frame, loc=(x + sgn*0.0005, 0.066, 0.006), size=1)
+        temple.scale = (0.0055, 0.112, 0.011); tb = temple.modifiers.new("bevel", "BEVEL"); tb.width = 0.0018; tb.segments = 5
         parts.append(temple)
-        # AI gozlugu: sapta kucuk kamera/sensor modulu
-        cam = add_obj(f"sensor_{side}", bpy.ops.mesh.primitive_cylinder_add, mat_lens, loc=(x + sgn*0.0025, 0.012, 0.004), rot=(0, math.radians(90), 0), radius=0.0022, depth=0.002, vertices=32)
-        smooth(cam); parts.append(cam)
+        tip = add_obj(f"tip_{side}", bpy.ops.mesh.primitive_cube_add, mat_frame, loc=(x + sgn*0.0005, 0.134, -0.004), rot=(math.radians(-28), 0, 0), size=1)
+        tip.scale = (0.0052, 0.034, 0.0095); tpb = tip.modifiers.new("bevel", "BEVEL"); tpb.width = 0.0022; tpb.segments = 5
+        parts.append(tip)
+        # mikrofon delikleri (sap dışı, iki nokta)
+        for dy in (0.040, 0.046):
+            mic = add_obj(f"mic_{side}", bpy.ops.mesh.primitive_cylinder_add, mat_dark, loc=(x + sgn*0.0033, dy, 0.006), rot=(0, math.radians(90), 0), radius=0.0006, depth=0.001, vertices=12)
+            parts.append(mic)
+        # hoparlör ızgarası (sap içi, menteşeye yakın üç yarık)
+        for dy in (0.014, 0.017, 0.020):
+            slit = add_obj(f"slit_{side}", bpy.ops.mesh.primitive_cube_add, mat_dark, loc=(x - sgn*0.0031, dy, 0.004), size=1)
+            slit.scale = (0.0006, 0.0008, 0.005); parts.append(slit)
+    # --- kamera modülü: sol ön köşe (izleyiciye göre sol), hafif öne çıkık halka + cam
+    ring = add_obj("cam_ring", bpy.ops.mesh.primitive_cylinder_add, mat_frame, loc=(-0.061, -0.0068, 0.012), rot=(math.radians(90), 0, 0), radius=0.0042, depth=0.0012, vertices=32)
+    smooth(ring); parts.append(ring)
+    cam = add_obj("cam_lens", bpy.ops.mesh.primitive_cylinder_add, mat_cam, loc=(-0.061, -0.0072, 0.012), rot=(math.radians(90), 0, 0), radius=0.0028, depth=0.0008, vertices=32)
+    smooth(cam); parts.append(cam)
+    # --- kırmızı anahtar: sol sap üstü, menteşeye yakın
+    sw = add_obj("switch", bpy.ops.mesh.primitive_cube_add, mat_red, loc=(-0.0705, 0.024, 0.0122), size=1)
+    sw.scale = (0.0035, 0.006, 0.0014); parts.append(sw)
     for p in parts: p.parent = root
     return root
 
@@ -119,13 +185,17 @@ def screen_material(name, frames_dir, fallback_color):
     m = bpy.data.materials.new(name); m.use_nodes = True
     nt = m.node_tree; bsdf = nt.nodes["Principled BSDF"]
     bsdf.inputs["Roughness"].default_value = 0.15
-    if frames_dir and os.path.isdir(frames_dir):
+    img = None; n_frames = 0
+    if frames_dir and os.path.isfile(frames_dir) and frames_dir.lower().endswith((".mp4", ".mov", ".mkv", ".webm")):
+        img = bpy.data.images.load(frames_dir); img.source = "MOVIE"; n_frames = img.frame_duration
+    elif frames_dir and os.path.isdir(frames_dir):
         files = sorted(f for f in os.listdir(frames_dir) if f.lower().endswith((".png", ".jpg", ".jpeg")))
         if files:
-            img = bpy.data.images.load(os.path.join(frames_dir, files[0]))
-            img.source = "SEQUENCE"
+            img = bpy.data.images.load(os.path.join(frames_dir, files[0])); img.source = "SEQUENCE"; n_frames = len(files)
+    if img is not None:
+        if True:
             tex = nt.nodes.new("ShaderNodeTexImage"); tex.image = img
-            tex.image_user.frame_duration = len(files); tex.image_user.use_auto_refresh = True; tex.image_user.use_cyclic = True
+            tex.image_user.frame_duration = n_frames; tex.image_user.use_auto_refresh = True; tex.image_user.use_cyclic = True
             nt.links.new(tex.outputs["Color"], bsdf.inputs["Emission Color"])
             nt.links.new(tex.outputs["Color"], bsdf.inputs["Base Color"])
             bsdf.inputs["Emission Strength"].default_value = 3.0
@@ -171,7 +241,7 @@ def build_city_lights():
     nt.links.new(ramp.outputs["Color"], em.inputs["Strength"])
     em.inputs["Strength"].default_value = 40.0
     nt.links.new(em.outputs["Emission"], out.inputs["Surface"])
-    wall = add_obj("city_wall", bpy.ops.mesh.primitive_plane_add, m, loc=(0, -2.5, 0.3), rot=(math.radians(90), 0, 0), size=6)
+    wall = add_obj("city_wall", bpy.ops.mesh.primitive_plane_add, m, loc=(0.15, -1.1, 0.55), rot=(math.radians(90), 0, 0), size=3)
     # emission strength'i ramp * 40 yapmak icin math node
     mul = nt.nodes.new("ShaderNodeMath"); mul.operation = "MULTIPLY"; mul.inputs[1].default_value = 40.0
     nt.links.new(ramp.outputs["Color"], mul.inputs[0]); nt.links.new(mul.outputs[0], em.inputs["Strength"])
@@ -183,17 +253,19 @@ def build_lights():
         bpy.ops.object.light_add(type="AREA", location=loc, rotation=rot)
         l = bpy.context.active_object; l.name = name
         l.data.energy = energy; l.data.size = size; l.data.color = color
+        l.visible_transmission = False   # camdan isik govdesi gorunmesin
         return l
-    area("key", (0.6, -0.5, 0.6), (math.radians(50), 0, math.radians(50)), 60, 0.5, (1.0, 0.93, 0.85))
-    area("rim", (-0.5, 0.6, 0.4), (math.radians(-60), 0, math.radians(-140)), 90, 0.3, (0.88, 0.94, 1.0))
-    area("fill", (-0.7, -0.6, 0.1), (math.radians(80), 0, math.radians(-50)), 15, 1.2)
+    area("key", (0.6, -0.5, 0.6), (math.radians(50), 0, math.radians(50)), 22, 0.5, (1.0, 0.90, 0.78))
+    area("rim", (-0.5, 0.6, 0.4), (math.radians(-60), 0, math.radians(-140)), 45, 0.3, (0.72, 0.86, 1.0))
+    f = area("fill", (-0.7, -0.6, 0.1), (math.radians(80), 0, math.radians(-50)), 6, 1.2)
+    f.visible_glossy = False   # camda softbox lekesi olmasin
     w = bpy.context.scene.world or bpy.data.worlds.new("World"); bpy.context.scene.world = w
     w.use_nodes = True; bg = w.node_tree.nodes["Background"]
     bg.inputs["Color"].default_value = (0.01, 0.011, 0.015, 1); bg.inputs["Strength"].default_value = 1.0
 
 def build_floor():
     m = mat_principled("floor", (0.03, 0.032, 0.04, 1), rough=0.25)
-    add_obj("floor", bpy.ops.mesh.primitive_plane_add, m, loc=(0, 0, -0.06), size=8)
+    add_obj("floor", bpy.ops.mesh.primitive_plane_add, m, loc=(0, 0, -0.22), size=8)
 
 # ---------------------------------------------------------------- camera
 def make_camera(focal=50, fstop=2.8, focus=None):
@@ -231,25 +303,27 @@ def shot_SH010(glasses):
     build_city_lights()
     tgt = bpy.data.objects.new("focus_010", None); bpy.context.collection.objects.link(tgt); tgt.location = (0.036, 0, 0)
     cam = make_camera(focal=85, fstop=2.8, focus=tgt)
-    key_loc(cam, 1, (0.18, -0.42, 0.06)); key_loc(cam, n, (0.06, -0.19, 0.02))
+    key_loc(cam, 1, (0.20, -0.46, 0.08)); key_loc(cam, n, (0.075, -0.25, 0.035))
     ease_all(cam); look_at(cam, tgt)
-    glasses.rotation_euler = (0, 0, math.radians(-12))
+    glasses.rotation_euler = (math.radians(-16), 0, math.radians(-24))
     return n
 
 def shot_SH050(glasses, phone, watch):
     """Bullet time: uc urun havada donmus, kamera 180 derece orbit + hafif yukselme."""
     n = SHOTS["SH050"]["frames"]
-    glasses.location = (0, 0, 0.02); glasses.rotation_euler = (math.radians(12), 0, math.radians(25))
-    phone.location = (-0.16, 0.05, 0.0); phone.rotation_euler = (math.radians(-10), math.radians(15), math.radians(-30))
-    watch.location = (0.15, 0.04, -0.01); watch.rotation_euler = (math.radians(15), math.radians(-20), math.radians(40))
+    glasses.location = (0, 0, 0.03); glasses.rotation_euler = (math.radians(12), 0, math.radians(25))
+    phone.location = (-0.128, 0.120, 0.082); phone.rotation_euler = (math.radians(-10), math.radians(15), math.radians(-30))
+    watch.location = (0.118, -0.058, -0.062); watch.rotation_euler = (math.radians(15), math.radians(-20), math.radians(40))
     pivot = bpy.data.objects.new("orbit_pivot", None); bpy.context.collection.objects.link(pivot)
-    cam = make_camera(focal=50, fstop=4.0, focus=glasses)
-    cam.parent = pivot; cam.location = (0, -0.75, 0.12)
+    cam = make_camera(focal=50, fstop=3.2, focus=glasses)
+    cam.parent = pivot; cam.location = (0, -0.72, 0.10)
     look_at(cam, glasses)
-    pivot.rotation_euler = (0, 0, math.radians(-90)); pivot.keyframe_insert("rotation_euler", frame=1)
-    pivot.rotation_euler = (0, 0, math.radians(90));  pivot.keyframe_insert("rotation_euler", frame=n)
+    pivot.rotation_euler = (0, 0, math.radians(-50)); pivot.keyframe_insert("rotation_euler", frame=1)
+    pivot.rotation_euler = (0, 0, math.radians(100)); pivot.keyframe_insert("rotation_euler", frame=n)
     key_loc(pivot, 1, (0, 0, -0.03)); key_loc(pivot, n, (0, 0, 0.06))
     ease_all(pivot)
+    fl = bpy.data.objects.get("floor")
+    if fl: fl.hide_render = True; fl.hide_viewport = True   # bullet time: karanlik sonsuzluk
     # havada asili his: her urun cok hafif sallanir
     for o, amp in ((glasses, 2), (phone, 3), (watch, 3)):
         r = o.rotation_euler.copy()
@@ -269,7 +343,9 @@ def shot_SH060(glasses, phone, watch):
     key_loc(cam, 1, (0.1, -0.7, 0.12)); key_loc(cam, n, (0.05, -1.5, 0.28))
     ease_all(cam); look_at(cam, tgt)
     mat_txt = mat_principled("text", (0.9, 0.9, 0.92, 1), rough=0.4, emission=(1, 1, 1, 1), emission_strength=0.6)
-    for name, body, size, z, f_in in (("logo", "evaglass", 0.09, 0.16, int(n*0.35)), ("cta", "Uygulamayi indir", 0.032, 0.11, int(n*0.55))):
+    for name, body, size, z, f_in in (("logo", "evaglass", 0.09, 0.17, int(n*0.30)),
+                                      ("cta", "Uygulamayi indir", 0.032, 0.12, int(n*0.50)),
+                                      ("url", "evatechnosoft.github.io/evaglass-releases", 0.025, 0.085, int(n*0.62))):
         bpy.ops.object.text_add(location=(0, 0.25, z), rotation=(math.radians(90), 0, 0))
         t = bpy.context.active_object; t.name = name; t.data.body = body; t.data.size = size; t.data.align_x = "CENTER"
         t.data.extrude = 0.001; t.data.materials.append(mat_txt)
@@ -302,7 +378,7 @@ def setup_render(n_frames, out_dir, shot):
 
 def build_common():
     clear_scene()
-    mat_frame = mat_principled("frame", (0.015, 0.015, 0.018, 1), rough=0.3)
+    mat_frame = mat_principled("frame", (0.010, 0.010, 0.011, 1), rough=0.48)  # mat siyah plastik
     mat_lens = mat_principled("lens", (1.0, 1.0, 1.0, 1), rough=0.01, transmission=1.0, ior=1.5)
     mat_body = mat_principled("device_body", (0.05, 0.05, 0.055, 1), rough=0.28, metal=0.6)
     mat_phone_scr = screen_material("phone_screen", args.screen_phone, (0.05, 0.35, 0.55, 1))

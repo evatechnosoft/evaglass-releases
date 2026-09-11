@@ -1,0 +1,8 @@
+venv/
+out/
+spot/out/
+deliver/
+audio/*.mp3
+__pycache__/
+*.blend1
+.kaggle/
