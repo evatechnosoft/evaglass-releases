@@ -95,21 +95,21 @@ def build_glasses(mat_frame, mat_lens):
     # alt kenarı hafif daralt (trapez): alt köşe vertexlerini içeri çek
     for v in front.data.vertices:
         if v.co.z < 0: v.co.x *= 0.95
-    bev = front.modifiers.new("bevel", "BEVEL"); bev.width = 0.0045; bev.segments = 8; bev.limit_method = "ANGLE"
+    bev = front.modifiers.new("bevel", "BEVEL"); bev.width = 0.0085; bev.segments = 12; bev.limit_method = "ANGLE"
     bpy.ops.object.modifier_apply(modifier=bev.name)
     # cam boşlukları: yuvarlatılmış dikdörtgen kesici (küp + bevel), camlar aynı şekille kesişim
     def rounded_cutter(name, x, depth):
-        """Wayfarer cam açıklığı: köşeler 4.5 mm yarıçaplı, alt kenar üstten %10 dar, dış alt köşe biraz daha kısa."""
+        """Wayfarer cam açıklığı: köşeler 8 mm yarıçaplı (fotoğraflardaki yumuşak form), alt kenar üstten %12 dar."""
         c = add_obj(name, bpy.ops.mesh.primitive_cube_add, None, loc=(x, 0, -0.002), size=1)
-        c.scale = (0.054, depth, 0.040)
+        c.scale = (0.058, depth, 0.0435)
         bpy.ops.object.select_all(action="DESELECT"); c.select_set(True); bpy.context.view_layer.objects.active = c
         bpy.ops.object.transform_apply(scale=True)
         outer = 1 if x > 0 else -1
         for v in c.data.vertices:
             if v.co.z < 0:
-                v.co.x *= 0.90                       # alt kenar daralır
+                v.co.x *= 0.88                       # alt kenar daralır
                 if (v.co.x > 0) == (outer > 0): v.co.z += 0.003  # dış alt köşe yukarı: Wayfarer eğimi
-        b = c.modifiers.new("bevel", "BEVEL"); b.width = 0.0045; b.segments = 8; b.limit_method = "NONE"
+        b = c.modifiers.new("bevel", "BEVEL"); b.width = 0.0080; b.segments = 12; b.limit_method = "NONE"
         bpy.ops.object.modifier_apply(modifier=b.name)
         return c
     for side, x in (("L", -0.0345), ("R", 0.0345)):
@@ -156,9 +156,19 @@ def build_glasses(mat_frame, mat_lens):
     smooth(ring); parts.append(ring)
     cam = add_obj("cam_lens", bpy.ops.mesh.primitive_cylinder_add, mat_cam, loc=(-0.061, -0.0072, 0.012), rot=(math.radians(90), 0, 0), radius=0.0028, depth=0.0008, vertices=32)
     smooth(cam); parts.append(cam)
-    # --- kırmızı anahtar: sol sap üstü, menteşeye yakın
-    sw = add_obj("switch", bpy.ops.mesh.primitive_cube_add, mat_red, loc=(-0.0705, 0.024, 0.0122), size=1)
-    sw.scale = (0.0035, 0.006, 0.0014); parts.append(sw)
+    # --- kontroller (sağ sap): sürterek ses şeridi, önünde kırmızı ve siyah tuş
+    mat_touch = mat_principled("touch", (0.02, 0.02, 0.02, 1), rough=0.22)   # parlak dokunmatik yüzey
+    mat_blk = mat_principled("switch_black", (0.015, 0.015, 0.015, 1), rough=0.35)
+    xr = 0.0705
+    strip = add_obj("touch_strip", bpy.ops.mesh.primitive_cube_add, mat_touch, loc=(xr, 0.072, 0.0114), size=1)
+    strip.scale = (0.0040, 0.030, 0.0009)
+    sb = strip.modifiers.new("bevel", "BEVEL"); sb.width = 0.0004; sb.segments = 3
+    parts.append(strip)
+    for name, mat, dy in (("switch_red", mat_red, 0.030), ("switch_black", mat_blk, 0.041)):
+        b = add_obj(name, bpy.ops.mesh.primitive_cube_add, mat, loc=(xr, dy, 0.0118), size=1)
+        b.scale = (0.0032, 0.0045, 0.0012)
+        bb = b.modifiers.new("bevel", "BEVEL"); bb.width = 0.0005; bb.segments = 4
+        parts.append(b)
     for p in parts: p.parent = root
     return root
 
@@ -379,7 +389,7 @@ def setup_render(n_frames, out_dir, shot):
 def build_common():
     clear_scene()
     mat_frame = mat_principled("frame", (0.010, 0.010, 0.011, 1), rough=0.48)  # mat siyah plastik
-    mat_lens = mat_principled("lens", (1.0, 1.0, 1.0, 1), rough=0.01, transmission=1.0, ior=1.5)
+    mat_lens = mat_principled("lens", (0.16, 0.16, 0.17, 1), rough=0.01, transmission=0.92, ior=1.52)  # fotokromik duman
     mat_body = mat_principled("device_body", (0.05, 0.05, 0.055, 1), rough=0.28, metal=0.6)
     mat_phone_scr = screen_material("phone_screen", args.screen_phone, (0.05, 0.35, 0.55, 1))
     mat_watch_scr = screen_material("watch_screen", args.screen_watch, (0.08, 0.5, 0.45, 1))
