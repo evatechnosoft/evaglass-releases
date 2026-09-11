@@ -48,6 +48,22 @@
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-wear-v0.1.1/evaitecOTA-0.1.1.apk",
       "sha256": "a263c7c448cef46f64d9a681b6b02fb6a8bb6668237d807d8d1bf4ea896ad07c",
       "notes": "Saate BİR KEZ ADB ile kurulur; sonraki uygulamalar bunun üzerinden gelir. 0.1.1: kurulu uygulamalar artık doğru görünüyor (paket görünürlüğü)."
+    },
+    {
+      "id": "netmovies-mini-watch",
+      "packageName": "com.evaitec.netmovies.wear",
+      "versionCode": 100,
+      "name": "NetMovies Mini",
+      "tagline": "Televizyonu bileğinizden sürün — kaydır yön, dokun OK.",
+      "platform": "watch",
+      "icon": "assets/evaitec-ota.svg",
+      "screenshots": [],
+      "version": "0.1.0",
+      "releaseDate": "2026-09-11",
+      "sizeBytes": 23063533,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.0/netmovies-mini-0.1.0.apk",
+      "sha256": "05083dd5a8128a599ce43408cc183f22083dcee5b3295aa30c9ba5f885f186af",
+      "notes": "Ev ağındaki NetMovies sunucusuna doğrudan bağlanır; telefon gerekmez. Bu dosyayı telefona kurmayın."
     }
   ]
 }
