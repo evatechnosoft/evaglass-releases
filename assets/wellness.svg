@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Wellness">
+  <defs>
+    <linearGradient id="wellnessRing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="0.55" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="96" height="96" rx="22" fill="#0b0d12"/>
+
+  <!-- Gunun hedef halkasi: uygulamanin ana ekranindaki protein halkasi. -->
+  <circle cx="48" cy="48" r="30" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="7"/>
+  <circle cx="48" cy="48" r="30" fill="none" stroke="url(#wellnessRing)" stroke-width="7"
+          stroke-linecap="round" stroke-dasharray="137 189" transform="rotate(-90 48 48)"/>
+
+  <!-- Nabiz cizgisi: halkanin icinde, olculen seyin kendisi. -->
+  <path d="M32 48h6l4-8 6 16 5-9h11" fill="none" stroke="#f4f6fb" stroke-opacity="0.92"
+        stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
