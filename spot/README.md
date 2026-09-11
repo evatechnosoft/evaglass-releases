@@ -17,8 +17,9 @@ Yerel makine (Quadro K620, 2 GB VRAM) yalnızca `.blend` dosyasını açıp kame
 ## Dosyalar
 
 - `blender/evaglass_spot.py` — SH010/SH050/SH060 sahnelerini sıfırdan kurar ve render eder. Blender 4.2+ ve `pip install bpy` (5.0) ile test edildi.
-- `kaggle/01_blender_render.ipynb` — Kaggle'da Blender indir, OPTIX ile render, mp4 üret.
-- `kaggle/02_wan22_broll.ipynb` — Wan 2.2 TI2V-5B ile B-roll. **Deneysel, T4'te doğrulanmadı.**
+- `kaggle/blender/01_blender_render.ipynb` — Kaggle'da Blender indir, OPTIX ile render, mp4 üret.
+- `kaggle/broll/02_wan22_broll.ipynb` — Wan 2.2 TI2V-5B ile B-roll. **Deneysel, T4'te doğrulanmadı.**
+- `kaggle/push.sh` — defteri Kaggle API ile gönderir, bitince çıktıları `spot/out/` altına indirir.
 - `prompts/wan22_prompts.json` — SH020 ve SH040 prompt'ları.
 
 ## Sizden gerekenler
@@ -27,6 +28,17 @@ Yerel makine (Quadro K620, 2 GB VRAM) yalnızca `.blend` dosyasını açıp kame
 2. Telefon ve saat uygulamasından 10–15 sn ekran kaydı. PNG dizisine çevirmek için:
    `ffmpeg -i phone.mp4 -vf fps=24 phone_frames/%04d.png`
 3. Bunları bir Kaggle Dataset olarak yükleyip defterdeki `GLASSES`, `SCREEN_PHONE`, `SCREEN_WATCH` yollarını doldurun.
+
+## Kaggle'a göndermek (tarayıcı gerekmez)
+
+```
+pip install kaggle
+# kaggle.com/settings -> API -> Create New Token -> kaggle.json dosyasini ~/.kaggle/ (Windows: %USERPROFILE%\.kaggle\) altina koy
+git clone -b claude/highfield-senior-animator-k39icv https://github.com/evatechnosoft/evaglass-releases
+cd evaglass-releases/spot/kaggle && ./push.sh blender      # Git Bash / WSL
+```
+
+Defter Kaggle'da GPU ile çalışır, betik bitene kadar bekler ve mp4'leri indirir. B-roll için `./push.sh broll`.
 
 ## Yerel hızlı test (GPU gerekmez)
 

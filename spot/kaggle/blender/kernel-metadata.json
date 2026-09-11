@@ -1,0 +1,15 @@
+{
+  "id": "KAGGLE_USERNAME/evaglass-spot-blender",
+  "title": "evaglass spot blender",
+  "code_file": "01_blender_render.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}
