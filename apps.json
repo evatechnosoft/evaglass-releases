@@ -2,6 +2,22 @@
   "updated": "2026-09-11",
   "apps": [
     {
+      "id": "evaitec-ota-mobile",
+      "packageName": "com.evaitec.ota.mobile",
+      "versionCode": 2,
+      "name": "evaitecOTA",
+      "tagline": "Telefona uygulama kuran ve guncelleyen yukleyici; saate de APK gonderir.",
+      "platform": "phone",
+      "icon": "assets/evaitec-ota.svg",
+      "screenshots": [],
+      "version": "0.1.1",
+      "releaseDate": "2026-09-11",
+      "sizeBytes": 396233,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.1/evaitecOTA-mobile-0.1.1.apk",
+      "sha256": "01438551c72f9b53873b4b16c92aa093bd6b895dbeb1374b868cc9fc8d75bca8",
+      "notes": "Android 11+. Bir kez elle kurulur; sonraki uygulamalar ve guncellemeler bunun uzerinden gelir."
+    },
+    {
       "id": "evaglass-phone",
       "packageName": "com.evaglass.app",
       "versionCode": 806,
