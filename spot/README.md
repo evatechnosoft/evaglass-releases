@@ -25,9 +25,10 @@ Yerel makine (Quadro K620, 2 GB VRAM) yalnızca `.blend` dosyasını açıp kame
 ## Sizden gerekenler
 
 1. Gözlüğün 3D modeli (`.glb` tercih) ya da düz arka planda 3 açıdan fotoğraf. Model yoksa betik yer tutucu bir gözlük çizer.
-2. Telefon ve saat uygulamasından 10–15 sn ekran kaydı. PNG dizisine çevirmek için:
-   `ffmpeg -i phone.mp4 -vf fps=24 phone_frames/%04d.png`
-3. Bunları bir Kaggle Dataset olarak yükleyip defterdeki `GLASSES`, `SCREEN_PHONE`, `SCREEN_WATCH` yollarını doldurun.
+2. Telefon ve saat uygulamasından 10–15 sn ekran kaydı (`phone.mp4`, `watch.mp4`). Betik mp4'ü doğrudan okur.
+3. Bunları `evaglass-assets` adıyla bir Kaggle Dataset olarak yükleyip defterdeki `GLASSES`, `SCREEN_PHONE`, `SCREEN_WATCH` yollarını doldurun.
+
+Ürün referans fotoğrafları `assets/ref/` altında; yer tutucu geometri bunlara göre çizildi (kalın mat siyah Wayfarer gövde, sol ön köşede kamera, sapta kırmızı anahtar, mikrofon delikleri, hoparlör yarıkları).
 
 ## Kaggle'a göndermek (tarayıcı gerekmez)
 
