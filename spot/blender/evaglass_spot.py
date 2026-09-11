@@ -131,7 +131,7 @@ def build_glasses(mat_frame, mat_lens):
         bpy.ops.object.select_all(action="DESELECT"); lens.select_set(True); bpy.context.view_layer.objects.active = lens
         bpy.ops.object.modifier_apply(modifier=m.name)
         bpy.data.objects.remove(shape, do_unlink=True)
-        smooth(lens); parts.append(lens)
+        parts.append(lens)  # düz levha: flat shading doğru, smooth buruşuk gösterir
     # --- saplar: kalın, elektronikli; uçta kulak kıvrımı
     for side, x, sgn in (("L", -0.070, -1), ("R", 0.070, 1)):
         hinge = add_obj(f"hinge_{side}", bpy.ops.mesh.primitive_cube_add, mat_frame, loc=(x, 0.006, 0.006), size=1)
