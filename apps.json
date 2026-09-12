@@ -1,6 +1,22 @@
 {
-  "updated": "2026-09-11",
+  "updated": "2026-09-12",
   "apps": [
+    {
+      "id": "evaitec-ota-tv",
+      "packageName": "com.evaitec.ota.tv",
+      "versionCode": 2,
+      "name": "evaitecOTA",
+      "tagline": "Televizyona uygulama kuran ve güncelleyen yükleyici.",
+      "platform": "tv",
+      "icon": "assets/evaitec-ota.svg",
+      "screenshots": [],
+      "version": "0.1.1",
+      "releaseDate": "2026-09-12",
+      "sizeBytes": 262841,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-tv-v0.1.1/evaitecOTA-tv-0.1.1.apk",
+      "sha256": "648df5ec682bdf438c8e8cfeda3b8ad5142ba9c8962513bcb20521ee7237e4a3",
+      "notes": "Televizyona BİR KEZ elle kurulur; sonraki uygulamalar ve güncellemeler bunun üzerinden gelir. D-pad ile gezilir."
+    },
     {
       "id": "evaitec-ota-mobile",
       "packageName": "com.evaitec.ota.mobile",
@@ -112,6 +128,22 @@
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-v0.1.80/netmovies-0.1.80.apk",
       "sha256": "9e9dd4d3d8280d555314431b51f070b332724cdedffc5a2324a614c3a459af44",
       "notes": "Aynı APK Android TV'de de çalışır. Telefonda kumandadır: seçilen içerik televizyonda açılır, telefonda değil."
+    },
+    {
+      "id": "netmovies-tv",
+      "packageName": "com.evaitec.netmovies.tv",
+      "versionCode": 10080,
+      "name": "NetMovies",
+      "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
+      "platform": "tv",
+      "icon": "assets/netmovies-phone.svg",
+      "screenshots": [],
+      "version": "0.1.80",
+      "releaseDate": "2026-09-12",
+      "sizeBytes": 20084862,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-v0.1.80/netmovies-0.1.80.apk",
+      "sha256": "9e9dd4d3d8280d555314431b51f070b332724cdedffc5a2324a614c3a459af44",
+      "notes": "Telefon sürümüyle aynı APK; televizyonda oynatıcı olarak açılır."
     }
   ]
 }

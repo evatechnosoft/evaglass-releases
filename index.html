@@ -161,6 +161,7 @@
   var PLATFORM = {
     phone: { label: 'Telefon', path: 'M7 2h10v20H7z M10 19h4' },
     watch: { label: 'Saat', path: 'M6 8h12v8H6z M9 8V4h6v4 M9 16v4h6v-4' },
+    tv:    { label: 'TV', path: 'M3 6h18v11H3z M9 21h6' },
     both:  { label: 'Telefon + Saat', path: 'M4 3h8v18H4z M15 8h5v8h-5z' }
   };
 
@@ -277,6 +278,9 @@
     if (app.notes) c.appendChild(el('p', 'note', app.notes));
     if (app.platform === 'watch') {
       c.appendChild(el('p', 'note', 'Telefondan saate kurulamaz — saatin tarayıcısından indirin ya da ADB ile aktarın.'));
+    }
+    if (app.platform === 'tv') {
+      c.appendChild(el('p', 'note', 'Televizyona ilk kurulum elle yapılır (ADB ya da TV’nin indirme uygulaması); sonrası evaitecOTA üzerinden gelir.'));
     }
 
     var sha = shaNode(app);
