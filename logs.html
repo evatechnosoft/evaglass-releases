@@ -60,14 +60,18 @@
 <main>
   <p class="eyebrow">evaglass</p>
   <h1>Log <span class="grad">monitörü</span></h1>
-  <p class="lede">Cihazın canlı hata ayıklama kaydını Azure Blob üzerinden okur. Bağlantı bilgisi yalnızca bu tarayıcıda saklanır, hiçbir sunucuya gönderilmez.</p>
+  <p class="lede">Cihazın canlı hata ayıklama kaydını <strong>geçitten</strong> okur: uygulama 5 saniyede bir yeni satırları yolluyor, geçit aynı oturum dosyasına ekliyor. Anahtar yalnızca bu tarayıcıda saklanır.</p>
 
   <section class="card" id="config-card" aria-labelledby="cfg-title">
     <h2 id="cfg-title">Bağlantı</h2>
     <div id="cfg-empty">
-      <label class="field-label" for="url-input">Blob log URL'i (SAS token dahil, tam okuma linki)</label>
+      <label class="field-label" for="url-input">Geçit adresi</label>
+      <div class="row" style="margin-bottom:10px;">
+        <input type="text" id="url-input" placeholder="https://evaglass-gateway.azurewebsites.net/api" value="https://evaglass-gateway.azurewebsites.net/api" style="flex:1; min-width:260px;">
+      </div>
+      <label class="field-label" for="key-input">Function key (<code>x-functions-key</code> değeri)</label>
       <div class="row">
-        <input type="text" id="url-input" placeholder="https://…blob.core.windows.net/…/logs/live.txt?sv=…(SAS)" style="flex:1; min-width:260px;">
+        <input type="password" id="key-input" placeholder="…" style="flex:1; min-width:260px;">
         <button class="btn" id="save-url-btn">Kaydet</button>
       </div>
       <p class="stat" id="cfg-error" style="color:var(--err); margin-top:8px;" hidden></p>
@@ -107,8 +111,8 @@
   <section class="card">
     <details class="help">
       <summary>CORS hatası mı alıyorsunuz?</summary>
-      <p style="margin-top:10px;">Blob hesabı tarayıcıdan doğrudan okunuyor. Hesapta CORS kuralı yoksa istek tarayıcı tarafından engellenir (genelde konsolda "CORS" veya "network error" görülür, durum rozeti de hatayı gösterir). Çözüm: Azure portalda ilgili Storage Account → <code>Resource sharing (CORS)</code> → Blob service altına şu kuralı ekleyin — Origin: <code>https://evatechnosoft.github.io</code>, Metodlar: <code>GET, HEAD</code>, İzin verilen başlıklar: <code>*</code>, Max age: <code>3600</code>.</p>
-      <p>403 hatası alırsanız SAS token'ının süresi dolmuş olabilir — yeni bir SAS linki üretip yukarıya yeniden yapıştırın.</p>
+      <p style="margin-top:10px;">Geçidin (Azure Function) izin verdiği origin listesinde bu sayfanın adresi olmalı: <code>https://evatechnosoft.github.io</code>. Eklemek için <code>az functionapp cors add -n evaglass-gateway -g rg-evaitec-foundry-dev --allowed-origins https://evatechnosoft.github.io</code>.</p>
+      <p>Anahtar sorgu dizesinde (<code>?code=</code>) gider; özel başlık olmadığı için tarayıcı preflight yapmaz. 401/403 görüyorsanız anahtar yanlıştır.</p>
     </details>
   </section>
 
@@ -121,7 +125,9 @@
 <script>
 (function () {
   'use strict';
-  var STORAGE_KEY = 'evaglass_log_url';
+  // Geçit adresi + function key. Anahtar `?code=` ile gider: özel başlık olmadığı için
+  // tarayıcı preflight yapmaz (basit istek) — CORS yalnız Function App'in origin listesine bağlı.
+  var STORAGE_KEY = 'evaglass_log_gateway';
 
   function safeGet() { try { return localStorage.getItem(STORAGE_KEY); } catch (e) { return null; } }
   function safeSet(v) { try { localStorage.setItem(STORAGE_KEY, v); return true; } catch (e) { return false; } }
@@ -131,6 +137,7 @@
   var cfgSet = document.getElementById('cfg-set');
   var cfgError = document.getElementById('cfg-error');
   var urlInput = document.getElementById('url-input');
+  var keyInput = document.getElementById('key-input');
   var saveBtn = document.getElementById('save-url-btn');
   var forgetBtn = document.getElementById('forget-btn');
   var viewerCard = document.getElementById('viewer-card');
@@ -164,21 +171,33 @@
     if (agoTimer) { clearInterval(agoTimer); agoTimer = null; }
   }
 
+  /** Kayıtlı geçit adresi + anahtardan en yeni oturumun ham log URL'ini kurar. */
+  function logUrl(stored) {
+    var base = stored.base.replace(/\/+$/, '');
+    return base + '/log?index=0&code=' + encodeURIComponent(stored.key);
+  }
+
   saveBtn.addEventListener('click', function () {
-    var v = (urlInput.value || '').trim();
+    var base = (urlInput.value || '').trim();
+    var key = (keyInput.value || '').trim();
     cfgError.hidden = true;
-    if (v.indexOf('https://') !== 0) {
-      cfgError.textContent = 'Geçersiz bağlantı: URL "https://" ile başlamalı.';
+    if (base.indexOf('https://') !== 0) {
+      cfgError.textContent = 'Geçersiz adres: geçit URL'i "https://" ile başlamalı.';
       cfgError.hidden = false;
       return;
     }
-    if (!safeSet(v)) {
+    if (!key) {
+      cfgError.textContent = 'Function key boş olamaz — uygulamadaki geçit anahtarının aynısı.';
+      cfgError.hidden = false;
+      return;
+    }
+    if (!safeSet(JSON.stringify({ base: base, key: key }))) {
       cfgError.textContent = 'Tarayıcı depolamasına yazılamadı (özel pencere olabilir).';
       cfgError.hidden = false;
       return;
     }
-    urlInput.value = '';
-    applyConfigured(v);
+    keyInput.value = '';
+    applyConfigured(logUrl({ base: base, key: key }));
   });
 
   forgetBtn.addEventListener('click', function () {
@@ -244,14 +263,26 @@
   autoscrollToggle.addEventListener('change', renderLines);
 
   function friendlyError(err, status) {
-    if (status === 403) return 'Erişim reddedildi (403). SAS süresi dolmuş olabilir, yeni URL yapıştır.';
-    if (status === 404) return 'Dosya bulunamadı (404). Yol veya hesap adı doğru mu kontrol edin.';
+    if (status === 401 || status === 403) return 'Erişim reddedildi (' + status + '). Function key yanlış olabilir.';
+    if (status === 404) return 'Henüz kayıt yok (404) — uygulama debug sürümü açık ve geçit adresi ayarlı mı?';
     if (status) return 'Sunucu hatası (HTTP ' + status + ').';
     return 'İstek başarısız — CORS engeli, ağ sorunu veya adres hatalı olabilir. Aşağıdaki CORS yardımına bakın.';
   }
 
+  /** Depoda JSON tutulur; eski sürümden kalan düz URL varsa olduğu gibi kullanılır. */
+  function storedUrl() {
+    var raw = safeGet();
+    if (!raw) return null;
+    try {
+      var o = JSON.parse(raw);
+      return (o && o.base && o.key) ? logUrl(o) : null;
+    } catch (e) {
+      return raw.indexOf('https://') === 0 ? raw : null;
+    }
+  }
+
   function doFetch() {
-    var url = safeGet();
+    var url = storedUrl();
     if (!url) { applyUnconfigured(); return; }
     setStatus('pending', 'yükleniyor…');
 
@@ -288,7 +319,7 @@
   autoToggle.addEventListener('change', function () { scheduleFetch(true); });
   intervalSelect.addEventListener('change', function () { scheduleFetch(true); });
 
-  var existing = safeGet();
+  var existing = storedUrl();
   if (existing) { applyConfigured(existing); } else { applyUnconfigured(); }
 })();
 </script>
