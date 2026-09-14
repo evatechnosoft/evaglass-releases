@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-12",
+  "updated": "2026-09-14",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -132,18 +132,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 10080,
+      "versionCode": 20005,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.1.80",
-      "releaseDate": "2026-09-12",
-      "sizeBytes": 20084862,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-v0.1.80/netmovies-0.1.80.apk",
-      "sha256": "9e9dd4d3d8280d555314431b51f070b332724cdedffc5a2324a614c3a459af44",
-      "notes": "Telefon sürümüyle aynı APK; televizyonda oynatıcı olarak açılır."
+      "version": "0.2.5",
+      "releaseDate": "2026-09-14",
+      "sizeBytes": 20215934,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.2.5/netmovies-tv-0.2.5.apk",
+      "sha256": "e9c03367776620cc6a3343704dfe4fcc7ee44db92e585eabb15acb221953b309",
+      "notes": "Ev ağındaki NetMovies sunucusuna bağlanır. Canlı TV, ajanda, arama ve kumanda dahil. Güncellemeler uygulama içinden de gelir."
     }
   ]
 }
