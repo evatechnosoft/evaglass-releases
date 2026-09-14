@@ -144,6 +144,38 @@
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.2.5/netmovies-tv-0.2.5.apk",
       "sha256": "e9c03367776620cc6a3343704dfe4fcc7ee44db92e585eabb15acb221953b309",
       "notes": "Ev ağındaki NetMovies sunucusuna bağlanır. Canlı TV, ajanda, arama ve kumanda dahil. Güncellemeler uygulama içinden de gelir."
+    },
+    {
+      "packageName": "app.morphe.manager",
+      "versionCode": 39827570,
+      "name": "Morphe",
+      "version": "1.30.0",
+      "releaseDate": "2026-09-14",
+      "sizeBytes": 18574280,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/morphe-manager-v1.30.0/morphe-manager-1.30.0.apk",
+      "sha256": "37a608c38f9a65ed7296ead2c02f9b411a926227159049ab3b199390e30d603c",
+      "icon": "assets/evaitec-ota.svg",
+      "screenshots": [],
+      "id": "morphe-tv",
+      "platform": "tv",
+      "tagline": "APK yamalayıcı — üçüncü parti araç.",
+      "notes": "Evaitec ürünü değil. TV'de Google Play Hizmetleri gerektirir; bazı özellikleri Android 11 ister."
+    },
+    {
+      "packageName": "app.morphe.manager",
+      "versionCode": 39827570,
+      "name": "Morphe",
+      "version": "1.30.0",
+      "releaseDate": "2026-09-14",
+      "sizeBytes": 18574280,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/morphe-manager-v1.30.0/morphe-manager-1.30.0.apk",
+      "sha256": "37a608c38f9a65ed7296ead2c02f9b411a926227159049ab3b199390e30d603c",
+      "icon": "assets/evaitec-ota.svg",
+      "screenshots": [],
+      "id": "morphe-phone",
+      "platform": "phone",
+      "tagline": "APK yamalayıcı — üçüncü parti araç.",
+      "notes": "Evaitec ürünü değil. Yamalama işini telefonda yapıp çıkan APK'yı TV'ye kurmak en sağlam yol."
     }
   ]
 }
