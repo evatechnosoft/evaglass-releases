@@ -4,17 +4,17 @@
     {
       "id": "evaitec-ota-tv",
       "packageName": "com.evaitec.ota.tv",
-      "versionCode": 11,
+      "versionCode": 12,
       "name": "evaitecOTA",
       "tagline": "Televizyona uygulama kuran ve güncelleyen yükleyici.",
       "platform": "tv",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.10",
+      "version": "0.1.11",
       "releaseDate": "2026-09-15",
-      "sizeBytes": 188541,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-tv-v0.1.10/evaitecOTA-tv-0.1.10.apk",
-      "sha256": "335eeca474f1aadc42b8f143fd3934c555f1c5eb4d8dfebc9275a0e8d952ac1d",
+      "sizeBytes": 188821,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-tv-v0.1.11/evaitecOTA-tv-0.1.11.apk",
+      "sha256": "6e9ade2a2e9e32cf8ee03f50522b1d252c23d92e73d813716aa5e13d4e31496a",
       "notes": "Televizyona BİR KEZ elle kurulur; sonraki uygulamalar ve güncellemeler bunun üzerinden gelir. Android 8.1 ve üzeri (Mi Box dahil). D-pad ile gezilir."
     },
     {
