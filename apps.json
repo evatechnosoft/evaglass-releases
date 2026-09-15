@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 208,
+      "versionCode": 300,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.2.8",
-      "releaseDate": "2026-09-14",
-      "sizeBytes": 20215930,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.2.8/netmovies-tv-0.2.8.apk",
-      "sha256": "845c2871af4e9b2ba3a838e1cb89601c820c5ef427642bfd2e88ff66cd65da21",
-      "notes": "Aynı APK televizyonda da çalışır; telefonda kumandadır — seçilen içerik TV'de açılır. Android 8.0+."
+      "version": "0.3.0",
+      "releaseDate": "2026-09-15",
+      "sizeBytes": 20232318,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.0/netmovies-tv-0.3.0.apk",
+      "sha256": "e0a82248478820fd8b411c7770a56f7d98da27b019ee7428193cf31b5ff9cf50",
+      "notes": "Oynatıcıda alt kumanda barı: önceki/sonraki bölüm, sarma, oynat, bölüm listesi, dakika ve ayarlar tek şeritte, küçük ikonlarla ve kumandayla gezilebilir (AŞAĞI tuşu açar). Dakika tuş takımı artık sol altta küçük bir kutu, telefon düzeninde 4x4. Favorilerdeki yerli diziler oynamıyordu, düzeldi; kaynak araması yüklü tüm sağlayıcıları tarıyor."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 208,
+      "versionCode": 300,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.2.8",
-      "releaseDate": "2026-09-14",
-      "sizeBytes": 20215930,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.2.8/netmovies-tv-0.2.8.apk",
-      "sha256": "845c2871af4e9b2ba3a838e1cb89601c820c5ef427642bfd2e88ff66cd65da21",
-      "notes": "Ev ağındaki NetMovies sunucusuna bağlanır. Canlı TV, ajanda, arama ve kumanda dahil. Güncellemeler uygulama içinden de gelir."
+      "version": "0.3.0",
+      "releaseDate": "2026-09-15",
+      "sizeBytes": 20232318,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.0/netmovies-tv-0.3.0.apk",
+      "sha256": "e0a82248478820fd8b411c7770a56f7d98da27b019ee7428193cf31b5ff9cf50",
+      "notes": "Oynatıcıda alt kumanda barı: önceki/sonraki bölüm, sarma, oynat, bölüm listesi, dakika ve ayarlar tek şeritte, küçük ikonlarla ve kumandayla gezilebilir (AŞAĞI tuşu açar). Dakika tuş takımı artık sol altta küçük bir kutu, telefon düzeninde 4x4. Favorilerdeki yerli diziler oynamıyordu, düzeldi; kaynak araması yüklü tüm sağlayıcıları tarıyor."
     }
   ]
 }
