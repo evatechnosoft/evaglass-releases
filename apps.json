@@ -84,18 +84,18 @@
     {
       "id": "netmovies-mini-watch",
       "packageName": "com.evaitec.netmovies.wear",
-      "versionCode": 102,
+      "versionCode": 103,
       "name": "NetMovies Mini",
       "tagline": "Televizyonu bileğinizden sürün — kaydır yön, dokun OK.",
       "platform": "watch",
       "icon": "assets/netmovies-watch.svg",
       "screenshots": [],
-      "version": "0.1.2",
-      "releaseDate": "2026-09-12",
-      "sizeBytes": 23112685,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.2/netmovies-mini-0.1.2.apk",
-      "sha256": "0f698cc6a1619bb31ed8878612423a68977ae6df11764e8e7818226ae25c9f7b",
-      "notes": "Halka (döner çerçeve) ile sarma, ana menü düğmesi. Ev ağındaki NetMovies sunucusuna doğrudan bağlanır; telefon gerekmez."
+      "version": "0.1.3",
+      "releaseDate": "2026-09-15",
+      "sizeBytes": 23178305,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.3/netmovies-mini-0.1.3.apk",
+      "sha256": "d6fb919772cbc8d85fc04053aa779b91e76f389a1d2c7830e4985984d5971e28",
+      "notes": "Sesli arama ve sesli komut: mikrofona söyle — \"inception aç\" arar, \"10 saniye geri al\" / \"sesi kıs\" doğrudan televizyona gider. Döner çerçeve tek düğmeyle sarma ⟷ ses arasında geçer. Açılış hızlandı: Devam Et anında gelir."
     },
     {
       "id": "wellness-phone",
