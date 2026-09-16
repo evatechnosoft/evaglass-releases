@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 301,
+      "versionCode": 302,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.3.1",
-      "releaseDate": "2026-09-15",
+      "version": "0.3.2",
+      "releaseDate": "2026-09-16",
       "sizeBytes": 20248698,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.1/netmovies-tv-0.3.1.apk",
-      "sha256": "d6e5ee2c121d89aee0cb07eeb9cf003efdf442521f5fcf124a08f10b5c938dcb",
-      "notes": "Bölüm seçimi ayrı bir sayfa oldu: kutucuk ızgarasında önce sezon, sonra bölüm; GERİ bir sayfa geri alır. Panelin içindeki iç içe sezon rafı + bölüm listesi kaldırıldı. Alt kumanda barı ve sol alttaki 4x4 dakika tuş takımı da bu sürümde."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.2/netmovies-tv-0.3.2.apk",
+      "sha256": "5c907209006cd54efa3f532bf20ca35fb508df91abd165bf0daf5d053f8d00a7",
+      "notes": "Sarma düzeltildi: basılı tutma tek seek yapar, bırakınca kaldığın yerde devam eder, art arda basışlar birikir (+10 +10 +10). Basılı tutma kademeli hızlanır (10 sn → 30 sn → 1 dk). OK sarmayı olduğu yerde durdurur. Kumandanın ⏪⏩ tuşları da aynı motoru kullanır."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 301,
+      "versionCode": 302,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.3.1",
-      "releaseDate": "2026-09-15",
+      "version": "0.3.2",
+      "releaseDate": "2026-09-16",
       "sizeBytes": 20248698,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.1/netmovies-tv-0.3.1.apk",
-      "sha256": "d6e5ee2c121d89aee0cb07eeb9cf003efdf442521f5fcf124a08f10b5c938dcb",
-      "notes": "Bölüm seçimi ayrı bir sayfa oldu: kutucuk ızgarasında önce sezon, sonra bölüm; GERİ bir sayfa geri alır. Panelin içindeki iç içe sezon rafı + bölüm listesi kaldırıldı. Alt kumanda barı ve sol alttaki 4x4 dakika tuş takımı da bu sürümde."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.2/netmovies-tv-0.3.2.apk",
+      "sha256": "5c907209006cd54efa3f532bf20ca35fb508df91abd165bf0daf5d053f8d00a7",
+      "notes": "Sarma düzeltildi: basılı tutma tek seek yapar, bırakınca kaldığın yerde devam eder, art arda basışlar birikir (+10 +10 +10). Basılı tutma kademeli hızlanır (10 sn → 30 sn → 1 dk). OK sarmayı olduğu yerde durdurur. Kumandanın ⏪⏩ tuşları da aynı motoru kullanır."
     }
   ]
 }
