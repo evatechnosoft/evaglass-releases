@@ -84,18 +84,18 @@
     {
       "id": "netmovies-mini-watch",
       "packageName": "com.evaitec.netmovies.wear",
-      "versionCode": 109,
+      "versionCode": 110,
       "name": "NetMovies Mini",
       "tagline": "Televizyonu bileğinizden sürün — kaydır yön, dokun OK.",
       "platform": "watch",
       "icon": "assets/netmovies-watch.svg",
       "screenshots": [],
-      "version": "0.1.9",
+      "version": "0.1.10",
       "releaseDate": "2026-09-16",
-      "sizeBytes": 23243937,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.9/netmovies-wear-0.1.9.apk",
-      "sha256": "0f95437d8b7a96bcf0e460d3662496f758f0ae421029ef68a40447ed77466976",
-      "notes": "Ana ekran sabit ince şerit (yerleşim artık kaymıyor), iki düğme (uzun basış ikinci iş), alt kenarda yarım daire sarma/ses alanı."
+      "sizeBytes": 23243933,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.10/netmovies-wear-0.1.10.apk",
+      "sha256": "4d343fd33c171ebd1284bb2da10630b66f84637f39f908d1d319b3124549f403",
+      "notes": "Üç kip düğmesi (saatte gezin / sarma / ses), mikrofon öne geldi, TV ana ekranı uzun basışta. Kip 5 sn sonra varsayılana döner: film oynuyorsa ses, oynamıyorsa gezinme."
     },
     {
       "id": "wellness-phone",
