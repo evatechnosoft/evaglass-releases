@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 308,
+      "versionCode": 309,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.3.8",
+      "version": "0.3.9",
       "releaseDate": "2026-09-16",
       "sizeBytes": 20248702,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.8/netmovies-tv-0.3.8.apk",
-      "sha256": "6d2c5245afd94de91a2d61a227e15115276bbb899ae6af0f3daa81f14e862097",
-      "notes": "Sağlayıcının kısa uyarı klibi artık bölüm sayılmıyor, zincirleme bölüm atlaması durdu. Bölüm seçicide sezon seçilebiliyor. Ayarlarda kaynak listesi ayrı alt sayfada."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.9/netmovies-tv-0.3.9.apk",
+      "sha256": "403e25831e83b30a0ce3fa71c8909652850da6e2940023e8bedaa5c231868dd3",
+      "notes": "Bolum secici ve Ayarlar menusu tam genislik satir listesi (list tile) oldu."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 308,
+      "versionCode": 309,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.3.8",
+      "version": "0.3.9",
       "releaseDate": "2026-09-16",
       "sizeBytes": 20248702,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.8/netmovies-tv-0.3.8.apk",
-      "sha256": "6d2c5245afd94de91a2d61a227e15115276bbb899ae6af0f3daa81f14e862097",
-      "notes": "Sağlayıcının kısa uyarı klibi artık bölüm sayılmıyor, zincirleme bölüm atlaması durdu. Bölüm seçicide sezon seçilebiliyor. Ayarlarda kaynak listesi ayrı alt sayfada."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.9/netmovies-tv-0.3.9.apk",
+      "sha256": "403e25831e83b30a0ce3fa71c8909652850da6e2940023e8bedaa5c231868dd3",
+      "notes": "Bolum secici ve Ayarlar menusu tam genislik satir listesi (list tile) oldu."
     }
   ]
 }
