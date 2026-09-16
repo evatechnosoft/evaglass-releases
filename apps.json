@@ -84,18 +84,18 @@
     {
       "id": "netmovies-mini-watch",
       "packageName": "com.evaitec.netmovies.wear",
-      "versionCode": 106,
+      "versionCode": 107,
       "name": "NetMovies Mini",
       "tagline": "Televizyonu bileğinizden sürün — kaydır yön, dokun OK.",
       "platform": "watch",
       "icon": "assets/netmovies-watch.svg",
       "screenshots": [],
-      "version": "0.1.6",
+      "version": "0.1.7",
       "releaseDate": "2026-09-16",
-      "sizeBytes": 23211145,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.6/netmovies-wear-0.1.6.apk",
-      "sha256": "c2aa960f2c5147303890701cd30e3418b6fad67d28794dfdb38d69820cb19cae",
-      "notes": "Uygulama kendi kendini günceller ve kurulum sonucu ekranda görünür (onay bekleniyor / iptal edildi / imza farklı). Listeler yuvarlak kadrana oturdu, döner çerçeveyle kaydırılıyor."
+      "sizeBytes": 23227529,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.7/netmovies-wear-0.1.7.apk",
+      "sha256": "b535ff36498c00f58f7c41a5d993a59b8dd6a40a4b9476ba7ad159d5cf70217f",
+      "notes": "Posterler kadran kenarında yay üzerinde, döner çerçeveyle geziliyor ve merkezdeki büyüyor. Halka üç kipli. Oynat-duraklat ve GERİ ayrı düğmeler."
     },
     {
       "id": "wellness-phone",
@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 306,
+      "versionCode": 307,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.3.6",
+      "version": "0.3.7",
       "releaseDate": "2026-09-16",
-      "sizeBytes": 20248698,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.6/netmovies-tv-0.3.6.apk",
-      "sha256": "beab2c58f25df41de530c811629b330782b90d8df7b1532c9a8ba21b1e562af3",
-      "notes": "Ayarlar paneli sadeleşti: kaynak listesi ayrı alt sayfada, ana panelde seçili kaynak tek satır. Ajanda üç adım (Bu Hafta · Bu Ay · Geçmiş), birikimli sarma, bölüm kimliği S4B8."
+      "sizeBytes": 20248702,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.7/netmovies-tv-0.3.7.apk",
+      "sha256": "d02319e18365f9c5dd85356243d126adbdd9c8bfb6a15d6b4531b6198a65cfda",
+      "notes": "Bölüm seçicide sezon seçilebiliyor, kutucuklar küçüldü. Ayarlarda kaynak listesi ayrı alt sayfada. Ajanda üç adım, birikimli sarma."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 306,
+      "versionCode": 307,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.3.6",
+      "version": "0.3.7",
       "releaseDate": "2026-09-16",
-      "sizeBytes": 20248698,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.6/netmovies-tv-0.3.6.apk",
-      "sha256": "beab2c58f25df41de530c811629b330782b90d8df7b1532c9a8ba21b1e562af3",
-      "notes": "Ayarlar paneli sadeleşti: kaynak listesi ayrı alt sayfada, ana panelde seçili kaynak tek satır. Ajanda üç adım (Bu Hafta · Bu Ay · Geçmiş), birikimli sarma, bölüm kimliği S4B8."
+      "sizeBytes": 20248702,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.7/netmovies-tv-0.3.7.apk",
+      "sha256": "d02319e18365f9c5dd85356243d126adbdd9c8bfb6a15d6b4531b6198a65cfda",
+      "notes": "Bölüm seçicide sezon seçilebiliyor, kutucuklar küçüldü. Ayarlarda kaynak listesi ayrı alt sayfada. Ajanda üç adım, birikimli sarma."
     }
   ]
 }
