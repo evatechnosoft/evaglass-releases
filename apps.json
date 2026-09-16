@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 302,
+      "versionCode": 303,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.3.2",
+      "version": "0.3.3",
       "releaseDate": "2026-09-16",
       "sizeBytes": 20248698,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.2/netmovies-tv-0.3.2.apk",
-      "sha256": "5c907209006cd54efa3f532bf20ca35fb508df91abd165bf0daf5d053f8d00a7",
-      "notes": "Sarma düzeltildi: basılı tutma tek seek yapar, bırakınca kaldığın yerde devam eder, art arda basışlar birikir (+10 +10 +10). Basılı tutma kademeli hızlanır (10 sn → 30 sn → 1 dk). OK sarmayı olduğu yerde durdurur. Kumandanın ⏪⏩ tuşları da aynı motoru kullanır."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.3/netmovies-tv-0.3.3.apk",
+      "sha256": "13bc6a1793a22360d1e1e6e81269d317b075071ba296b4cebb6b1da92f0d1fa8",
+      "notes": "Devam Et artık gerçek bölüm numarasını tutuyor (S4B8). Reacher'da \"123. bölüm\" yazan hatalı etiket bitti; sağlayıcı değişse de doğru bölüm bulunuyor, webde izlenen bölüm TV'de eşleşiyor. Sarma motoru (0.3.2): basılı tutma tek seek, bırakınca kaldığın yerde devam, art arda basışlar birikir."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 302,
+      "versionCode": 303,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.3.2",
+      "version": "0.3.3",
       "releaseDate": "2026-09-16",
       "sizeBytes": 20248698,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.2/netmovies-tv-0.3.2.apk",
-      "sha256": "5c907209006cd54efa3f532bf20ca35fb508df91abd165bf0daf5d053f8d00a7",
-      "notes": "Sarma düzeltildi: basılı tutma tek seek yapar, bırakınca kaldığın yerde devam eder, art arda basışlar birikir (+10 +10 +10). Basılı tutma kademeli hızlanır (10 sn → 30 sn → 1 dk). OK sarmayı olduğu yerde durdurur. Kumandanın ⏪⏩ tuşları da aynı motoru kullanır."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.3/netmovies-tv-0.3.3.apk",
+      "sha256": "13bc6a1793a22360d1e1e6e81269d317b075071ba296b4cebb6b1da92f0d1fa8",
+      "notes": "Devam Et artık gerçek bölüm numarasını tutuyor (S4B8). Reacher'da \"123. bölüm\" yazan hatalı etiket bitti; sağlayıcı değişse de doğru bölüm bulunuyor, webde izlenen bölüm TV'de eşleşiyor. Sarma motoru (0.3.2): basılı tutma tek seek, bırakınca kaldığın yerde devam, art arda basışlar birikir."
     }
   ]
 }
