@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.8.7.apk",
-  "versionCode": 807,
-  "versionName": "0.8.7",
-  "sha256": "fd580161157d8f3ac794282d1184f7892ec3675a287221f4500fc343080e9f2d",
+  "apk": "evaglass-0.8.8.apk",
+  "versionCode": 808,
+  "versionName": "0.8.8",
+  "sha256": "6194cc972010a718e76f553568eb7777a9409bcc44eb209ce27781bd0b39eb67",
   "releaseDate": "2026-09-16",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.7/evaglass-0.8.7.apk",
-  "notes": "Cihazsiz sinav yuzeyi: sahte gozluk HTTP sunucusu uzerinde transfer testleri (528 JVM + 13 pytest). OTA sertlestirmesi: APK indirme adresi de https zorunlu (manifest'in mutlak url alani uzaktan belirleniyordu). Gecidin butce/dosya kapilari testle baglandi. 13.09 saha duzenlemeleri (parametre/IP-envanter sorgulari, 0x48 mod elemesi) ve okunabilir log zinciri bu surumde.",
-  "wearApk": "evaglass-watch-0.8.7.apk",
-  "wearSha256": "6523d01b4846c55dc2110ddcc9956cb30f17586db29746d0968e5ad4811187bf",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.7/evaglass-watch-0.8.7.apk"
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.8/evaglass-0.8.8.apk",
+  "notes": "Saha turu icin: otomatik gunluk akisi release'de de acik (gecici bayrak LOG_AUTO_UPLOAD; urun yayinindan once kapanacak). Gonder dugmesine basmaya gerek yok, log 5 sn'de bir gecide gider.",
+  "wearApk": "evaglass-watch-0.8.8.apk",
+  "wearSha256": "4b2236e27df8f7ea8892e7e55f4086c96a7806f15726f5de2af2ef99a534ccc5",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.8/evaglass-watch-0.8.8.apk"
 }
