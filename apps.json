@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 307,
+      "versionCode": 308,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.3.7",
+      "version": "0.3.8",
       "releaseDate": "2026-09-16",
       "sizeBytes": 20248702,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.7/netmovies-tv-0.3.7.apk",
-      "sha256": "d02319e18365f9c5dd85356243d126adbdd9c8bfb6a15d6b4531b6198a65cfda",
-      "notes": "Bölüm seçicide sezon seçilebiliyor, kutucuklar küçüldü. Ayarlarda kaynak listesi ayrı alt sayfada. Ajanda üç adım, birikimli sarma."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.8/netmovies-tv-0.3.8.apk",
+      "sha256": "6d2c5245afd94de91a2d61a227e15115276bbb899ae6af0f3daa81f14e862097",
+      "notes": "Sağlayıcının kısa uyarı klibi artık bölüm sayılmıyor, zincirleme bölüm atlaması durdu. Bölüm seçicide sezon seçilebiliyor. Ayarlarda kaynak listesi ayrı alt sayfada."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 307,
+      "versionCode": 308,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.3.7",
+      "version": "0.3.8",
       "releaseDate": "2026-09-16",
       "sizeBytes": 20248702,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.7/netmovies-tv-0.3.7.apk",
-      "sha256": "d02319e18365f9c5dd85356243d126adbdd9c8bfb6a15d6b4531b6198a65cfda",
-      "notes": "Bölüm seçicide sezon seçilebiliyor, kutucuklar küçüldü. Ayarlarda kaynak listesi ayrı alt sayfada. Ajanda üç adım, birikimli sarma."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.8/netmovies-tv-0.3.8.apk",
+      "sha256": "6d2c5245afd94de91a2d61a227e15115276bbb899ae6af0f3daa81f14e862097",
+      "notes": "Sağlayıcının kısa uyarı klibi artık bölüm sayılmıyor, zincirleme bölüm atlaması durdu. Bölüm seçicide sezon seçilebiliyor. Ayarlarda kaynak listesi ayrı alt sayfada."
     }
   ]
 }
