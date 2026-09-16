@@ -68,18 +68,18 @@
     {
       "id": "evaitec-ota-wear",
       "packageName": "com.evaitec.ota.wear",
-      "versionCode": 4,
+      "versionCode": 5,
       "name": "evaitecOTA",
       "tagline": "Saate uygulama kuran ve güncelleyen yükleyici.",
       "platform": "watch",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.8",
-      "releaseDate": "2026-09-15",
-      "sizeBytes": 341825,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-wear-v0.1.8/evaitecOTA-wear-0.1.8.apk",
-      "sha256": "9f7a8bcca5db6f569833c5734b58727fa2593720eea5eb714d483749cd18d0ac",
-      "notes": "Saate BİR KEZ ADB ile kurulur; sonraki uygulamalar bunun üzerinden gelir. 0.1.1: kurulu uygulamalar artık doğru görünüyor (paket görünürlüğü)."
+      "version": "0.1.9",
+      "releaseDate": "2026-09-16",
+      "sizeBytes": 343785,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.9/evaitec-ota-wear-0.1.9.apk",
+      "sha256": "070d4ea3f986d10ab6b9e7933c2bff736c3d766472fe29e8d666375b4225008f",
+      "notes": "Kurulum iptal olduğunda sebebi ekranda görünüyor. Yarım kalan kurulum oturumları temizleniyor; oturuma boyut ve paket adı bildiriliyor."
     },
     {
       "id": "netmovies-mini-watch",
