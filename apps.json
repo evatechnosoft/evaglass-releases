@@ -84,18 +84,18 @@
     {
       "id": "netmovies-mini-watch",
       "packageName": "com.evaitec.netmovies.wear",
-      "versionCode": 104,
+      "versionCode": 105,
       "name": "NetMovies Mini",
       "tagline": "Televizyonu bileğinizden sürün — kaydır yön, dokun OK.",
       "platform": "watch",
       "icon": "assets/netmovies-watch.svg",
       "screenshots": [],
-      "version": "0.1.4",
-      "releaseDate": "2026-09-15",
-      "sizeBytes": 23178305,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.4/netmovies-mini-0.1.4.apk",
-      "sha256": "c915f3c3379c537a4c9490fb1f0936aed8a7224b33d922a838e635bc33ec6daf",
-      "notes": "Sunucu adresi adayları paralel yoklanıyor ve yalnız gerçekten ayakta olan adres hatırlanıyor: tünel kopukken saat ölü adrese kilitlenip sonsuza kadar \"yükleniyor\" kalıyor, düğmeler \"gönderilemedi\" diyordu. Ulaşılamayınca ekran bunu yazıyor, dokununca yeniden arıyor."
+      "version": "0.1.5",
+      "releaseDate": "2026-09-16",
+      "sizeBytes": 23457083,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.5/netmovies-wear-0.1.5.apk",
+      "sha256": "5c98f871dca53430ef1d76538c0e02d0a0bbde2561a6eca0fc0ffbb5d35e1039",
+      "notes": "Saat kendi kendini günceller: ana ekranda yeni sürüm varsa '⬆ güncelle' şeridi çıkar, APK ev sunucusundan inip doğrudan kurulur. Listeler yuvarlak kadrana oturdu ve döner çerçeveyle kaydırılıyor."
     },
     {
       "id": "wellness-phone",
