@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 303,
+      "versionCode": 304,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.3.3",
+      "version": "0.3.4",
       "releaseDate": "2026-09-16",
-      "sizeBytes": 20248698,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.3/netmovies-tv-0.3.3.apk",
-      "sha256": "13bc6a1793a22360d1e1e6e81269d317b075071ba296b4cebb6b1da92f0d1fa8",
-      "notes": "Devam Et artık gerçek bölüm numarasını tutuyor (S4B8). Reacher'da \"123. bölüm\" yazan hatalı etiket bitti; sağlayıcı değişse de doğru bölüm bulunuyor, webde izlenen bölüm TV'de eşleşiyor. Sarma motoru (0.3.2): basılı tutma tek seek, bırakınca kaldığın yerde devam, art arda basışlar birikir."
+      "sizeBytes": 20248702,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.4/netmovies-tv-0.3.4.apk",
+      "sha256": "8b4719eb6783245acacae4fb46f72e5e108f4489409eb143b7d837d8b552c0e6",
+      "notes": "Ajanda geçmiş 7 günü de gösteriyor: yayın günü geçen bölüm listede kalır, sağlayıcıya günler sonra düşebiliyor. Bu hafta vizyona girmiş filmler de listede. Posterler ana sayfa ölçüsünde, odak bugünün ilk kartına gidiyor. Bölüm kimliği artık S4B8 (0.3.3), sarma motoru birikimli (0.3.2)."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 303,
+      "versionCode": 304,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.3.3",
+      "version": "0.3.4",
       "releaseDate": "2026-09-16",
-      "sizeBytes": 20248698,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.3/netmovies-tv-0.3.3.apk",
-      "sha256": "13bc6a1793a22360d1e1e6e81269d317b075071ba296b4cebb6b1da92f0d1fa8",
-      "notes": "Devam Et artık gerçek bölüm numarasını tutuyor (S4B8). Reacher'da \"123. bölüm\" yazan hatalı etiket bitti; sağlayıcı değişse de doğru bölüm bulunuyor, webde izlenen bölüm TV'de eşleşiyor. Sarma motoru (0.3.2): basılı tutma tek seek, bırakınca kaldığın yerde devam, art arda basışlar birikir."
+      "sizeBytes": 20248702,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.4/netmovies-tv-0.3.4.apk",
+      "sha256": "8b4719eb6783245acacae4fb46f72e5e108f4489409eb143b7d837d8b552c0e6",
+      "notes": "Ajanda geçmiş 7 günü de gösteriyor: yayın günü geçen bölüm listede kalır, sağlayıcıya günler sonra düşebiliyor. Bu hafta vizyona girmiş filmler de listede. Posterler ana sayfa ölçüsünde, odak bugünün ilk kartına gidiyor. Bölüm kimliği artık S4B8 (0.3.3), sarma motoru birikimli (0.3.2)."
     }
   ]
 }
