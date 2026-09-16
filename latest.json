@@ -1,12 +1,12 @@
 {
-  "apk": "evaglass-0.8.6.apk",
-  "versionCode": 806,
-  "versionName": "0.8.6",
-  "sha256": "072f2272ee56adeb8fcb38df6d49dbdf139d88c9d6569d82496f2bf02baf9b53",
-  "releaseDate": "2026-09-10",
-  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.6/evaglass-0.8.6.apk",
-  "notes": "Foto/thumbnail: AI-capture 02 01 06 + photo-ready notify beklemesi, cift deklansor kaldirildi. Ses: telefon mikrofonu acilmiyordu (queries/RecognitionService), STT hatalari artik gorunuyor, gozluk-mic anahtari tek anlama geldi. Gozlukteki tik sesleri: is modu tek komuta indi. Medya: 'Medya indir' butonu eklendi, release'de cleartext gozluk gecidi icin acildi, mobil veri acikken de calisir.",
-  "wearApk": "evaglass-watch-0.8.6.apk",
-  "wearSha256": "7003d4f1ba5a31b8246e2bf894fba32dbe66ec43ffc0c0e541971b85ffbb07a0",
-  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.6/evaglass-watch-0.8.6.apk"
+  "apk": "evaglass-0.8.7.apk",
+  "versionCode": 807,
+  "versionName": "0.8.7",
+  "sha256": "fd580161157d8f3ac794282d1184f7892ec3675a287221f4500fc343080e9f2d",
+  "releaseDate": "2026-09-16",
+  "url": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.7/evaglass-0.8.7.apk",
+  "notes": "Cihazsiz sinav yuzeyi: sahte gozluk HTTP sunucusu uzerinde transfer testleri (528 JVM + 13 pytest). OTA sertlestirmesi: APK indirme adresi de https zorunlu (manifest'in mutlak url alani uzaktan belirleniyordu). Gecidin butce/dosya kapilari testle baglandi. 13.09 saha duzenlemeleri (parametre/IP-envanter sorgulari, 0x48 mod elemesi) ve okunabilir log zinciri bu surumde.",
+  "wearApk": "evaglass-watch-0.8.7.apk",
+  "wearSha256": "6523d01b4846c55dc2110ddcc9956cb30f17586db29746d0968e5ad4811187bf",
+  "wearUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.7/evaglass-watch-0.8.7.apk"
 }
