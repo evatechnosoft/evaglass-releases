@@ -4,18 +4,18 @@
     {
       "id": "evaitec-ota-tv",
       "packageName": "com.evaitec.ota.tv",
-      "versionCode": 12,
+      "versionCode": 13,
       "name": "evaitecOTA",
       "tagline": "Televizyona uygulama kuran ve güncelleyen yükleyici.",
       "platform": "tv",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.11",
-      "releaseDate": "2026-09-15",
-      "sizeBytes": 188821,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-tv-v0.1.11/evaitecOTA-tv-0.1.11.apk",
-      "sha256": "6e9ade2a2e9e32cf8ee03f50522b1d252c23d92e73d813716aa5e13d4e31496a",
-      "notes": "Televizyona BİR KEZ elle kurulur; sonraki uygulamalar ve güncellemeler bunun üzerinden gelir. Android 8.1 ve üzeri (Mi Box dahil). D-pad ile gezilir."
+      "version": "0.1.12",
+      "releaseDate": "2026-09-16",
+      "sizeBytes": 189953,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-tv-v0.1.12/evaitec-ota-tv-0.1.12.apk",
+      "sha256": "382c57f26099e8e2d41e05f70e7ef4aa298a88d209918ab6ee26938ad0de4e00",
+      "notes": "Izgara düzen: kartlar yan yana, ekrana dört uygulama sığıyor. Kart içindeki dolu butonlar kalktı, kartın kendisi OK ile çalışıyor. Vurgu rengi yalnız iş bekleyen kartta."
     },
     {
       "id": "evaitec-ota-mobile",
