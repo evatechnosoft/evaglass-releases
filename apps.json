@@ -68,18 +68,18 @@
     {
       "id": "evaitec-ota-wear",
       "packageName": "com.evaitec.ota.wear",
-      "versionCode": 5,
+      "versionCode": 6,
       "name": "evaitecOTA",
       "tagline": "Saate uygulama kuran ve güncelleyen yükleyici.",
       "platform": "watch",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.9",
+      "version": "0.1.10",
       "releaseDate": "2026-09-16",
-      "sizeBytes": 343785,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.9/evaitec-ota-wear-0.1.9.apk",
-      "sha256": "070d4ea3f986d10ab6b9e7933c2bff736c3d766472fe29e8d666375b4225008f",
-      "notes": "Kurulum iptal olduğunda sebebi ekranda görünüyor. Yarım kalan kurulum oturumları temizleniyor; oturuma boyut ve paket adı bildiriliyor."
+      "sizeBytes": 345709,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.10/evaitec-ota-wear-0.1.10.apk",
+      "sha256": "7c826e6673fc13cd94134aeb283284c48a0c5921db678e07aada8bc4145f9b75",
+      "notes": "Katalogdan önce ağ açıkça isteniyor (Bluetooth vekili üzerinden çıkan saatte 'bağlanamadı' hatası). Kurulum sonucu ekranda görünüyor."
     },
     {
       "id": "netmovies-mini-watch",
