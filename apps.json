@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 305,
+      "versionCode": 306,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.3.5",
+      "version": "0.3.6",
       "releaseDate": "2026-09-16",
-      "sizeBytes": 20248702,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.5/netmovies-tv-0.3.5.apk",
-      "sha256": "7cd1b446281e1dfe6c7b28f8296bdf62cf361fb63dc0e171722a5c9e6822c6ed",
-      "notes": "Ajandada geçmiş günler ayrı adımda: Bu Hafta · Bu Ay · Geçmiş. Posterler küçüldü, satıra daha çok gün sığıyor. Sarma motoru birikimli (0.3.2), bölüm kimliği S4B8 (0.3.3), ajanda geçmişi 7 gün (0.3.4)."
+      "sizeBytes": 20248698,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.6/netmovies-tv-0.3.6.apk",
+      "sha256": "beab2c58f25df41de530c811629b330782b90d8df7b1532c9a8ba21b1e562af3",
+      "notes": "Ayarlar paneli sadeleşti: kaynak listesi ayrı alt sayfada, ana panelde seçili kaynak tek satır. Ajanda üç adım (Bu Hafta · Bu Ay · Geçmiş), birikimli sarma, bölüm kimliği S4B8."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 305,
+      "versionCode": 306,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.3.5",
+      "version": "0.3.6",
       "releaseDate": "2026-09-16",
-      "sizeBytes": 20248702,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.5/netmovies-tv-0.3.5.apk",
-      "sha256": "7cd1b446281e1dfe6c7b28f8296bdf62cf361fb63dc0e171722a5c9e6822c6ed",
-      "notes": "Ajandada geçmiş günler ayrı adımda: Bu Hafta · Bu Ay · Geçmiş. Posterler küçüldü, satıra daha çok gün sığıyor. Sarma motoru birikimli (0.3.2), bölüm kimliği S4B8 (0.3.3), ajanda geçmişi 7 gün (0.3.4)."
+      "sizeBytes": 20248698,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.6/netmovies-tv-0.3.6.apk",
+      "sha256": "beab2c58f25df41de530c811629b330782b90d8df7b1532c9a8ba21b1e562af3",
+      "notes": "Ayarlar paneli sadeleşti: kaynak listesi ayrı alt sayfada, ana panelde seçili kaynak tek satır. Ajanda üç adım (Bu Hafta · Bu Ay · Geçmiş), birikimli sarma, bölüm kimliği S4B8."
     }
   ]
 }
