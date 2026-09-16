@@ -84,18 +84,18 @@
     {
       "id": "netmovies-mini-watch",
       "packageName": "com.evaitec.netmovies.wear",
-      "versionCode": 107,
+      "versionCode": 108,
       "name": "NetMovies Mini",
       "tagline": "Televizyonu bileğinizden sürün — kaydır yön, dokun OK.",
       "platform": "watch",
       "icon": "assets/netmovies-watch.svg",
       "screenshots": [],
-      "version": "0.1.7",
+      "version": "0.1.8",
       "releaseDate": "2026-09-16",
-      "sizeBytes": 23227529,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.7/netmovies-wear-0.1.7.apk",
-      "sha256": "b535ff36498c00f58f7c41a5d993a59b8dd6a40a4b9476ba7ad159d5cf70217f",
-      "notes": "Posterler kadran kenarında yay üzerinde, döner çerçeveyle geziliyor ve merkezdeki büyüyor. Halka üç kipli. Oynat-duraklat ve GERİ ayrı düğmeler."
+      "sizeBytes": 23227553,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.8/netmovies-wear-0.1.8.apk",
+      "sha256": "7e28e4603b58087f89e0279f07a3fc8ee05100f4fa8ce3a23987f6cbfe3e07a0",
+      "notes": "Wi-Fi taşıyıcısı açıkça isteniyor (Wear OS radyoyu kapatıyordu). Posterler kadran kenarında yay üzerinde, halka üç kipli, oynat-duraklat ve GERİ ayrı düğmeler."
     },
     {
       "id": "wellness-phone",
