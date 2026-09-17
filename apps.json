@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 407,
+      "versionCode": 408,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.4.7",
+      "version": "0.4.8",
       "releaseDate": "2026-09-17",
       "sizeBytes": 20287922,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.7/netmovies-tv-0.4.7.apk",
-      "sha256": "10026d9c9ee4790b88c924a798a4e939e1434d57048b53af7fe367aae7fba7d9",
-      "notes": "Ana ekran kumandası: kendiliğinden gezen poster yayı, artı pad (köşelerde mikrofon ve arama), sarma satırı. İçerik menüsünde kaynak yoklaması."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.8/netmovies-tv-0.4.8.apk",
+      "sha256": "3dff209b44ecf8f5942231959e2fc1c814695e9aff3d44bc72383e4d4ad3b852",
+      "notes": "Oynatıcıda sol üstte hangi bölümde olduğun yazıyor, kontrol çubuğunda önceki/sonraki bölüm, Kitaplık ayarların en üstünde. Ana ekran kumanda widget'i."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 407,
+      "versionCode": 408,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.4.7",
+      "version": "0.4.8",
       "releaseDate": "2026-09-17",
       "sizeBytes": 20287922,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.7/netmovies-tv-0.4.7.apk",
-      "sha256": "10026d9c9ee4790b88c924a798a4e939e1434d57048b53af7fe367aae7fba7d9",
-      "notes": "Ana ekran kumandası: kendiliğinden gezen poster yayı, artı pad (köşelerde mikrofon ve arama), sarma satırı. İçerik menüsünde kaynak yoklaması."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.8/netmovies-tv-0.4.8.apk",
+      "sha256": "3dff209b44ecf8f5942231959e2fc1c814695e9aff3d44bc72383e4d4ad3b852",
+      "notes": "Oynatıcıda sol üstte hangi bölümde olduğun yazıyor, kontrol çubuğunda önceki/sonraki bölüm, Kitaplık ayarların en üstünde. Ana ekran kumanda widget'i."
     }
   ]
 }
