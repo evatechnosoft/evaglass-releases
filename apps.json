@@ -84,18 +84,18 @@
     {
       "id": "netmovies-mini-watch",
       "packageName": "com.evaitec.netmovies.wear",
-      "versionCode": 111,
+      "versionCode": 112,
       "name": "NetMovies Mini",
       "tagline": "Televizyonu bileğinizden sürün — kaydır yön, dokun OK.",
       "platform": "watch",
       "icon": "assets/netmovies-watch.svg",
       "screenshots": [],
-      "version": "0.1.11",
+      "version": "0.1.12",
       "releaseDate": "2026-09-17",
-      "sizeBytes": 23260321,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.11/netmovies-wear-0.1.11.apk",
-      "sha256": "164f75cf3714c82fd1eaf249d403b90dc880e1f5b23cdf793e0a381fb8b1052b",
-      "notes": "Saat sunucuyu kendi alt agini tarayarak da bulur (PC IP'si degisirse yerel yol kaybolmaz). Uc kip dugmesi (saatte gezin / sarma / ses), mikrofon öne geldi, TV ana ekranı uzun basışta. Kip 5 sn sonra varsayılana döner: film oynuyorsa ses, oynamıyorsa gezinme."
+      "sizeBytes": 23260385,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.12/netmovies-wear-0.1.12.apk",
+      "sha256": "8e7be415b365f09d18b8831823676859adbde8dd05af506b5b6c335d30127abb",
+      "notes": "Indirme sirasinda Wi-Fi ve CPU uyanik tutulur, ekran kapaninca guncelleme durmaz. Saat sunucuyu kendi alt agini tarayarak da bulur (PC IP'si degisirse yerel yol kaybolmaz). Uc kip dugmesi (saatte gezin / sarma / ses), mikrofon öne geldi, TV ana ekranı uzun basışta. Kip 5 sn sonra varsayılana döner: film oynuyorsa ses, oynamıyorsa gezinme."
     },
     {
       "id": "wellness-phone",
