@@ -84,18 +84,18 @@
     {
       "id": "netmovies-mini-watch",
       "packageName": "com.evaitec.netmovies.wear",
-      "versionCode": 112,
+      "versionCode": 113,
       "name": "NetMovies Mini",
       "tagline": "Televizyonu bileğinizden sürün — kaydır yön, dokun OK.",
       "platform": "watch",
       "icon": "assets/netmovies-watch.svg",
       "screenshots": [],
-      "version": "0.1.12",
+      "version": "0.1.13",
       "releaseDate": "2026-09-17",
       "sizeBytes": 23260385,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.12/netmovies-wear-0.1.12.apk",
-      "sha256": "8e7be415b365f09d18b8831823676859adbde8dd05af506b5b6c335d30127abb",
-      "notes": "Indirme sirasinda Wi-Fi ve CPU uyanik tutulur, ekran kapaninca guncelleme durmaz. Saat sunucuyu kendi alt agini tarayarak da bulur (PC IP'si degisirse yerel yol kaybolmaz). Uc kip dugmesi (saatte gezin / sarma / ses), mikrofon öne geldi, TV ana ekranı uzun basışta. Kip 5 sn sonra varsayılana döner: film oynuyorsa ses, oynamıyorsa gezinme."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.13/netmovies-wear-0.1.13.apk",
+      "sha256": "61c782933d4616fac4833d974e898ca29925748a1b49423bd1b06704081a5b0b",
+      "notes": "Bos donen alt ag taramasi 5 dk hatirlanir, acilis kilitlenmez. Indirme sirasinda Wi-Fi ve CPU uyanik tutulur."
     },
     {
       "id": "wellness-phone",
@@ -108,7 +108,7 @@
       "screenshots": [],
       "version": "0.7.1",
       "releaseDate": "2026-09-11",
-      "sizeBytes": 10270617,
+      "sizeBytes": 23260385,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/wellness-v0.7.1/wellness-0.7.1.apk",
       "sha256": "3f24260409891f2fe8d2094f361fb483344e7dc0f8635fcdfa40910a20fd5e5a",
       "notes": "Android 8+. Ilk acilista Ayar > Sunucu alanina adres ve token girilir; Health Connect izinleri telefon ayarlarindan verilir."
@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 309,
+      "versionCode": 400,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.3.9",
+      "version": "0.4.0",
       "releaseDate": "2026-09-16",
       "sizeBytes": 20248702,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.9/netmovies-tv-0.3.9.apk",
-      "sha256": "403e25831e83b30a0ce3fa71c8909652850da6e2940023e8bedaa5c231868dd3",
-      "notes": "Bolum secici ve Ayarlar menusu tam genislik satir listesi (list tile) oldu."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.0/netmovies-tv-0.4.0.apk",
+      "sha256": "45f5fb7a37f7d385b6a503518d768d4201c7ea84051dbfc30fabbeec0a843181",
+      "notes": "Sarma sayaci kontrol cubuguna binmiyor; bolum listesi sikilasti."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 309,
+      "versionCode": 400,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.3.9",
+      "version": "0.4.0",
       "releaseDate": "2026-09-16",
       "sizeBytes": 20248702,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.3.9/netmovies-tv-0.3.9.apk",
-      "sha256": "403e25831e83b30a0ce3fa71c8909652850da6e2940023e8bedaa5c231868dd3",
-      "notes": "Bolum secici ve Ayarlar menusu tam genislik satir listesi (list tile) oldu."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.0/netmovies-tv-0.4.0.apk",
+      "sha256": "45f5fb7a37f7d385b6a503518d768d4201c7ea84051dbfc30fabbeec0a843181",
+      "notes": "Sarma sayaci kontrol cubuguna binmiyor; bolum listesi sikilasti."
     }
   ]
 }
