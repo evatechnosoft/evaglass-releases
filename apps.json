@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 403,
+      "versionCode": 404,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.4.3",
+      "version": "0.4.4",
       "releaseDate": "2026-09-17",
-      "sizeBytes": 20287306,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.3/netmovies-tv-0.4.3.apk",
-      "sha256": "1dc2085fe1ffa3ad8e8a137207490a9cda8cf670ecf835d5af8879b93f1bb722",
-      "notes": "Ana ekran widget'i: artı düzende yön pad'i, Devam Et posterleri (dokun = kaldığın yerden aç) ve sarma satırı. Posterler önbellekli, dakikada bir tazelenir."
+      "sizeBytes": 20287686,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.4/netmovies-tv-0.4.4.apk",
+      "sha256": "0577d04f85a72e65169a41fa6f9fd4b155e211f071448b3e62d24a1fffb942fa",
+      "notes": "Ana ekran widget'i: artı pad (köşelerde mikrofon ve arama), Devam Et posterleri ve sarma satırı. Sesli/yazılı komut televizyona gider, uygulama açılmaz."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 403,
+      "versionCode": 404,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.4.3",
+      "version": "0.4.4",
       "releaseDate": "2026-09-17",
-      "sizeBytes": 20287306,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.3/netmovies-tv-0.4.3.apk",
-      "sha256": "1dc2085fe1ffa3ad8e8a137207490a9cda8cf670ecf835d5af8879b93f1bb722",
-      "notes": "Ana ekran widget'i: artı düzende yön pad'i, Devam Et posterleri (dokun = kaldığın yerden aç) ve sarma satırı. Posterler önbellekli, dakikada bir tazelenir."
+      "sizeBytes": 20287686,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.4/netmovies-tv-0.4.4.apk",
+      "sha256": "0577d04f85a72e65169a41fa6f9fd4b155e211f071448b3e62d24a1fffb942fa",
+      "notes": "Ana ekran widget'i: artı pad (köşelerde mikrofon ve arama), Devam Et posterleri ve sarma satırı. Sesli/yazılı komut televizyona gider, uygulama açılmaz."
     }
   ]
 }
