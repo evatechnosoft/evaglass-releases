@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 404,
+      "versionCode": 405,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.4.4",
+      "version": "0.4.5",
       "releaseDate": "2026-09-17",
       "sizeBytes": 20287686,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.4/netmovies-tv-0.4.4.apk",
-      "sha256": "0577d04f85a72e65169a41fa6f9fd4b155e211f071448b3e62d24a1fffb942fa",
-      "notes": "Ana ekran widget'i: artı pad (köşelerde mikrofon ve arama), Devam Et posterleri ve sarma satırı. Sesli/yazılı komut televizyona gider, uygulama açılmaz."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.5/netmovies-tv-0.4.5.apk",
+      "sha256": "5af92d6b09758b34edc715f1f84d70b45f34bb7a02c774e582f75cda520806b6",
+      "notes": "İçerik menüsü içerik kadar yükseklikte; Oynat satırı kaynak yoklamasının sonucunu taşıyor; bölüm seçilince o bölüm yoklanıyor. Ana ekran kumanda widget'i."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 404,
+      "versionCode": 405,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.4.4",
+      "version": "0.4.5",
       "releaseDate": "2026-09-17",
       "sizeBytes": 20287686,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.4/netmovies-tv-0.4.4.apk",
-      "sha256": "0577d04f85a72e65169a41fa6f9fd4b155e211f071448b3e62d24a1fffb942fa",
-      "notes": "Ana ekran widget'i: artı pad (köşelerde mikrofon ve arama), Devam Et posterleri ve sarma satırı. Sesli/yazılı komut televizyona gider, uygulama açılmaz."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.5/netmovies-tv-0.4.5.apk",
+      "sha256": "5af92d6b09758b34edc715f1f84d70b45f34bb7a02c774e582f75cda520806b6",
+      "notes": "İçerik menüsü içerik kadar yükseklikte; Oynat satırı kaynak yoklamasının sonucunu taşıyor; bölüm seçilince o bölüm yoklanıyor. Ana ekran kumanda widget'i."
     }
   ]
 }
