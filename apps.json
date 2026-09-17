@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 401,
+      "versionCode": 402,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.4.1",
+      "version": "0.4.2",
       "releaseDate": "2026-09-17",
-      "sizeBytes": 20679004,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.1/netmovies-tv-0.4.1.apk",
-      "sha256": "300ab87eff718f7ac552d60d417bca909f7e0ab7bbec5dd803945dac1cffb507",
-      "notes": "Telefon ana ekranına kumanda widget'i: uygulamayı açmadan sar, duraklat, TV ana ekranı. Dakikada bir tazelenir. Oynatıcıda buton ipucu, sarma sayacı kontrol çubuğuna binmiyor."
+      "sizeBytes": 20287058,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.2/netmovies-tv-0.4.2.apk",
+      "sha256": "418fdef9da96cab7a7cd314fb3d963ef3a131062b0ce6031ac8ccc1ee4cec468",
+      "notes": "Ana ekran widget'i saatteki pad gibi: Devam Et posterleri (dokun = kaldığın yerden aç), yön pad'i ve sarma satırı. Dakikada bir tazelenir."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 401,
+      "versionCode": 402,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.4.1",
+      "version": "0.4.2",
       "releaseDate": "2026-09-17",
-      "sizeBytes": 20679004,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.1/netmovies-tv-0.4.1.apk",
-      "sha256": "300ab87eff718f7ac552d60d417bca909f7e0ab7bbec5dd803945dac1cffb507",
-      "notes": "Telefon ana ekranına kumanda widget'i: uygulamayı açmadan sar, duraklat, TV ana ekranı. Dakikada bir tazelenir. Oynatıcıda buton ipucu, sarma sayacı kontrol çubuğuna binmiyor."
+      "sizeBytes": 20287058,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.2/netmovies-tv-0.4.2.apk",
+      "sha256": "418fdef9da96cab7a7cd314fb3d963ef3a131062b0ce6031ac8ccc1ee4cec468",
+      "notes": "Ana ekran widget'i saatteki pad gibi: Devam Et posterleri (dokun = kaldığın yerden aç), yön pad'i ve sarma satırı. Dakikada bir tazelenir."
     }
   ]
 }
