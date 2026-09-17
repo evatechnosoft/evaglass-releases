@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 408,
+      "versionCode": 409,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.4.8",
+      "version": "0.4.9",
       "releaseDate": "2026-09-17",
-      "sizeBytes": 20287922,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.8/netmovies-tv-0.4.8.apk",
-      "sha256": "3dff209b44ecf8f5942231959e2fc1c814695e9aff3d44bc72383e4d4ad3b852",
-      "notes": "Oynatıcıda sol üstte hangi bölümde olduğun yazıyor, kontrol çubuğunda önceki/sonraki bölüm, Kitaplık ayarların en üstünde. Ana ekran kumanda widget'i."
+      "sizeBytes": 20304306,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.9/netmovies-tv-0.4.9.apk",
+      "sha256": "264078ef135caa117da03b368506af437281ccb576bbf05a773626fe707cd142",
+      "notes": "Ayarlar ikon şeridi: üstte altı ikon, altında yalnız seçili olanın seçenekleri. Oynatıcıda sol üstte hangi bölümde olduğun yazıyor, çubukta önceki/sonraki bölüm."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 408,
+      "versionCode": 409,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.4.8",
+      "version": "0.4.9",
       "releaseDate": "2026-09-17",
-      "sizeBytes": 20287922,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.8/netmovies-tv-0.4.8.apk",
-      "sha256": "3dff209b44ecf8f5942231959e2fc1c814695e9aff3d44bc72383e4d4ad3b852",
-      "notes": "Oynatıcıda sol üstte hangi bölümde olduğun yazıyor, kontrol çubuğunda önceki/sonraki bölüm, Kitaplık ayarların en üstünde. Ana ekran kumanda widget'i."
+      "sizeBytes": 20304306,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.9/netmovies-tv-0.4.9.apk",
+      "sha256": "264078ef135caa117da03b368506af437281ccb576bbf05a773626fe707cd142",
+      "notes": "Ayarlar ikon şeridi: üstte altı ikon, altında yalnız seçili olanın seçenekleri. Oynatıcıda sol üstte hangi bölümde olduğun yazıyor, çubukta önceki/sonraki bölüm."
     }
   ]
 }
