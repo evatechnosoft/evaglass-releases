@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 405,
+      "versionCode": 407,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.4.5",
+      "version": "0.4.7",
       "releaseDate": "2026-09-17",
-      "sizeBytes": 20287686,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.5/netmovies-tv-0.4.5.apk",
-      "sha256": "5af92d6b09758b34edc715f1f84d70b45f34bb7a02c774e582f75cda520806b6",
-      "notes": "İçerik menüsü içerik kadar yükseklikte; Oynat satırı kaynak yoklamasının sonucunu taşıyor; bölüm seçilince o bölüm yoklanıyor. Ana ekran kumanda widget'i."
+      "sizeBytes": 20287922,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.7/netmovies-tv-0.4.7.apk",
+      "sha256": "10026d9c9ee4790b88c924a798a4e939e1434d57048b53af7fe367aae7fba7d9",
+      "notes": "Ana ekran kumandası: kendiliğinden gezen poster yayı, artı pad (köşelerde mikrofon ve arama), sarma satırı. İçerik menüsünde kaynak yoklaması."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 405,
+      "versionCode": 407,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.4.5",
+      "version": "0.4.7",
       "releaseDate": "2026-09-17",
-      "sizeBytes": 20287686,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.5/netmovies-tv-0.4.5.apk",
-      "sha256": "5af92d6b09758b34edc715f1f84d70b45f34bb7a02c774e582f75cda520806b6",
-      "notes": "İçerik menüsü içerik kadar yükseklikte; Oynat satırı kaynak yoklamasının sonucunu taşıyor; bölüm seçilince o bölüm yoklanıyor. Ana ekran kumanda widget'i."
+      "sizeBytes": 20287922,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.7/netmovies-tv-0.4.7.apk",
+      "sha256": "10026d9c9ee4790b88c924a798a4e939e1434d57048b53af7fe367aae7fba7d9",
+      "notes": "Ana ekran kumandası: kendiliğinden gezen poster yayı, artı pad (köşelerde mikrofon ve arama), sarma satırı. İçerik menüsünde kaynak yoklaması."
     }
   ]
 }
