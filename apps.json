@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 400,
+      "versionCode": 401,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.4.0",
-      "releaseDate": "2026-09-16",
-      "sizeBytes": 20248702,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.0/netmovies-tv-0.4.0.apk",
-      "sha256": "45f5fb7a37f7d385b6a503518d768d4201c7ea84051dbfc30fabbeec0a843181",
-      "notes": "Sarma sayaci kontrol cubuguna binmiyor; bolum listesi sikilasti."
+      "version": "0.4.1",
+      "releaseDate": "2026-09-17",
+      "sizeBytes": 20679004,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.1/netmovies-tv-0.4.1.apk",
+      "sha256": "300ab87eff718f7ac552d60d417bca909f7e0ab7bbec5dd803945dac1cffb507",
+      "notes": "Telefon ana ekranına kumanda widget'i: uygulamayı açmadan sar, duraklat, TV ana ekranı. Dakikada bir tazelenir. Oynatıcıda buton ipucu, sarma sayacı kontrol çubuğuna binmiyor."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 400,
+      "versionCode": 401,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.4.0",
-      "releaseDate": "2026-09-16",
-      "sizeBytes": 20248702,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.0/netmovies-tv-0.4.0.apk",
-      "sha256": "45f5fb7a37f7d385b6a503518d768d4201c7ea84051dbfc30fabbeec0a843181",
-      "notes": "Sarma sayaci kontrol cubuguna binmiyor; bolum listesi sikilasti."
+      "version": "0.4.1",
+      "releaseDate": "2026-09-17",
+      "sizeBytes": 20679004,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.4.1/netmovies-tv-0.4.1.apk",
+      "sha256": "300ab87eff718f7ac552d60d417bca909f7e0ab7bbec5dd803945dac1cffb507",
+      "notes": "Telefon ana ekranına kumanda widget'i: uygulamayı açmadan sar, duraklat, TV ana ekranı. Dakikada bir tazelenir. Oynatıcıda buton ipucu, sarma sayacı kontrol çubuğuna binmiyor."
     }
   ]
 }
