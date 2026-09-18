@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 603,
+      "versionCode": 604,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.6.3",
+      "version": "0.6.4",
       "releaseDate": "2026-09-18",
       "sizeBytes": 20353530,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.3/netmovies-tv-0.6.3.apk",
-      "sha256": "da0fcdb4164fd07e71d033db1e13d88b66a2aa3cdbf3dfdd96e05ef9018de81a",
-      "notes": "Baslangic panelinde bolum listesi gelene kadar yukleniyor satiri. Sonraki bolum karti 70 sn kala. Bolumler ayar panelinin icinde."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.4/netmovies-tv-0.6.4.apk",
+      "sha256": "7360384e13c25332d8f01fc79e478100bfa855c249c5225f90df11d52887646f",
+      "notes": "Ajandada Izlemediklerim adimi: takip listendeki izlenmemis bolumler tek listede. Panelde bolum listesi yuklenirken uyari. Sonraki bolum karti 70 sn kala."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 603,
+      "versionCode": 604,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.6.3",
+      "version": "0.6.4",
       "releaseDate": "2026-09-18",
       "sizeBytes": 20353530,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.3/netmovies-tv-0.6.3.apk",
-      "sha256": "da0fcdb4164fd07e71d033db1e13d88b66a2aa3cdbf3dfdd96e05ef9018de81a",
-      "notes": "Baslangic panelinde bolum listesi gelene kadar yukleniyor satiri. Sonraki bolum karti 70 sn kala. Bolumler ayar panelinin icinde."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.4/netmovies-tv-0.6.4.apk",
+      "sha256": "7360384e13c25332d8f01fc79e478100bfa855c249c5225f90df11d52887646f",
+      "notes": "Ajandada Izlemediklerim adimi: takip listendeki izlenmemis bolumler tek listede. Panelde bolum listesi yuklenirken uyari. Sonraki bolum karti 70 sn kala."
     }
   ]
 }
