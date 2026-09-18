@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 602,
+      "versionCode": 603,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.6.2",
+      "version": "0.6.3",
       "releaseDate": "2026-09-18",
       "sizeBytes": 20353530,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.2/netmovies-tv-0.6.2.apk",
-      "sha256": "99728a79738abdd1c7ec3ca2dc846cb79f304312823f24e217ecff7b6322ffc1",
-      "notes": "Sonraki bolum karti 70 sn kala cikar (90 sn erkendi). Bolumler ayar panelinin icinde, alt bar kaydirilabilir, sag/sol sarma liste kapaninca calisir."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.3/netmovies-tv-0.6.3.apk",
+      "sha256": "da0fcdb4164fd07e71d033db1e13d88b66a2aa3cdbf3dfdd96e05ef9018de81a",
+      "notes": "Baslangic panelinde bolum listesi gelene kadar yukleniyor satiri. Sonraki bolum karti 70 sn kala. Bolumler ayar panelinin icinde."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 602,
+      "versionCode": 603,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.6.2",
+      "version": "0.6.3",
       "releaseDate": "2026-09-18",
       "sizeBytes": 20353530,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.2/netmovies-tv-0.6.2.apk",
-      "sha256": "99728a79738abdd1c7ec3ca2dc846cb79f304312823f24e217ecff7b6322ffc1",
-      "notes": "Sonraki bolum karti 70 sn kala cikar (90 sn erkendi). Bolumler ayar panelinin icinde, alt bar kaydirilabilir, sag/sol sarma liste kapaninca calisir."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.3/netmovies-tv-0.6.3.apk",
+      "sha256": "da0fcdb4164fd07e71d033db1e13d88b66a2aa3cdbf3dfdd96e05ef9018de81a",
+      "notes": "Baslangic panelinde bolum listesi gelene kadar yukleniyor satiri. Sonraki bolum karti 70 sn kala. Bolumler ayar panelinin icinde."
     }
   ]
 }
