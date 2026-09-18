@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 601,
+      "versionCode": 602,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.6.1",
+      "version": "0.6.2",
       "releaseDate": "2026-09-18",
       "sizeBytes": 20353530,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.1/netmovies-tv-0.6.1.apk",
-      "sha256": "0b89ee5b4bc2a298473683c3904f6459f711de0a06e407409c48b8b1b4012650",
-      "notes": "Bolumler ayar panelinin icinde acilir (tam ekran liste degil). Alt bar kaydirilabilir, ileri sarma dugmesine ulasilir. Liste kapaninca odak oynaticiya doner: sag/sol sarma calisir."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.2/netmovies-tv-0.6.2.apk",
+      "sha256": "99728a79738abdd1c7ec3ca2dc846cb79f304312823f24e217ecff7b6322ffc1",
+      "notes": "Sonraki bolum karti 70 sn kala cikar (90 sn erkendi). Bolumler ayar panelinin icinde, alt bar kaydirilabilir, sag/sol sarma liste kapaninca calisir."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 601,
+      "versionCode": 602,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.6.1",
+      "version": "0.6.2",
       "releaseDate": "2026-09-18",
       "sizeBytes": 20353530,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.1/netmovies-tv-0.6.1.apk",
-      "sha256": "0b89ee5b4bc2a298473683c3904f6459f711de0a06e407409c48b8b1b4012650",
-      "notes": "Bolumler ayar panelinin icinde acilir (tam ekran liste degil). Alt bar kaydirilabilir, ileri sarma dugmesine ulasilir. Liste kapaninca odak oynaticiya doner: sag/sol sarma calisir."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.2/netmovies-tv-0.6.2.apk",
+      "sha256": "99728a79738abdd1c7ec3ca2dc846cb79f304312823f24e217ecff7b6322ffc1",
+      "notes": "Sonraki bolum karti 70 sn kala cikar (90 sn erkendi). Bolumler ayar panelinin icinde, alt bar kaydirilabilir, sag/sol sarma liste kapaninca calisir."
     }
   ]
 }
