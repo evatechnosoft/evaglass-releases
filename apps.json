@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 606,
+      "versionCode": 607,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.6.6",
-      "releaseDate": "2026-09-18",
+      "version": "0.6.7",
+      "releaseDate": "2026-09-19",
       "sizeBytes": 20353530,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.6/netmovies-tv-0.6.6.apk",
-      "sha256": "5b92680c55ffea21f55a6ecbc73a47d62af75affc61e83a9be5d34400402dc1b",
-      "notes": "Bolum sayfasi kartlari dogrudan o bolumu acar (baslikta sezon/bolum okunur). Alt bar tuslari gezilebilir. Ajandada Izlemediklerim."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.7/netmovies-tv-0.6.7.apk",
+      "sha256": "c2c942e5dceb66046773329ed9b600044607e139646180054b5022b0775af004",
+      "notes": "Oynayan bolum kendiliginden kapanmiyor. Baglanti hatasinda WARP ile tekrar. Bolum sayfasi kartlari dogrudan acilir, alt bar tuslari gezilebilir."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 606,
+      "versionCode": 607,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.6.6",
-      "releaseDate": "2026-09-18",
+      "version": "0.6.7",
+      "releaseDate": "2026-09-19",
       "sizeBytes": 20353530,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.6/netmovies-tv-0.6.6.apk",
-      "sha256": "5b92680c55ffea21f55a6ecbc73a47d62af75affc61e83a9be5d34400402dc1b",
-      "notes": "Bolum sayfasi kartlari dogrudan o bolumu acar (baslikta sezon/bolum okunur). Alt bar tuslari gezilebilir. Ajandada Izlemediklerim."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.7/netmovies-tv-0.6.7.apk",
+      "sha256": "c2c942e5dceb66046773329ed9b600044607e139646180054b5022b0775af004",
+      "notes": "Oynayan bolum kendiliginden kapanmiyor. Baglanti hatasinda WARP ile tekrar. Bolum sayfasi kartlari dogrudan acilir, alt bar tuslari gezilebilir."
     }
   ]
 }
