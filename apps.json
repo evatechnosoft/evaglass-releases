@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 500,
+      "versionCode": 501,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.5.0",
-      "releaseDate": "2026-09-17",
+      "version": "0.5.1",
+      "releaseDate": "2026-09-18",
       "sizeBytes": 20304306,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.5.0/netmovies-tv-0.5.0.apk",
-      "sha256": "d5b4f0fb4685b108270245ebb5655835e39c98947b8fd07c7802654967ce3cef",
-      "notes": "Ayarlar ikon şeridi; sezon ve bölüm listesi panelin içinde (tam ekran modal yok). Oynatıcıda sol üstte bölüm bilgisi, çubukta önceki/sonraki bölüm. Ana ekran kumanda widget'i."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.5.1/netmovies-tv-0.5.1.apk",
+      "sha256": "01c42d6c26b758599579bba31d6aa8a191c945556786fc68fbbfddd6f2bb5494",
+      "notes": "Favoriden acilan dizi kaldigi bolumden devam ediyor. Gateway bayat baglantiyi bir kez tazeliyor."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 500,
+      "versionCode": 501,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.5.0",
-      "releaseDate": "2026-09-17",
+      "version": "0.5.1",
+      "releaseDate": "2026-09-18",
       "sizeBytes": 20304306,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.5.0/netmovies-tv-0.5.0.apk",
-      "sha256": "d5b4f0fb4685b108270245ebb5655835e39c98947b8fd07c7802654967ce3cef",
-      "notes": "Ayarlar ikon şeridi; sezon ve bölüm listesi panelin içinde (tam ekran modal yok). Oynatıcıda sol üstte bölüm bilgisi, çubukta önceki/sonraki bölüm. Ana ekran kumanda widget'i."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.5.1/netmovies-tv-0.5.1.apk",
+      "sha256": "01c42d6c26b758599579bba31d6aa8a191c945556786fc68fbbfddd6f2bb5494",
+      "notes": "Favoriden acilan dizi kaldigi bolumden devam ediyor. Gateway bayat baglantiyi bir kez tazeliyor."
     }
   ]
 }
