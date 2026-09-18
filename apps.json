@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 607,
+      "versionCode": 700,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.6.7",
+      "version": "0.7.0",
       "releaseDate": "2026-09-19",
       "sizeBytes": 20353530,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.7/netmovies-tv-0.6.7.apk",
-      "sha256": "c2c942e5dceb66046773329ed9b600044607e139646180054b5022b0775af004",
-      "notes": "Oynayan bolum kendiliginden kapanmiyor. Baglanti hatasinda WARP ile tekrar. Bolum sayfasi kartlari dogrudan acilir, alt bar tuslari gezilebilir."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.7.0/netmovies-tv-0.7.0.apk",
+      "sha256": "e40f1f35cf454634fae5b9dd21932ffa9fe889e3d2e5b8c5106c277efc41aee3",
+      "notes": "Bolum listesi en zengin saglayicidan (Reacher 28->43). Oynayan bolum kapanmiyor. Alt bar tuslari gezilebilir. Ajandada Izlemediklerim."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 607,
+      "versionCode": 700,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.6.7",
+      "version": "0.7.0",
       "releaseDate": "2026-09-19",
       "sizeBytes": 20353530,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.7/netmovies-tv-0.6.7.apk",
-      "sha256": "c2c942e5dceb66046773329ed9b600044607e139646180054b5022b0775af004",
-      "notes": "Oynayan bolum kendiliginden kapanmiyor. Baglanti hatasinda WARP ile tekrar. Bolum sayfasi kartlari dogrudan acilir, alt bar tuslari gezilebilir."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.7.0/netmovies-tv-0.7.0.apk",
+      "sha256": "e40f1f35cf454634fae5b9dd21932ffa9fe889e3d2e5b8c5106c277efc41aee3",
+      "notes": "Bolum listesi en zengin saglayicidan (Reacher 28->43). Oynayan bolum kapanmiyor. Alt bar tuslari gezilebilir. Ajandada Izlemediklerim."
     }
   ]
 }
