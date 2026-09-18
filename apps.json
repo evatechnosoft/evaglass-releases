@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 605,
+      "versionCode": 606,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.6.5",
+      "version": "0.6.6",
       "releaseDate": "2026-09-18",
       "sizeBytes": 20353530,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.5/netmovies-tv-0.6.5.apk",
-      "sha256": "c865d47cf258c8a24d7cecd39b2fc742c938dec2dc750f06bb7419807e924ca3",
-      "notes": "Alt bar tuslari gezilebiliyor (indeks tabanli secim). ASAGI ok acar, SOL/SAG gezer, OK uygular. Ajandada Izlemediklerim adimi."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.6/netmovies-tv-0.6.6.apk",
+      "sha256": "5b92680c55ffea21f55a6ecbc73a47d62af75affc61e83a9be5d34400402dc1b",
+      "notes": "Bolum sayfasi kartlari dogrudan o bolumu acar (baslikta sezon/bolum okunur). Alt bar tuslari gezilebilir. Ajandada Izlemediklerim."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 605,
+      "versionCode": 606,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.6.5",
+      "version": "0.6.6",
       "releaseDate": "2026-09-18",
       "sizeBytes": 20353530,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.5/netmovies-tv-0.6.5.apk",
-      "sha256": "c865d47cf258c8a24d7cecd39b2fc742c938dec2dc750f06bb7419807e924ca3",
-      "notes": "Alt bar tuslari gezilebiliyor (indeks tabanli secim). ASAGI ok acar, SOL/SAG gezer, OK uygular. Ajandada Izlemediklerim adimi."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.6/netmovies-tv-0.6.6.apk",
+      "sha256": "5b92680c55ffea21f55a6ecbc73a47d62af75affc61e83a9be5d34400402dc1b",
+      "notes": "Bolum sayfasi kartlari dogrudan o bolumu acar (baslikta sezon/bolum okunur). Alt bar tuslari gezilebilir. Ajandada Izlemediklerim."
     }
   ]
 }
