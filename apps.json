@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 502,
+      "versionCode": 600,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.5.2",
+      "version": "0.6.0",
       "releaseDate": "2026-09-18",
-      "sizeBytes": 20304306,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.5.2/netmovies-tv-0.5.2.apk",
-      "sha256": "82746bbe178db42acbb36ff69070af934e624168cf28399b7fb6d26738fe1acf",
-      "notes": "Kaynak dili dogru etiketleniyor (orijinal dil). Posterde DUB/ALT/ORJ rozeti, menude dil ozeti. Favoriden acilan dizi kaldigi bolumden devam eder."
+      "sizeBytes": 20353534,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.0/netmovies-tv-0.6.0.apk",
+      "sha256": "102fb2026351cd8bf411179b493d5c3ebb490898fca2658301cdcd02dc9d08b9",
+      "notes": "Telefonda gercek arama ekrani: tek satir sonuc (yil, puan, sezon/bolum, dil), basinca bilgi karti kaynaklari yoklar ve TV de oynatir. Siralama sunucuda: favori/izlenecek/takip ustte."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 502,
+      "versionCode": 600,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.5.2",
+      "version": "0.6.0",
       "releaseDate": "2026-09-18",
-      "sizeBytes": 20304306,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.5.2/netmovies-tv-0.5.2.apk",
-      "sha256": "82746bbe178db42acbb36ff69070af934e624168cf28399b7fb6d26738fe1acf",
-      "notes": "Kaynak dili dogru etiketleniyor (orijinal dil). Posterde DUB/ALT/ORJ rozeti, menude dil ozeti. Favoriden acilan dizi kaldigi bolumden devam eder."
+      "sizeBytes": 20353534,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.0/netmovies-tv-0.6.0.apk",
+      "sha256": "102fb2026351cd8bf411179b493d5c3ebb490898fca2658301cdcd02dc9d08b9",
+      "notes": "Telefonda gercek arama ekrani: tek satir sonuc (yil, puan, sezon/bolum, dil), basinca bilgi karti kaynaklari yoklar ve TV de oynatir. Siralama sunucuda: favori/izlenecek/takip ustte."
     }
   ]
 }
