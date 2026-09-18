@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 600,
+      "versionCode": 601,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.6.0",
+      "version": "0.6.1",
       "releaseDate": "2026-09-18",
-      "sizeBytes": 20353534,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.0/netmovies-tv-0.6.0.apk",
-      "sha256": "102fb2026351cd8bf411179b493d5c3ebb490898fca2658301cdcd02dc9d08b9",
-      "notes": "Telefonda gercek arama ekrani: tek satir sonuc (yil, puan, sezon/bolum, dil), basinca bilgi karti kaynaklari yoklar ve TV de oynatir. Siralama sunucuda: favori/izlenecek/takip ustte."
+      "sizeBytes": 20353530,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.1/netmovies-tv-0.6.1.apk",
+      "sha256": "0b89ee5b4bc2a298473683c3904f6459f711de0a06e407409c48b8b1b4012650",
+      "notes": "Bolumler ayar panelinin icinde acilir (tam ekran liste degil). Alt bar kaydirilabilir, ileri sarma dugmesine ulasilir. Liste kapaninca odak oynaticiya doner: sag/sol sarma calisir."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 600,
+      "versionCode": 601,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.6.0",
+      "version": "0.6.1",
       "releaseDate": "2026-09-18",
-      "sizeBytes": 20353534,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.0/netmovies-tv-0.6.0.apk",
-      "sha256": "102fb2026351cd8bf411179b493d5c3ebb490898fca2658301cdcd02dc9d08b9",
-      "notes": "Telefonda gercek arama ekrani: tek satir sonuc (yil, puan, sezon/bolum, dil), basinca bilgi karti kaynaklari yoklar ve TV de oynatir. Siralama sunucuda: favori/izlenecek/takip ustte."
+      "sizeBytes": 20353530,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.6.1/netmovies-tv-0.6.1.apk",
+      "sha256": "0b89ee5b4bc2a298473683c3904f6459f711de0a06e407409c48b8b1b4012650",
+      "notes": "Bolumler ayar panelinin icinde acilir (tam ekran liste degil). Alt bar kaydirilabilir, ileri sarma dugmesine ulasilir. Liste kapaninca odak oynaticiya doner: sag/sol sarma calisir."
     }
   ]
 }
