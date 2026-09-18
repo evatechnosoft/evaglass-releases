@@ -84,18 +84,18 @@
     {
       "id": "netmovies-mini-watch",
       "packageName": "com.evaitec.netmovies.wear",
-      "versionCode": 114,
+      "versionCode": 115,
       "name": "NetMovies Mini",
       "tagline": "Televizyonu bileğinizden sürün — kaydır yön, dokun OK.",
       "platform": "watch",
       "icon": "assets/netmovies-watch.svg",
       "screenshots": [],
-      "version": "0.1.14",
+      "version": "0.1.15",
       "releaseDate": "2026-09-18",
-      "sizeBytes": 850055,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.14/netmovies-mini-watch-0.1.14.apk",
-      "sha256": "06d42f687c1ff34970597ee2092127fbcfac765c49bfe8be69316daf752d2cd5",
-      "notes": "APK 23,2 MB -> 850 KB (R8). Indirme once Wi-Fi tasiyicisini isteyip yerel sunucuyu yeniden ariyor; tunelden inmiyor."
+      "sizeBytes": 5306621,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.15/netmovies-mini-watch-0.1.15.apk",
+      "sha256": "42dc0995ba773bf46241658757728c398512f6a2b603312d87bf965d3f1eed96",
+      "notes": "0.1.14 acilmiyordu (R8 uygulama siniflarina dokunuyordu). 23,2 MB -> 5,3 MB, uygulama kodu korunuyor. Indirme yerel yoldan."
     },
     {
       "id": "wellness-phone",
