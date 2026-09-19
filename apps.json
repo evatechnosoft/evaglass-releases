@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16",
+  "updated": "2026-09-19T15:25:55Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 903,
+      "versionCode": 904,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.3",
+      "version": "0.9.4",
       "releaseDate": "2026-09-19",
       "sizeBytes": 20386298,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.3/netmovies-tv-0.9.3.apk",
-      "sha256": "d68a3ab3a5184af5546e0f3e89d98c23a503e02ae5c923e3569cb1af3da723f1",
-      "notes": "Rafa 10 poster (tum sayfalar ayni olcu) + cokme izi ekranda gosteriliyor."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.4/netmovies-tv-0.9.4.apk",
+      "sha256": "2cda6b821b47bf51412ddcbfdd8a3992f57c168986c25f6b4021a58a1c40600b",
+      "notes": "Oynatici ekrani acilmiyordu (ART VerifyError). Dexleyici hatasi; R8 8.13.23 ile duzeldi."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 903,
+      "versionCode": 904,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.3",
+      "version": "0.9.4",
       "releaseDate": "2026-09-19",
       "sizeBytes": 20386298,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.3/netmovies-tv-0.9.3.apk",
-      "sha256": "d68a3ab3a5184af5546e0f3e89d98c23a503e02ae5c923e3569cb1af3da723f1",
-      "notes": "Rafa 10 poster (tum sayfalar ayni olcu) + cokme izi ekranda gosteriliyor."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.4/netmovies-tv-0.9.4.apk",
+      "sha256": "2cda6b821b47bf51412ddcbfdd8a3992f57c168986c25f6b4021a58a1c40600b",
+      "notes": "Oynatici ekrani acilmiyordu (ART VerifyError). Dexleyici hatasi; R8 8.13.23 ile duzeldi."
     }
   ]
 }
