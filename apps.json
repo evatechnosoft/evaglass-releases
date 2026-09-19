@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 703,
+      "versionCode": 800,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.7.3",
+      "version": "0.8.0",
       "releaseDate": "2026-09-19",
       "sizeBytes": 20371404,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.7.3/netmovies-tv-0.7.3.apk",
-      "sha256": "a3e7511287889683b4f53ba32a1b33e7781cfdd46695d04367ce1db89b8cfd7b",
-      "notes": "Orijinal oynatici kontrolleri alt barda; odak panelde kalir. Cokme raporu."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.8.0/netmovies-tv-0.8.0.apk",
+      "sha256": "8c50dd920ffdd6e9a3eba038cbd353ef45a3df71fd25e5aee0e375ae641ec303",
+      "notes": "Devam edenler / Izlenecekler / Takip ettiklerim / Begendiklerim raflari; bolum secici dar sutun + onizleme."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 703,
+      "versionCode": 800,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.7.3",
+      "version": "0.8.0",
       "releaseDate": "2026-09-19",
       "sizeBytes": 20371404,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.7.3/netmovies-tv-0.7.3.apk",
-      "sha256": "a3e7511287889683b4f53ba32a1b33e7781cfdd46695d04367ce1db89b8cfd7b",
-      "notes": "Orijinal oynatici kontrolleri alt barda; odak panelde kalir. Cokme raporu."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.8.0/netmovies-tv-0.8.0.apk",
+      "sha256": "8c50dd920ffdd6e9a3eba038cbd353ef45a3df71fd25e5aee0e375ae641ec303",
+      "notes": "Devam edenler / Izlenecekler / Takip ettiklerim / Begendiklerim raflari; bolum secici dar sutun + onizleme."
     }
   ]
 }
