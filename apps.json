@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 901,
+      "versionCode": 902,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.1",
+      "version": "0.9.2",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 20369914,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.1/netmovies-tv-0.9.1.apk",
-      "sha256": "9c06ea0f71829cdf573881f2a1a09a0dc2cd4d70956b2510cfa504e1c06e589e",
-      "notes": "Tek oynatici (bizimki): bolum yazisi sol ustte, onceki/sonraki bolum cubukta."
+      "sizeBytes": 20386302,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.2/netmovies-tv-0.9.2.apk",
+      "sha256": "59f4291e23d58bb542e03ff6ae547e04c44b56292ac963eb9ad660ac3e2c6925",
+      "notes": "Secilen bolum dogru aciliyor (bolum adresiyle cozumleme); kontrol dugmeleri D-pad ile geziliyor."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 901,
+      "versionCode": 902,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.1",
+      "version": "0.9.2",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 20369914,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.1/netmovies-tv-0.9.1.apk",
-      "sha256": "9c06ea0f71829cdf573881f2a1a09a0dc2cd4d70956b2510cfa504e1c06e589e",
-      "notes": "Tek oynatici (bizimki): bolum yazisi sol ustte, onceki/sonraki bolum cubukta."
+      "sizeBytes": 20386302,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.2/netmovies-tv-0.9.2.apk",
+      "sha256": "59f4291e23d58bb542e03ff6ae547e04c44b56292ac963eb9ad660ac3e2c6925",
+      "notes": "Secilen bolum dogru aciliyor (bolum adresiyle cozumleme); kontrol dugmeleri D-pad ile geziliyor."
     }
   ]
 }
