@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 701,
+      "versionCode": 702,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.7.1",
+      "version": "0.7.2",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 20353530,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.7.1/netmovies-tv-0.7.1.apk",
-      "sha256": "892eac9c0afe7b90074c6ea9698ec8171b57ab24239bc35b579c7a8ab92bbfd3",
-      "notes": "Oynatici secimi: ozel (buton-eslemeli) veya orijinal Media3 kontrol cubugu — Araclar sekmesinden."
+      "sizeBytes": 20494502,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.7.2/netmovies-tv-0.7.2.apk",
+      "sha256": "b891dbb968219bd1244b995eb9d0fdf7046fb7212d29152de6eb86a0de1e59b8",
+      "notes": "Cokme raporu: uygulama patlarsa yigin izi sonraki acilista sunucuya gider. Oynatici secimi (ozel/orijinal) Araclar sekmesinde."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 701,
+      "versionCode": 702,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.7.1",
+      "version": "0.7.2",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 20353530,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.7.1/netmovies-tv-0.7.1.apk",
-      "sha256": "892eac9c0afe7b90074c6ea9698ec8171b57ab24239bc35b579c7a8ab92bbfd3",
-      "notes": "Oynatici secimi: ozel (buton-eslemeli) veya orijinal Media3 kontrol cubugu — Araclar sekmesinden."
+      "sizeBytes": 20494502,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.7.2/netmovies-tv-0.7.2.apk",
+      "sha256": "b891dbb968219bd1244b995eb9d0fdf7046fb7212d29152de6eb86a0de1e59b8",
+      "notes": "Cokme raporu: uygulama patlarsa yigin izi sonraki acilista sunucuya gider. Oynatici secimi (ozel/orijinal) Araclar sekmesinde."
     }
   ]
 }
