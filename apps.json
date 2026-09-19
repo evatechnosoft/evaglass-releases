@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 902,
+      "versionCode": 903,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.2",
+      "version": "0.9.3",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 20386302,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.2/netmovies-tv-0.9.2.apk",
-      "sha256": "59f4291e23d58bb542e03ff6ae547e04c44b56292ac963eb9ad660ac3e2c6925",
-      "notes": "Secilen bolum dogru aciliyor (bolum adresiyle cozumleme); kontrol dugmeleri D-pad ile geziliyor."
+      "sizeBytes": 20386298,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.3/netmovies-tv-0.9.3.apk",
+      "sha256": "d68a3ab3a5184af5546e0f3e89d98c23a503e02ae5c923e3569cb1af3da723f1",
+      "notes": "Rafa 10 poster (tum sayfalar ayni olcu) + cokme izi ekranda gosteriliyor."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 902,
+      "versionCode": 903,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.2",
+      "version": "0.9.3",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 20386302,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.2/netmovies-tv-0.9.2.apk",
-      "sha256": "59f4291e23d58bb542e03ff6ae547e04c44b56292ac963eb9ad660ac3e2c6925",
-      "notes": "Secilen bolum dogru aciliyor (bolum adresiyle cozumleme); kontrol dugmeleri D-pad ile geziliyor."
+      "sizeBytes": 20386298,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.3/netmovies-tv-0.9.3.apk",
+      "sha256": "d68a3ab3a5184af5546e0f3e89d98c23a503e02ae5c923e3569cb1af3da723f1",
+      "notes": "Rafa 10 poster (tum sayfalar ayni olcu) + cokme izi ekranda gosteriliyor."
     }
   ]
 }
