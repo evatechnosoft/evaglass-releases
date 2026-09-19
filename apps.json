@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 908,
+      "versionCode": 909,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.8",
+      "version": "0.9.9",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 20419810,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.8/netmovies-tv-0.9.8.apk",
-      "sha256": "c793e46dbb2f762dac071db095c909c6f533f969b2e55570b69d6887d9ae799d",
-      "notes": "Film baslarken kendi kendine basilmis gibi olmasi duzeldi. Baslangic panelinde GERI artik cikis degil OYNAT."
+      "sizeBytes": 20402682,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.9/netmovies-tv-0.9.9.apk",
+      "sha256": "bbd60667051a9990b8d11061f5797d58cbf14a5626a027f65f11dc4145897559",
+      "notes": "Oynaticida SOL/SAG artik sarma degil kumanda bari: oklarla butonlar arasinda gezilir. Sarma bardan, kumandanin sarma tuslarindan ve YUKARI onizlemeden."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 908,
+      "versionCode": 909,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.8",
+      "version": "0.9.9",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 20419810,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.8/netmovies-tv-0.9.8.apk",
-      "sha256": "c793e46dbb2f762dac071db095c909c6f533f969b2e55570b69d6887d9ae799d",
-      "notes": "Film baslarken kendi kendine basilmis gibi olmasi duzeldi. Baslangic panelinde GERI artik cikis degil OYNAT."
+      "sizeBytes": 20402682,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.9/netmovies-tv-0.9.9.apk",
+      "sha256": "bbd60667051a9990b8d11061f5797d58cbf14a5626a027f65f11dc4145897559",
+      "notes": "Oynaticida SOL/SAG artik sarma degil kumanda bari: oklarla butonlar arasinda gezilir. Sarma bardan, kumandanin sarma tuslarindan ve YUKARI onizlemeden."
     }
   ]
 }
