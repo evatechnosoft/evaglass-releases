@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 906,
+      "versionCode": 907,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.6",
+      "version": "0.9.7",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 20386298,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.6/netmovies-tv-0.9.6.apk",
-      "sha256": "2dc13dd68a13aa0c400d9071633276c08e0b1dad8bead68ad04e845704286b12",
-      "notes": "Cokme seridi herhangi bir tusla kapaniyor, her acilista tekrar gelmiyor, mesaj kesilmiyor."
+      "sizeBytes": 20402682,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.7/netmovies-tv-0.9.7.apk",
+      "sha256": "c7a97a370736e0263dc74639cd63639b1f9f0c25b48a2fd96c087212576df3c9",
+      "notes": "Oynaticida ASAGI ok kumanda barini aciyor. Poster uzun-bas karti: sol bolumler, sag listeler, orta ozet/dil, alt oynat — yon tuslariyla."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 906,
+      "versionCode": 907,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.6",
+      "version": "0.9.7",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 20386298,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.6/netmovies-tv-0.9.6.apk",
-      "sha256": "2dc13dd68a13aa0c400d9071633276c08e0b1dad8bead68ad04e845704286b12",
-      "notes": "Cokme seridi herhangi bir tusla kapaniyor, her acilista tekrar gelmiyor, mesaj kesilmiyor."
+      "sizeBytes": 20402682,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.7/netmovies-tv-0.9.7.apk",
+      "sha256": "c7a97a370736e0263dc74639cd63639b1f9f0c25b48a2fd96c087212576df3c9",
+      "notes": "Oynaticida ASAGI ok kumanda barini aciyor. Poster uzun-bas karti: sol bolumler, sag listeler, orta ozet/dil, alt oynat — yon tuslariyla."
     }
   ]
 }
