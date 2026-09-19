@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-19T15:25:55Z",
+  "updated": "2026-09-19T15:35:46Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 904,
+      "versionCode": 905,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.4",
+      "version": "0.9.5",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 20386298,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.4/netmovies-tv-0.9.4.apk",
-      "sha256": "2cda6b821b47bf51412ddcbfdd8a3992f57c168986c25f6b4021a58a1c40600b",
-      "notes": "Oynatici ekrani acilmiyordu (ART VerifyError). Dexleyici hatasi; R8 8.13.23 ile duzeldi."
+      "sizeBytes": 20386302,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.5/netmovies-tv-0.9.5.apk",
+      "sha256": "0277b02711b694adb953b04b4938e65b6bf158289261e69c12020b5c9e64fade",
+      "notes": "Oynatici ekrani acilmiyordu (ART VerifyError, dexleyici hatasi) — duzeldi. Harici oynatici secenegi kaldirildi."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 904,
+      "versionCode": 905,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.4",
+      "version": "0.9.5",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 20386298,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.4/netmovies-tv-0.9.4.apk",
-      "sha256": "2cda6b821b47bf51412ddcbfdd8a3992f57c168986c25f6b4021a58a1c40600b",
-      "notes": "Oynatici ekrani acilmiyordu (ART VerifyError). Dexleyici hatasi; R8 8.13.23 ile duzeldi."
+      "sizeBytes": 20386302,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.5/netmovies-tv-0.9.5.apk",
+      "sha256": "0277b02711b694adb953b04b4938e65b6bf158289261e69c12020b5c9e64fade",
+      "notes": "Oynatici ekrani acilmiyordu (ART VerifyError, dexleyici hatasi) — duzeldi. Harici oynatici secenegi kaldirildi."
     }
   ]
 }
