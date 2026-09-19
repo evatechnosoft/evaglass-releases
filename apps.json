@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 801,
+      "versionCode": 802,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.8.1",
+      "version": "0.8.2",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 20371404,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.8.1/netmovies-tv-0.8.1.apk",
-      "sha256": "47a40c0a29cc3b0ef65aeb1b69871d9e33ffe671f213f4e3c7e12eb45d197efc",
-      "notes": "Bolum secicide TMDB bolum ozeti + bolum karesi. Anlamli listeler."
+      "sizeBytes": 20387896,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.8.2/netmovies-tv-0.8.2.apk",
+      "sha256": "9e54d0ab602987a9a7e5112a61bb59f6515fcfb2f3350e5c850436769bce70eb",
+      "notes": "Alt barda onceki/sonraki bolum + harici oynatici (VLC/Nova/MX). TMDB bolum ozeti."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 801,
+      "versionCode": 802,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.8.1",
+      "version": "0.8.2",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 20371404,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.8.1/netmovies-tv-0.8.1.apk",
-      "sha256": "47a40c0a29cc3b0ef65aeb1b69871d9e33ffe671f213f4e3c7e12eb45d197efc",
-      "notes": "Bolum secicide TMDB bolum ozeti + bolum karesi. Anlamli listeler."
+      "sizeBytes": 20387896,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.8.2/netmovies-tv-0.8.2.apk",
+      "sha256": "9e54d0ab602987a9a7e5112a61bb59f6515fcfb2f3350e5c850436769bce70eb",
+      "notes": "Alt barda onceki/sonraki bolum + harici oynatici (VLC/Nova/MX). TMDB bolum ozeti."
     }
   ]
 }
