@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 900,
+      "versionCode": 901,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.0",
+      "version": "0.9.1",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 25357502,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.0/netmovies-tv-0.9.0.apk",
-      "sha256": "713dee5ab17851c60fd44da8bd525d259fb5ec771328db52b4483e1875b68372",
-      "notes": "Yeni oynatici: Media3 Compose arayuzu, D-pad gezinmesi kutudan, bolum gecisi merkez seritte."
+      "sizeBytes": 20369914,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.1/netmovies-tv-0.9.1.apk",
+      "sha256": "9c06ea0f71829cdf573881f2a1a09a0dc2cd4d70956b2510cfa504e1c06e589e",
+      "notes": "Tek oynatici (bizimki): bolum yazisi sol ustte, onceki/sonraki bolum cubukta."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 900,
+      "versionCode": 901,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.0",
+      "version": "0.9.1",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 25357502,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.0/netmovies-tv-0.9.0.apk",
-      "sha256": "713dee5ab17851c60fd44da8bd525d259fb5ec771328db52b4483e1875b68372",
-      "notes": "Yeni oynatici: Media3 Compose arayuzu, D-pad gezinmesi kutudan, bolum gecisi merkez seritte."
+      "sizeBytes": 20369914,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.1/netmovies-tv-0.9.1.apk",
+      "sha256": "9c06ea0f71829cdf573881f2a1a09a0dc2cd4d70956b2510cfa504e1c06e589e",
+      "notes": "Tek oynatici (bizimki): bolum yazisi sol ustte, onceki/sonraki bolum cubukta."
     }
   ]
 }
