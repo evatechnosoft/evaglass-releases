@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 800,
+      "versionCode": 801,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.8.0",
+      "version": "0.8.1",
       "releaseDate": "2026-09-19",
       "sizeBytes": 20371404,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.8.0/netmovies-tv-0.8.0.apk",
-      "sha256": "8c50dd920ffdd6e9a3eba038cbd353ef45a3df71fd25e5aee0e375ae641ec303",
-      "notes": "Devam edenler / Izlenecekler / Takip ettiklerim / Begendiklerim raflari; bolum secici dar sutun + onizleme."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.8.1/netmovies-tv-0.8.1.apk",
+      "sha256": "47a40c0a29cc3b0ef65aeb1b69871d9e33ffe671f213f4e3c7e12eb45d197efc",
+      "notes": "Bolum secicide TMDB bolum ozeti + bolum karesi. Anlamli listeler."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 800,
+      "versionCode": 801,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.8.0",
+      "version": "0.8.1",
       "releaseDate": "2026-09-19",
       "sizeBytes": 20371404,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.8.0/netmovies-tv-0.8.0.apk",
-      "sha256": "8c50dd920ffdd6e9a3eba038cbd353ef45a3df71fd25e5aee0e375ae641ec303",
-      "notes": "Devam edenler / Izlenecekler / Takip ettiklerim / Begendiklerim raflari; bolum secici dar sutun + onizleme."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.8.1/netmovies-tv-0.8.1.apk",
+      "sha256": "47a40c0a29cc3b0ef65aeb1b69871d9e33ffe671f213f4e3c7e12eb45d197efc",
+      "notes": "Bolum secicide TMDB bolum ozeti + bolum karesi. Anlamli listeler."
     }
   ]
 }
