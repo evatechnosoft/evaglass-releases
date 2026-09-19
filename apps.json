@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 907,
+      "versionCode": 908,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.7",
+      "version": "0.9.8",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 20402682,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.7/netmovies-tv-0.9.7.apk",
-      "sha256": "c7a97a370736e0263dc74639cd63639b1f9f0c25b48a2fd96c087212576df3c9",
-      "notes": "Oynaticida ASAGI ok kumanda barini aciyor. Poster uzun-bas karti: sol bolumler, sag listeler, orta ozet/dil, alt oynat — yon tuslariyla."
+      "sizeBytes": 20419810,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.8/netmovies-tv-0.9.8.apk",
+      "sha256": "c793e46dbb2f762dac071db095c909c6f533f969b2e55570b69d6887d9ae799d",
+      "notes": "Film baslarken kendi kendine basilmis gibi olmasi duzeldi. Baslangic panelinde GERI artik cikis degil OYNAT."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 907,
+      "versionCode": 908,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.7",
+      "version": "0.9.8",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 20402682,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.7/netmovies-tv-0.9.7.apk",
-      "sha256": "c7a97a370736e0263dc74639cd63639b1f9f0c25b48a2fd96c087212576df3c9",
-      "notes": "Oynaticida ASAGI ok kumanda barini aciyor. Poster uzun-bas karti: sol bolumler, sag listeler, orta ozet/dil, alt oynat — yon tuslariyla."
+      "sizeBytes": 20419810,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.8/netmovies-tv-0.9.8.apk",
+      "sha256": "c793e46dbb2f762dac071db095c909c6f533f969b2e55570b69d6887d9ae799d",
+      "notes": "Film baslarken kendi kendine basilmis gibi olmasi duzeldi. Baslangic panelinde GERI artik cikis degil OYNAT."
     }
   ]
 }
