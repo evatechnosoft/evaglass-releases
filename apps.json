@@ -116,34 +116,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 802,
+      "versionCode": 900,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.8.2",
+      "version": "0.9.0",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 20387896,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.8.2/netmovies-tv-0.8.2.apk",
-      "sha256": "9e54d0ab602987a9a7e5112a61bb59f6515fcfb2f3350e5c850436769bce70eb",
-      "notes": "Alt barda onceki/sonraki bolum + harici oynatici (VLC/Nova/MX). TMDB bolum ozeti."
+      "sizeBytes": 25357502,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.0/netmovies-tv-0.9.0.apk",
+      "sha256": "713dee5ab17851c60fd44da8bd525d259fb5ec771328db52b4483e1875b68372",
+      "notes": "Yeni oynatici: Media3 Compose arayuzu, D-pad gezinmesi kutudan, bolum gecisi merkez seritte."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 802,
+      "versionCode": 900,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.8.2",
+      "version": "0.9.0",
       "releaseDate": "2026-09-19",
-      "sizeBytes": 20387896,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.8.2/netmovies-tv-0.8.2.apk",
-      "sha256": "9e54d0ab602987a9a7e5112a61bb59f6515fcfb2f3350e5c850436769bce70eb",
-      "notes": "Alt barda onceki/sonraki bolum + harici oynatici (VLC/Nova/MX). TMDB bolum ozeti."
+      "sizeBytes": 25357502,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.0/netmovies-tv-0.9.0.apk",
+      "sha256": "713dee5ab17851c60fd44da8bd525d259fb5ec771328db52b4483e1875b68372",
+      "notes": "Yeni oynatici: Media3 Compose arayuzu, D-pad gezinmesi kutudan, bolum gecisi merkez seritte."
     }
   ]
 }
