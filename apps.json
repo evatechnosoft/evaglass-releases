@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20T11:11:07Z",
+  "updated": "2026-09-20T12:11:02Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -132,34 +132,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 909,
+      "versionCode": 910,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.9",
-      "releaseDate": "2026-09-19",
+      "version": "0.9.10",
+      "releaseDate": "2026-09-20",
       "sizeBytes": 20402682,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.9/netmovies-tv-0.9.9.apk",
-      "sha256": "bbd60667051a9990b8d11061f5797d58cbf14a5626a027f65f11dc4145897559",
-      "notes": "Oynaticida SOL/SAG artik sarma degil kumanda bari: oklarla butonlar arasinda gezilir. Sarma bardan, kumandanin sarma tuslarindan ve YUKARI onizlemeden."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.10/netmovies-tv-0.9.10.apk",
+      "sha256": "3e027a669f02f0757d36ffbb737199f2316962868468b5208eca0057a28b059c",
+      "notes": "Sunucunun ev agindaki adresi degisince uygulama kendini toparlar; artik elle Tekrar dene gerekmiyor."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 909,
+      "versionCode": 910,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.9",
-      "releaseDate": "2026-09-19",
+      "version": "0.9.10",
+      "releaseDate": "2026-09-20",
       "sizeBytes": 20402682,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.9/netmovies-tv-0.9.9.apk",
-      "sha256": "bbd60667051a9990b8d11061f5797d58cbf14a5626a027f65f11dc4145897559",
-      "notes": "Oynaticida SOL/SAG artik sarma degil kumanda bari: oklarla butonlar arasinda gezilir. Sarma bardan, kumandanin sarma tuslarindan ve YUKARI onizlemeden."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.10/netmovies-tv-0.9.10.apk",
+      "sha256": "3e027a669f02f0757d36ffbb737199f2316962868468b5208eca0057a28b059c",
+      "notes": "Sunucunun ev agindaki adresi degisince uygulama kendini toparlar; artik elle Tekrar dene gerekmiyor."
     }
   ]
 }
