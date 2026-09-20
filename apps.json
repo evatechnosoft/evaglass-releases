@@ -1,37 +1,37 @@
 {
-  "updated": "2026-09-20T18:59:54Z",
+  "updated": "2026-09-20T19:19:01Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
       "packageName": "com.evaitec.ota.tv",
-      "versionCode": 13,
+      "versionCode": 14,
       "name": "evaitecOTA",
       "tagline": "Televizyona uygulama kuran ve güncelleyen yükleyici.",
       "platform": "tv",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.12",
-      "releaseDate": "2026-09-16",
-      "sizeBytes": 189953,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-tv-v0.1.12/evaitec-ota-tv-0.1.12.apk",
-      "sha256": "382c57f26099e8e2d41e05f70e7ef4aa298a88d209918ab6ee26938ad0de4e00",
-      "notes": "Izgara düzen: kartlar yan yana, ekrana dört uygulama sığıyor. Kart içindeki dolu butonlar kalktı, kartın kendisi OK ile çalışıyor. Vurgu rengi yalnız iş bekleyen kartta."
+      "version": "0.1.13",
+      "releaseDate": "2026-09-20",
+      "sizeBytes": 190769,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-tv-v0.1.13/evaitec-ota-tv-0.1.13.apk",
+      "sha256": "346f20dcf1ac57956da3d9617ce5e835cbc1dcf43fbcc34420f2cd7dd37ab337",
+      "notes": "Indirme once ev sunucusundan, sonra Cloudflare tunelinden, en sonda GitHub."
     },
     {
       "id": "evaitec-ota-mobile",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 11,
+      "versionCode": 12,
       "name": "evaitecOTA",
       "tagline": "Telefona uygulama kuran ve guncelleyen yukleyici; saate de APK gonderir.",
       "platform": "phone",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.10",
-      "releaseDate": "2026-09-15",
-      "sizeBytes": 665385,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.10/evaitecOTA-mobile-0.1.10.apk",
-      "sha256": "e625fdbaa58a3f16a54d586a64cf3a686038c4ea2d4761e9fdfce50d5046e0a7",
-      "notes": "Android 11+. Bir kez elle kurulur; sonraki uygulamalar ve guncellemeler bunun uzerinden gelir."
+      "version": "0.1.11",
+      "releaseDate": "2026-09-20",
+      "sizeBytes": 670269,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.11/evaitec-ota-mobile-0.1.11.apk",
+      "sha256": "0fe0f2f51026564f857c84006646a3f910c0dbd93be06f845c227fe1570e01c8",
+      "notes": "Indirme once ev sunucusundan, sonra Cloudflare tunelinden, en sonda GitHub."
     },
     {
       "id": "evaglass-phone",
@@ -68,18 +68,18 @@
     {
       "id": "evaitec-ota-wear",
       "packageName": "com.evaitec.ota.wear",
-      "versionCode": 7,
+      "versionCode": 8,
       "name": "evaitecOTA",
       "tagline": "Saate uygulama kuran ve güncelleyen yükleyici.",
       "platform": "watch",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.11",
-      "releaseDate": "2026-09-17",
-      "sizeBytes": 345761,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.11/evaitec-ota-wear-0.1.11.apk",
-      "sha256": "0e32f4b86a67618b6545c5ac5db570efdf1cd1d269f3d63345754993b7d74e80",
-      "notes": "İndirme sırasında Wi-Fi radyosu ve CPU uyanık tutulur; kopan indirme kalınan yerden devam eder."
+      "version": "0.1.12",
+      "releaseDate": "2026-09-20",
+      "sizeBytes": 349673,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.12/evaitec-ota-wear-0.1.12.apk",
+      "sha256": "7fa61ce2f3a4fa5c0c8ded64767a8f5dae8838d516eb2b943d74d0223d8f6aa2",
+      "notes": "Indirme once ev sunucusundan, sonra Cloudflare tunelinden, en sonda GitHub."
     },
     {
       "id": "netmovies-mini-watch",
@@ -95,7 +95,11 @@
       "sizeBytes": 6737429,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.16/netmovies-mini-watch-0.1.16.apk",
       "sha256": "f2102393daf16e971639f707c47d00c8fe8bbfed97dfde8dc7bec31215410fae",
-      "notes": "Uygulama kuruluyor ama acilmiyordu (giris ekrani sinifi eksikti) - duzeltildi."
+      "notes": "Uygulama kuruluyor ama acilmiyordu (giris ekrani sinifi eksikti) - duzeltildi.",
+      "mirrors": [
+        "http://192.168.1.185:3310/api/v1/app_update/download?target=wear",
+        "https://w.evaitec.com/api/v1/app_update/download?target=wear"
+      ]
     },
     {
       "id": "wellness-phone",
@@ -143,7 +147,11 @@
       "sizeBytes": 20402686,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.12/netmovies-tv-0.9.12.apk",
       "sha256": "51765c8400299c1774500d340355d59ddc57d58cb9e6e276a1a1025306efd88f",
-      "notes": "Kumanda barindan sesi kapat/ac; widget sunucu adresi degisince kendini toparlar."
+      "notes": "Kumanda barindan sesi kapat/ac; widget sunucu adresi degisince kendini toparlar.",
+      "mirrors": [
+        "http://192.168.1.185:3310/api/v1/app_update/download?target=tv",
+        "https://w.evaitec.com/api/v1/app_update/download?target=tv"
+      ]
     },
     {
       "id": "netmovies-tv",
@@ -159,7 +167,11 @@
       "sizeBytes": 20402686,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.12/netmovies-tv-0.9.12.apk",
       "sha256": "51765c8400299c1774500d340355d59ddc57d58cb9e6e276a1a1025306efd88f",
-      "notes": "Kumanda barindan sesi kapat/ac; widget sunucu adresi degisince kendini toparlar."
+      "notes": "Kumanda barindan sesi kapat/ac; widget sunucu adresi degisince kendini toparlar.",
+      "mirrors": [
+        "http://192.168.1.185:3310/api/v1/app_update/download?target=tv",
+        "https://w.evaitec.com/api/v1/app_update/download?target=tv"
+      ]
     }
   ]
 }
