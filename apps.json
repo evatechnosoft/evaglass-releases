@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20T18:03:34Z",
+  "updated": "2026-09-20T18:14:00Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -132,34 +132,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 911,
+      "versionCode": 912,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.11",
+      "version": "0.9.12",
       "releaseDate": "2026-09-20",
       "sizeBytes": 20402686,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.11/netmovies-tv-0.9.11.apk",
-      "sha256": "90c35c024a54d5d095bb3e561c9d93fdb9007a4181f884c1e8b3619cbd9a38e5",
-      "notes": "Oynaticida asagi/sag/sol basili tutma da gezilebilir kumanda barini acar."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.12/netmovies-tv-0.9.12.apk",
+      "sha256": "51765c8400299c1774500d340355d59ddc57d58cb9e6e276a1a1025306efd88f",
+      "notes": "Kumanda barindan sesi kapat/ac; widget sunucu adresi degisince kendini toparlar."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 911,
+      "versionCode": 912,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.11",
+      "version": "0.9.12",
       "releaseDate": "2026-09-20",
       "sizeBytes": 20402686,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.11/netmovies-tv-0.9.11.apk",
-      "sha256": "90c35c024a54d5d095bb3e561c9d93fdb9007a4181f884c1e8b3619cbd9a38e5",
-      "notes": "Oynaticida asagi/sag/sol basili tutma da gezilebilir kumanda barini acar."
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.12/netmovies-tv-0.9.12.apk",
+      "sha256": "51765c8400299c1774500d340355d59ddc57d58cb9e6e276a1a1025306efd88f",
+      "notes": "Kumanda barindan sesi kapat/ac; widget sunucu adresi degisince kendini toparlar."
     }
   ]
 }
