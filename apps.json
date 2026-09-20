@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-19T15:54:13Z",
+  "updated": "2026-09-20T11:10:00Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -100,18 +100,34 @@
     {
       "id": "wellness-phone",
       "packageName": "com.evaitec.wellness",
-      "versionCode": 701,
+      "versionCode": 2000,
       "name": "Wellness",
       "tagline": "Kilo, protein, antrenman ve saat verisi tek gunlukte; Eva sorar, sen onaylarsin.",
       "platform": "phone",
       "icon": "assets/wellness.svg",
       "screenshots": [],
-      "version": "0.7.1",
-      "releaseDate": "2026-09-11",
-      "sizeBytes": 23260385,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/wellness-v0.7.1/wellness-0.7.1.apk",
-      "sha256": "3f24260409891f2fe8d2094f361fb483344e7dc0f8635fcdfa40910a20fd5e5a",
-      "notes": "Android 8+. Ilk acilista Ayar > Sunucu alanina adres ve token girilir; Health Connect izinleri telefon ayarlarindan verilir."
+      "version": "0.20.0",
+      "releaseDate": "2026-09-20",
+      "sizeBytes": 24140652,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/wellness-v0.20.0/wellness-0.20.0.apk",
+      "sha256": "7f52f209e3a6c419aad40014f951ad0c7d7782eb4e0fa13b072391a782965b80",
+      "notes": "Android 8+. Giris adresi artik https://fit.evaitec.com — Ayar > Sunucu alanina yalnizca token girilir. Health Connect izinleri telefon ayarlarindan verilir."
+    },
+    {
+      "id": "wellness-wear",
+      "packageName": "com.evaitec.wellness",
+      "versionCode": 2000,
+      "name": "Wellness Saat",
+      "tagline": "Adim, nabiz ve antrenmani bilekten toplar; telefonla ayni gunluge yazar.",
+      "platform": "watch",
+      "icon": "assets/wellness.svg",
+      "screenshots": [],
+      "version": "0.20.0",
+      "releaseDate": "2026-09-20",
+      "sizeBytes": 13053264,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/wellness-v0.20.0/wellness-wear-0.20.0.apk",
+      "sha256": "a9993574f88d8a3e41091d8d4bc656502dd007520e0812705db803367b41d627",
+      "notes": "Bu dosyayi telefona kurmayin; telefon uygulamasiyla ayni paket adini tasir."
     },
     {
       "id": "netmovies-phone",
