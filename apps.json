@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20T12:11:02Z",
+  "updated": "2026-09-20T17:51:35Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -100,33 +100,33 @@
     {
       "id": "wellness-phone",
       "packageName": "com.evaitec.wellness",
-      "versionCode": 2000,
+      "versionCode": 2100,
       "name": "Wellness",
       "tagline": "Kilo, protein, antrenman ve saat verisi tek gunlukte; Eva sorar, sen onaylarsin.",
       "platform": "phone",
       "icon": "assets/wellness.svg",
       "screenshots": [],
-      "version": "0.20.0",
+      "version": "0.21.0",
       "releaseDate": "2026-09-20",
-      "sizeBytes": 24140652,
-      "sha256": "7f52f209e3a6c419aad40014f951ad0c7d7782eb4e0fa13b072391a782965b80",
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/wellness-v0.20.0/wellness-0.20.0.apk",
+      "sizeBytes": 24140988,
+      "sha256": "06ed1b47cf0aea6dcac0049ad9111efecb6b4cbe7e173b6b624d94fcce575ec5",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/wellness-v0.21.0/wellness-0.21.0.apk",
       "notes": "Android 8+. Giris adresi https://fit.evaitec.com — Ayar > Sunucu alanina yalnizca token girilir. Health Connect izinleri telefon ayarlarindan verilir."
     },
     {
       "id": "wellness-wear",
       "packageName": "com.evaitec.wellness",
-      "versionCode": 2000,
+      "versionCode": 2100,
       "name": "Wellness Saat",
       "tagline": "Adim, nabiz ve antrenmani bilekten toplar; telefonla ayni gunluge yazar.",
       "platform": "watch",
       "icon": "assets/wellness.svg",
       "screenshots": [],
-      "version": "0.20.0",
+      "version": "0.21.0",
       "releaseDate": "2026-09-20",
       "sizeBytes": 13053264,
-      "sha256": "a9993574f88d8a3e41091d8d4bc656502dd007520e0812705db803367b41d627",
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/wellness-v0.20.0/wellness-wear-0.20.0.apk",
+      "sha256": "b81901995b2e6eac5471dc6ec0f4b1194c5aa48bb5a4d08b97adc7837670bdb6",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/wellness-v0.21.0/wellness-wear-0.21.0.apk",
       "notes": "Bu dosyayi telefona kurmayin; telefon uygulamasiyla ayni paket adini tasir."
     },
     {
