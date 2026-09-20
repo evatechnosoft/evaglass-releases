@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20T18:19:41Z",
+  "updated": "2026-09-20T18:43:41Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -110,7 +110,7 @@
       "releaseDate": "2026-09-20",
       "sizeBytes": 24141128,
       "sha256": "f3c6658e301b85cb9cd30baa3182b2657c472be55fda6fcf8b52c990362f5568",
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/wellness-v0.22.0/wellness-0.22.0.apk",
+      "downloadUrl": "https://fit.evaitec.com/ota/wellness-0.22.0.apk",
       "notes": "Android 8+. Giris adresi https://fit.evaitec.com — Ayar > Sunucu alanina yalnizca token girilir. Health Connect izinleri telefon ayarlarindan verilir."
     },
     {
@@ -126,7 +126,7 @@
       "releaseDate": "2026-09-20",
       "sizeBytes": 13053264,
       "sha256": "07ab1e470acfbef04ce12428e134cf39d423df639e8050e8ab9fe127b85e5684",
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/wellness-v0.22.0/wellness-wear-0.22.0.apk",
+      "downloadUrl": "https://fit.evaitec.com/ota/wellness-wear-0.22.0.apk",
       "notes": "Bu dosyayi telefona kurmayin; telefon uygulamasiyla ayni paket adini tasir."
     },
     {
