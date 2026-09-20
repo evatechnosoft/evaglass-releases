@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20T17:51:35Z",
+  "updated": "2026-09-20T18:03:34Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -132,34 +132,34 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 910,
+      "versionCode": 911,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.10",
+      "version": "0.9.11",
       "releaseDate": "2026-09-20",
-      "sizeBytes": 20402682,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.10/netmovies-tv-0.9.10.apk",
-      "sha256": "3e027a669f02f0757d36ffbb737199f2316962868468b5208eca0057a28b059c",
-      "notes": "Sunucunun ev agindaki adresi degisince uygulama kendini toparlar; artik elle Tekrar dene gerekmiyor."
+      "sizeBytes": 20402686,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.11/netmovies-tv-0.9.11.apk",
+      "sha256": "90c35c024a54d5d095bb3e561c9d93fdb9007a4181f884c1e8b3619cbd9a38e5",
+      "notes": "Oynaticida asagi/sag/sol basili tutma da gezilebilir kumanda barini acar."
     },
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 910,
+      "versionCode": 911,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.10",
+      "version": "0.9.11",
       "releaseDate": "2026-09-20",
-      "sizeBytes": 20402682,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.10/netmovies-tv-0.9.10.apk",
-      "sha256": "3e027a669f02f0757d36ffbb737199f2316962868468b5208eca0057a28b059c",
-      "notes": "Sunucunun ev agindaki adresi degisince uygulama kendini toparlar; artik elle Tekrar dene gerekmiyor."
+      "sizeBytes": 20402686,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.11/netmovies-tv-0.9.11.apk",
+      "sha256": "90c35c024a54d5d095bb3e561c9d93fdb9007a4181f884c1e8b3619cbd9a38e5",
+      "notes": "Oynaticida asagi/sag/sol basili tutma da gezilebilir kumanda barini acar."
     }
   ]
 }
