@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21T12:31:23Z",
+  "updated": "2026-09-21T15:20:46Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -136,17 +136,17 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 913,
+      "versionCode": 914,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.13",
+      "version": "0.9.14",
       "releaseDate": "2026-09-21",
-      "sizeBytes": 20402686,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.13/netmovies-tv-0.9.13.apk",
-      "sha256": "5303773b20520302b65b6c0a9c8c393303d6440ae4bccb6b13a0354354706dc5",
+      "sizeBytes": 20386302,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.14/netmovies-tv-0.9.14.apk",
+      "sha256": "52d0c288a0dea71bb3ef7242c6af80daa8d8898345bc36eacda11df03acf93ac",
       "notes": "Bolum sonundaki \"sonraki bolum\" karti: tek basista 2-3 bolum atlanmasi duzeltildi.",
       "mirrors": [
         "http://192.168.1.185:3310/api/v1/app_update/download?target=tv",
@@ -156,17 +156,17 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 913,
+      "versionCode": 914,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.13",
+      "version": "0.9.14",
       "releaseDate": "2026-09-21",
-      "sizeBytes": 20402686,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.13/netmovies-tv-0.9.13.apk",
-      "sha256": "5303773b20520302b65b6c0a9c8c393303d6440ae4bccb6b13a0354354706dc5",
+      "sizeBytes": 20386302,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.14/netmovies-tv-0.9.14.apk",
+      "sha256": "52d0c288a0dea71bb3ef7242c6af80daa8d8898345bc36eacda11df03acf93ac",
       "notes": "Bolum sonundaki \"sonraki bolum\" karti: tek basista 2-3 bolum atlanmasi duzeltildi.",
       "mirrors": [
         "http://192.168.1.185:3310/api/v1/app_update/download?target=tv",
