@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21T15:20:46Z",
+  "updated": "2026-09-21T18:49:23Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -84,18 +84,18 @@
     {
       "id": "netmovies-mini-watch",
       "packageName": "com.evaitec.netmovies.wear",
-      "versionCode": 117,
+      "versionCode": 118,
       "name": "NetMovies Mini",
       "tagline": "Televizyonu bileğinizden sürün — kaydır yön, dokun OK.",
       "platform": "watch",
       "icon": "assets/netmovies-watch.svg",
       "screenshots": [],
-      "version": "0.1.17",
+      "version": "0.1.18",
       "releaseDate": "2026-09-21",
-      "sizeBytes": 6737433,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.17/netmovies-mini-watch-0.1.17.apk",
-      "sha256": "b860c0ff47f34a0754b3991deede70b59bbbd283880e8e8bc5248717dfa99c93",
-      "notes": "Poster yayi ic ice giriyordu: yay belirginlesti, kontroller kadranin altina indi.",
+      "sizeBytes": 6753817,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.18/netmovies-mini-watch-0.1.18.apk",
+      "sha256": "76d79c1b2d8e7f69aa324fddd2f87021622a70655556bf9187ffd4e989b535ad",
+      "notes": "Mousepad kipi: ✥ tusu tum kadrani yuzey yapar (kaydir yon, dokun OK, basili tut GERI).",
       "mirrors": [
         "http://192.168.1.185:3310/api/v1/app_update/download?target=wear",
         "https://w.evaitec.com/api/v1/app_update/download?target=wear"
