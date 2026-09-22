@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21T18:49:23Z",
+  "updated": "2026-09-22T15:09:37Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -104,33 +104,33 @@
     {
       "id": "wellness-phone",
       "packageName": "com.evaitec.wellness",
-      "versionCode": 2600,
+      "versionCode": 2700,
       "name": "Wellness",
       "tagline": "Kilo, protein, antrenman ve saat verisi tek gunlukte; Eva sorar, sen onaylarsin.",
       "platform": "phone",
       "icon": "assets/wellness.svg",
       "screenshots": [],
-      "version": "0.26.0",
-      "releaseDate": "2026-09-21",
-      "sizeBytes": 24147356,
-      "sha256": "ccb07d4d2141cf0b873e6019a63dd19095d65129df5efba70c6968132cc66080",
-      "downloadUrl": "https://fit.evaitec.com/ota/wellness-0.26.0.apk",
+      "version": "0.27.0",
+      "releaseDate": "2026-09-22",
+      "sizeBytes": 24149812,
+      "sha256": "c3a11d22b850183ea27a6be995b8d3d0eed39a3114b1aeeec6cae04aa1907c17",
+      "downloadUrl": "https://fit.evaitec.com/ota/wellness-0.27.0.apk",
       "notes": "Android 8+. Giris adresi https://fit.evaitec.com — Ayar > Sunucu alanina yalnizca token girilir. Health Connect izinleri telefon ayarlarindan verilir."
     },
     {
       "id": "wellness-wear",
       "packageName": "com.evaitec.wellness",
-      "versionCode": 2600,
+      "versionCode": 2700,
       "name": "Wellness Saat",
       "tagline": "Adim, nabiz ve antrenmani bilekten toplar; telefonla ayni gunluge yazar.",
       "platform": "watch",
       "icon": "assets/wellness.svg",
       "screenshots": [],
-      "version": "0.26.0",
-      "releaseDate": "2026-09-21",
-      "sizeBytes": 13054448,
-      "sha256": "ccf49dd00384bca738486f4724503f6af9027020999102fdce8e0b9b48d6dff3",
-      "downloadUrl": "https://fit.evaitec.com/ota/wellness-wear-0.26.0.apk",
+      "version": "0.27.0",
+      "releaseDate": "2026-09-22",
+      "sizeBytes": 13054444,
+      "sha256": "1c46b9f8e6ecd1e347a4fab5a9f23e15a0318a2a2c7dbf3b28a57095b0146bba",
+      "downloadUrl": "https://fit.evaitec.com/ota/wellness-wear-0.27.0.apk",
       "notes": "Bu dosyayi telefona kurmayin; telefon uygulamasiyla ayni paket adini tasir."
     },
     {
