@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23T08:35:48Z",
+  "updated": "2026-09-23T09:09:59Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -136,18 +136,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 917,
+      "versionCode": 918,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.17",
-      "releaseDate": "2026-09-22",
+      "version": "0.9.18",
+      "releaseDate": "2026-09-23",
       "sizeBytes": 20402686,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.17/netmovies-tv-0.9.17.apk",
-      "sha256": "725bd5e21bd196361484f4b25d60fd2e622ac3eacde31f0614a28c32c4619b75",
-      "notes": "Poster uzun basisi kucuk pad acar: yukari bolumler, asagi listeler, sol ozet, sag benzerleri, orta oynat.",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.18/netmovies-tv-0.9.18.apk",
+      "sha256": "6721fb2a7d952c2445321018670636284e70d2d1386b09e2561eb83f8df8ea23",
+      "notes": "Listelerdeki diziler acilmiyordu: kayitli saglayici adresi curudugunde icerik basliktan baska saglayicida bulunuyor.",
       "mirrors": [
         "http://192.168.1.185:3310/api/v1/app_update/download?target=tv",
         "https://w.evaitec.com/api/v1/app_update/download?target=tv"
@@ -156,18 +156,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 917,
+      "versionCode": 918,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.17",
-      "releaseDate": "2026-09-22",
+      "version": "0.9.18",
+      "releaseDate": "2026-09-23",
       "sizeBytes": 20402686,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.17/netmovies-tv-0.9.17.apk",
-      "sha256": "725bd5e21bd196361484f4b25d60fd2e622ac3eacde31f0614a28c32c4619b75",
-      "notes": "Poster uzun basisi kucuk pad acar: yukari bolumler, asagi listeler, sol ozet, sag benzerleri, orta oynat.",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.18/netmovies-tv-0.9.18.apk",
+      "sha256": "6721fb2a7d952c2445321018670636284e70d2d1386b09e2561eb83f8df8ea23",
+      "notes": "Listelerdeki diziler acilmiyordu: kayitli saglayici adresi curudugunde icerik basliktan baska saglayicida bulunuyor.",
       "mirrors": [
         "http://192.168.1.185:3310/api/v1/app_update/download?target=tv",
         "https://w.evaitec.com/api/v1/app_update/download?target=tv"
