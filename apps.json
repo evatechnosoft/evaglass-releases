@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23T12:53:30Z",
+  "updated": "2026-09-24T08:11:03Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -104,33 +104,33 @@
     {
       "id": "wellness-phone",
       "packageName": "com.evaitec.wellness",
-      "versionCode": 3100,
+      "versionCode": 3200,
       "name": "Wellness",
       "tagline": "Kilo, protein, antrenman ve saat verisi tek gunlukte; Eva sorar, sen onaylarsin.",
       "platform": "phone",
       "icon": "assets/wellness.svg",
       "screenshots": [],
-      "version": "0.31.0",
-      "releaseDate": "2026-09-23",
-      "sizeBytes": 24589975,
-      "sha256": "65959a08387ca8ab985911da22d1b53dc6477efc56a7f11ef8bca34745de0450",
-      "downloadUrl": "https://fit.evaitec.com/ota/wellness-0.31.0.apk",
+      "version": "0.32.0",
+      "releaseDate": "2026-09-24",
+      "sizeBytes": 24591883,
+      "sha256": "a5c6b0b170b6c8ed574c182506d23a1c9e9fd36f2861bbe7720a6bf16f9b95b7",
+      "downloadUrl": "https://fit.evaitec.com/ota/wellness-0.32.0.apk",
       "notes": "Android 8+. Giris adresi https://fit.evaitec.com — Ayar > Sunucu alanina yalnizca token girilir. Health Connect izinleri telefon ayarlarindan verilir."
     },
     {
       "id": "wellness-wear",
       "packageName": "com.evaitec.wellness",
-      "versionCode": 3100,
+      "versionCode": 3200,
       "name": "Wellness Saat",
       "tagline": "Adim, nabiz ve antrenmani bilekten toplar; telefonla ayni gunluge yazar.",
       "platform": "watch",
       "icon": "assets/wellness.svg",
       "screenshots": [],
-      "version": "0.31.0",
-      "releaseDate": "2026-09-23",
+      "version": "0.32.0",
+      "releaseDate": "2026-09-24",
       "sizeBytes": 13054444,
-      "sha256": "319c06aa1c9de1db2a116071e788b6f708eabec2ac8e353994dc29e9dd0056d8",
-      "downloadUrl": "https://fit.evaitec.com/ota/wellness-wear-0.31.0.apk",
+      "sha256": "e1ee5f108dfcf416bde894c265b79f927d97790815f8e29ad05ed827cb336583",
+      "downloadUrl": "https://fit.evaitec.com/ota/wellness-wear-0.32.0.apk",
       "notes": "Bu dosyayi telefona kurmayin; telefon uygulamasiyla ayni paket adini tasir."
     },
     {
