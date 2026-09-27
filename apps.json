@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-27T17:26:43Z",
+  "updated": "2026-09-27T17:57:39Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -104,33 +104,33 @@
     {
       "id": "wellness-phone",
       "packageName": "com.evaitec.wellness",
-      "versionCode": 3800,
+      "versionCode": 3801,
       "name": "Wellness",
       "tagline": "Kilo, protein, antrenman ve saat verisi tek gunlukte; Eva sorar, sen onaylarsin.",
       "platform": "phone",
       "icon": "assets/wellness.svg",
       "screenshots": [],
-      "version": "0.38.0",
+      "version": "0.38.1",
       "releaseDate": "2026-09-27",
-      "sizeBytes": 24589570,
-      "sha256": "46841a53340eef337233ffa2766145934a0c9b21279fa5f117db0406bd5ffedc",
-      "downloadUrl": "https://fit.evaitec.com/ota/wellness-0.38.0.apk",
+      "sizeBytes": 24589574,
+      "sha256": "2a379ab4c5143e19e8fcb4779e4c3e127c5065af8b983f7ed668c64dc9e2686c",
+      "downloadUrl": "https://fit.evaitec.com/ota/wellness-0.38.1.apk",
       "notes": "Android 8+. Giris adresi https://fit.evaitec.com — Ayar > Sunucu alanina yalnizca token girilir. Health Connect izinleri telefon ayarlarindan verilir."
     },
     {
       "id": "wellness-wear",
       "packageName": "com.evaitec.wellness",
-      "versionCode": 3800,
+      "versionCode": 3801,
       "name": "Wellness Saat",
       "tagline": "Adim, nabiz ve antrenmani bilekten toplar; telefonla ayni gunluge yazar.",
       "platform": "watch",
       "icon": "assets/wellness.svg",
       "screenshots": [],
-      "version": "0.38.0",
+      "version": "0.38.1",
       "releaseDate": "2026-09-27",
-      "sizeBytes": 13054448,
-      "sha256": "1ec1d3f6e1968928659ae901453602790cf061f3714b4121e8c5c829a880b0ba",
-      "downloadUrl": "https://fit.evaitec.com/ota/wellness-wear-0.38.0.apk",
+      "sizeBytes": 13054444,
+      "sha256": "a971c97c83a1e3fc6f6fa5c75adbb94ec3da80a0b42a265cb30ddeca7664d957",
+      "downloadUrl": "https://fit.evaitec.com/ota/wellness-wear-0.38.1.apk",
       "notes": "Bu dosyayi telefona kurmayin; telefon uygulamasiyla ayni paket adini tasir."
     },
     {
