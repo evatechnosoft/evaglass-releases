@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-27T18:39:26Z",
+  "updated": "2026-09-27T18:40:41Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -172,6 +172,38 @@
         "http://192.168.1.185:3310/api/v1/app_update/download?target=tv",
         "https://w.evaitec.com/api/v1/app_update/download?target=tv"
       ]
+    },
+    {
+      "id": "rcmycar-phone",
+      "name": "rcmycar",
+      "tagline": "Aracı telefondan kilitle, aç, çalıştır; yaklaşınca kapı açılır.",
+      "platform": "phone",
+      "sizeBytes": 6914774,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/rcmycar-v0.1.0/rcmycar-0.1.0.apk",
+      "sha256": "a1c727d33d608bed6bdf843477ed0382c4f507a934f48e506320fce02c0df360",
+      "notes": "Android 12+. Ilk surum, arac uzerinde test edilmedi. Ilk acilista Bluetooth ve bildirim izni ister.",
+      "packageName": "com.evaitec.rcmycar",
+      "versionCode": 1,
+      "version": "0.1.0",
+      "releaseDate": "2026-09-27",
+      "icon": "assets/rcmycar.svg",
+      "screenshots": []
+    },
+    {
+      "id": "rcmycar-watch",
+      "name": "rcmycar Saat",
+      "tagline": "Kilitle / Aç / Çalıştır bileğinde; komutu telefon iletir.",
+      "platform": "watch",
+      "sizeBytes": 6905490,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/rcmycar-v0.1.0/rcmycar-watch-0.1.0.apk",
+      "sha256": "c51661e70ab956b5f4bb9b0e12f4537f9846f8928fcf04a6fa86699ff02d0c4c",
+      "notes": "Bu dosyayi telefona kurmayin; telefon uygulamasiyla ayni paket adini tasir.",
+      "packageName": "com.evaitec.rcmycar",
+      "versionCode": 1,
+      "version": "0.1.0",
+      "releaseDate": "2026-09-27",
+      "icon": "assets/rcmycar.svg",
+      "screenshots": []
     }
   ]
 }
