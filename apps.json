@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T07:06:41Z",
+  "updated": "2026-09-30T13:18:21Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -178,14 +178,14 @@
       "name": "rcmycar",
       "tagline": "Aracı telefondan kilitle, aç, çalıştır; yaklaşınca kapı açılır.",
       "platform": "phone",
-      "sizeBytes": 6958081,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/rcmycar-v0.2.1/rcmycar-0.2.1.apk",
-      "sha256": "60000df725f54d528927a1255833860a10ad6423d7a20b2616e8c601640db075",
+      "sizeBytes": 6967613,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/rcmycar-v0.2.2/rcmycar-0.2.2.apk",
+      "sha256": "1a687ebad08f35fee33195d94323f3e7f9b4a3171eb1025d143918b84781a600",
       "notes": "Android 12+. Ilk surum, arac uzerinde test edilmedi. Ilk acilista Bluetooth ve bildirim izni ister.",
       "packageName": "com.evaitec.rcmycar",
-      "versionCode": 3,
-      "version": "0.2.1",
-      "releaseDate": "2026-09-29",
+      "versionCode": 4,
+      "version": "0.2.2",
+      "releaseDate": "2026-09-30",
       "icon": "assets/rcmycar.svg",
       "screenshots": []
     },
@@ -194,14 +194,14 @@
       "name": "rcmycar Saat",
       "tagline": "Kilitle / Aç / Çalıştır bileğinde; komutu telefon iletir.",
       "platform": "watch",
-      "sizeBytes": 12565746,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/rcmycar-v0.2.1/rcmycar-watch-0.2.1.apk",
-      "sha256": "113814a6db6c76512e294fe79110a569adf63936e564616d14732c1bd62b0091",
+      "sizeBytes": 12566886,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/rcmycar-v0.2.2/rcmycar-watch-0.2.2.apk",
+      "sha256": "f851423b00d01d04f0f85e13d5aae59f12907b12efa231c3c7ede949dcb156ee",
       "notes": "Bu dosyayi telefona kurmayin; telefon uygulamasiyla ayni paket adini tasir.",
       "packageName": "com.evaitec.rcmycar",
-      "versionCode": 3,
-      "version": "0.2.1",
-      "releaseDate": "2026-09-29",
+      "versionCode": 4,
+      "version": "0.2.2",
+      "releaseDate": "2026-09-30",
       "icon": "assets/rcmycar.svg",
       "screenshots": []
     }
