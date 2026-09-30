@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T13:18:21Z",
+  "updated": "2026-09-30T17:49:51Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -178,13 +178,13 @@
       "name": "rcmycar",
       "tagline": "Aracı telefondan kilitle, aç, çalıştır; yaklaşınca kapı açılır.",
       "platform": "phone",
-      "sizeBytes": 6967613,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/rcmycar-v0.2.2/rcmycar-0.2.2.apk",
-      "sha256": "1a687ebad08f35fee33195d94323f3e7f9b4a3171eb1025d143918b84781a600",
+      "sizeBytes": 6989561,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/rcmycar-v0.2.3/rcmycar-0.2.3.apk",
+      "sha256": "eadaf972aead4731fa0bc8af335553c20d1ef403601104bd86312f2573a34f51",
       "notes": "Android 12+. Ilk surum, arac uzerinde test edilmedi. Ilk acilista Bluetooth ve bildirim izni ister.",
       "packageName": "com.evaitec.rcmycar",
-      "versionCode": 4,
-      "version": "0.2.2",
+      "versionCode": 5,
+      "version": "0.2.3",
       "releaseDate": "2026-09-30",
       "icon": "assets/rcmycar.svg",
       "screenshots": []
@@ -195,12 +195,12 @@
       "tagline": "Kilitle / Aç / Çalıştır bileğinde; komutu telefon iletir.",
       "platform": "watch",
       "sizeBytes": 12566886,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/rcmycar-v0.2.2/rcmycar-watch-0.2.2.apk",
-      "sha256": "f851423b00d01d04f0f85e13d5aae59f12907b12efa231c3c7ede949dcb156ee",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/rcmycar-v0.2.3/rcmycar-watch-0.2.3.apk",
+      "sha256": "814e61669debe90e6e399fb7cb95c984a983e04910038f4c508fb49e390c5efb",
       "notes": "Bu dosyayi telefona kurmayin; telefon uygulamasiyla ayni paket adini tasir.",
       "packageName": "com.evaitec.rcmycar",
-      "versionCode": 4,
-      "version": "0.2.2",
+      "versionCode": 5,
+      "version": "0.2.3",
       "releaseDate": "2026-09-30",
       "icon": "assets/rcmycar.svg",
       "screenshots": []
