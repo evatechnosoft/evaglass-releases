@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T18:20:56Z",
+  "updated": "2026-09-30T18:38:39Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -68,18 +68,18 @@
     {
       "id": "evaitec-ota-wear",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 9,
+      "versionCode": 10,
       "name": "evaitecOTA",
       "tagline": "Saate uygulama kuran ve güncelleyen yükleyici.",
       "platform": "watch",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.14",
+      "version": "0.1.15",
       "releaseDate": "2026-09-30",
-      "sizeBytes": 361337,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.14/evaitec-ota-wear-0.1.14.apk",
-      "sha256": "f9f7d1e0ae5e102fb84ea96f57b9e8357509699343f69de17654d1d80bea9881",
-      "notes": "Bu dosyayi telefona kurmayin; telefon uygulamasiyla ayni paket adini tasir. Eski com.evaitec.ota.wear saatten elle kaldirilir."
+      "sizeBytes": 362201,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.15/evaitec-ota-wear-0.1.15.apk",
+      "sha256": "ca4506256ccc90b432aedbaeaaec4998166924d3dc72006841d9b10787dc9c6e",
+      "notes": "Wi-Fi zorlanir; 30 sn icinde gelmezse Ayarlar uzerinden baglan. Bu dosyayi telefona kurmayin; eski com.evaitec.ota.wear saatten elle kaldirilir."
     },
     {
       "id": "netmovies-mini-watch",
