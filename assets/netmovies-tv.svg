@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="NetMovies televizyon">
+  <defs>
+    <linearGradient id="nmt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EC4899"/>
+      <stop offset=".55" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#2DD4BF"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#nmt)"/>
+  <!-- Telefon ikonundan farki: genis ekran, ayakli sehpa, oynat ucgeni yok; ekranda uc "film" cizgisi. -->
+  <g fill="none" stroke="#0B0D12" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="16" y="30" width="96" height="58" rx="8"/>
+    <path d="M44 104h40"/>
+    <path d="M56 88v16M72 88v16"/>
+    <path d="M34 48h60M34 60h60M34 72h36"/>
+  </g>
+</svg>

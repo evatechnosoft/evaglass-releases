@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T18:43:52Z",
+  "updated": "2026-09-30T18:54:05Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -20,18 +20,18 @@
     {
       "id": "evaitec-ota-mobile",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 14,
+      "versionCode": 15,
       "name": "evaitecOTA",
       "tagline": "Telefona uygulama kuran ve guncelleyen yukleyici; saate de APK gonderir.",
       "platform": "phone",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.15",
+      "version": "0.1.16",
       "releaseDate": "2026-09-30",
-      "sizeBytes": 691073,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.15/evaitec-ota-mobile-0.1.15.apk",
-      "sha256": "ded77d3fc38c400d2554e506fd620a92ef8d5c80ce43c142a07bf7581cbfe3ad",
-      "notes": "Yeni ikon (yesil indirme oku). Saate gonderim Data Layer ile; indirme ev sunucusu, tunel, GitHub sirasiyla."
+      "sizeBytes": 742901,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.16/evaitec-ota-mobile-0.1.16.apk",
+      "sha256": "811e4e864ef6051be8aa6a8e6e7114aa13a725884e51e17ea8bfaaab2958b53c",
+      "notes": "Wi-Fi ADB ile saate/TV'ye kurulum (hizli yol, klasik 5555 portu). Yeni ikon. Saate gonderim Data Layer ile de calisir."
     },
     {
       "id": "evaglass-phone",
@@ -160,7 +160,7 @@
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
-      "icon": "assets/netmovies-phone.svg",
+      "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
       "version": "0.9.40",
       "releaseDate": "2026-09-30",
