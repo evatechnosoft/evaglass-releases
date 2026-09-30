@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30T18:38:39Z",
+  "updated": "2026-09-30T18:43:52Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -20,18 +20,18 @@
     {
       "id": "evaitec-ota-mobile",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 13,
+      "versionCode": 14,
       "name": "evaitecOTA",
       "tagline": "Telefona uygulama kuran ve guncelleyen yukleyici; saate de APK gonderir.",
       "platform": "phone",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.14",
+      "version": "0.1.15",
       "releaseDate": "2026-09-30",
-      "sizeBytes": 689977,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.14/evaitec-ota-mobile-0.1.14.apk",
-      "sha256": "ff7ce820def6e682f414af030c5f696276c05cfe14d0755144b4cc2b05348313",
-      "notes": "Saate gonderim duzeltildi (Data Layer); indirme once ev sunucusu, sonra tunel, en sonda GitHub. Saatteki evaitecOTA da 0.1.14 olmali."
+      "sizeBytes": 691073,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.15/evaitec-ota-mobile-0.1.15.apk",
+      "sha256": "ded77d3fc38c400d2554e506fd620a92ef8d5c80ce43c142a07bf7581cbfe3ad",
+      "notes": "Yeni ikon (yesil indirme oku). Saate gonderim Data Layer ile; indirme ev sunucusu, tunel, GitHub sirasiyla."
     },
     {
       "id": "evaglass-phone",
@@ -68,18 +68,18 @@
     {
       "id": "evaitec-ota-wear",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 10,
+      "versionCode": 11,
       "name": "evaitecOTA",
       "tagline": "Saate uygulama kuran ve güncelleyen yükleyici.",
       "platform": "watch",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.15",
+      "version": "0.1.16",
       "releaseDate": "2026-09-30",
-      "sizeBytes": 362201,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.15/evaitec-ota-wear-0.1.15.apk",
-      "sha256": "ca4506256ccc90b432aedbaeaaec4998166924d3dc72006841d9b10787dc9c6e",
-      "notes": "Wi-Fi zorlanir; 30 sn icinde gelmezse Ayarlar uzerinden baglan. Bu dosyayi telefona kurmayin; eski com.evaitec.ota.wear saatten elle kaldirilir."
+      "sizeBytes": 363333,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.16/evaitec-ota-wear-0.1.16.apk",
+      "sha256": "c97b5b64433ad06ec1e09134e4edbffd86663626ae3894ef02524eb988e86195",
+      "notes": "Yeni ikon; kurulum sonrasi bant yalniz gercek hatada. Wi-Fi zorlanir. Bu dosyayi telefona kurmayin; eski com.evaitec.ota.wear elle kaldirilir."
     },
     {
       "id": "netmovies-mini-watch",
