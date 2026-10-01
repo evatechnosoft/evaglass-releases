@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T23:30:00Z",
+  "updated": "2026-10-01T23:45:00Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -15,23 +15,29 @@
       "sizeBytes": 190769,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-tv-v0.1.13/evaitec-ota-tv-0.1.13.apk",
       "sha256": "346f20dcf1ac57956da3d9617ce5e835cbc1dcf43fbcc34420f2cd7dd37ab337",
-      "notes": "Indirme once ev sunucusundan, sonra Cloudflare tunelinden, en sonda GitHub."
+      "notes": "Indirme once ev sunucusundan, sonra Cloudflare tunelinden, en sonda GitHub.",
+      "mirrors": [
+        "http://192.168.1.186:8099/evaitec-ota-tv.apk"
+      ]
     },
     {
       "id": "evaitec-ota-mobile",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 17,
+      "versionCode": 18,
       "name": "evaitecOTA",
       "tagline": "Telefona uygulama kuran ve guncelleyen yukleyici; saate de APK gonderir.",
       "platform": "phone",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.18",
+      "version": "0.1.19",
       "releaseDate": "2026-10-01",
-      "sizeBytes": 754637,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.18/evaitec-ota-mobile-0.1.18.apk",
-      "sha256": "905983a9cee6a292302d2c853004b4e570b777a863bfa13fef31e461d00224b4",
-      "notes": "Saat uykuya gecince indirme kesilmez (ekran acik + radyo uyanik), kopan indirme kalinan yerden surer; telefon saate indirme yuzdesini yazar."
+      "sizeBytes": 754889,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.19/evaitec-ota-mobile-0.1.19.apk",
+      "sha256": "456b8fb74675d9e30038561e6f98988d0c0d3a4747066e5aacf2b957951ee05f",
+      "notes": "Indirme once ev aynasindan (Zima LAN), ozet her kaynakta dogrulanir; uymazsa GitHub.",
+      "mirrors": [
+        "http://192.168.1.186:8099/evaitec-ota-mobile.apk"
+      ]
     },
     {
       "id": "evaglass-phone",
@@ -47,7 +53,10 @@
       "sizeBytes": 22831134,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.8/evaglass-0.8.8.apk",
       "sha256": "6194cc972010a718e76f553568eb7777a9409bcc44eb209ce27781bd0b39eb67",
-      "notes": "Android 10+. Kurulumdan önce \"bilinmeyen kaynaklara izin ver\" açık olmalı."
+      "notes": "Android 10+. Kurulumdan önce \"bilinmeyen kaynaklara izin ver\" açık olmalı.",
+      "mirrors": [
+        "http://192.168.1.186:8099/evaglass-phone.apk"
+      ]
     },
     {
       "id": "evaglass-watch",
@@ -63,23 +72,29 @@
       "sizeBytes": 2855322,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.8/evaglass-watch-0.8.8.apk",
       "sha256": "4b2236e27df8f7ea8892e7e55f4086c96a7806f15726f5de2af2ef99a534ccc5",
-      "notes": "Bu dosyayı telefona kurmayın; telefon uygulamasıyla aynı paket adını taşır."
+      "notes": "Bu dosyayı telefona kurmayın; telefon uygulamasıyla aynı paket adını taşır.",
+      "mirrors": [
+        "http://192.168.1.186:8099/evaglass-watch.apk"
+      ]
     },
     {
       "id": "evaitec-ota-wear",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 13,
+      "versionCode": 14,
       "name": "evaitecOTA",
       "tagline": "Saate uygulama kuran ve güncelleyen yükleyici.",
       "platform": "watch",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.18",
+      "version": "0.1.19",
       "releaseDate": "2026-10-01",
-      "sizeBytes": 366681,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.18/evaitec-ota-wear-0.1.18.apk",
-      "sha256": "0d50a489bbcef8302424b379dfcd7c83b83da6d1b9b652bb0f5caf729a4884ac",
-      "notes": "Saat uykuya gecince indirme kesilmez (ekran acik + radyo uyanik), kopan indirme kalinan yerden surer; telefon saate indirme yuzdesini yazar."
+      "sizeBytes": 367241,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.19/evaitec-ota-wear-0.1.19.apk",
+      "sha256": "cbe122ff022bb19a06a59fef0b6e2a1bcddc671f511110407dde60455f4d8bb5",
+      "notes": "Indirme once ev aynasindan (Zima LAN), ozet her kaynakta dogrulanir; uymazsa GitHub.",
+      "mirrors": [
+        "http://192.168.1.186:8099/evaitec-ota-wear.apk"
+      ]
     },
     {
       "id": "netmovies-mini-watch",
@@ -97,8 +112,7 @@
       "sha256": "9c88894f8901ae1419db6fd52f4f894a54c03732462cf25ba6faf9a0b826accb",
       "notes": "Saat pad: yavas kaydirma artik yon gonderiyor, geri tetiklenmiyor.",
       "mirrors": [
-        "http://192.168.1.186:3310/api/v1/app_update/download?target=wear",
-        "https://w.evaitec.com/api/v1/app_update/download?target=wear"
+        "http://192.168.1.186:8099/netmovies-mini-watch.apk"
       ]
     },
     {
@@ -115,7 +129,10 @@
       "sizeBytes": 25244051,
       "sha256": "a4e0a658dbdb225c7b5011eeb65ac8eae66e1b7ed9206d2b0694bfa15561b37e",
       "downloadUrl": "https://fit.evaitec.com/ota/wellness-0.39.0.apk",
-      "notes": "Android 8+. Giris adresi https://fit.evaitec.com — Ayar > Sunucu alanina yalnizca token girilir. Health Connect izinleri telefon ayarlarindan verilir."
+      "notes": "Android 8+. Giris adresi https://fit.evaitec.com — Ayar > Sunucu alanina yalnizca token girilir. Health Connect izinleri telefon ayarlarindan verilir.",
+      "mirrors": [
+        "http://192.168.1.186:8099/wellness-phone.apk"
+      ]
     },
     {
       "id": "wellness-wear",
@@ -131,7 +148,10 @@
       "sizeBytes": 13188324,
       "sha256": "7f28a2dbfa52675b534e2f0deacdf06d9f8c92f1e384a8785eb5c99e26fece48",
       "downloadUrl": "https://fit.evaitec.com/ota/wellness-wear-0.39.0.apk",
-      "notes": "Bu dosyayi telefona kurmayin; telefon uygulamasiyla ayni paket adini tasir."
+      "notes": "Bu dosyayi telefona kurmayin; telefon uygulamasiyla ayni paket adini tasir.",
+      "mirrors": [
+        "http://192.168.1.186:8099/wellness-wear.apk"
+      ]
     },
     {
       "id": "netmovies-phone",
@@ -149,8 +169,7 @@
       "sha256": "2ea3ff90f3dd89f266cd70615327f99d5434c49a2392fde2826fe4bc7cb3720b",
       "notes": "Pad listeleri 3 küçük ikon; listeden çıkarınca odak kaybolmuyor.",
       "mirrors": [
-        "http://192.168.1.186:3310/api/v1/app_update/download?target=tv",
-        "https://w.evaitec.com/api/v1/app_update/download?target=tv"
+        "http://192.168.1.186:8099/netmovies-phone.apk"
       ]
     },
     {
@@ -169,8 +188,7 @@
       "sha256": "2ea3ff90f3dd89f266cd70615327f99d5434c49a2392fde2826fe4bc7cb3720b",
       "notes": "Pad listeleri 3 küçük ikon; listeden çıkarınca odak kaybolmuyor.",
       "mirrors": [
-        "http://192.168.1.186:3310/api/v1/app_update/download?target=tv",
-        "https://w.evaitec.com/api/v1/app_update/download?target=tv"
+        "http://192.168.1.186:8099/netmovies-tv.apk"
       ]
     },
     {
@@ -187,7 +205,10 @@
       "version": "0.2.13",
       "releaseDate": "2026-10-01",
       "icon": "assets/rcmycar.svg",
-      "screenshots": []
+      "screenshots": [],
+      "mirrors": [
+        "http://192.168.1.186:8099/rcmycar-phone.apk"
+      ]
     },
     {
       "id": "rcmycar-watch",
@@ -203,7 +224,10 @@
       "version": "0.2.13",
       "releaseDate": "2026-10-01",
       "icon": "assets/rcmycar.svg",
-      "screenshots": []
+      "screenshots": [],
+      "mirrors": [
+        "http://192.168.1.186:8099/rcmycar-watch.apk"
+      ]
     }
   ]
 }
