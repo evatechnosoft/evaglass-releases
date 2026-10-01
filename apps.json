@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T18:39:45Z",
+  "updated": "2026-10-01T23:30:00Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -20,18 +20,18 @@
     {
       "id": "evaitec-ota-mobile",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 16,
+      "versionCode": 17,
       "name": "evaitecOTA",
       "tagline": "Telefona uygulama kuran ve guncelleyen yukleyici; saate de APK gonderir.",
       "platform": "phone",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.17",
-      "releaseDate": "2026-09-30",
-      "sizeBytes": 752785,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.17/evaitec-ota-mobile-0.1.17.apk",
-      "sha256": "50218767d374c4c62794ff14b0de280bcbcdfcc05900d7f5f35e2307650fc5e6",
-      "notes": "Saatte ne kurulu gorunur; APK onbellegi (uzun basma = tekrar indir); Wi-Fi ADB hizli yol."
+      "version": "0.1.18",
+      "releaseDate": "2026-10-01",
+      "sizeBytes": 754637,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.18/evaitec-ota-mobile-0.1.18.apk",
+      "sha256": "905983a9cee6a292302d2c853004b4e570b777a863bfa13fef31e461d00224b4",
+      "notes": "Saat uykuya gecince indirme kesilmez (ekran acik + radyo uyanik), kopan indirme kalinan yerden surer; telefon saate indirme yuzdesini yazar."
     },
     {
       "id": "evaglass-phone",
@@ -68,18 +68,18 @@
     {
       "id": "evaitec-ota-wear",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 12,
+      "versionCode": 13,
       "name": "evaitecOTA",
       "tagline": "Saate uygulama kuran ve güncelleyen yükleyici.",
       "platform": "watch",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.17",
-      "releaseDate": "2026-09-30",
-      "sizeBytes": 365233,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.17/evaitec-ota-wear-0.1.17.apk",
-      "sha256": "fff914e9b0fa4fc89cb1f762a95f8a46692006dab34d00853d457002b0654ac4",
-      "notes": "Telefona kurulu listesini bildirir. Wi-Fi zorlanir. Bu dosyayi telefona kurmayin; eski com.evaitec.ota.wear elle kaldirilir."
+      "version": "0.1.18",
+      "releaseDate": "2026-10-01",
+      "sizeBytes": 366681,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.18/evaitec-ota-wear-0.1.18.apk",
+      "sha256": "0d50a489bbcef8302424b379dfcd7c83b83da6d1b9b652bb0f5caf729a4884ac",
+      "notes": "Saat uykuya gecince indirme kesilmez (ekran acik + radyo uyanik), kopan indirme kalinan yerden surer; telefon saate indirme yuzdesini yazar."
     },
     {
       "id": "netmovies-mini-watch",
