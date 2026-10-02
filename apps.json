@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T23:45:00Z",
+  "updated": "2026-10-02T14:27:33Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -156,18 +156,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 944,
+      "versionCode": 945,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.44",
-      "releaseDate": "2026-10-01",
+      "version": "0.9.45",
+      "releaseDate": "2026-10-02",
       "sizeBytes": 22637128,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.44/netmovies-tv-0.9.44.apk",
-      "sha256": "2ea3ff90f3dd89f266cd70615327f99d5434c49a2392fde2826fe4bc7cb3720b",
-      "notes": "Pad listeleri 3 küçük ikon; listeden çıkarınca odak kaybolmuyor.",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.45/netmovies-tv-0.9.45.apk",
+      "sha256": "2ca34e135b3d3132a8dfdaef304662119d450af106daa9d82d147bbbdb224c63",
+      "notes": "Güncelleme düğmesi üst barda, ayrı şerit kalktı; TV'de kumanda düğmesi kaldırıldı.",
       "mirrors": [
         "http://192.168.1.186:8099/netmovies-phone.apk"
       ]
@@ -175,18 +175,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 944,
+      "versionCode": 945,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.44",
-      "releaseDate": "2026-10-01",
+      "version": "0.9.45",
+      "releaseDate": "2026-10-02",
       "sizeBytes": 22637128,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.44/netmovies-tv-0.9.44.apk",
-      "sha256": "2ea3ff90f3dd89f266cd70615327f99d5434c49a2392fde2826fe4bc7cb3720b",
-      "notes": "Pad listeleri 3 küçük ikon; listeden çıkarınca odak kaybolmuyor.",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.45/netmovies-tv-0.9.45.apk",
+      "sha256": "2ca34e135b3d3132a8dfdaef304662119d450af106daa9d82d147bbbdb224c63",
+      "notes": "Güncelleme düğmesi üst barda, ayrı şerit kalktı; TV'de kumanda düğmesi kaldırıldı.",
       "mirrors": [
         "http://192.168.1.186:8099/netmovies-tv.apk"
       ]
