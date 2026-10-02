@@ -23,18 +23,18 @@
     {
       "id": "evaitec-ota-mobile",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 18,
+      "versionCode": 19,
       "name": "evaitecOTA",
       "tagline": "Telefona uygulama kuran ve guncelleyen yukleyici; saate de APK gonderir.",
       "platform": "phone",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.19",
-      "releaseDate": "2026-10-01",
-      "sizeBytes": 754889,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.19/evaitec-ota-mobile-0.1.19.apk",
-      "sha256": "456b8fb74675d9e30038561e6f98988d0c0d3a4747066e5aacf2b957951ee05f",
-      "notes": "Indirme once ev aynasindan (Zima LAN), ozet her kaynakta dogrulanir; uymazsa GitHub.",
+      "version": "0.1.20",
+      "releaseDate": "2026-10-02",
+      "sizeBytes": 755157,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.20/evaitec-ota-mobile-0.1.20.apk",
+      "sha256": "82c61b3fbfc149bd6c1821573f3253a86c662ca4c042fbc9be2aae56fec09b80",
+      "notes": "Alt sekmeler Telefon/Saat/TV, Yenile dugmesi, dar kartlar.",
       "mirrors": [
         "http://192.168.1.186:8099/evaitec-ota-mobile.apk"
       ]
