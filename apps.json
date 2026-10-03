@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03T11:12:13Z",
+  "updated": "2026-10-03T11:16:16Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -118,40 +118,34 @@
     {
       "id": "wellness-phone",
       "packageName": "com.evaitec.wellness",
-      "versionCode": 3900,
+      "versionCode": 4000,
       "name": "Wellness",
       "tagline": "Kilo, protein, antrenman ve saat verisi tek gunlukte; Eva sorar, sen onaylarsin.",
       "platform": "phone",
       "icon": "assets/wellness.svg",
       "screenshots": [],
-      "version": "0.39.0",
-      "releaseDate": "2026-09-27",
-      "sizeBytes": 25244051,
-      "sha256": "a4e0a658dbdb225c7b5011eeb65ac8eae66e1b7ed9206d2b0694bfa15561b37e",
-      "downloadUrl": "https://fit.evaitec.com/ota/wellness-0.39.0.apk",
-      "notes": "Android 8+. Giris adresi https://fit.evaitec.com — Ayar > Sunucu alanina yalnizca token girilir. Health Connect izinleri telefon ayarlarindan verilir.",
-      "mirrors": [
-        "http://192.168.1.186:8099/wellness-phone.apk"
-      ]
+      "version": "0.40.0",
+      "releaseDate": "2026-10-03",
+      "sizeBytes": 25280591,
+      "sha256": "db428e1115f4361be018d23299c213495557a3f0e0cd449bf8ab46f596cc242c",
+      "downloadUrl": "https://fit.evaitec.com/ota/wellness-0.40.0.apk",
+      "notes": "Android 8+. Giris adresi https://fit.evaitec.com — Ayar > Sunucu alanina yalnizca token girilir. Health Connect izinleri telefon ayarlarindan verilir."
     },
     {
       "id": "wellness-wear",
       "packageName": "com.evaitec.wellness",
-      "versionCode": 3900,
+      "versionCode": 4000,
       "name": "Wellness Saat",
       "tagline": "Adim, nabiz ve antrenmani bilekten toplar; telefonla ayni gunluge yazar.",
       "platform": "watch",
       "icon": "assets/wellness.svg",
       "screenshots": [],
-      "version": "0.39.0",
-      "releaseDate": "2026-09-27",
+      "version": "0.40.0",
+      "releaseDate": "2026-10-03",
       "sizeBytes": 13188324,
-      "sha256": "7f28a2dbfa52675b534e2f0deacdf06d9f8c92f1e384a8785eb5c99e26fece48",
-      "downloadUrl": "https://fit.evaitec.com/ota/wellness-wear-0.39.0.apk",
-      "notes": "Bu dosyayi telefona kurmayin; telefon uygulamasiyla ayni paket adini tasir.",
-      "mirrors": [
-        "http://192.168.1.186:8099/wellness-wear.apk"
-      ]
+      "sha256": "4417daabe2b2fa9483f44ec624f7fe7f0b83d7174076898df251828ede8b3eb3",
+      "downloadUrl": "https://fit.evaitec.com/ota/wellness-wear-0.40.0.apk",
+      "notes": "Bu dosyayi telefona kurmayin; telefon uygulamasiyla ayni paket adini tasir."
     },
     {
       "id": "netmovies-phone",
