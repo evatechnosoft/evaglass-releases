@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03T18:39:02Z",
+  "updated": "2026-10-03T18:42:01Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -68,17 +68,17 @@
     {
       "id": "evaitec-ota-wear",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 14,
+      "versionCode": 15,
       "name": "evaitecOTA",
       "tagline": "Saate uygulama kuran ve güncelleyen yükleyici.",
       "platform": "watch",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.19",
-      "releaseDate": "2026-10-01",
-      "sizeBytes": 367241,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.19/evaitec-ota-wear-0.1.19.apk",
-      "sha256": "cbe122ff022bb19a06a59fef0b6e2a1bcddc671f511110407dde60455f4d8bb5",
+      "version": "0.1.20",
+      "releaseDate": "2026-10-03",
+      "sizeBytes": 367245,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.20/evaitec-ota-wear-0.1.20.apk",
+      "sha256": "\\b87e010a09165676279c60e24dc02be2439a76e80d63440411430b29ede061d",
       "notes": "Indirme once ev aynasindan (Zima LAN), ozet her kaynakta dogrulanir; uymazsa GitHub."
     },
     {
