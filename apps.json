@@ -20,18 +20,18 @@
     {
       "id": "evaitec-ota-mobile",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 19,
+      "versionCode": 20,
       "name": "evaitecOTA",
       "tagline": "Telefona uygulama kuran ve guncelleyen yukleyici; saate de APK gonderir.",
       "platform": "phone",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.20",
-      "releaseDate": "2026-10-02",
-      "sizeBytes": 755157,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.20/evaitec-ota-mobile-0.1.20.apk",
-      "sha256": "82c61b3fbfc149bd6c1821573f3253a86c662ca4c042fbc9be2aae56fec09b80",
-      "notes": "Alt sekmeler Telefon/Saat/TV, Yenile dugmesi, dar kartlar."
+      "version": "0.1.21",
+      "releaseDate": "2026-10-03",
+      "sizeBytes": 4712784,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.21/evaitec-ota-mobile-0.1.21.apk",
+      "sha256": "e58225faec213acfce96db9820fd5592f317f25efb73b2564a1f7ba387421ccb",
+      "notes": "Eslestirme kodlu kablosuz ADB (ilk sefer kod, sonra kodsuz); saatte ADB uzaktan acilir; TV Gonder kare kod istemez."
     },
     {
       "id": "evaglass-phone",
@@ -68,18 +68,18 @@
     {
       "id": "evaitec-ota-wear",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 16,
+      "versionCode": 17,
       "name": "evaitecOTA",
       "tagline": "Saate uygulama kuran ve güncelleyen yükleyici.",
       "platform": "watch",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.21",
+      "version": "0.1.22",
       "releaseDate": "2026-10-03",
-      "sizeBytes": 375245,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.21/evaitec-ota-wear-0.1.21.apk",
-      "sha256": "cf1d4c2272278a37ac24f71bbdf4482b414e86affd52f8e36095155ae9c3d76a",
-      "notes": "Ayarlar > Aktarim: Otomatik / Wi-Fi / Telefon. Wi-Fi yolu agi acikca ister; telefondan aktarim 30 sn durursa hata verir."
+      "sizeBytes": 378045,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.22/evaitec-ota-wear-0.1.22.apk",
+      "sha256": "6170eae524ea9684bbc389e92804aa672cd796489fd6cc5c5aab93aabf12be7c",
+      "notes": "Telefon istediginde kablosuz hata ayiklamayi acar/kapatir; Ayarlar > Aktarim yolu."
     },
     {
       "id": "netmovies-mini-watch",
