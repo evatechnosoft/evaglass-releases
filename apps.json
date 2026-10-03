@@ -15,10 +15,7 @@
       "sizeBytes": 190769,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-tv-v0.1.13/evaitec-ota-tv-0.1.13.apk",
       "sha256": "346f20dcf1ac57956da3d9617ce5e835cbc1dcf43fbcc34420f2cd7dd37ab337",
-      "notes": "Indirme once ev sunucusundan, sonra Cloudflare tunelinden, en sonda GitHub.",
-      "mirrors": [
-        "http://192.168.1.186:8099/evaitec-ota-tv.apk"
-      ]
+      "notes": "Indirme once ev sunucusundan, sonra Cloudflare tunelinden, en sonda GitHub."
     },
     {
       "id": "evaitec-ota-mobile",
@@ -34,10 +31,7 @@
       "sizeBytes": 755157,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.20/evaitec-ota-mobile-0.1.20.apk",
       "sha256": "82c61b3fbfc149bd6c1821573f3253a86c662ca4c042fbc9be2aae56fec09b80",
-      "notes": "Alt sekmeler Telefon/Saat/TV, Yenile dugmesi, dar kartlar.",
-      "mirrors": [
-        "http://192.168.1.186:8099/evaitec-ota-mobile.apk"
-      ]
+      "notes": "Alt sekmeler Telefon/Saat/TV, Yenile dugmesi, dar kartlar."
     },
     {
       "id": "evaglass-phone",
@@ -53,10 +47,7 @@
       "sizeBytes": 22831134,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.8/evaglass-0.8.8.apk",
       "sha256": "6194cc972010a718e76f553568eb7777a9409bcc44eb209ce27781bd0b39eb67",
-      "notes": "Android 10+. Kurulumdan önce \"bilinmeyen kaynaklara izin ver\" açık olmalı.",
-      "mirrors": [
-        "http://192.168.1.186:8099/evaglass-phone.apk"
-      ]
+      "notes": "Android 10+. Kurulumdan önce \"bilinmeyen kaynaklara izin ver\" açık olmalı."
     },
     {
       "id": "evaglass-watch",
@@ -72,10 +63,7 @@
       "sizeBytes": 2855322,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.8/evaglass-watch-0.8.8.apk",
       "sha256": "4b2236e27df8f7ea8892e7e55f4086c96a7806f15726f5de2af2ef99a534ccc5",
-      "notes": "Bu dosyayı telefona kurmayın; telefon uygulamasıyla aynı paket adını taşır.",
-      "mirrors": [
-        "http://192.168.1.186:8099/evaglass-watch.apk"
-      ]
+      "notes": "Bu dosyayı telefona kurmayın; telefon uygulamasıyla aynı paket adını taşır."
     },
     {
       "id": "evaitec-ota-wear",
@@ -91,10 +79,7 @@
       "sizeBytes": 367241,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.19/evaitec-ota-wear-0.1.19.apk",
       "sha256": "cbe122ff022bb19a06a59fef0b6e2a1bcddc671f511110407dde60455f4d8bb5",
-      "notes": "Indirme once ev aynasindan (Zima LAN), ozet her kaynakta dogrulanir; uymazsa GitHub.",
-      "mirrors": [
-        "http://192.168.1.186:8099/evaitec-ota-wear.apk"
-      ]
+      "notes": "Indirme once ev aynasindan (Zima LAN), ozet her kaynakta dogrulanir; uymazsa GitHub."
     },
     {
       "id": "netmovies-mini-watch",
@@ -110,10 +95,7 @@
       "sizeBytes": 6753817,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.19/netmovies-mini-watch-0.1.19.apk",
       "sha256": "9c88894f8901ae1419db6fd52f4f894a54c03732462cf25ba6faf9a0b826accb",
-      "notes": "Saat pad: yavas kaydirma artik yon gonderiyor, geri tetiklenmiyor.",
-      "mirrors": [
-        "http://192.168.1.186:8099/netmovies-mini-watch.apk"
-      ]
+      "notes": "Saat pad: yavas kaydirma artik yon gonderiyor, geri tetiklenmiyor."
     },
     {
       "id": "wellness-phone",
@@ -161,10 +143,7 @@
       "sizeBytes": 22637128,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.45/netmovies-tv-0.9.45.apk",
       "sha256": "2ca34e135b3d3132a8dfdaef304662119d450af106daa9d82d147bbbdb224c63",
-      "notes": "Güncelleme düğmesi üst barda, ayrı şerit kalktı; TV'de kumanda düğmesi kaldırıldı.",
-      "mirrors": [
-        "http://192.168.1.186:8099/netmovies-phone.apk"
-      ]
+      "notes": "Güncelleme düğmesi üst barda, ayrı şerit kalktı; TV'de kumanda düğmesi kaldırıldı."
     },
     {
       "id": "netmovies-tv",
@@ -180,10 +159,7 @@
       "sizeBytes": 22637128,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.45/netmovies-tv-0.9.45.apk",
       "sha256": "2ca34e135b3d3132a8dfdaef304662119d450af106daa9d82d147bbbdb224c63",
-      "notes": "Güncelleme düğmesi üst barda, ayrı şerit kalktı; TV'de kumanda düğmesi kaldırıldı.",
-      "mirrors": [
-        "http://192.168.1.186:8099/netmovies-tv.apk"
-      ]
+      "notes": "Güncelleme düğmesi üst barda, ayrı şerit kalktı; TV'de kumanda düğmesi kaldırıldı."
     },
     {
       "id": "rcmycar-phone",
@@ -199,10 +175,7 @@
       "version": "0.3.2",
       "releaseDate": "2026-10-03",
       "icon": "assets/rcmycar.svg",
-      "screenshots": [],
-      "mirrors": [
-        "http://192.168.1.186:8099/rcmycar-phone.apk"
-      ]
+      "screenshots": []
     },
     {
       "id": "rcmycar-watch",
@@ -218,10 +191,7 @@
       "version": "0.3.2",
       "releaseDate": "2026-10-03",
       "icon": "assets/rcmycar.svg",
-      "screenshots": [],
-      "mirrors": [
-        "http://192.168.1.186:8099/rcmycar-watch.apk"
-      ]
+      "screenshots": []
     }
   ]
 }
