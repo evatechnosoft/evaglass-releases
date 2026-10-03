@@ -68,18 +68,18 @@
     {
       "id": "evaitec-ota-wear",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 15,
+      "versionCode": 16,
       "name": "evaitecOTA",
       "tagline": "Saate uygulama kuran ve güncelleyen yükleyici.",
       "platform": "watch",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.20",
+      "version": "0.1.21",
       "releaseDate": "2026-10-03",
-      "sizeBytes": 367245,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.20/evaitec-ota-wear-0.1.20.apk",
-      "sha256": "\\b87e010a09165676279c60e24dc02be2439a76e80d63440411430b29ede061d",
-      "notes": "Indirme once ev aynasindan (Zima LAN), ozet her kaynakta dogrulanir; uymazsa GitHub."
+      "sizeBytes": 375245,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.21/evaitec-ota-wear-0.1.21.apk",
+      "sha256": "cf1d4c2272278a37ac24f71bbdf4482b414e86affd52f8e36095155ae9c3d76a",
+      "notes": "Ayarlar > Aktarim: Otomatik / Wi-Fi / Telefon. Wi-Fi yolu agi acikca ister; telefondan aktarim 30 sn durursa hata verir."
     },
     {
       "id": "netmovies-mini-watch",
