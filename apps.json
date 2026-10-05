@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05T08:37:13Z",
+  "updated": "2026-10-05T13:27:48Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -192,6 +192,19 @@
       "releaseDate": "2026-10-05",
       "icon": "assets/rcmycar.svg",
       "screenshots": []
+    },
+    {
+      "id": "evabench",
+      "name": "EvaBench",
+      "packageName": "com.evaitec.evabench",
+      "platform": "android",
+      "version": "0.2.0",
+      "versionCode": 2,
+      "releaseDate": "2026-10-05",
+      "sizeBytes": 22924878,
+      "sha256": "5bebfa838de686e44e05bac689a5d3877bc2b6cf1224e87f0b04eea84328c1da",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evabench-v0.2.0/evabench-0.2.0.apk",
+      "notes": "EvaBench 0.2.0: BLE/WiFi tarama, GATT, konsol (BLE/USB/WiFi), uzak menzil, OTA"
     }
   ]
 }
