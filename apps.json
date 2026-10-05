@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-04T08:07:29Z",
+  "updated": "2026-10-05T06:27:53Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -166,14 +166,14 @@
       "name": "rcmycar",
       "tagline": "Aracı telefondan kilitle, aç, çalıştır; yaklaşınca kapı açılır.",
       "platform": "phone",
-      "sizeBytes": 25205601,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/rcmycar-v0.3.12/rcmycar-0.3.12.apk",
-      "sha256": "4d7427ca34fccc34cdd9adf502a1cf383819de26f1f6be399e6fb5c52c9bca08",
+      "sizeBytes": 25207577,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/rcmycar-v0.3.13/rcmycar-0.3.13.apk",
+      "sha256": "f1500509ee6b15ec3f34f94b9e204eca8d5f0340cbd0e66808d2c5f620cecd9b",
       "notes": "Android 12+. Ilk surum, arac uzerinde test edilmedi. Ilk acilista Bluetooth ve bildirim izni ister.",
       "packageName": "com.evaitec.rcmycar",
-      "versionCode": 28,
-      "version": "0.3.12",
-      "releaseDate": "2026-10-04",
+      "versionCode": 29,
+      "version": "0.3.13",
+      "releaseDate": "2026-10-05",
       "icon": "assets/rcmycar.svg",
       "screenshots": []
     },
@@ -183,13 +183,13 @@
       "tagline": "Kilitle / Aç / Çalıştır bileğinde; komutu telefon iletir.",
       "platform": "watch",
       "sizeBytes": 1838362,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/rcmycar-v0.3.12/rcmycar-watch-0.3.12.apk",
-      "sha256": "abe50de65fc4674e08b533c6856c3791f66c9bcbb624ada1c65c2f9b8b052fe9",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/rcmycar-v0.3.13/rcmycar-watch-0.3.13.apk",
+      "sha256": "5479b4b477313710173a36bfe4eb98e848c1aad0fa974fb20ff9b5db95f275ca",
       "notes": "Bu dosyayi telefona kurmayin; telefon uygulamasiyla ayni paket adini tasir.",
       "packageName": "com.evaitec.rcmycar",
-      "versionCode": 28,
-      "version": "0.3.12",
-      "releaseDate": "2026-10-04",
+      "versionCode": 29,
+      "version": "0.3.13",
+      "releaseDate": "2026-10-05",
       "icon": "assets/rcmycar.svg",
       "screenshots": []
     }
