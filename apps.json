@@ -156,18 +156,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 957,
+      "versionCode": 958,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.57",
+      "version": "0.9.58",
       "releaseDate": "2026-10-06",
-      "sizeBytes": 22719252,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.57/netmovies-tv-0.9.57.apk",
-      "sha256": "575a6a53806d768ae1630f104fd21f7902eccd5d80db6d0ec2845b906c683eaf",
-      "notes": "Ayarlar → Rafları düzenle (sırala/gizle). Poster menüsü ▼: Devam Et'ten çıkar, Raflarda gösterme. Gözat'ta çipi taşırken ▼ gizler. Elle dizilmemiş kaynaklar oynatma puanına göre.",
+      "sizeBytes": 22735636,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.58/netmovies-tv-0.9.58.apk",
+      "sha256": "33489d1584065089217785bd63cd1a0cf68c50a4be758f6a51ef9b1365bbdecf",
+      "notes": "Arama artık YouTube'suz; asıl diziler önde. Gözat'ta TV hapı.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-phone.apk"
       ]
@@ -175,18 +175,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 957,
+      "versionCode": 958,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.57",
+      "version": "0.9.58",
       "releaseDate": "2026-10-06",
-      "sizeBytes": 22719252,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.57/netmovies-tv-0.9.57.apk",
-      "sha256": "575a6a53806d768ae1630f104fd21f7902eccd5d80db6d0ec2845b906c683eaf",
-      "notes": "Devam Et artık Dizi ve Film diye iki sekme. Ayarlar → Rafları düzenle: kişisel sekmeleri gizle/göster, basılı tut ▲▼ taşı.",
+      "sizeBytes": 22735636,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.58/netmovies-tv-0.9.58.apk",
+      "sha256": "33489d1584065089217785bd63cd1a0cf68c50a4be758f6a51ef9b1365bbdecf",
+      "notes": "Gözat'ta YouTube'un yanında TV hapı (Canlı TV kanalları). Arama artık YouTube'suz; YouTube araması Gözat → YouTube seçiliyken ya da arama ekranındaki YouTube anahtarıyla.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-tv.apk"
       ]
