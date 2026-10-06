@@ -15,7 +15,10 @@
       "sizeBytes": 190769,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-tv-v0.1.13/evaitec-ota-tv-0.1.13.apk",
       "sha256": "346f20dcf1ac57956da3d9617ce5e835cbc1dcf43fbcc34420f2cd7dd37ab337",
-      "notes": "Indirme once ev sunucusundan, sonra Cloudflare tunelinden, en sonda GitHub."
+      "notes": "Indirme once ev sunucusundan, sonra Cloudflare tunelinden, en sonda GitHub.",
+      "mirrors": [
+        "http://192.168.1.186:8099/evaitec-ota-tv.apk"
+      ]
     },
     {
       "id": "evaitec-ota-mobile",
@@ -31,7 +34,10 @@
       "sizeBytes": 4712784,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.21/evaitec-ota-mobile-0.1.21.apk",
       "sha256": "e58225faec213acfce96db9820fd5592f317f25efb73b2564a1f7ba387421ccb",
-      "notes": "Eslestirme kodlu kablosuz ADB (ilk sefer kod, sonra kodsuz); saatte ADB uzaktan acilir; TV Gonder kare kod istemez."
+      "notes": "Eslestirme kodlu kablosuz ADB (ilk sefer kod, sonra kodsuz); saatte ADB uzaktan acilir; TV Gonder kare kod istemez.",
+      "mirrors": [
+        "http://192.168.1.186:8099/evaitec-ota-mobile.apk"
+      ]
     },
     {
       "id": "evaglass-phone",
@@ -47,7 +53,10 @@
       "sizeBytes": 22831134,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.8/evaglass-0.8.8.apk",
       "sha256": "6194cc972010a718e76f553568eb7777a9409bcc44eb209ce27781bd0b39eb67",
-      "notes": "Android 10+. Kurulumdan önce \"bilinmeyen kaynaklara izin ver\" açık olmalı."
+      "notes": "Android 10+. Kurulumdan önce \"bilinmeyen kaynaklara izin ver\" açık olmalı.",
+      "mirrors": [
+        "http://192.168.1.186:8099/evaglass-phone.apk"
+      ]
     },
     {
       "id": "evaglass-watch",
@@ -63,7 +72,10 @@
       "sizeBytes": 2855322,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/v0.8.8/evaglass-watch-0.8.8.apk",
       "sha256": "4b2236e27df8f7ea8892e7e55f4086c96a7806f15726f5de2af2ef99a534ccc5",
-      "notes": "Bu dosyayı telefona kurmayın; telefon uygulamasıyla aynı paket adını taşır."
+      "notes": "Bu dosyayı telefona kurmayın; telefon uygulamasıyla aynı paket adını taşır.",
+      "mirrors": [
+        "http://192.168.1.186:8099/evaglass-watch.apk"
+      ]
     },
     {
       "id": "evaitec-ota-wear",
@@ -79,7 +91,10 @@
       "sizeBytes": 378045,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.22/evaitec-ota-wear-0.1.22.apk",
       "sha256": "6170eae524ea9684bbc389e92804aa672cd796489fd6cc5c5aab93aabf12be7c",
-      "notes": "Telefon istediginde kablosuz hata ayiklamayi acar/kapatir; Ayarlar > Aktarim yolu."
+      "notes": "Telefon istediginde kablosuz hata ayiklamayi acar/kapatir; Ayarlar > Aktarim yolu.",
+      "mirrors": [
+        "http://192.168.1.186:8099/evaitec-ota-wear.apk"
+      ]
     },
     {
       "id": "netmovies-mini-watch",
@@ -95,7 +110,10 @@
       "sizeBytes": 6753817,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.19/netmovies-mini-watch-0.1.19.apk",
       "sha256": "9c88894f8901ae1419db6fd52f4f894a54c03732462cf25ba6faf9a0b826accb",
-      "notes": "Saat pad: yavas kaydirma artik yon gonderiyor, geri tetiklenmiyor."
+      "notes": "Saat pad: yavas kaydirma artik yon gonderiyor, geri tetiklenmiyor.",
+      "mirrors": [
+        "http://192.168.1.186:8099/netmovies-mini-watch.apk"
+      ]
     },
     {
       "id": "wellness-phone",
@@ -111,7 +129,10 @@
       "sizeBytes": 25282122,
       "sha256": "8c1f0c1d396ec6ab68108af71a984fa1244b7a8939d08d8cdc38045541fac7b4",
       "downloadUrl": "https://fit.evaitec.com/ota/wellness-0.41.0.apk",
-      "notes": "Android 8+. Giris adresi https://fit.evaitec.com — Ayar > Sunucu alanina yalnizca token girilir. Health Connect izinleri telefon ayarlarindan verilir."
+      "notes": "Android 8+. Giris adresi https://fit.evaitec.com — Ayar > Sunucu alanina yalnizca token girilir. Health Connect izinleri telefon ayarlarindan verilir.",
+      "mirrors": [
+        "http://192.168.1.186:8099/wellness-phone.apk"
+      ]
     },
     {
       "id": "wellness-wear",
@@ -127,7 +148,10 @@
       "sizeBytes": 13225556,
       "sha256": "c3ed3ff1d42ab49640dea00b75b1b308bed2e0798bdced93c6311ac42e417232",
       "downloadUrl": "https://fit.evaitec.com/ota/wellness-wear-0.41.0.apk",
-      "notes": "Bu dosyayi telefona kurmayin; telefon uygulamasiyla ayni paket adini tasir."
+      "notes": "Bu dosyayi telefona kurmayin; telefon uygulamasiyla ayni paket adini tasir.",
+      "mirrors": [
+        "http://192.168.1.186:8099/wellness-wear.apk"
+      ]
     },
     {
       "id": "netmovies-phone",
@@ -143,7 +167,10 @@
       "sizeBytes": 22719252,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.57/netmovies-tv-0.9.57.apk",
       "sha256": "575a6a53806d768ae1630f104fd21f7902eccd5d80db6d0ec2845b906c683eaf",
-      "notes": "Ayarlar → Rafları düzenle (sırala/gizle). Poster menüsü ▼: Devam Et'ten çıkar, Raflarda gösterme. Gözat'ta çipi taşırken ▼ gizler. Elle dizilmemiş kaynaklar oynatma puanına göre."
+      "notes": "Ayarlar → Rafları düzenle (sırala/gizle). Poster menüsü ▼: Devam Et'ten çıkar, Raflarda gösterme. Gözat'ta çipi taşırken ▼ gizler. Elle dizilmemiş kaynaklar oynatma puanına göre.",
+      "mirrors": [
+        "http://192.168.1.186:8099/netmovies-phone.apk"
+      ]
     },
     {
       "id": "netmovies-tv",
@@ -159,7 +186,10 @@
       "sizeBytes": 22719252,
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.57/netmovies-tv-0.9.57.apk",
       "sha256": "575a6a53806d768ae1630f104fd21f7902eccd5d80db6d0ec2845b906c683eaf",
-      "notes": "Devam Et artık Dizi ve Film diye iki sekme. Ayarlar → Rafları düzenle: kişisel sekmeleri gizle/göster, basılı tut ▲▼ taşı."
+      "notes": "Devam Et artık Dizi ve Film diye iki sekme. Ayarlar → Rafları düzenle: kişisel sekmeleri gizle/göster, basılı tut ▲▼ taşı.",
+      "mirrors": [
+        "http://192.168.1.186:8099/netmovies-tv.apk"
+      ]
     },
     {
       "id": "rcmycar-phone",
@@ -175,7 +205,10 @@
       "version": "0.3.18",
       "releaseDate": "2026-10-06",
       "icon": "assets/rcmycar.svg",
-      "screenshots": []
+      "screenshots": [],
+      "mirrors": [
+        "http://192.168.1.186:8099/rcmycar-phone.apk"
+      ]
     },
     {
       "id": "rcmycar-watch",
@@ -191,7 +224,10 @@
       "version": "0.3.18",
       "releaseDate": "2026-10-06",
       "icon": "assets/rcmycar.svg",
-      "screenshots": []
+      "screenshots": [],
+      "mirrors": [
+        "http://192.168.1.186:8099/rcmycar-watch.apk"
+      ]
     },
     {
       "id": "evabench",
@@ -204,7 +240,10 @@
       "sizeBytes": 22924878,
       "sha256": "5bebfa838de686e44e05bac689a5d3877bc2b6cf1224e87f0b04eea84328c1da",
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evabench-v0.2.0/evabench-0.2.0.apk",
-      "notes": "EvaBench 0.2.0: BLE/WiFi tarama, GATT, konsol (BLE/USB/WiFi), uzak menzil, OTA"
+      "notes": "EvaBench 0.2.0: BLE/WiFi tarama, GATT, konsol (BLE/USB/WiFi), uzak menzil, OTA",
+      "mirrors": [
+        "http://192.168.1.186:8099/evabench.apk"
+      ]
     }
   ]
 }
