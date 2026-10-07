@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07T05:22:11Z",
+  "updated": "2026-10-07T09:49:40Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -80,18 +80,18 @@
     {
       "id": "evaitec-ota-wear",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 17,
+      "versionCode": 18,
       "name": "evaitecOTA",
       "tagline": "Saate uygulama kuran ve güncelleyen yükleyici.",
       "platform": "watch",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.22",
-      "releaseDate": "2026-10-03",
-      "sizeBytes": 378045,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.22/evaitec-ota-wear-0.1.22.apk",
-      "sha256": "6170eae524ea9684bbc389e92804aa672cd796489fd6cc5c5aab93aabf12be7c",
-      "notes": "Telefon istediginde kablosuz hata ayiklamayi acar/kapatir; Ayarlar > Aktarim yolu.",
+      "version": "0.1.23",
+      "releaseDate": "2026-10-07",
+      "sizeBytes": 378021,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.23/evaitec-ota-wear-0.1.23.apk",
+      "sha256": "da9be75bdfe1b8f1d901d5f5aed4626586bd9b28ec8a55eebb226129c3a82f27",
+      "notes": "Otomatik yol: Wi-Fi beklemeden dogrudan ota.evaitec.com'dan indirir; olmazsa telefona duser.",
       "mirrors": [
         "https://ota.evaitec.com/evaitec-ota-wear.apk"
       ]
