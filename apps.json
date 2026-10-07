@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07T09:49:40Z",
+  "updated": "2026-10-07T10:05:19Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -23,18 +23,18 @@
     {
       "id": "evaitec-ota-mobile",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 20,
+      "versionCode": 21,
       "name": "evaitecOTA",
       "tagline": "Telefona uygulama kuran ve guncelleyen yukleyici; saate de APK gonderir.",
       "platform": "phone",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.21",
-      "releaseDate": "2026-10-03",
+      "version": "0.1.22",
+      "releaseDate": "2026-10-07",
       "sizeBytes": 4712784,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.21/evaitec-ota-mobile-0.1.21.apk",
-      "sha256": "e58225faec213acfce96db9820fd5592f317f25efb73b2564a1f7ba387421ccb",
-      "notes": "Eslestirme kodlu kablosuz ADB (ilk sefer kod, sonra kodsuz); saatte ADB uzaktan acilir; TV Gonder kare kod istemez.",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.22/evaitec-ota-mobile-0.1.22.apk",
+      "sha256": "e232ddfa13f2f11009d7772891ba3960f767cac31fe1c4e4140d3eb4d67a2b46",
+      "notes": "Indirme sekme/sayfa degisince kopmaz, ikinci dokunus sifirdan baslatmaz; ayna eski dosyayi vermez.",
       "mirrors": [
         "https://ota.evaitec.com/evaitec-ota-mobile.apk"
       ]
@@ -80,18 +80,18 @@
     {
       "id": "evaitec-ota-wear",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 18,
+      "versionCode": 19,
       "name": "evaitecOTA",
       "tagline": "Saate uygulama kuran ve güncelleyen yükleyici.",
       "platform": "watch",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.23",
+      "version": "0.1.24",
       "releaseDate": "2026-10-07",
-      "sizeBytes": 378021,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.23/evaitec-ota-wear-0.1.23.apk",
-      "sha256": "da9be75bdfe1b8f1d901d5f5aed4626586bd9b28ec8a55eebb226129c3a82f27",
-      "notes": "Otomatik yol: Wi-Fi beklemeden dogrudan ota.evaitec.com'dan indirir; olmazsa telefona duser.",
+      "sizeBytes": 379389,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.24/evaitec-ota-wear-0.1.24.apk",
+      "sha256": "85155fdc3fc136dd84ac2a2b69989025cf51535444050ba8534df1cccee4b263",
+      "notes": "Indirme sekme/sayfa degisince kopmaz, ikinci dokunus sifirdan baslatmaz; ayna eski dosyayi vermez.",
       "mirrors": [
         "https://ota.evaitec.com/evaitec-ota-wear.apk"
       ]
