@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08T06:32:53Z",
+  "updated": "2026-10-08T07:43:04Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -156,18 +156,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 961,
+      "versionCode": 962,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.61",
+      "version": "0.9.62",
       "releaseDate": "2026-10-08",
       "sizeBytes": 22735636,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.61/netmovies-tv-0.9.61.apk",
-      "sha256": "d06869c65896a6ed7098f66e3e60960f489758f02bfd35a61e9793afbacd46d3",
-      "notes": "Aramada OK ekran klavyesini açar; Lioness'te yanlış YouTube videosu açılmaz.",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.62/netmovies-tv-0.9.62.apk",
+      "sha256": "03d91bf3b0921b28414596632e7861f93aaebb6093dd4d6591f361fbde8f3db2",
+      "notes": "Film/dizi sessiz başlamaz; ses 9'dan başlar.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-phone.apk"
       ]
@@ -175,18 +175,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 961,
+      "versionCode": 962,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.61",
+      "version": "0.9.62",
       "releaseDate": "2026-10-08",
       "sizeBytes": 22735636,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.61/netmovies-tv-0.9.61.apk",
-      "sha256": "d06869c65896a6ed7098f66e3e60960f489758f02bfd35a61e9793afbacd46d3",
-      "notes": "Aramada OK ekran klavyesini açar; Lioness'te yanlış YouTube videosu açılmaz.",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.62/netmovies-tv-0.9.62.apk",
+      "sha256": "03d91bf3b0921b28414596632e7861f93aaebb6093dd4d6591f361fbde8f3db2",
+      "notes": "Film/dizi sessiz başlamaz; ses 9'dan başlar.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-tv.apk"
       ]
