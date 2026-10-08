@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07T11:20:51Z",
+  "updated": "2026-10-08T04:39:27Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -156,18 +156,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 958,
+      "versionCode": 959,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.58",
-      "releaseDate": "2026-10-06",
+      "version": "0.9.59",
+      "releaseDate": "2026-10-08",
       "sizeBytes": 22735636,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.58/netmovies-tv-0.9.58.apk",
-      "sha256": "33489d1584065089217785bd63cd1a0cf68c50a4be758f6a51ef9b1365bbdecf",
-      "notes": "Arama artık YouTube'suz; asıl diziler önde. Gözat'ta TV hapı.",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.59/netmovies-tv-0.9.59.apk",
+      "sha256": "88ac11bb4cafd7feb7b9ee6eef7cac56ed9a37c3371f3b12a7077e0545545fa5",
+      "notes": "Gece sunucu kapalıyken Tekrar dene uyandırır; kartta ORJ rozeti kalktı.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-phone.apk"
       ]
@@ -175,18 +175,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 958,
+      "versionCode": 959,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.58",
-      "releaseDate": "2026-10-06",
+      "version": "0.9.59",
+      "releaseDate": "2026-10-08",
       "sizeBytes": 22735636,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.58/netmovies-tv-0.9.58.apk",
-      "sha256": "33489d1584065089217785bd63cd1a0cf68c50a4be758f6a51ef9b1365bbdecf",
-      "notes": "Gözat'ta YouTube'un yanında TV hapı (Canlı TV kanalları). Arama artık YouTube'suz; YouTube araması Gözat → YouTube seçiliyken ya da arama ekranındaki YouTube anahtarıyla.",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.59/netmovies-tv-0.9.59.apk",
+      "sha256": "88ac11bb4cafd7feb7b9ee6eef7cac56ed9a37c3371f3b12a7077e0545545fa5",
+      "notes": "Gece sunucu kapalıyken Tekrar dene uyandırır; kartta ORJ rozeti kalktı.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-tv.apk"
       ]
