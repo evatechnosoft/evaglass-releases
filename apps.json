@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08T04:39:27Z",
+  "updated": "2026-10-08T04:52:00Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -156,18 +156,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 959,
+      "versionCode": 960,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.59",
+      "version": "0.9.60",
       "releaseDate": "2026-10-08",
       "sizeBytes": 22735636,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.59/netmovies-tv-0.9.59.apk",
-      "sha256": "88ac11bb4cafd7feb7b9ee6eef7cac56ed9a37c3371f3b12a7077e0545545fa5",
-      "notes": "Gece sunucu kapalıyken Tekrar dene uyandırır; kartta ORJ rozeti kalktı.",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.60/netmovies-tv-0.9.60.apk",
+      "sha256": "2489602ecad59e4f510c77a1c549cee4d7d7c8420c4641e59a82547fb6738b2f",
+      "notes": "Kart dil rozetleri sağ alt köşede tek harf: A altyazı, D dublaj.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-phone.apk"
       ]
@@ -175,18 +175,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 959,
+      "versionCode": 960,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.59",
+      "version": "0.9.60",
       "releaseDate": "2026-10-08",
       "sizeBytes": 22735636,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.59/netmovies-tv-0.9.59.apk",
-      "sha256": "88ac11bb4cafd7feb7b9ee6eef7cac56ed9a37c3371f3b12a7077e0545545fa5",
-      "notes": "Gece sunucu kapalıyken Tekrar dene uyandırır; kartta ORJ rozeti kalktı.",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.60/netmovies-tv-0.9.60.apk",
+      "sha256": "2489602ecad59e4f510c77a1c549cee4d7d7c8420c4641e59a82547fb6738b2f",
+      "notes": "Kart dil rozetleri sağ alt köşede tek harf: A altyazı, D dublaj.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-tv.apk"
       ]
