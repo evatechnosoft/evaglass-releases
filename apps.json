@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09T19:30:00Z",
+  "updated": "2026-10-09T20:00:00Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -99,18 +99,18 @@
     {
       "id": "netmovies-mini-watch",
       "packageName": "com.evaitec.netmovies.wear",
-      "versionCode": 121,
+      "versionCode": 122,
       "name": "NetMovies Mini",
       "tagline": "Televizyonu bileğinizden sürün — kaydır yön, dokun OK.",
       "platform": "watch",
       "icon": "assets/netmovies-watch.svg",
       "screenshots": [],
-      "version": "0.1.21",
+      "version": "0.1.22",
       "releaseDate": "2026-10-09",
-      "sizeBytes": 13439537,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.21/netmovies-mini-watch-0.1.21.apk",
-      "sha256": "9c089e520314efd5269a0b0fe1e65f00f5dd009815a7d0913792c700479a1413",
-      "notes": "Hava faresi: saat Mi Box'a Bluetooth fare; el seçimi, X/Y/Hız, pad sürükleme, ↩ geri.",
+      "sizeBytes": 6868529,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.22/netmovies-mini-watch-0.1.22.apk",
+      "sha256": "e9fc4bb11b4dec36d608af7594c611db0fc1f2c755b072e7691619f474b0086a",
+      "notes": "Hava faresi: imleç ve odak kipi (ok tuşları, basılı uzun OK).",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-mini-watch.apk"
       ]
@@ -156,18 +156,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 964,
+      "versionCode": 965,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.64",
+      "version": "0.9.65",
       "releaseDate": "2026-10-09",
       "sizeBytes": 22752020,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.64/netmovies-tv-0.9.64.apk",
-      "sha256": "208418f0473bca0cf1d8dc3ce872e973f4e4338aa5c90fe535b4f0d614b97a05",
-      "notes": "Aramada klavye seçimi: ABC / QWERTY / Sistem.",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.65/netmovies-tv-0.9.65.apk",
+      "sha256": "4e2fddd97ae1a275de1597abbc42800dcb13d6091a6a0a75850108a4759b4020",
+      "notes": "Bluetooth fare için büyük halka imleç.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-phone.apk"
       ]
@@ -175,18 +175,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 964,
+      "versionCode": 965,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.64",
+      "version": "0.9.65",
       "releaseDate": "2026-10-09",
       "sizeBytes": 22752020,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.64/netmovies-tv-0.9.64.apk",
-      "sha256": "208418f0473bca0cf1d8dc3ce872e973f4e4338aa5c90fe535b4f0d614b97a05",
-      "notes": "Aramada klavye seçimi: ABC / QWERTY / Sistem.",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.65/netmovies-tv-0.9.65.apk",
+      "sha256": "4e2fddd97ae1a275de1597abbc42800dcb13d6091a6a0a75850108a4759b4020",
+      "notes": "Bluetooth fare için büyük halka imleç.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-tv.apk"
       ]
