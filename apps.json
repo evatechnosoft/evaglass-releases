@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09T20:20:00Z",
+  "updated": "2026-10-09T20:45:00Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -156,18 +156,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 965,
+      "versionCode": 966,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.65",
+      "version": "0.9.66",
       "releaseDate": "2026-10-09",
-      "sizeBytes": 22752020,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.65/netmovies-tv-0.9.65.apk",
-      "sha256": "4e2fddd97ae1a275de1597abbc42800dcb13d6091a6a0a75850108a4759b4020",
-      "notes": "Bluetooth fare için büyük halka imleç.",
+      "sizeBytes": 22752188,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.66/netmovies-tv-0.9.66.apk",
+      "sha256": "e1d8fa249d11eb60ccf06f7791ecdc3b335359e14f05368211f31d5157f9ab7a",
+      "notes": "Telefondan Paylaş → TV'de aç; büyük halka imleç.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-phone.apk"
       ]
@@ -175,18 +175,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 965,
+      "versionCode": 966,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.65",
+      "version": "0.9.66",
       "releaseDate": "2026-10-09",
-      "sizeBytes": 22752020,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.65/netmovies-tv-0.9.65.apk",
-      "sha256": "4e2fddd97ae1a275de1597abbc42800dcb13d6091a6a0a75850108a4759b4020",
-      "notes": "Bluetooth fare için büyük halka imleç.",
+      "sizeBytes": 22752188,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.66/netmovies-tv-0.9.66.apk",
+      "sha256": "e1d8fa249d11eb60ccf06f7791ecdc3b335359e14f05368211f31d5157f9ab7a",
+      "notes": "Telefondan Paylaş → TV'de aç; büyük halka imleç.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-tv.apk"
       ]
