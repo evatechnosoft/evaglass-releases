@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08T07:43:04Z",
+  "updated": "2026-10-09T07:25:00Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -156,18 +156,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 963,
+      "versionCode": 964,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.63",
-      "releaseDate": "2026-10-08",
+      "version": "0.9.64",
+      "releaseDate": "2026-10-09",
       "sizeBytes": 22752020,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.63/netmovies-tv-0.9.63.apk",
-      "sha256": "517eeeb971ab1fc50d6f85723e316f906c8aeb878f12c00bca14f1785b3e2ded",
-      "notes": "Film/dizi sessiz başlamaz; ses 9'dan başlar.",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.64/netmovies-tv-0.9.64.apk",
+      "sha256": "208418f0473bca0cf1d8dc3ce872e973f4e4338aa5c90fe535b4f0d614b97a05",
+      "notes": "Aramada klavye seçimi: ABC / QWERTY / Sistem.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-phone.apk"
       ]
@@ -175,18 +175,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 963,
+      "versionCode": 964,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.63",
-      "releaseDate": "2026-10-08",
+      "version": "0.9.64",
+      "releaseDate": "2026-10-09",
       "sizeBytes": 22752020,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.63/netmovies-tv-0.9.63.apk",
-      "sha256": "517eeeb971ab1fc50d6f85723e316f906c8aeb878f12c00bca14f1785b3e2ded",
-      "notes": "Film/dizi sessiz başlamaz; ses 9'dan başlar.",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.64/netmovies-tv-0.9.64.apk",
+      "sha256": "208418f0473bca0cf1d8dc3ce872e973f4e4338aa5c90fe535b4f0d614b97a05",
+      "notes": "Aramada klavye seçimi: ABC / QWERTY / Sistem.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-tv.apk"
       ]
