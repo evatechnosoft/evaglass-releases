@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09T07:25:00Z",
+  "updated": "2026-10-09T19:30:00Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -99,18 +99,18 @@
     {
       "id": "netmovies-mini-watch",
       "packageName": "com.evaitec.netmovies.wear",
-      "versionCode": 119,
+      "versionCode": 121,
       "name": "NetMovies Mini",
       "tagline": "Televizyonu bileğinizden sürün — kaydır yön, dokun OK.",
       "platform": "watch",
       "icon": "assets/netmovies-watch.svg",
       "screenshots": [],
-      "version": "0.1.19",
-      "releaseDate": "2026-09-26",
-      "sizeBytes": 6753817,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.19/netmovies-mini-watch-0.1.19.apk",
-      "sha256": "9c88894f8901ae1419db6fd52f4f894a54c03732462cf25ba6faf9a0b826accb",
-      "notes": "Saat pad: yavas kaydirma artik yon gonderiyor, geri tetiklenmiyor.",
+      "version": "0.1.21",
+      "releaseDate": "2026-10-09",
+      "sizeBytes": 13439537,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.21/netmovies-mini-watch-0.1.21.apk",
+      "sha256": "9c089e520314efd5269a0b0fe1e65f00f5dd009815a7d0913792c700479a1413",
+      "notes": "Hava faresi: saat Mi Box'a Bluetooth fare; el seçimi, X/Y/Hız, pad sürükleme, ↩ geri.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-mini-watch.apk"
       ]
