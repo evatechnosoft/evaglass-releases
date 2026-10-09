@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09T20:00:00Z",
+  "updated": "2026-10-09T20:20:00Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -99,18 +99,18 @@
     {
       "id": "netmovies-mini-watch",
       "packageName": "com.evaitec.netmovies.wear",
-      "versionCode": 122,
+      "versionCode": 123,
       "name": "NetMovies Mini",
       "tagline": "Televizyonu bileğinizden sürün — kaydır yön, dokun OK.",
       "platform": "watch",
       "icon": "assets/netmovies-watch.svg",
       "screenshots": [],
-      "version": "0.1.22",
+      "version": "0.1.23",
       "releaseDate": "2026-10-09",
-      "sizeBytes": 6868529,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.22/netmovies-mini-watch-0.1.22.apk",
-      "sha256": "e9fc4bb11b4dec36d608af7594c611db0fc1f2c755b072e7691619f474b0086a",
-      "notes": "Hava faresi: imleç ve odak kipi (ok tuşları, basılı uzun OK).",
+      "sizeBytes": 6868533,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.23/netmovies-mini-watch-0.1.23.apk",
+      "sha256": "23fcdac0280cd4d619f1da63121b9bbd9a39c1bbb9070b7e8bd43381284328ba",
+      "notes": "Hava faresi: imleç/odak kipi; hedef cihaz ⚙ › 📺 ile seçilir.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-mini-watch.apk"
       ]
