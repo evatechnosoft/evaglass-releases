@@ -156,18 +156,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 966,
+      "versionCode": 967,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.66",
-      "releaseDate": "2026-10-09",
-      "sizeBytes": 22752188,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.66/netmovies-tv-0.9.66.apk",
-      "sha256": "e1d8fa249d11eb60ccf06f7791ecdc3b335359e14f05368211f31d5157f9ab7a",
-      "notes": "Telefondan Paylaş → TV'de aç; büyük halka imleç.",
+      "version": "0.9.67",
+      "releaseDate": "2026-10-10",
+      "sizeBytes": 23579406,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.67/netmovies-tv-0.9.67.apk",
+      "sha256": "7d210e58ace8fbec83ef7e00fe818257b74038dd3fcd2eb6f13600e667a90f2c",
+      "notes": "Paylaş → TV: video oynatıcıda, yazı aramada/sayfa kutusunda; sayfada tam ekran video, reklam engeli.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-phone.apk"
       ]
@@ -175,18 +175,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 966,
+      "versionCode": 967,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.66",
-      "releaseDate": "2026-10-09",
-      "sizeBytes": 22752188,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.66/netmovies-tv-0.9.66.apk",
-      "sha256": "e1d8fa249d11eb60ccf06f7791ecdc3b335359e14f05368211f31d5157f9ab7a",
-      "notes": "Telefondan Paylaş → TV'de aç; büyük halka imleç.",
+      "version": "0.9.67",
+      "releaseDate": "2026-10-10",
+      "sizeBytes": 23579406,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.67/netmovies-tv-0.9.67.apk",
+      "sha256": "7d210e58ace8fbec83ef7e00fe818257b74038dd3fcd2eb6f13600e667a90f2c",
+      "notes": "Paylaş → TV: video oynatıcıda, yazı aramada/sayfa kutusunda; sayfada tam ekran video, reklam engeli.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-tv.apk"
       ]
