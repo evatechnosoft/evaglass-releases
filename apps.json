@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 968,
+      "versionCode": 969,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.68",
-      "releaseDate": "2026-10-11",
-      "sizeBytes": 22768812,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.68/netmovies-tv-0.9.68.apk",
-      "sha256": "351e41f14f989806fa65d5a80958e33e29273d1999121c127b6d38b6b746d8c7",
-      "notes": "TV kutusu derin uykuya girmez, ağda kalır; kumanda ve uzaktan açma çalışır.",
+      "version": "0.9.69",
+      "releaseDate": "2026-10-12",
+      "sizeBytes": 22768572,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.69/netmovies-tv-0.9.69.apk",
+      "sha256": "c44aebebaa2f0adcec809fc155e53588302c4201b51edce5d327e7d8caba78bf",
+      "notes": "Uyanık tut servisi kaldırıldı; kutu uyku davranışı eskisi gibi.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 968,
+      "versionCode": 969,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.68",
-      "releaseDate": "2026-10-11",
-      "sizeBytes": 22768812,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.68/netmovies-tv-0.9.68.apk",
-      "sha256": "351e41f14f989806fa65d5a80958e33e29273d1999121c127b6d38b6b746d8c7",
-      "notes": "TV kutusu derin uykuya girmez, ağda kalır; kumanda ve uzaktan açma çalışır.",
+      "version": "0.9.69",
+      "releaseDate": "2026-10-12",
+      "sizeBytes": 22768572,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.69/netmovies-tv-0.9.69.apk",
+      "sha256": "c44aebebaa2f0adcec809fc155e53588302c4201b51edce5d327e7d8caba78bf",
+      "notes": "Uyanık tut servisi kaldırıldı; kutu uyku davranışı eskisi gibi.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-tv.apk"
       ]
