@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 970,
+      "versionCode": 971,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.70",
+      "version": "0.9.71",
       "releaseDate": "2026-10-13",
       "sizeBytes": 22768568,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.70/netmovies-tv-0.9.70.apk",
-      "sha256": "00d0b65c7da92d0a0112678b1d4fa127d6f05fe95711aa101212663253314654",
-      "notes": "Sunucu uyandırma (WOL) kutunun kendi ağına yayın yapar; 0.x taşınması sonrası düzeldi.",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.71/netmovies-tv-0.9.71.apk",
+      "sha256": "c1d9f49702ae9dab29e71a6d070844f41ddbec2fb95724f57d37847dd863be42",
+      "notes": "Ev ağı tek: sunucu 192.168.0.186 doğrudan bulunur.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 970,
+      "versionCode": 971,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.70",
+      "version": "0.9.71",
       "releaseDate": "2026-10-13",
       "sizeBytes": 22768568,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.70/netmovies-tv-0.9.70.apk",
-      "sha256": "00d0b65c7da92d0a0112678b1d4fa127d6f05fe95711aa101212663253314654",
-      "notes": "Sunucu uyandırma (WOL) kutunun kendi ağına yayın yapar; 0.x taşınması sonrası düzeldi.",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.71/netmovies-tv-0.9.71.apk",
+      "sha256": "c1d9f49702ae9dab29e71a6d070844f41ddbec2fb95724f57d37847dd863be42",
+      "notes": "Ev ağı tek: sunucu 192.168.0.186 doğrudan bulunur.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-tv.apk"
       ]
