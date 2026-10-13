@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 969,
+      "versionCode": 970,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.69",
-      "releaseDate": "2026-10-12",
-      "sizeBytes": 22768572,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.69/netmovies-tv-0.9.69.apk",
-      "sha256": "c44aebebaa2f0adcec809fc155e53588302c4201b51edce5d327e7d8caba78bf",
-      "notes": "Uyanık tut servisi kaldırıldı; kutu uyku davranışı eskisi gibi.",
+      "version": "0.9.70",
+      "releaseDate": "2026-10-13",
+      "sizeBytes": 22768568,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.70/netmovies-tv-0.9.70.apk",
+      "sha256": "00d0b65c7da92d0a0112678b1d4fa127d6f05fe95711aa101212663253314654",
+      "notes": "Sunucu uyandırma (WOL) kutunun kendi ağına yayın yapar; 0.x taşınması sonrası düzeldi.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 969,
+      "versionCode": 970,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.69",
-      "releaseDate": "2026-10-12",
-      "sizeBytes": 22768572,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.69/netmovies-tv-0.9.69.apk",
-      "sha256": "c44aebebaa2f0adcec809fc155e53588302c4201b51edce5d327e7d8caba78bf",
-      "notes": "Uyanık tut servisi kaldırıldı; kutu uyku davranışı eskisi gibi.",
+      "version": "0.9.70",
+      "releaseDate": "2026-10-13",
+      "sizeBytes": 22768568,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.70/netmovies-tv-0.9.70.apk",
+      "sha256": "00d0b65c7da92d0a0112678b1d4fa127d6f05fe95711aa101212663253314654",
+      "notes": "Sunucu uyandırma (WOL) kutunun kendi ağına yayın yapar; 0.x taşınması sonrası düzeldi.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-tv.apk"
       ]
