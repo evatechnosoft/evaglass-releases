@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14T10:50:38Z",
+  "updated": "2026-10-14T11:05:28Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -118,33 +118,33 @@
     {
       "id": "wellness-phone",
       "packageName": "com.evaitec.wellness",
-      "versionCode": 4500,
+      "versionCode": 4600,
       "name": "Wellness",
       "tagline": "Kilo, protein, antrenman ve saat verisi tek gunlukte; Eva sorar, sen onaylarsin.",
       "platform": "phone",
       "icon": "assets/wellness.svg",
       "screenshots": [],
-      "version": "0.45.0",
+      "version": "0.46.0",
       "releaseDate": "2026-10-14",
       "sizeBytes": 25283150,
-      "sha256": "b2b538ecaec7a48dca0e53f54637fcaec7d80468974a580c3c5ad845b67b7ae0",
-      "downloadUrl": "https://fit.evaitec.com/ota/wellness-0.45.0.apk",
+      "sha256": "f98d61f031ea85a0470820ff2ceac4a096a472b2fca8925927350a24c04cada1",
+      "downloadUrl": "https://fit.evaitec.com/ota/wellness-0.46.0.apk",
       "notes": "Android 8+. Giris adresi https://fit.evaitec.com — Ayar > Sunucu alanina yalnizca token girilir. Health Connect izinleri telefon ayarlarindan verilir."
     },
     {
       "id": "wellness-wear",
       "packageName": "com.evaitec.wellness",
-      "versionCode": 4500,
+      "versionCode": 4600,
       "name": "Wellness Saat",
       "tagline": "Adim, nabiz ve antrenmani bilekten toplar; telefonla ayni gunluge yazar.",
       "platform": "watch",
       "icon": "assets/wellness.svg",
       "screenshots": [],
-      "version": "0.45.0",
+      "version": "0.46.0",
       "releaseDate": "2026-10-14",
-      "sizeBytes": 13269284,
-      "sha256": "90dce42cccc63899521e1d58a85e47fb6b8430c918a203844ecd78cb854ded88",
-      "downloadUrl": "https://fit.evaitec.com/ota/wellness-wear-0.45.0.apk",
+      "sizeBytes": 1646315,
+      "sha256": "94c3b8c531edad302dcc8d4e44763a8eed46787609e4cd25a49b856a9356061f",
+      "downloadUrl": "https://fit.evaitec.com/ota/wellness-wear-0.46.0.apk",
       "notes": "Bu dosyayi telefona kurmayin; telefon uygulamasiyla ayni paket adini tasir."
     },
     {
