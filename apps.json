@@ -99,17 +99,17 @@
     {
       "id": "netmovies-mini-watch",
       "packageName": "com.evaitec.netmovies.wear",
-      "versionCode": 124,
+      "versionCode": 125,
       "name": "NetMovies Mini",
       "tagline": "Televizyonu bileğinizden sürün — kaydır yön, dokun OK.",
       "platform": "watch",
       "icon": "assets/netmovies-watch.svg",
       "screenshots": [],
-      "version": "0.1.24",
-      "releaseDate": "2026-10-09",
-      "sizeBytes": 6884913,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.24/netmovies-mini-watch-0.1.24.apk",
-      "sha256": "5b9aae895a1770d78cc9ff83f24443dd176349f9733dcbcf4afa139119475a30",
+      "version": "0.1.25",
+      "releaseDate": "2026-10-15",
+      "sizeBytes": 7746150,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.25/netmovies-mini-watch-0.1.25.apk",
+      "sha256": "b7dbde1262191a8193a2e2487f1bab3d9c5d0d0d3d9ddd786d7975daf9b571e6",
       "notes": "Hava faresi: hız ayarlandı, ⇄/⇅ eksen çevirme, ⌃ alt yay menü.",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-mini-watch.apk"
