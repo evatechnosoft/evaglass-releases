@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 971,
+      "versionCode": 972,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.71",
-      "releaseDate": "2026-10-13",
-      "sizeBytes": 22768568,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.71/netmovies-tv-0.9.71.apk",
-      "sha256": "c1d9f49702ae9dab29e71a6d070844f41ddbec2fb95724f57d37847dd863be42",
-      "notes": "Ev ağı tek: sunucu 192.168.0.186 doğrudan bulunur.",
+      "version": "0.9.72",
+      "releaseDate": "2026-10-15",
+      "sizeBytes": 22768680,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.72/netmovies-tv-0.9.72.apk",
+      "sha256": "0e94335b1a2459ff0e19c4d7c1f95d48d33b132a9c50e1e154138eae93327261",
+      "notes": "Projektör gibi tek uygulamalık cihazda ana ekran olabilir (varsayılan kapalı).",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 971,
+      "versionCode": 972,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.71",
-      "releaseDate": "2026-10-13",
-      "sizeBytes": 22768568,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.71/netmovies-tv-0.9.71.apk",
-      "sha256": "c1d9f49702ae9dab29e71a6d070844f41ddbec2fb95724f57d37847dd863be42",
-      "notes": "Ev ağı tek: sunucu 192.168.0.186 doğrudan bulunur.",
+      "version": "0.9.72",
+      "releaseDate": "2026-10-15",
+      "sizeBytes": 22768680,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.72/netmovies-tv-0.9.72.apk",
+      "sha256": "0e94335b1a2459ff0e19c4d7c1f95d48d33b132a9c50e1e154138eae93327261",
+      "notes": "Projektör gibi tek uygulamalık cihazda ana ekran olabilir (varsayılan kapalı).",
       "mirrors": [
         "https://ota.evaitec.com/netmovies-tv.apk"
       ]
