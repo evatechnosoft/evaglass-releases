@@ -17,7 +17,7 @@
       "sha256": "346f20dcf1ac57956da3d9617ce5e835cbc1dcf43fbcc34420f2cd7dd37ab337",
       "notes": "Indirme once ev sunucusundan, sonra Cloudflare tunelinden, en sonda GitHub.",
       "mirrors": [
-        "https://ota.evaitec.com/evaitec-ota-tv.apk"
+        "http://192.168.0.186:8099/evaitec-ota-tv.apk"
       ]
     },
     {
@@ -36,7 +36,7 @@
       "sha256": "e232ddfa13f2f11009d7772891ba3960f767cac31fe1c4e4140d3eb4d67a2b46",
       "notes": "Indirme sekme/sayfa degisince kopmaz, ikinci dokunus sifirdan baslatmaz; ayna eski dosyayi vermez.",
       "mirrors": [
-        "https://ota.evaitec.com/evaitec-ota-mobile.apk"
+        "http://192.168.0.186:8099/evaitec-ota-mobile.apk"
       ]
     },
     {
@@ -55,7 +55,7 @@
       "sha256": "6194cc972010a718e76f553568eb7777a9409bcc44eb209ce27781bd0b39eb67",
       "notes": "Android 10+. Kurulumdan önce \"bilinmeyen kaynaklara izin ver\" açık olmalı.",
       "mirrors": [
-        "https://ota.evaitec.com/evaglass-phone.apk"
+        "http://192.168.0.186:8099/evaglass-phone.apk"
       ]
     },
     {
@@ -74,7 +74,7 @@
       "sha256": "4b2236e27df8f7ea8892e7e55f4086c96a7806f15726f5de2af2ef99a534ccc5",
       "notes": "Bu dosyayı telefona kurmayın; telefon uygulamasıyla aynı paket adını taşır.",
       "mirrors": [
-        "https://ota.evaitec.com/evaglass-watch.apk"
+        "http://192.168.0.186:8099/evaglass-watch.apk"
       ]
     },
     {
@@ -93,7 +93,7 @@
       "sha256": "85155fdc3fc136dd84ac2a2b69989025cf51535444050ba8534df1cccee4b263",
       "notes": "Indirme sekme/sayfa degisince kopmaz, ikinci dokunus sifirdan baslatmaz; ayna eski dosyayi vermez.",
       "mirrors": [
-        "https://ota.evaitec.com/evaitec-ota-wear.apk"
+        "http://192.168.0.186:8099/evaitec-ota-wear.apk"
       ]
     },
     {
@@ -112,7 +112,7 @@
       "sha256": "b7dbde1262191a8193a2e2487f1bab3d9c5d0d0d3d9ddd786d7975daf9b571e6",
       "notes": "Hava faresi: hız ayarlandı, ⇄/⇅ eksen çevirme, ⌃ alt yay menü.",
       "mirrors": [
-        "https://ota.evaitec.com/netmovies-mini-watch.apk"
+        "http://192.168.0.186:8099/netmovies-mini-watch.apk"
       ]
     },
     {
@@ -163,7 +163,7 @@
       "sha256": "92b40e2faf4a44bde9b6570be4f97e76a44d8effeb59b0eb933ad2b1665811d1",
       "notes": "Cihaz başına izleme geçmişi ve profiller; yeni cihaz ilk açılışta bir kez PIN sorar.",
       "mirrors": [
-        "https://ota.evaitec.com/netmovies-phone.apk"
+        "http://192.168.0.186:8099/netmovies-phone.apk"
       ]
     },
     {
@@ -182,7 +182,7 @@
       "sha256": "92b40e2faf4a44bde9b6570be4f97e76a44d8effeb59b0eb933ad2b1665811d1",
       "notes": "Cihaz başına izleme geçmişi ve profiller; yeni cihaz ilk açılışta bir kez PIN sorar.",
       "mirrors": [
-        "https://ota.evaitec.com/netmovies-tv.apk"
+        "http://192.168.0.186:8099/netmovies-tv.apk"
       ]
     },
     {
@@ -201,7 +201,7 @@
       "icon": "assets/rcmycar.svg",
       "screenshots": [],
       "mirrors": [
-        "https://ota.evaitec.com/rcmycar-phone.apk"
+        "http://192.168.0.186:8099/rcmycar-phone.apk"
       ]
     },
     {
@@ -220,7 +220,7 @@
       "icon": "assets/rcmycar.svg",
       "screenshots": [],
       "mirrors": [
-        "https://ota.evaitec.com/rcmycar-watch.apk"
+        "http://192.168.0.186:8099/rcmycar-watch.apk"
       ]
     },
     {
@@ -236,7 +236,7 @@
       "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evabench-v0.2.0/evabench-0.2.0.apk",
       "notes": "EvaBench 0.2.0: BLE/WiFi tarama, GATT, konsol (BLE/USB/WiFi), uzak menzil, OTA",
       "mirrors": [
-        "https://ota.evaitec.com/evabench.apk"
+        "http://192.168.0.186:8099/evabench.apk"
       ]
     }
   ]
