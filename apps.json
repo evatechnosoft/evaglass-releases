@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T06:30:00Z",
+  "updated": "2026-10-21T19:02:02Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 973,
+      "versionCode": 974,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.73",
+      "version": "0.9.74",
       "releaseDate": "2026-10-21",
       "sizeBytes": 22785064,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.73/netmovies-tv-0.9.73.apk",
-      "sha256": "92b40e2faf4a44bde9b6570be4f97e76a44d8effeb59b0eb933ad2b1665811d1",
-      "notes": "Cihaz başına izleme geçmişi ve profiller; yeni cihaz ilk açılışta bir kez PIN sorar.",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.74/netmovies-tv-0.9.74.apk",
+      "sha256": "2a5f6eb97a6550126936cae811bdff5606aa8df70e242e96e1e71222704269aa",
+      "notes": "Oynatıcı donması düzeltildi: tampon 64 MB",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 973,
+      "versionCode": 974,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.73",
+      "version": "0.9.74",
       "releaseDate": "2026-10-21",
       "sizeBytes": 22785064,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.73/netmovies-tv-0.9.73.apk",
-      "sha256": "92b40e2faf4a44bde9b6570be4f97e76a44d8effeb59b0eb933ad2b1665811d1",
-      "notes": "Cihaz başına izleme geçmişi ve profiller; yeni cihaz ilk açılışta bir kez PIN sorar.",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.74/netmovies-tv-0.9.74.apk",
+      "sha256": "2a5f6eb97a6550126936cae811bdff5606aa8df70e242e96e1e71222704269aa",
+      "notes": "Oynatıcı donması düzeltildi: tampon 64 MB",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-tv.apk"
       ]
