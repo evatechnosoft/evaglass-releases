@@ -1,5 +1,9 @@
 # evaitec — İndirme Merkezi
 
+> **Katalog taşındı:** `apps.json`'in asıl kaynağı artık
+> [evatechnosoft/evaitec-ota](https://github.com/evatechnosoft/evaitec-ota).
+> Buradaki `apps.json` eski istemciler için 15 dakikada bir oradan kopyalanır; elle yazma.
+
 Tum evaitec uygulamalarinin ortak dagitim kanali. Kod depolari ayri ve ozeldir;
 burada yalnizca **imzali release APK** ve surum metadatasi bulunur.
 
