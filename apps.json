@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T18:39:53Z",
+  "updated": "2026-10-22T19:01:38Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -23,18 +23,18 @@
     {
       "id": "evaitec-ota-mobile",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 25,
+      "versionCode": 26,
       "name": "evaitecOTA",
       "tagline": "Telefona uygulama kuran ve guncelleyen yukleyici; saate de APK gonderir.",
       "platform": "phone",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.26",
+      "version": "0.1.27",
       "releaseDate": "2026-10-22",
-      "sizeBytes": 4748892,
-      "downloadUrl": "https://github.com/evatechnosoft/evaitec-ota/releases/download/evaitec-ota-mobile-v0.1.26/evaitec-ota-mobile-0.1.26.apk",
-      "sha256": "875e6c48242cb9f10f6673004c5d6388c7e4ba2a882539a4a9e19e2f4499d1f4",
-      "notes": "ADB: TLS öncelikli, cihaz adları model/seri, eşleştirme portu elle, Samsung saat ret açıklaması, kopan kurulumda yeniden bağlanma",
+      "sizeBytes": 4759296,
+      "downloadUrl": "https://github.com/evatechnosoft/evaitec-ota/releases/download/evaitec-ota-mobile-v0.1.27/evaitec-ota-mobile-0.1.27.apk",
+      "sha256": "f840a462e1d9b3097cfabb19bb346f55acea687a24601163ba1aa37df68cf1fd",
+      "notes": "ADB: listeli cihaz satırları, uygulama kaldırma, hazır komutlar",
       "mirrors": [
         "http://192.168.0.186:8099/evaitec-ota-mobile.apk"
       ]
@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 974,
+      "versionCode": 975,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.74",
-      "releaseDate": "2026-10-21",
+      "version": "0.9.75",
+      "releaseDate": "2026-10-22",
       "sizeBytes": 22785064,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.74/netmovies-tv-0.9.74.apk",
-      "sha256": "2a5f6eb97a6550126936cae811bdff5606aa8df70e242e96e1e71222704269aa",
-      "notes": "Oynatıcı donması düzeltildi: tampon 64 MB",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.75/netmovies-tv-0.9.75.apk",
+      "sha256": "9bd0bd48ab84d1a51fbb6aa57601ff18d3033909eda67820f25088749f6d125d",
+      "notes": "Arama sonucunda GERİ basınca çökme düzeltildi",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 974,
+      "versionCode": 975,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.74",
-      "releaseDate": "2026-10-21",
+      "version": "0.9.75",
+      "releaseDate": "2026-10-22",
       "sizeBytes": 22785064,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.74/netmovies-tv-0.9.74.apk",
-      "sha256": "2a5f6eb97a6550126936cae811bdff5606aa8df70e242e96e1e71222704269aa",
-      "notes": "Oynatıcı donması düzeltildi: tampon 64 MB",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.75/netmovies-tv-0.9.75.apk",
+      "sha256": "9bd0bd48ab84d1a51fbb6aa57601ff18d3033909eda67820f25088749f6d125d",
+      "notes": "Arama sonucunda GERİ basınca çökme düzeltildi",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-tv.apk"
       ]
