@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T17:57:12Z",
+  "updated": "2026-10-22T18:39:53Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -23,18 +23,18 @@
     {
       "id": "evaitec-ota-mobile",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 24,
+      "versionCode": 25,
       "name": "evaitecOTA",
       "tagline": "Telefona uygulama kuran ve guncelleyen yukleyici; saate de APK gonderir.",
       "platform": "phone",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.25",
+      "version": "0.1.26",
       "releaseDate": "2026-10-22",
-      "sizeBytes": 4744236,
-      "downloadUrl": "https://github.com/evatechnosoft/evaitec-ota/releases/download/evaitec-ota-mobile-v0.1.25/evaitec-ota-mobile-0.1.25.apk",
-      "sha256": "4dc8be629aca8e812805a23cc3fd0a7594b62f41a2b2c317416ab2b8caaa8375",
-      "notes": "Katalog önce ZimaOS; ADB klasörden kur: APK seçimi",
+      "sizeBytes": 4748892,
+      "downloadUrl": "https://github.com/evatechnosoft/evaitec-ota/releases/download/evaitec-ota-mobile-v0.1.26/evaitec-ota-mobile-0.1.26.apk",
+      "sha256": "875e6c48242cb9f10f6673004c5d6388c7e4ba2a882539a4a9e19e2f4499d1f4",
+      "notes": "ADB: TLS öncelikli, cihaz adları model/seri, eşleştirme portu elle, Samsung saat ret açıklaması, kopan kurulumda yeniden bağlanma",
       "mirrors": [
         "http://192.168.0.186:8099/evaitec-ota-mobile.apk"
       ]
