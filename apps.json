@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T19:01:38Z",
+  "updated": "2026-10-22T19:21:37Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 975,
+      "versionCode": 976,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.75",
+      "version": "0.9.76",
       "releaseDate": "2026-10-22",
       "sizeBytes": 22785064,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.75/netmovies-tv-0.9.75.apk",
-      "sha256": "9bd0bd48ab84d1a51fbb6aa57601ff18d3033909eda67820f25088749f6d125d",
-      "notes": "Arama sonucunda GERİ basınca çökme düzeltildi",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.76/netmovies-tv-0.9.76.apk",
+      "sha256": "7bf9280bf576386723e9a2c42474df2b0f302a433130c286fc08db204fd9d30c",
+      "notes": "Ajanda kartı bölümü doğrudan açar (S2B3)",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 975,
+      "versionCode": 976,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.75",
+      "version": "0.9.76",
       "releaseDate": "2026-10-22",
       "sizeBytes": 22785064,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.75/netmovies-tv-0.9.75.apk",
-      "sha256": "9bd0bd48ab84d1a51fbb6aa57601ff18d3033909eda67820f25088749f6d125d",
-      "notes": "Arama sonucunda GERİ basınca çökme düzeltildi",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.76/netmovies-tv-0.9.76.apk",
+      "sha256": "7bf9280bf576386723e9a2c42474df2b0f302a433130c286fc08db204fd9d30c",
+      "notes": "Ajanda kartı bölümü doğrudan açar (S2B3)",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-tv.apk"
       ]
