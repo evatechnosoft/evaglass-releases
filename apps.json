@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T19:02:02Z",
+  "updated": "2026-10-22T17:18:34Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -23,18 +23,18 @@
     {
       "id": "evaitec-ota-mobile",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 21,
+      "versionCode": 23,
       "name": "evaitecOTA",
       "tagline": "Telefona uygulama kuran ve guncelleyen yukleyici; saate de APK gonderir.",
       "platform": "phone",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.22",
-      "releaseDate": "2026-10-07",
-      "sizeBytes": 4712784,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/ota-mobile-v0.1.22/evaitec-ota-mobile-0.1.22.apk",
-      "sha256": "e232ddfa13f2f11009d7772891ba3960f767cac31fe1c4e4140d3eb4d67a2b46",
-      "notes": "Indirme sekme/sayfa degisince kopmaz, ikinci dokunus sifirdan baslatmaz; ayna eski dosyayi vermez.",
+      "version": "0.1.24",
+      "releaseDate": "2026-10-22",
+      "sizeBytes": 4743792,
+      "downloadUrl": "https://github.com/evatechnosoft/evaitec-ota/releases/download/evaitec-ota-mobile-v0.1.24/evaitec-ota-mobile-0.1.24.apk",
+      "sha256": "c1e44a256450dcb6d59d14110100228603e389972d60308d363a22590b4e503a",
+      "notes": "ADB Cihazlar ekrani: agdaki cihazlari bul, baglan, klasorden APK kur, uygulama cek.",
       "mirrors": [
         "http://192.168.0.186:8099/evaitec-ota-mobile.apk"
       ]
