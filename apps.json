@@ -1,21 +1,21 @@
 {
-  "updated": "2026-10-22T17:18:34Z",
+  "updated": "2026-10-22T17:57:12Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
       "packageName": "com.evaitec.ota.tv",
-      "versionCode": 14,
+      "versionCode": 15,
       "name": "evaitecOTA",
       "tagline": "Televizyona uygulama kuran ve güncelleyen yükleyici.",
       "platform": "tv",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.13",
-      "releaseDate": "2026-09-20",
-      "sizeBytes": 190769,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-tv-v0.1.13/evaitec-ota-tv-0.1.13.apk",
-      "sha256": "346f20dcf1ac57956da3d9617ce5e835cbc1dcf43fbcc34420f2cd7dd37ab337",
-      "notes": "Indirme once ev sunucusundan, sonra Cloudflare tunelinden, en sonda GitHub.",
+      "version": "0.1.14",
+      "releaseDate": "2026-10-22",
+      "sizeBytes": 191889,
+      "downloadUrl": "https://github.com/evatechnosoft/evaitec-ota/releases/download/evaitec-ota-tv-v0.1.14/evaitec-ota-tv-0.1.14.apk",
+      "sha256": "299f8145a48a8bb7ef5f30e0964bd69fc55ffab0849e95ee4876135cdf5ba119",
+      "notes": "Katalog önce ZimaOS; ADB klasörden kur: APK seçimi",
       "mirrors": [
         "http://192.168.0.186:8099/evaitec-ota-tv.apk"
       ]
@@ -23,18 +23,18 @@
     {
       "id": "evaitec-ota-mobile",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 23,
+      "versionCode": 24,
       "name": "evaitecOTA",
       "tagline": "Telefona uygulama kuran ve guncelleyen yukleyici; saate de APK gonderir.",
       "platform": "phone",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.24",
+      "version": "0.1.25",
       "releaseDate": "2026-10-22",
-      "sizeBytes": 4743792,
-      "downloadUrl": "https://github.com/evatechnosoft/evaitec-ota/releases/download/evaitec-ota-mobile-v0.1.24/evaitec-ota-mobile-0.1.24.apk",
-      "sha256": "c1e44a256450dcb6d59d14110100228603e389972d60308d363a22590b4e503a",
-      "notes": "ADB Cihazlar ekrani: agdaki cihazlari bul, baglan, klasorden APK kur, uygulama cek.",
+      "sizeBytes": 4744236,
+      "downloadUrl": "https://github.com/evatechnosoft/evaitec-ota/releases/download/evaitec-ota-mobile-v0.1.25/evaitec-ota-mobile-0.1.25.apk",
+      "sha256": "4dc8be629aca8e812805a23cc3fd0a7594b62f41a2b2c317416ab2b8caaa8375",
+      "notes": "Katalog önce ZimaOS; ADB klasörden kur: APK seçimi",
       "mirrors": [
         "http://192.168.0.186:8099/evaitec-ota-mobile.apk"
       ]
@@ -80,18 +80,18 @@
     {
       "id": "evaitec-ota-wear",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 19,
+      "versionCode": 20,
       "name": "evaitecOTA",
       "tagline": "Saate uygulama kuran ve güncelleyen yükleyici.",
       "platform": "watch",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.24",
-      "releaseDate": "2026-10-07",
-      "sizeBytes": 379389,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/evaitec-ota-wear-v0.1.24/evaitec-ota-wear-0.1.24.apk",
-      "sha256": "85155fdc3fc136dd84ac2a2b69989025cf51535444050ba8534df1cccee4b263",
-      "notes": "Indirme sekme/sayfa degisince kopmaz, ikinci dokunus sifirdan baslatmaz; ayna eski dosyayi vermez.",
+      "version": "0.1.25",
+      "releaseDate": "2026-10-22",
+      "sizeBytes": 379809,
+      "downloadUrl": "https://github.com/evatechnosoft/evaitec-ota/releases/download/evaitec-ota-wear-v0.1.25/evaitec-ota-wear-0.1.25.apk",
+      "sha256": "1a28a20b6235b325878bb84811fd4f8a0168c0e649a5528bb6b33d094ad8c904",
+      "notes": "Katalog önce ZimaOS; ADB klasörden kur: APK seçimi",
       "mirrors": [
         "http://192.168.0.186:8099/evaitec-ota-wear.apk"
       ]
