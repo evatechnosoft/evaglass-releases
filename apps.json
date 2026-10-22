@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T19:21:37Z",
+  "updated": "2026-10-22T20:12:38Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -23,18 +23,18 @@
     {
       "id": "evaitec-ota-mobile",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 26,
+      "versionCode": 27,
       "name": "evaitecOTA",
       "tagline": "Telefona uygulama kuran ve guncelleyen yukleyici; saate de APK gonderir.",
       "platform": "phone",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.27",
+      "version": "0.1.28",
       "releaseDate": "2026-10-22",
-      "sizeBytes": 4759296,
-      "downloadUrl": "https://github.com/evatechnosoft/evaitec-ota/releases/download/evaitec-ota-mobile-v0.1.27/evaitec-ota-mobile-0.1.27.apk",
-      "sha256": "f840a462e1d9b3097cfabb19bb346f55acea687a24601163ba1aa37df68cf1fd",
-      "notes": "ADB: listeli cihaz satırları, uygulama kaldırma, hazır komutlar",
+      "sizeBytes": 4778028,
+      "downloadUrl": "https://github.com/evatechnosoft/evaitec-ota/releases/download/evaitec-ota-mobile-v0.1.28/evaitec-ota-mobile-0.1.28.apk",
+      "sha256": "53f773f59fa8a422648b3a2acc8ea55710c17235c2f98e632591e952389047b4",
+      "notes": "ADB uygulama yöneticisi: arama, Kullanıcı/Sistem/Devre dışı süzgeci, toplu kaldır/devre dışı/etkinleştir, UAD risk etiketleri; sade cihaz listesi ve yeniden adlandırma",
       "mirrors": [
         "http://192.168.0.186:8099/evaitec-ota-mobile.apk"
       ]
