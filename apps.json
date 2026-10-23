@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23T07:34:56Z",
+  "updated": "2026-10-23T18:51:37Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 977,
+      "versionCode": 978,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.77",
+      "version": "0.9.78",
       "releaseDate": "2026-10-23",
-      "sizeBytes": 8094987,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.77/netmovies-tv-0.9.77.apk",
-      "sha256": "9600c21c9b0bebfaa7e8ed554fd81331ea4f853e3218cb0e65332d3bd970a4ac",
-      "notes": "SOL/SAĞ sezon değiştirme; sezonlu liste her ayar açılışında; R8 küçültme — güncelleme sonrası açılış ANR'si",
+      "sizeBytes": 8571730,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.78/netmovies-tv-0.9.78.apk",
+      "sha256": "a3f68ae63cde309e472502050ec9960d581da9b248cc8e9b4063e934d85cd982",
+      "notes": "Kumanda: YUKARI tek basış bölüm listesi, basılı tutunca sarma; basılı tutma panel kaydırmıyor; medya tuşları MediaSession ile (sonraki/önceki bölüm)",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 977,
+      "versionCode": 978,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.77",
+      "version": "0.9.78",
       "releaseDate": "2026-10-23",
-      "sizeBytes": 8094987,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.77/netmovies-tv-0.9.77.apk",
-      "sha256": "9600c21c9b0bebfaa7e8ed554fd81331ea4f853e3218cb0e65332d3bd970a4ac",
-      "notes": "SOL/SAĞ sezon değiştirme; sezonlu liste her ayar açılışında; R8 küçültme — güncelleme sonrası açılış ANR'si",
+      "sizeBytes": 8571730,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.78/netmovies-tv-0.9.78.apk",
+      "sha256": "a3f68ae63cde309e472502050ec9960d581da9b248cc8e9b4063e934d85cd982",
+      "notes": "Kumanda: YUKARI tek basış bölüm listesi, basılı tutunca sarma; basılı tutma panel kaydırmıyor; medya tuşları MediaSession ile (sonraki/önceki bölüm)",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-tv.apk"
       ]
