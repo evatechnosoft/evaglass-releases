@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23",
+  "updated": "2026-10-23T07:34:56Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 976,
+      "versionCode": 977,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.76",
-      "releaseDate": "2026-10-22",
-      "sizeBytes": 22785064,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.76/netmovies-tv-0.9.76.apk",
-      "sha256": "7bf9280bf576386723e9a2c42474df2b0f302a433130c286fc08db204fd9d30c",
-      "notes": "Ajanda kartı bölümü doğrudan açar (S2B3)",
+      "version": "0.9.77",
+      "releaseDate": "2026-10-23",
+      "sizeBytes": 8094987,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.77/netmovies-tv-0.9.77.apk",
+      "sha256": "9600c21c9b0bebfaa7e8ed554fd81331ea4f853e3218cb0e65332d3bd970a4ac",
+      "notes": "SOL/SAĞ sezon değiştirme; sezonlu liste her ayar açılışında; R8 küçültme — güncelleme sonrası açılış ANR'si",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 976,
+      "versionCode": 977,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.76",
-      "releaseDate": "2026-10-22",
-      "sizeBytes": 22785064,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.76/netmovies-tv-0.9.76.apk",
-      "sha256": "7bf9280bf576386723e9a2c42474df2b0f302a433130c286fc08db204fd9d30c",
-      "notes": "Ajanda kartı bölümü doğrudan açar (S2B3)",
+      "version": "0.9.77",
+      "releaseDate": "2026-10-23",
+      "sizeBytes": 8094987,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.77/netmovies-tv-0.9.77.apk",
+      "sha256": "9600c21c9b0bebfaa7e8ed554fd81331ea4f853e3218cb0e65332d3bd970a4ac",
+      "notes": "SOL/SAĞ sezon değiştirme; sezonlu liste her ayar açılışında; R8 küçültme — güncelleme sonrası açılış ANR'si",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-tv.apk"
       ]
@@ -242,18 +242,40 @@
     {
       "id": "watchfaces-wear",
       "packageName": "com.evaitec.watchfaces",
-      "versionCode": 3,
-      "name": "Evaitec Kadranlar",
+      "versionCode": 4,
+      "name": "Evaitec Watchfaces",
       "tagline": "Kadran karuseli; telefondan seçilen kadran saatte kendiliğinden değişir.",
       "platform": "watch",
       "icon": "",
       "screenshots": [],
-      "version": "0.2.0",
+      "version": "0.2.1",
       "releaseDate": "2026-10-23",
-      "sizeBytes": 15387595,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/watchfaces-wear-v0.2.0/evaitec-watchfaces-0.2.0.apk",
-      "sha256": "943131d818af578e3ecf3dde8930afe15125f39e89c696ef14b5b2858dd3b8b6",
-      "notes": "Saat uygulaması. Telefon uygulaması henüz yok; kadranı saatteki karuselden seçin."
+      "sizeBytes": 15391587,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/watchfaces-wear-v0.2.1/evaitec-watchfaces-wear-0.2.1.apk",
+      "sha256": "f802b1e51d23affef0f82f8ff70549d39260c6c6159e71ccacd7a6da6dff5f4e",
+      "notes": "Saat uygulaması. Kadranı telefondaki Evaitec Watchfaces'dan ya da saatteki karuselden seçin. Bu dosyayı telefona kurmayın.",
+      "mirrors": [
+        "http://192.168.0.186:8099/watchfaces-wear.apk"
+      ]
+    },
+    {
+      "id": "watchfaces-phone",
+      "packageName": "com.evaitec.watchfaces",
+      "versionCode": 2,
+      "name": "Evaitec Watchfaces",
+      "tagline": "Kadranı telefondan seç, saatte değişsin.",
+      "platform": "phone",
+      "icon": "",
+      "screenshots": [],
+      "version": "0.1.1",
+      "releaseDate": "2026-10-23",
+      "sizeBytes": 14413574,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/watchfaces-phone-v0.1.1/evaitec-watchfaces-phone-0.1.1.apk",
+      "sha256": "81177867e3ee9e643a32acd77edfedea14e36b1fed5d7a1f56a9bc916cd1ee7a",
+      "notes": "Telefon uygulaması. Saatte Evaitec Watchfaces (saat) kurulu olmalı. Bu dosyayı saate kurmayın.",
+      "mirrors": [
+        "http://192.168.0.186:8099/watchfaces-phone.apk"
+      ]
     }
   ]
 }
