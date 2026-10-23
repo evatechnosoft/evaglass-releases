@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T20:12:38Z",
+  "updated": "2026-10-23",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -238,6 +238,22 @@
       "mirrors": [
         "http://192.168.0.186:8099/evabench.apk"
       ]
+    },
+    {
+      "id": "watchfaces-wear",
+      "packageName": "com.evaitec.watchfaces",
+      "versionCode": 3,
+      "name": "Evaitec Kadranlar",
+      "tagline": "Kadran karuseli; telefondan seçilen kadran saatte kendiliğinden değişir.",
+      "platform": "watch",
+      "icon": "",
+      "screenshots": [],
+      "version": "0.2.0",
+      "releaseDate": "2026-10-23",
+      "sizeBytes": 15387595,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/watchfaces-wear-v0.2.0/evaitec-watchfaces-0.2.0.apk",
+      "sha256": "943131d818af578e3ecf3dde8930afe15125f39e89c696ef14b5b2858dd3b8b6",
+      "notes": "Saat uygulaması. Telefon uygulaması henüz yok; kadranı saatteki karuselden seçin."
     }
   ]
 }
