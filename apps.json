@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24T12:10:26Z",
+  "updated": "2026-10-24T20:34:34Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -242,17 +242,17 @@
     {
       "id": "watchfaces-wear",
       "packageName": "com.evaitec.watchfaces",
-      "versionCode": 10,
+      "versionCode": 12,
       "name": "Evaitec Watchfaces",
       "tagline": "Kadran karuseli; telefondan seçilen kadran saatte kendiliğinden değişir.",
       "platform": "watch",
       "icon": "assets/watchfaces.svg",
       "screenshots": [],
-      "version": "0.2.7",
+      "version": "0.2.9",
       "releaseDate": "2026-10-24",
-      "sizeBytes": 14855153,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/watchfaces-wear-v0.2.7/evaitec-watchfaces-wear-0.2.7.apk",
-      "sha256": "9b9887a9c8d2d5490571a7d4a012c7fe2869712690f4df02238c79b219f87f79",
+      "sizeBytes": 14939229,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/watchfaces-wear-v0.2.9/evaitec-watchfaces-wear-0.2.9.apk",
+      "sha256": "a94afdf782f1441e4ab4fa586f05eb180040d71a57a1d86c667e589582f7afad",
       "notes": "Saat uygulaması. Kadranı telefondaki Evaitec Watchfaces'dan ya da saatteki karuselden seçin. Bu dosyayı telefona kurmayın.",
       "mirrors": [
         "http://192.168.0.186:8099/watchfaces-wear.apk"
@@ -261,17 +261,17 @@
     {
       "id": "watchfaces-phone",
       "packageName": "com.evaitec.watchfaces",
-      "versionCode": 2,
+      "versionCode": 3,
       "name": "Evaitec Watchfaces",
       "tagline": "Kadranı telefondan seç, saatte değişsin.",
       "platform": "phone",
       "icon": "assets/watchfaces.svg",
       "screenshots": [],
-      "version": "0.1.1",
-      "releaseDate": "2026-10-23",
-      "sizeBytes": 14413574,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/watchfaces-phone-v0.1.1/evaitec-watchfaces-phone-0.1.1.apk",
-      "sha256": "81177867e3ee9e643a32acd77edfedea14e36b1fed5d7a1f56a9bc916cd1ee7a",
+      "version": "0.1.2",
+      "releaseDate": "2026-10-24",
+      "sizeBytes": 12768200,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/watchfaces-phone-v0.1.2/evaitec-watchfaces-phone-0.1.2.apk",
+      "sha256": "9653e237c275ac4137aa14b9b370182ddbb99129c26f9f66db432cb80dc4455d",
       "notes": "Telefon uygulaması. Saatte Evaitec Watchfaces (saat) kurulu olmalı. Bu dosyayı saate kurmayın.",
       "mirrors": [
         "http://192.168.0.186:8099/watchfaces-phone.apk"
