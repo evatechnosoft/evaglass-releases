@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T18:43:49Z",
+  "updated": "2026-10-25T19:54:15Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 980,
+      "versionCode": 981,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.80",
+      "version": "0.9.81",
       "releaseDate": "2026-10-25",
       "sizeBytes": 8571730,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.80/netmovies-tv-0.9.80.apk",
-      "sha256": "bac1dd900f529ab17299899a2f30a98d44283099b8a89c934a6dc9357313399c",
-      "notes": "0.9.80: telefon kumanda kipinde arama telefon klavyesiyle",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.81/netmovies-tv-0.9.81.apk",
+      "sha256": "98ee58dc1503fe4b4c676d4b28aceaf32aad231dd8eab999c8c371c0ce9b8806",
+      "notes": "0.9.81: telefon aramada GERİ tuşu düzeltmesi (klavye kapanır)",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 980,
+      "versionCode": 981,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.80",
+      "version": "0.9.81",
       "releaseDate": "2026-10-25",
       "sizeBytes": 8571730,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.80/netmovies-tv-0.9.80.apk",
-      "sha256": "bac1dd900f529ab17299899a2f30a98d44283099b8a89c934a6dc9357313399c",
-      "notes": "0.9.80: telefon kumanda kipinde arama telefon klavyesiyle",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.81/netmovies-tv-0.9.81.apk",
+      "sha256": "98ee58dc1503fe4b4c676d4b28aceaf32aad231dd8eab999c8c371c0ce9b8806",
+      "notes": "0.9.81: telefon aramada GERİ tuşu düzeltmesi (klavye kapanır)",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-tv.apk"
       ]
@@ -261,17 +261,17 @@
     {
       "id": "watchfaces-phone",
       "packageName": "com.evaitec.watchfaces",
-      "versionCode": 10,
+      "versionCode": 12,
       "name": "Evaitec Watchfaces",
       "tagline": "Kadranı telefondan seç, saatte değişsin.",
       "platform": "phone",
       "icon": "assets/watchfaces.svg",
       "screenshots": [],
-      "version": "0.1.9",
+      "version": "0.1.11",
       "releaseDate": "2026-10-25",
-      "sizeBytes": 17961860,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/watchfaces-phone-v0.1.9/evaitec-watchfaces-phone-0.1.9.apk",
-      "sha256": "71837bfc2be8db316b24bec8861e700b37ff06eebe604213e535c70f7b8a8ed8",
+      "sizeBytes": 17961852,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/watchfaces-phone-v0.1.11/evaitec-watchfaces-phone-0.1.11.apk",
+      "sha256": "0e5228602c931b8b03a0f988f78b11893c9db880577b99a25d9228bcd337967e",
       "notes": "Telefon uygulaması. Saatte Evaitec Watchfaces (saat) kurulu olmalı. Bu dosyayı saate kurmayın.",
       "mirrors": [
         "http://192.168.0.186:8099/watchfaces-phone.apk"
