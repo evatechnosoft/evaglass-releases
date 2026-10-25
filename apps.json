@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T11:12:27Z",
+  "updated": "2026-10-25T15:40:42Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -23,18 +23,18 @@
     {
       "id": "evaitec-ota-mobile",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 30,
+      "versionCode": 31,
       "name": "evaitecOTA",
       "tagline": "Telefona uygulama kuran ve guncelleyen yukleyici; saate de APK gonderir.",
       "platform": "phone",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.31",
+      "version": "0.1.32",
       "releaseDate": "2026-10-25",
-      "sizeBytes": 4786892,
-      "downloadUrl": "https://github.com/evatechnosoft/evaitec-ota/releases/download/evaitec-ota-mobile-v0.1.31/evaitec-ota-mobile-0.1.31.apk",
-      "sha256": "b287b3f4fad0258210d86ce578daccb311ce941b0d69477ffc7058cba74e314d",
-      "notes": "Acilista cokme duzeltildi (bildirim izni).",
+      "sizeBytes": 4786948,
+      "downloadUrl": "https://github.com/evatechnosoft/evaitec-ota/releases/download/evaitec-ota-mobile-v0.1.32/evaitec-ota-mobile-0.1.32.apk",
+      "sha256": "5368c9cf477b50d3b2ed1b368054f09768265ee9ed0a99932e4e4db0dd5ff358",
+      "notes": "Bildirimde Güncelle düğmesi; açılış testi",
       "mirrors": [
         "http://192.168.0.186:8099/evaitec-ota-mobile.apk"
       ]
@@ -242,17 +242,17 @@
     {
       "id": "watchfaces-wear",
       "packageName": "com.evaitec.watchfaces",
-      "versionCode": 16,
+      "versionCode": 18,
       "name": "Evaitec Watchfaces",
       "tagline": "Kadran karuseli; telefondan seçilen kadran saatte kendiliğinden değişir.",
       "platform": "watch",
       "icon": "assets/watchfaces.svg",
       "screenshots": [],
-      "version": "0.2.13",
+      "version": "0.2.15",
       "releaseDate": "2026-10-25",
-      "sizeBytes": 14957141,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/watchfaces-wear-v0.2.13/evaitec-watchfaces-wear-0.2.13.apk",
-      "sha256": "743318a6c6d12a2b990d34a3d98113d84bf880db9c5517d45691af6092f704e8",
+      "sizeBytes": 14727667,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/watchfaces-wear-v0.2.15/evaitec-watchfaces-wear-0.2.15.apk",
+      "sha256": "051ab552555518da7f52b6e64f1dff85f4b599ba5a4deb020c857670252c3ef3",
       "notes": "Saat uygulaması. Kadranı telefondaki Evaitec Watchfaces'dan ya da saatteki karuselden seçin. Bu dosyayı telefona kurmayın.",
       "mirrors": [
         "http://192.168.0.186:8099/watchfaces-wear.apk"
@@ -261,17 +261,17 @@
     {
       "id": "watchfaces-phone",
       "packageName": "com.evaitec.watchfaces",
-      "versionCode": 5,
+      "versionCode": 6,
       "name": "Evaitec Watchfaces",
       "tagline": "Kadranı telefondan seç, saatte değişsin.",
       "platform": "phone",
       "icon": "assets/watchfaces.svg",
       "screenshots": [],
-      "version": "0.1.4",
+      "version": "0.1.5",
       "releaseDate": "2026-10-25",
-      "sizeBytes": 12784788,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/watchfaces-phone-v0.1.4/evaitec-watchfaces-phone-0.1.4.apk",
-      "sha256": "d93424cdde1ba72e6e02d65a9bd75eb91a0e93a742543372ff8c8f1b18b36774",
+      "sizeBytes": 12393806,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/watchfaces-phone-v0.1.5/evaitec-watchfaces-phone-0.1.5.apk",
+      "sha256": "046b9437d255d6fe3fbd1a79990edeee75fd49816a07da113d303ed6ede027c1",
       "notes": "Telefon uygulaması. Saatte Evaitec Watchfaces (saat) kurulu olmalı. Bu dosyayı saate kurmayın.",
       "mirrors": [
         "http://192.168.0.186:8099/watchfaces-phone.apk"
