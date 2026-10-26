@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T19:54:15Z",
+  "updated": "2026-10-26T06:18:31Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -261,17 +261,17 @@
     {
       "id": "watchfaces-phone",
       "packageName": "com.evaitec.watchfaces",
-      "versionCode": 12,
+      "versionCode": 13,
       "name": "Evaitec Watchfaces",
       "tagline": "Kadranı telefondan seç, saatte değişsin.",
       "platform": "phone",
       "icon": "assets/watchfaces.svg",
       "screenshots": [],
-      "version": "0.1.11",
-      "releaseDate": "2026-10-25",
+      "version": "0.1.12",
+      "releaseDate": "2026-10-26",
       "sizeBytes": 17961852,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/watchfaces-phone-v0.1.11/evaitec-watchfaces-phone-0.1.11.apk",
-      "sha256": "0e5228602c931b8b03a0f988f78b11893c9db880577b99a25d9228bcd337967e",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/watchfaces-phone-v0.1.12/evaitec-watchfaces-phone-0.1.12.apk",
+      "sha256": "15d2292e8a7324cc7240943bcaa49d6cf3c92dcf9dc04ac4b4a8e8a6c4583558",
       "notes": "Telefon uygulaması. Saatte Evaitec Watchfaces (saat) kurulu olmalı. Bu dosyayı saate kurmayın.",
       "mirrors": [
         "http://192.168.0.186:8099/watchfaces-phone.apk"
