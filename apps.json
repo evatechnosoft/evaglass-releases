@@ -242,17 +242,17 @@
     {
       "id": "watchfaces-wear",
       "packageName": "com.evaitec.watchfaces",
-      "versionCode": 22,
+      "versionCode": 24,
       "name": "Evaitec Watchfaces",
       "tagline": "Kadran karuseli; telefondan seçilen kadran saatte kendiliğinden değişir.",
       "platform": "watch",
       "icon": "assets/watchfaces.svg",
       "screenshots": [],
-      "version": "0.2.19",
+      "version": "0.2.21",
       "releaseDate": "2026-10-25",
-      "sizeBytes": 19875241,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/watchfaces-wear-v0.2.19/evaitec-watchfaces-wear-0.2.19.apk",
-      "sha256": "b69eef4cb49c15d80fd8691c4f058d995185ac2dde38ce650e6abfa2a336999c",
+      "sizeBytes": 19883649,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/watchfaces-wear-v0.2.21/evaitec-watchfaces-wear-0.2.21.apk",
+      "sha256": "ff87f216f8d4cf4189e9f769c6acc92abe04b2e9529347bc457c6a91cb229d76",
       "notes": "Saat uygulaması. Kadranı telefondaki Evaitec Watchfaces'dan ya da saatteki karuselden seçin. Bu dosyayı telefona kurmayın.",
       "mirrors": [
         "http://192.168.0.186:8099/watchfaces-wear.apk"
