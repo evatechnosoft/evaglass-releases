@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26T06:18:31Z",
+  "updated": "2026-10-27T09:53:06Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -99,18 +99,18 @@
     {
       "id": "netmovies-mini-watch",
       "packageName": "com.evaitec.netmovies.wear",
-      "versionCode": 125,
+      "versionCode": 126,
       "name": "NetMovies Mini",
       "tagline": "Televizyonu bileğinizden sürün — kaydır yön, dokun OK.",
       "platform": "watch",
       "icon": "assets/netmovies-watch.svg",
       "screenshots": [],
-      "version": "0.1.25",
-      "releaseDate": "2026-10-15",
-      "sizeBytes": 7746150,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.25/netmovies-mini-watch-0.1.25.apk",
-      "sha256": "b7dbde1262191a8193a2e2487f1bab3d9c5d0d0d3d9ddd786d7975daf9b571e6",
-      "notes": "Hava faresi: hız ayarlandı, ⇄/⇅ eksen çevirme, ⌃ alt yay menü.",
+      "version": "0.1.26",
+      "releaseDate": "2026-10-27",
+      "sizeBytes": 8098428,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-wear-v0.1.26/netmovies-mini-watch-0.1.26.apk",
+      "sha256": "16e9d29318eaacb5b1a290ced6c47b98370c0d53eaee71838c44a35007a73d87",
+      "notes": "Yeni logo",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-mini-watch.apk"
       ]
@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 981,
+      "versionCode": 982,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.81",
-      "releaseDate": "2026-10-25",
-      "sizeBytes": 8571730,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.81/netmovies-tv-0.9.81.apk",
-      "sha256": "98ee58dc1503fe4b4c676d4b28aceaf32aad231dd8eab999c8c371c0ce9b8806",
-      "notes": "0.9.81: telefon aramada GERİ tuşu düzeltmesi (klavye kapanır)",
+      "version": "0.9.82",
+      "releaseDate": "2026-10-27",
+      "sizeBytes": 9049037,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.82/netmovies-tv-0.9.82.apk",
+      "sha256": "97c0a7c08a814a517479624a51a992b5d5e6f1096461d3aa89d6fd6813a53983",
+      "notes": "Yeni logo",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 981,
+      "versionCode": 982,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.81",
-      "releaseDate": "2026-10-25",
-      "sizeBytes": 8571730,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.81/netmovies-tv-0.9.81.apk",
-      "sha256": "98ee58dc1503fe4b4c676d4b28aceaf32aad231dd8eab999c8c371c0ce9b8806",
-      "notes": "0.9.81: telefon aramada GERİ tuşu düzeltmesi (klavye kapanır)",
+      "version": "0.9.82",
+      "releaseDate": "2026-10-27",
+      "sizeBytes": 9049037,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.82/netmovies-tv-0.9.82.apk",
+      "sha256": "97c0a7c08a814a517479624a51a992b5d5e6f1096461d3aa89d6fd6813a53983",
+      "notes": "Yeni logo",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-tv.apk"
       ]
