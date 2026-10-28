@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T09:53:06Z",
+  "updated": "2026-10-28T10:06:52Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -23,18 +23,18 @@
     {
       "id": "evaitec-ota-mobile",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 33,
+      "versionCode": 34,
       "name": "evaitecOTA",
       "tagline": "Telefona uygulama kuran ve guncelleyen yukleyici; saate de APK gonderir.",
       "platform": "phone",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.34",
-      "releaseDate": "2026-10-25",
-      "sizeBytes": 4787048,
-      "downloadUrl": "https://github.com/evatechnosoft/evaitec-ota/releases/download/evaitec-ota-mobile-v0.1.34/evaitec-ota-mobile-0.1.34.apk",
-      "sha256": "c30024ff5a7047ae48715eb5137a1eda7c9123f9a6d587a8f1d3684f6e19b38d",
-      "notes": "İndirme arka planda kesilmiyor, kurulum ekranı açılıyor",
+      "version": "0.1.35",
+      "releaseDate": "2026-10-28",
+      "sizeBytes": 4791144,
+      "downloadUrl": "https://github.com/evatechnosoft/evaitec-ota/releases/download/evaitec-ota-mobile-v0.1.35/evaitec-ota-mobile-0.1.35.apk",
+      "sha256": "c57562242e2f9369131b11ccc53ca263c1ba381594011f25ec7e02d5aa52e836",
+      "notes": "Dar ızgara; dokununca alttan pencere; sağa/sola kaydırınca sekme değişir",
       "mirrors": [
         "http://192.168.0.186:8099/evaitec-ota-mobile.apk"
       ]
@@ -80,18 +80,18 @@
     {
       "id": "evaitec-ota-wear",
       "packageName": "com.evaitec.ota.mobile",
-      "versionCode": 33,
+      "versionCode": 34,
       "name": "evaitecOTA",
       "tagline": "Saate uygulama kuran ve güncelleyen yükleyici.",
       "platform": "watch",
       "icon": "assets/evaitec-ota.svg",
       "screenshots": [],
-      "version": "0.1.34",
-      "releaseDate": "2026-10-25",
-      "sizeBytes": 386221,
-      "downloadUrl": "https://github.com/evatechnosoft/evaitec-ota/releases/download/evaitec-ota-wear-v0.1.34/evaitec-ota-wear-0.1.34.apk",
-      "sha256": "d209f22154e43b125eb0d732ddf65ec8df5e5365ff10baf19b8d8ae40642336b",
-      "notes": "Telefonla aynı sürüm 0.1.34",
+      "version": "0.1.35",
+      "releaseDate": "2026-10-28",
+      "sizeBytes": 386217,
+      "downloadUrl": "https://github.com/evatechnosoft/evaitec-ota/releases/download/evaitec-ota-wear-v0.1.35/evaitec-ota-wear-0.1.35.apk",
+      "sha256": "84e32a93b61c2ddd080d644189f75e16da15363282b76ecd602a39a68c95ac65",
+      "notes": "Dar ızgara; dokununca alttan pencere; sağa/sola kaydırınca sekme değişir",
       "mirrors": [
         "http://192.168.0.186:8099/evaitec-ota-wear.apk"
       ]
@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 982,
+      "versionCode": 983,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.82",
-      "releaseDate": "2026-10-27",
+      "version": "0.9.83",
+      "releaseDate": "2026-10-28",
       "sizeBytes": 9049037,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.82/netmovies-tv-0.9.82.apk",
-      "sha256": "97c0a7c08a814a517479624a51a992b5d5e6f1096461d3aa89d6fd6813a53983",
-      "notes": "Yeni logo",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.83/netmovies-tv-0.9.83.apk",
+      "sha256": "7905616fd061784c5e02fb8e68da0b804e7253377dff5f98409eda860a4b68a1",
+      "notes": "Ayar paneli: bölüm listesi açıkken üstten iniş oynayan bölüme gelir",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 982,
+      "versionCode": 983,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.82",
-      "releaseDate": "2026-10-27",
+      "version": "0.9.83",
+      "releaseDate": "2026-10-28",
       "sizeBytes": 9049037,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.82/netmovies-tv-0.9.82.apk",
-      "sha256": "97c0a7c08a814a517479624a51a992b5d5e6f1096461d3aa89d6fd6813a53983",
-      "notes": "Yeni logo",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.83/netmovies-tv-0.9.83.apk",
+      "sha256": "7905616fd061784c5e02fb8e68da0b804e7253377dff5f98409eda860a4b68a1",
+      "notes": "Ayar paneli: bölüm listesi açıkken üstten iniş oynayan bölüme gelir",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-tv.apk"
       ]
