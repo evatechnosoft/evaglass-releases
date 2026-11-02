@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T05:57:30Z",
+  "updated": "2026-11-02T06:10:32Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 983,
+      "versionCode": 984,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.83",
-      "releaseDate": "2026-10-28",
-      "sizeBytes": 9049037,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.83/netmovies-tv-0.9.83.apk",
-      "sha256": "7905616fd061784c5e02fb8e68da0b804e7253377dff5f98409eda860a4b68a1",
-      "notes": "Ayar paneli: bölüm listesi açıkken üstten iniş oynayan bölüme gelir",
+      "version": "0.9.84",
+      "releaseDate": "2026-11-02",
+      "sizeBytes": 9150694,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.84/netmovies-tv-0.9.84.apk",
+      "sha256": "b121a93645bac9e21e295e52d74a3abb121231d3458ec64035fa3cf9e3590d91",
+      "notes": "Oynatıcı 2 varsayılan (ekranda Oynatıcı 2 etiketi), Remote Config kapatma anahtarları, arama iyileştirmeleri",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 983,
+      "versionCode": 984,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.83",
-      "releaseDate": "2026-10-28",
-      "sizeBytes": 9049037,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.83/netmovies-tv-0.9.83.apk",
-      "sha256": "7905616fd061784c5e02fb8e68da0b804e7253377dff5f98409eda860a4b68a1",
-      "notes": "Ayar paneli: bölüm listesi açıkken üstten iniş oynayan bölüme gelir",
+      "version": "0.9.84",
+      "releaseDate": "2026-11-02",
+      "sizeBytes": 9150694,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.84/netmovies-tv-0.9.84.apk",
+      "sha256": "b121a93645bac9e21e295e52d74a3abb121231d3458ec64035fa3cf9e3590d91",
+      "notes": "Oynatıcı 2 varsayılan (ekranda Oynatıcı 2 etiketi), Remote Config kapatma anahtarları, arama iyileştirmeleri",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-tv.apk"
       ]
@@ -196,7 +196,7 @@
       "notes": "Android 12+. Ilk surum, arac uzerinde test edilmedi. Ilk acilista Bluetooth ve bildirim izni ister.",
       "packageName": "com.evaitec.rcmycar",
       "versionCode": 39,
-      "version": "0.3.23",
+      "version": "0.3.22",
       "releaseDate": "2026-11-02",
       "icon": "assets/rcmycar.svg",
       "screenshots": [],
@@ -215,7 +215,7 @@
       "notes": "Bu dosyayi telefona kurmayin; telefon uygulamasiyla ayni paket adini tasir.",
       "packageName": "com.evaitec.rcmycar",
       "versionCode": 39,
-      "version": "0.3.23",
+      "version": "0.3.22",
       "releaseDate": "2026-11-02",
       "icon": "assets/rcmycar.svg",
       "screenshots": [],
