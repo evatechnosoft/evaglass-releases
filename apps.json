@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T20:08:10Z",
+  "updated": "2026-11-03T20:52:38Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 985,
+      "versionCode": 986,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.85",
-      "releaseDate": "2026-11-02",
-      "sizeBytes": 9167082,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.85/netmovies-tv-0.9.85.apk",
-      "sha256": "01fc10f1598e8bc07aa13f0f98576ad48e74792964f9019a13b317d82be30a4d",
-      "notes": "0.9.85: bölüm ekranında GERİ oynatıcıdan çıkar",
+      "version": "0.9.86",
+      "releaseDate": "2026-11-03",
+      "sizeBytes": 9167078,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.86/netmovies-tv-0.9.86.apk",
+      "sha256": "d9fb9a10db09fccb51a2de6795df8e27810dde03e44b195135b0010555acae8b",
+      "notes": "Gündem: SxBy · N bölüm kaldı alt yazısı (kalan alanı)",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 985,
+      "versionCode": 986,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.85",
-      "releaseDate": "2026-11-02",
-      "sizeBytes": 9167082,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.85/netmovies-tv-0.9.85.apk",
-      "sha256": "01fc10f1598e8bc07aa13f0f98576ad48e74792964f9019a13b317d82be30a4d",
-      "notes": "0.9.85: bölüm ekranında GERİ oynatıcıdan çıkar",
+      "version": "0.9.86",
+      "releaseDate": "2026-11-03",
+      "sizeBytes": 9167078,
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.86/netmovies-tv-0.9.86.apk",
+      "sha256": "d9fb9a10db09fccb51a2de6795df8e27810dde03e44b195135b0010555acae8b",
+      "notes": "Gündem: SxBy · N bölüm kaldı alt yazısı (kalan alanı)",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-tv.apk"
       ]
