@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T20:52:38Z",
+  "updated": "2026-11-04T08:27:32Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 986,
+      "versionCode": 987,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.86",
-      "releaseDate": "2026-11-03",
+      "version": "0.9.87",
+      "releaseDate": "2026-11-04",
       "sizeBytes": 9167078,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.86/netmovies-tv-0.9.86.apk",
-      "sha256": "d9fb9a10db09fccb51a2de6795df8e27810dde03e44b195135b0010555acae8b",
-      "notes": "Gündem: SxBy · N bölüm kaldı alt yazısı (kalan alanı)",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.87/netmovies-tv-0.9.87.apk",
+      "sha256": "597cc97ac577134680cafdca8a79aa718b5cbf42d28fa93ec427c697c0655b74",
+      "notes": "Sonraki bölüm geri sayımı yalnız son 60 sn içinde, 30 sn sayım",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 986,
+      "versionCode": 987,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.86",
-      "releaseDate": "2026-11-03",
+      "version": "0.9.87",
+      "releaseDate": "2026-11-04",
       "sizeBytes": 9167078,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.86/netmovies-tv-0.9.86.apk",
-      "sha256": "d9fb9a10db09fccb51a2de6795df8e27810dde03e44b195135b0010555acae8b",
-      "notes": "Gündem: SxBy · N bölüm kaldı alt yazısı (kalan alanı)",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.87/netmovies-tv-0.9.87.apk",
+      "sha256": "597cc97ac577134680cafdca8a79aa718b5cbf42d28fa93ec427c697c0655b74",
+      "notes": "Sonraki bölüm geri sayımı yalnız son 60 sn içinde, 30 sn sayım",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-tv.apk"
       ]
