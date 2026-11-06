@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T13:36:17Z",
+  "updated": "2026-11-06",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -275,6 +275,25 @@
       "notes": "Telefon uygulaması. Saatte Evaitec Watchfaces (saat) kurulu olmalı. Bu dosyayı saate kurmayın.",
       "mirrors": [
         "http://192.168.0.186:8099/watchfaces-phone.apk"
+      ]
+    },
+    {
+      "id": "evaidrive",
+      "packageName": "com.evaitec.evaidrive",
+      "versionCode": 103,
+      "name": "EvaiDrive",
+      "tagline": "Volta EV2 araç panosu: hız, pil, harita.",
+      "platform": "phone",
+      "icon": "",
+      "screenshots": [],
+      "version": "1.26.0",
+      "releaseDate": "2026-11-06",
+      "sizeBytes": 156633894,
+      "downloadUrl": "https://github.com/evatechnosoft/evaitec-ota/releases/download/evaidrive-v1.26.0/evaidrive-1.26.0.apk",
+      "sha256": "b8d2bd05055ddc22fc70ef2a661dc2b89271d94dcdbc48363962338ed23e9a24",
+      "notes": "Yeni paket (eski EvaiDash com.evaitec.evamania yerine, yan yana kurulur). Tablet: kurmadan önce eski uygulamada kanvas 'paylaş' yedeği al.",
+      "mirrors": [
+        "http://192.168.0.186:8099/evaidrive.apk"
       ]
     }
   ]
