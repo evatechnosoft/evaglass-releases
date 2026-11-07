@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-07T08:15:51Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 987,
+      "versionCode": 988,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.87",
-      "releaseDate": "2026-11-04",
+      "version": "0.9.88",
+      "releaseDate": "2026-11-07",
       "sizeBytes": 9167078,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.87/netmovies-tv-0.9.87.apk",
-      "sha256": "597cc97ac577134680cafdca8a79aa718b5cbf42d28fa93ec427c697c0655b74",
-      "notes": "Sonraki bölüm geri sayımı yalnız son 60 sn içinde, 30 sn sayım",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.88/netmovies-tv-0.9.88.apk",
+      "sha256": "fcde0f524302f1e604a59146bf1c890ad2e047c7570556e818df279a7b4618b9",
+      "notes": "Devam Et: aynı başlık tek kart; başlık bazlı sağlayıcı engeli",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 987,
+      "versionCode": 988,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.87",
-      "releaseDate": "2026-11-04",
+      "version": "0.9.88",
+      "releaseDate": "2026-11-07",
       "sizeBytes": 9167078,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.87/netmovies-tv-0.9.87.apk",
-      "sha256": "597cc97ac577134680cafdca8a79aa718b5cbf42d28fa93ec427c697c0655b74",
-      "notes": "Sonraki bölüm geri sayımı yalnız son 60 sn içinde, 30 sn sayım",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.88/netmovies-tv-0.9.88.apk",
+      "sha256": "fcde0f524302f1e604a59146bf1c890ad2e047c7570556e818df279a7b4618b9",
+      "notes": "Devam Et: aynı başlık tek kart; başlık bazlı sağlayıcı engeli",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-tv.apk"
       ]
