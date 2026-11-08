@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T08:15:51Z",
+  "updated": "2026-11-08T07:04:16Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 988,
+      "versionCode": 990,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.88",
-      "releaseDate": "2026-11-07",
+      "version": "0.9.90",
+      "releaseDate": "2026-11-08",
       "sizeBytes": 9167078,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.88/netmovies-tv-0.9.88.apk",
-      "sha256": "fcde0f524302f1e604a59146bf1c890ad2e047c7570556e818df279a7b4618b9",
-      "notes": "Devam Et: aynı başlık tek kart; başlık bazlı sağlayıcı engeli",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.90/netmovies-tv-0.9.90.apk",
+      "sha256": "59fbd702a2f17458ed1fab8ddce5d2bffac6d80d75bcbae48faf7a5d8332e831",
+      "notes": "Aramada YouTube video varsayılan",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 988,
+      "versionCode": 990,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.88",
-      "releaseDate": "2026-11-07",
+      "version": "0.9.90",
+      "releaseDate": "2026-11-08",
       "sizeBytes": 9167078,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.88/netmovies-tv-0.9.88.apk",
-      "sha256": "fcde0f524302f1e604a59146bf1c890ad2e047c7570556e818df279a7b4618b9",
-      "notes": "Devam Et: aynı başlık tek kart; başlık bazlı sağlayıcı engeli",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.90/netmovies-tv-0.9.90.apk",
+      "sha256": "59fbd702a2f17458ed1fab8ddce5d2bffac6d80d75bcbae48faf7a5d8332e831",
+      "notes": "Aramada YouTube video varsayılan",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-tv.apk"
       ]
