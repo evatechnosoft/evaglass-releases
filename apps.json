@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T18:54:30Z",
+  "updated": "2026-11-12T10:31:27Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 991,
+      "versionCode": 992,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.91",
-      "releaseDate": "2026-11-08",
+      "version": "0.9.92",
+      "releaseDate": "2026-11-12",
       "sizeBytes": 9167078,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.91/netmovies-tv-0.9.91.apk",
-      "sha256": "73229c8607ba050c2c65e3a3f511c7279ad5d0952da4c3a1243605e1d05b8f43",
-      "notes": "Gözat araması YouTube videolarını katar",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.92/netmovies-tv-0.9.92.apk",
+      "sha256": "cefb6a1ef18107b7813ae4aa85f937670e2e2d108aaed90352d1b2d4e8f3bb7d",
+      "notes": "Devam Et / son izlenenler uygulama one gelince ve dakikada bir tazelenir",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 991,
+      "versionCode": 992,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.91",
-      "releaseDate": "2026-11-08",
+      "version": "0.9.92",
+      "releaseDate": "2026-11-12",
       "sizeBytes": 9167078,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.91/netmovies-tv-0.9.91.apk",
-      "sha256": "73229c8607ba050c2c65e3a3f511c7279ad5d0952da4c3a1243605e1d05b8f43",
-      "notes": "Gözat araması YouTube videolarını katar",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.92/netmovies-tv-0.9.92.apk",
+      "sha256": "cefb6a1ef18107b7813ae4aa85f937670e2e2d108aaed90352d1b2d4e8f3bb7d",
+      "notes": "Devam Et / son izlenenler uygulama one gelince ve dakikada bir tazelenir",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-tv.apk"
       ]
