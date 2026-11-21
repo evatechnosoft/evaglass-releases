@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T09:40:01Z",
+  "updated": "2026-11-21T18:35:08Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 993,
+      "versionCode": 994,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.93",
+      "version": "0.9.94",
       "releaseDate": "2026-11-21",
       "sizeBytes": 9167078,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.93/netmovies-tv-0.9.93.apk",
-      "sha256": "1b4ba87cc19e3c2f2e9e1c6c38f826f2de9de6c02dc7c2be86074544d44958c3",
-      "notes": "Bluetooth hoparlörde ses gecikmesi ayarı (Ayarlar > Ses)",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.94/netmovies-tv-0.9.94.apk",
+      "sha256": "3e95b2bd8ab41bf833bdc0bf7e5072bd89269cf07c1db597ea3fc99673bf8fd4",
+      "notes": "Aramada kaynağı olmayan yeni filmlere Sinemada rozeti",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 993,
+      "versionCode": 994,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.93",
+      "version": "0.9.94",
       "releaseDate": "2026-11-21",
       "sizeBytes": 9167078,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.93/netmovies-tv-0.9.93.apk",
-      "sha256": "1b4ba87cc19e3c2f2e9e1c6c38f826f2de9de6c02dc7c2be86074544d44958c3",
-      "notes": "Bluetooth hoparlörde ses gecikmesi ayarı (Ayarlar > Ses)",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.94/netmovies-tv-0.9.94.apk",
+      "sha256": "3e95b2bd8ab41bf833bdc0bf7e5072bd89269cf07c1db597ea3fc99673bf8fd4",
+      "notes": "Aramada kaynağı olmayan yeni filmlere Sinemada rozeti",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-tv.apk"
       ]
