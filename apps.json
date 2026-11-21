@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T18:35:08Z",
+  "updated": "2026-11-21T21:16:13Z",
   "apps": [
     {
       "id": "evaitec-ota-tv",
@@ -150,18 +150,18 @@
     {
       "id": "netmovies-phone",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 994,
+      "versionCode": 995,
       "name": "NetMovies",
       "tagline": "Televizyonu telefondan sür: ara, seç, TV'de başlat.",
       "platform": "phone",
       "icon": "assets/netmovies-phone.svg",
       "screenshots": [],
-      "version": "0.9.94",
+      "version": "0.9.95",
       "releaseDate": "2026-11-21",
       "sizeBytes": 9167078,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.94/netmovies-tv-0.9.94.apk",
-      "sha256": "3e95b2bd8ab41bf833bdc0bf7e5072bd89269cf07c1db597ea3fc99673bf8fd4",
-      "notes": "Aramada kaynağı olmayan yeni filmlere Sinemada rozeti",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.95/netmovies-tv-0.9.95.apk",
+      "sha256": "4f120ea3fcfecb46ea30b0cdcc9c28766fbbd4c82132027b10420504f304000a",
+      "notes": "Henüz çıkmamış filmlere Yakında rozeti",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-phone.apk"
       ]
@@ -169,18 +169,18 @@
     {
       "id": "netmovies-tv",
       "packageName": "com.evaitec.netmovies.tv",
-      "versionCode": 994,
+      "versionCode": 995,
       "name": "NetMovies",
       "tagline": "Ev ağındaki NetMovies sunucusunu televizyonda izleyin.",
       "platform": "tv",
       "icon": "assets/netmovies-tv.svg",
       "screenshots": [],
-      "version": "0.9.94",
+      "version": "0.9.95",
       "releaseDate": "2026-11-21",
       "sizeBytes": 9167078,
-      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.94/netmovies-tv-0.9.94.apk",
-      "sha256": "3e95b2bd8ab41bf833bdc0bf7e5072bd89269cf07c1db597ea3fc99673bf8fd4",
-      "notes": "Aramada kaynağı olmayan yeni filmlere Sinemada rozeti",
+      "downloadUrl": "https://github.com/evatechnosoft/evaglass-releases/releases/download/netmovies-tv-v0.9.95/netmovies-tv-0.9.95.apk",
+      "sha256": "4f120ea3fcfecb46ea30b0cdcc9c28766fbbd4c82132027b10420504f304000a",
+      "notes": "Henüz çıkmamış filmlere Yakında rozeti",
       "mirrors": [
         "http://192.168.0.186:8099/netmovies-tv.apk"
       ]
